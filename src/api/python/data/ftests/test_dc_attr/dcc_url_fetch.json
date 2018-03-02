@@ -1,0 +1,17 @@
+[
+{
+    "algorithm": 0, 
+    "maxURLs": 20, 
+    "sitesCriterions": {
+	"WHERE": "`id` = 'cb62bbad8732c939a20065287033f0f5'",
+        "ORDER BY": "Priority DESC, TcDate ASC"
+    }, 
+    "sitesList": [], 
+    "urlUpdate": null, 
+    "urlsCriterions": {
+	"WHERE": "`url` LIKE '%566.%'",
+        "LIMIT": 2, 
+        "ORDER BY": "CDate ASC"
+    }
+}
+]

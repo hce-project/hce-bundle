@@ -1,0 +1,57 @@
+{
+    "cDate": "NOW()", 
+    "description": "rnd null", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+	    "mode": 0,
+            "pattern": "http://127.0.0.1/_site_random_generator.php(.*)", 
+	    "subject": "",
+            "siteId": null, 
+            "type": 1,
+            "opCode": 0,
+            "stage": 3,
+            "action": 1
+        }
+    ], 
+    "httpTimeout": 20000, 
+    "id": null, 
+    "iterations": 0, 
+    "maxErrors": 100, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 20, 
+    "maxURLs": 20, 
+    "priority": 100, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1",
+        "AUTO_REMOVE_RESOURCES": "1",
+        "AUTO_REMOVE_WHERE": "ParentMd5<>\"\" AND Status IN (4,7) AND DATE_ADD(UDate, INTERVAL %RecrawlPeriod% MINUTE)<NOW()",
+        "AUTO_REMOVE_ORDER": "CDate ASC"
+    }, 
+    "requestDelay": 200, 
+    "resources": 0, 
+    "state": 3, 
+    "tcDate": "NULL", 
+    "tcDateProcess": "NULL",
+    "uDate": "NULL", 
+    "urlType": 0, 
+    "urls": [
+        "http://127.0.0.1/_site_random_generator.php?new=1"
+    ],
+    "contents": 0,
+    "processingDelay": 500,
+    "size": 0,
+    "avgSpeed": 0,
+    "avgSpeedCounter": 0,
+    "userId": 11,
+    "recrawlPeriod": 15,
+    "recrawlDate": "DATE_ADD(NOW(), INTERVAL `RecrawlPeriod` MINUTE)",
+    "maxURLsFromPage": 100,
+    "collectedURLs": 0,
+    "fetchType": 1
+}

@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 23138191, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:06:15", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 27, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2015-05-07 02:03:14", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1252, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 8, 
+                        "TagsMask": 33554716, 
+                        "UDate": "2017-01-26 05:06:17"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "PD94bWwgdmVyc2lvbj0iMS4wIj8+PHJlc3BvbnNlPjxpdGVtPjx0aXRsZT5IaXAtSG9wIFdhcyB0aGUgQmlnZ2VzdCBSZXZvbHV0aW9uIGluIEFtZXJpY2FuIE11c2ljIGFuZCBUaGF04oCZcyBCYWNrZWQgQnkgYSBTdHVkeSBvZiAxNywwMDAgU29uZ3M8L3RpdGxlPjxib2R5PlRoZSBleHBsb3Npb24gb2YgaGlwLWhvcCBvbnRvIHRoZSBtdXNpYyBzY2VuZSBpbiB0aGUgMTk5MHMgd2FzIHRoZSBiaWdnZXN0IG11c2ljYWwgcmV2b2x1dGlvbiBpbiBBbWVyaWNhbiBwb3AgaGlzdG9yeS48L2JvZHk+PGltYWdlPmh0dHBzOi8vdGltZWRvdGNvbS5maWxlcy53b3JkcHJlc3MuY29tLzIwMTUvMDUvcHVibGljLWVuZW15LXJhcC5qcGc/cXVhbGl0eT02NSZhbXA7c3RyaXA9Y29sb3ImYW1wO3c9NTUwPC9pbWFnZT48cHViZGF0ZT4yMDE1LTA1LTA3IDAyOjAzOjE0PC9wdWJkYXRlPjxhdXRob3I+Jmx0O2EgaXRlbXByb3A9JnF1b3Q7YXV0aG9yJnF1b3Q7IGhyZWY9JnF1b3Q7Li4vLi4vYXV0aG9yL2hlbGVuLXJlZ2FuL2luZGV4Lmh0bWwmcXVvdDsmZ3Q7SGVsZW4gUmVnYW4mbHQ7L2EmZ3Q7PC9hdXRob3I+PGxpbms+bWFpbHRvOmJvYkB4eXouY29tPC9saW5rPjxlcnJvcnNfbWFzaz4wPC9lcnJvcnNfbWFzaz48L2l0ZW0+PC9yZXNwb25zZT4=", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html", 
+                    "urlMd5": "b3eb9e33190cbc35e4419a3764903a01"
+                }
+            ], 
+            "node": "r014_data", 
+            "port": "5733", 
+            "time": 3592
+        }
+    ]
+}

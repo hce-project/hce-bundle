@@ -1,0 +1,49 @@
+[
+    {
+	"siteId": "987a52f78fd0e7b39d7744fda5159a35",
+	"urlMd5": "987a52f78fd0e7b39d7744fda5159a35",
+	"putDict":
+	{
+	    "data": "Formato1_azzz",
+	    "cDate": null
+	},
+	"contentType": 10,
+	"fileStorageSuffix": null,
+	"criterions": null
+    },
+    {
+	"siteId": "987a52f78fd0e7b39d7744fda5159a35",
+	"urlMd5": "987a52f78fd0e7b39d7744fda5159a35",
+	"putDict":
+	{
+	    "data": "Dynamic",
+	    "cDate": null
+	},
+	"contentType": 9,
+	"fileStorageSuffix": null,
+	"criterions": null
+    },
+    {
+	"siteId": "987a52f78fd0e7b39d7744fda5159a35",
+	"urlMd5": "987a52f78fd0e7b39d7744fda5159a35",
+	"putDict":
+	{
+	    "data": "Cookies",
+	    "cDate": null
+	},
+	"contentType": 5,
+	"fileStorageSuffix": "cook",
+	"criterions": null
+    },
+    {
+	"siteId": "987a52f78fd0e7b39d7744fda5159a35",
+	"urlMd5": "987a52f78fd0e7b39d7744fda5159a35",
+	"putDict":
+	{
+	    "cDate": null
+	},
+	"contentType": 5,
+	"fileStorageSuffix": null,
+	"criterions": null
+    }
+]

@@ -1,0 +1,156 @@
+{
+  "id": 1,
+  "crawlerType": 4,
+  "items": [
+    {
+      "siteId": "0",
+      "urlContentResponse": null,
+      "siteObj": {
+        "fetchType": 1,
+        "id": "0",
+        "uDate": null,
+        "tcDate": null,
+        "cDate": null,
+        "resources": null,
+        "iterations": null,
+        "description": null,
+        "urls": [
+          
+        ],
+        "filters": [
+          
+        ],
+        "properties": [],
+        "state": null,
+        "priority": null,
+        "maxURLs": null,
+        "maxResources": null,
+        "maxErrors": null,
+        "maxResourceSize": null,
+        "requestDelay": null,
+        "httpTimeout": null,
+        "errorMask": null,
+        "errors": null,
+        "urlType": null,
+        "contents": null,
+        "processingDelay": null,
+        "size": null,
+        "avgSpeed": null,
+        "avgSpeedCounter": null,
+        "userId": null,
+        "recrawlPeriod": null,
+        "recrawlDate": null,
+        "maxURLsFromPage": null,
+        "collectedURLs": null
+      },
+      "urlObj": {
+        "status": 2,
+        "linksI": 0,
+        "linksE": 0,
+        "contentMask": 0,
+        "processingTime": 0,
+        "CDate": null,
+        "mRateCounter": 0,
+        "httpTimeout": 30000,
+        "size": 0,
+        "urlPut": null,
+        "batchId": 0,
+        "lastModified": null,
+        "tagsCount": 0,
+        "mRate": 0,
+        "charset": "",
+        "state": 0,
+        "httpCode": 0,
+        "priority": 0,
+        "maxURLsFromPage": 0,
+        "processingDelay": 1000,
+        "crawlingTime": 0,
+        "type": 1,
+        "processed": 0,
+        "totalTime": 0,
+        "siteSelect": 0,
+        "contentType": "",
+        "pDate": null,
+        "errorMask": 0,
+        "httpMethod": "get",
+        "eTag": "",
+        "siteId": "0",
+        "freq": 0,
+        "tcDate": null,
+        "rawContentMd5": "",
+        "crawled": 0,
+        "UDate": null,
+        "contentURLMd5": "",
+        "requestDelay": 1000,
+        "depth": 0,
+        "parentMd5": "",
+        "urlUpdate": null,
+        "tagsMask": 0,
+        "urlMd5": "c94766124b714e93ccf4efa4b783f0e3",
+        "url": "http:\/\/127.0.0.1\/template_scraping\/index2.html"
+      },
+      "urlPutObj": {
+        "putDict": {
+          
+        },
+        "urlMd5": "c94766124b714e93ccf4efa4b783f0e3",
+        "contentType": 0,
+        "siteId": "0",
+        "fileStorageSuffix": null,
+        "criterions": null
+      },
+      "properties": {
+        "ROBOTS_MODE": 0,
+        "ROBOTS_COLLECT":0,
+        "DB_TASK_MODE": "RO",
+        "HTTP_REDIRECTS_MAX": 5,
+        "HTML_REDIRECTS_MAX": 5,
+        "HTML_RECOVER": "0",
+        "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"user_name_algorithm\"},\"modules\":{\"user_name_algorithm\":[\"ScrapyExtractor\",\"GooseExtractor\"]}}",
+        "template": {
+          "templates": [
+            {
+              "output_format": {
+                "name": "json",
+                "header": "[\n",
+                "items_header": "",
+                "item": "{\n\"pubdate\":\"%pubdate%\",\n\"title\":\"%title%\",\n\"description\":\"%description%\",\n\"media\":\"%media%\",\n\"author\":\"%author%\",\n\"dc_date\":\"%dc_date%\",\n\"link\":\"%link%\",\n\"keywords\":\"%keywords%\",\n\"content_encoded\":\"%content_encoded%\",\n\"html_lang\":\"%html_lang%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n",
+                "items_footer": "",
+                "footer": "]\n"
+              },
+              "tags": {
+                "pubdate": [
+                ],
+                "title": [
+                ],
+                "description": [
+                ],
+                "media": [
+                ],
+                "author": [
+                ],
+                "dc_date": [
+                ],
+                "link": [
+                ],
+                "keywords": [
+                ],
+                "content_encoded": [
+                ],
+                "html_lang": [
+                ],
+                "errors_mask": [
+                ]
+              },
+              "priority": 100,
+              "mandatory": 1,
+              "is_filled": 0
+            }
+          ],
+          "select": "first_nonempty"
+        }
+      },
+      "urlId": "c94766124b714e93ccf4efa4b783f0e3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 2,
+        "time_max": 2000000,
+        "cleanup": 0
+    },
+    "command": "STR=`head --bytes=524288000 /dev/urandom|base64`;echo -n $STR",
+    "input": "",
+    "files": [
+    ]
+}

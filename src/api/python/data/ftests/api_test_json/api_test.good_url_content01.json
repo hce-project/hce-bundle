@@ -1,0 +1,23 @@
+[
+{
+    "contentTypeMask": 1027, 
+    "siteId": "74a29f25c8db8f68bfdb155a4a53fa53", 
+    "url": "", 
+    "urlFetch": {
+        "algorithm": 0, 
+        "maxURLs": 2, 
+        "sitesCriterions": {
+            "ORDER BY": "Priority DESC, TcDate ASC",
+            "WHERE": "User_Id=1"
+        }, 
+        "sitesList": [], 
+        "urlUpdate": null, 
+        "urlsCriterions": {
+            "LIMIT": 2, 
+            "ORDER BY": "CDate ASC", 
+            "WHERE": "Status=7 AND Crawled>0 AND Processed>0 AND TagsCount>0 AND CDate BETWEEN '2014-01-01 00:00:01' AND '2020-01-01 00:00:01'"
+        }
+    }, 
+    "urlMd5": ""
+}
+]

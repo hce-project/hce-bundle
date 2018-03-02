@@ -1,0 +1,48 @@
+http://graspdemo.snatz.com/daily/china
+../ http://graspdemo.snatz.com/
+1.jpg http://graspdemo.snatz.com/daily/1.jpg
+../2.jpg http://graspdemo.snatz.com/2.jpg
+../set/3.jpg http://graspdemo.snatz.com/set/3.jpg
+//www.nypost.com/test.html http://www.nypost.com/test.html
+http://graspdemo.snatz.com/daily/japan/ http://graspdemo.snatz.com/daily/japan/
+https://graspdemo.snatz.com/daily/japan/ https://graspdemo.snatz.com/daily/japan/
+www.html http://graspdemo.snatz.com/daily/www.html
+set/www3.html http://graspdemo.snatz.com/daily/set/www3.html
+/set/www3.html http://graspdemo.snatz.com/set/www3.html
+http://grasp:grasptest@graspdemo.snatz.com/set/www4.html http://grasp:grasptest@graspdemo.snatz.com/set/www4.html
+ftp://i.ua/set/www5.html ftp://i.ua/set/www5.html
+
+
+http://graspdemo.snatz.com/
+../ http://graspdemo.snatz.com/
+./1.jpg http://graspdemo.snatz.com/1.jpg
+/2.jpg http://graspdemo.snatz.com/2.jpg
+2.jpg http://graspdemo.snatz.com/2.jpg
+file:///home/user/pic.html file:///home/user/pic.html
+
+
+https://graspdemo.snatz.com/
+../ https://graspdemo.snatz.com/
+./1.jpg https://graspdemo.snatz.com/1.jpg
+//www.nypost.com/test.html https://www.nypost.com/test.html
+../test/test1/test2/../../1.jpg https://graspdemo.snatz.com/test/1.jpg
+ftp://test.com/link.txt ftp://test.com/link.txt
+mailto:test@test.ua mailto:test@test.ua
+
+
+https://test:test@graspdemo.snatz.com/path1/path2/path3/
+../ https://test:test@graspdemo.snatz.com/path1/path2/
+../set/../ https://test:test@graspdemo.snatz.com/path1/path2/
+../set/../1.html https://test:test@graspdemo.snatz.com/path1/path2/1.html
+http://test:test@graspdemo.snatz.com/path1/ http://test:test@graspdemo.snatz.com/path1/
+//test:test@graspdemo.snatz.com/path1/path2 https://test:test@graspdemo.snatz.com/path1/path2
+//test:test@graspdemo.snatz.com:99/path1/1.html https://test:test@graspdemo.snatz.com:99/path1/1.html
+
+
+file:///www.test.com/path1/path2/1.file
+../ file:///www.test.com/path1/
+http://test:test@graspdemo.snatz.com/path1/ http://test:test@graspdemo.snatz.com/path1/
+
+
+
+

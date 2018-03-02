@@ -1,0 +1,54 @@
+{
+    "cDate": {
+        "str": "\"2012-12-12 12:12:12\""
+    },
+    "description": "Test update - append", 
+    "errorMask": 20000000000, 
+    "errors": 200000000000, 
+    "filters": [
+        {
+            "pattern": "http://localhost/*", 
+            "siteId": "699fcf4591fc23e79b839d8819904293", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 2000000000, 
+    "id": "699fcf4591fc23e79b839d8819904293", 
+    "iterations": 20, 
+    "maxErrors": 20000, 
+    "maxResourceSize": 20000000, 
+    "maxResources": 2000, 
+    "maxURLs": 2000, 
+    "priority": 200, 
+    "properties": {
+        "PROCESS_CTYPES": "text/plain", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1"
+    }, 
+    "requestDelay": 200000000, 
+    "resources": 2, 
+    "state": 2, 
+    "tcDate": {
+        "str": "NOW()"
+    }, 
+    "uDate": {
+        "str": "NOW()"
+    }, 
+    "updateType": 0, 
+    "urlType": 2, 
+    "urls": [
+        "http://localhost/"
+    ],
+    "contents": 2000,
+    "processingDelay" : 20000,
+    "size":0,
+    "avgSpeed":0,
+    "avgSpeedCounter":0,
+    "recrawlPeriod" : 0,
+    "recrawlDate": "NULL", 
+    "userId": 11,
+    "maxURLsFromPage": null,
+    "criterions": null,
+    "collectedURLs": null,
+    "fetchType": null
+}

@@ -1,0 +1,13 @@
+[
+    {
+	"sitesList": ["z1"],
+	"urlsCriterions":
+	{
+	    "LIMIT": "10",
+	    "WHERE": "1=1",
+	    "ORDER BY": "URL"
+	},
+	"maxURLs": 10,
+	"algorithm": 0
+    }
+]

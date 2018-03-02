@@ -1,0 +1,6 @@
+{
+    "rid": 100,
+    "query": "SELECT SUM(`Resources`) AS Resources, SUM(`Contents`) AS Contents, SUM(`CollectedURLs`) AS CollectedURLs, SUM(`Errors`) AS Errors, SUM(`Size`) AS Size, AVG(`AVGSpeed`) AS AVGSpeed FROM `sites`",
+    "dbName": "dc_sites",
+    "includeFieldsNames": 1
+}

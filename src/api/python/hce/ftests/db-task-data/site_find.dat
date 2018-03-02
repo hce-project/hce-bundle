@@ -1,0 +1,38 @@
+ccopy_reg
+_reconstructor
+p1
+(cdc.Constants
+DRCESyncTasksCover
+p2
+c__builtin__
+tuple
+p3
+(I15
+g1
+(cdc.EventObjects
+SiteFind
+p4
+c__builtin__
+object
+p5
+NtRp6
+(dp7
+S'url'
+p8
+NsS'criterions'
+p9
+(dp10
+S'LIMIT'
+p11
+S'10'
+p12
+sS'WHERE'
+p13
+V`id` = 'z2'
+p14
+sS'ORDER BY'
+p15
+S'CDate DESC'
+p16
+ssbttRp17
+.

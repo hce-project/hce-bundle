@@ -1,0 +1,5 @@
+{
+    "deleteTaskId": null, 
+    "id": "f9a3c00da0978343057c4c8b83868912",
+		"excludeList": ["urls", "properties", "filters"]
+}

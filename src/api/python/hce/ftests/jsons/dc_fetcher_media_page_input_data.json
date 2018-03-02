@@ -1,0 +1,39 @@
+{
+  "data": {
+    "285faadbd343c7d59353f0e6305b670c": {
+      "source_url": "http://www.valuewalk.com/2018/01/ibm-q4-2017-earnings-results-tank-shares",
+      "title": "IBM Q4 2017 Earnings Results Tank Shares",
+      "domain": "valuewalk.com",
+      "errorMask": 63,
+      "data": [
+        
+      ],
+      "info": {
+        
+      }
+    }
+  },
+  "options": {
+    "totalMaxTime": 300,
+    "scrollCount": 100,
+    "scrollDelay": 1000,
+    "scrollStep": 300,
+    "searchField": "source_url",
+    "queryUrl": "",
+    "profileBannedCountMax": {
+      "fb": 5,
+      "tw": 0
+    },
+    "dataCount": 1,
+    "method": "media_page",
+    "currentDataMd5": "285faadbd343c7d59353f0e6305b670c",
+    "autostart": ""
+  },
+  "info": {
+    "currentDataIndex": 0,
+    "profileBannedCountCurrent": {
+      "fb": 0,
+      "tw": 0
+    }
+  }
+}

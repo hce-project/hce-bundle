@@ -1,0 +1,12 @@
+#!/bin/bash
+
+red='\e[0;31m'
+NC='\e[0m' # No Color
+
+echo -e "\n${red}Deleting task...${NC}\n"
+./dtmc_terminate_task
+
+echo -e "\n${red}Check task...${NC}\n"
+./dtmc_check_task
+
+echo -e "\n${red}Done.${NC}\n"

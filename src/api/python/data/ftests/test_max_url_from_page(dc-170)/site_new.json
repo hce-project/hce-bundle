@@ -1,0 +1,51 @@
+{
+    "avgSpeed": 0, 
+    "avgSpeedCounter": 0, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "contents": 0, 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "mode": 0, 
+            "pattern": "http://127.0.0.1/_site_random_generator.php(.*)", 
+            "siteId": "b85ab149a528bd0a024fa0f43e80b5fc", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 30000, 
+    "id": "b85ab149a528bd0a024fa0f43e80b5fc", 
+    "iterations": 0, 
+    "maxErrors": 20, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 20, 
+    "maxURLs": 20, 
+    "maxURLsFromPage": 30, 
+    "priority": 100, 
+    "processingDelay": 500, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1", 
+        "MIME_TYPE_STORE_ON_DISK":"none",
+        "PROCESSOR_NAME" : "NONE"
+    }, 
+    "recrawlDate" : "NOW()",
+    "requestDelay": 500, 
+    "resources": 0, 
+    "size": 0, 
+    "state": 3, 
+    "tcDate": null, 
+    "uDate": null, 
+    "urlType": 0, 
+    "urls": [
+        "http://127.0.0.1/_site_random_generator.php"
+    ], 
+    "recrawlPeriod" : 1440,
+    "userId": 2
+}

@@ -1,0 +1,8 @@
+{
+    "url": null,
+    "criterions":
+    {
+	"WHERE": "`id` = 'z2'"
+    }
+
+}

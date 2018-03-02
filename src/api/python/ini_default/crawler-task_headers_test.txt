@@ -1,0 +1,11 @@
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:en-US,en;q=0.8,en;q=0.6,us;q=0.4,us;q=0.2,ja;q=0.2
+Cache-Control:no-cache
+Connection:close
+Pragma:no-cache
+--disable-web-security:
+--allow-running-insecure-content:
+--allow-file-access-from-files:
+--user-data-dir-zip:
+--log-chrome-debug-log:

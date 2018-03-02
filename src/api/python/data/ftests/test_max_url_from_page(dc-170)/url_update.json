@@ -1,0 +1,47 @@
+[
+{
+    "CDate": null, 
+    "UDate": {
+        "str": "NOW()"
+    }, 
+    "tcDate": {
+        "str": "NOW()"
+    }, 
+    "batchId": null, 
+    "charset": null, 
+    "contentType": null, 
+    "crawled": null, 
+    "crawlingTime": null, 
+    "criterions": {
+        "LIMIT": 1
+    }, 
+    "errorMask": null, 
+    "httpCode": null, 
+    "httpTimeout": null, 
+    "processed": null, 
+    "processingTime": null, 
+    "requestDelay": null, 
+    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc", 
+    "siteSelect": null, 
+    "state": 0, 
+    "status": 1, 
+    "totalTime": null, 
+    "type": 1, 
+    "url": null, 
+    "maxURLsFromPage": 15, 
+    "processingDelay": 0, 
+    "httpMethod": "", 
+    "size": 0, 
+    "linksE": 0, 
+    "linksI": 0, 
+    "freq": 0, 
+    "depth": 0, 
+    "rawContentMd5": "", 
+    "parentMd5": "", 
+    "lastModified": null, 
+    "eTag": "", 
+    "mRate": 0.0, 
+    "mRateCounter": 0, 
+    "urlMd5": "701ccc5c1c589041d31d13dae8dce90d"
+}
+]

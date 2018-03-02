@@ -1,0 +1,297 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 2660739083, 
+            "itemObject": {
+                "avgSpeed": 1212118, 
+                "avgSpeedCounter": 69, 
+                "cDate": "2016-07-07 12:51:36", 
+                "categoryId": 1, 
+                "collectedURLs": 3, 
+                "contents": 2, 
+                "deletedURLs": 0, 
+                "description": "TEST MACRO", 
+                "errorMask": 0, 
+                "errors": 0, 
+                "fetchType": 2, 
+                "filters": [
+                    {
+                        "action": 1, 
+                        "cDate": "2016-07-07 12:51:36", 
+                        "groupId": 0, 
+                        "mode": 0, 
+                        "opCode": 0, 
+                        "pattern": "http(.*)", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "stage": 0, 
+                        "state": 1, 
+                        "subject": "", 
+                        "type": 1, 
+                        "uDate": "2016-07-07 12:51:36"
+                    }
+                ], 
+                "httpTimeout": 10000, 
+                "id": "ae9b744cdcd99b88865db1f03ddddf25", 
+                "iterations": 1, 
+                "maxErrors": 400, 
+                "maxResourceSize": 1000000, 
+                "maxResources": 10, 
+                "maxURLs": 10, 
+                "maxURLsFromPage": 200, 
+                "moveURLs": true, 
+                "newURLs": 0, 
+                "priority": 10000, 
+                "processingDelay": 1000, 
+                "properties": [
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "RECRAWL_DELETE_WHERE", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "(`Status`=1 OR (`Status`=4 AND Crawled=0 AND Processed=0) OR `PDate`<CURDATE() OR `PDate` IS NULL OR CDate<CURDATE()) AND `ParentMd5`<>''"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "AUTO_REMOVE_ORDER", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "ContentType ASC, Crawled ASC, TagsCount ASC, UDate ASC"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "DYNAMIC_FETCH_ONLY_FOR_ROOT_URL", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "1"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "ROBOTS_MODE", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "0"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "HTML_RECOVER", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "0"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "AUTO_REMOVE_WHERE", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "ParentMd5<>\"\" AND Status IN (4,7) AND DATE_ADD(UDate, INTERVAL %RecrawlPeriod% MINUTE)<NOW()"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "HTML_REDIRECTS_MAX", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "5"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "STATS_LOG_ENABLED", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "1"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "PROCESSOR_PROPERTIES", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "{\"algorithm\":{\"algorithm_name\":\"user_name_algorithm\"},\"modules\":{\"user_name_algorithm\":[\"ScrapyExtractor\",\"GooseExtractor\",\"NewspaperExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "SCRAPING_TYPE_NAME", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "NEWS"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "URLS_FIELDS_INIT", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "{\"type\": {\"conditions\":[\"parent.type = 0\"], \"value\":\"1\"}}"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "CONTENT_HASH", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "{ \"algorithm\": 1, \"tags\": \"title,description,content_encoded,media,pubdate\" }"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "ROBOTS_COLLECT", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "0"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "SITE_ID_MD5_SOURCE", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "1-127.0.0.1"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "template", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "{\"templates\":[{\"output_format\":{\"type\":\"news\",\"name\":\"json\",\"header\":\"[\\n\",\"items_header\":\"\",\"item\":\"{\\n\\\"pubdate\\\":\\\"%pubdate%\\\",\\n\\\"title\\\":\\\"%title%\\\",\\n\\\"description\\\":\\\"%description%\\\",\\n\\\"media\\\":\\\"%media%\\\",\\n\\\"author\\\":\\\"%author%\\\",\\n\\\"dc_date\\\":\\\"%dc_date%\\\",\\n\\\"link\\\":\\\"%link%\\\",\\n\\\"keywords\\\":\\\"%keywords%\\\",\\n\\\"content_encoded\\\":\\\"%content_encoded%\\\",\\n\\\"html_lang\\\":\\\"%html_lang%\\\",\\n\\\"source_url\\\":\\\"%source_url%\\\",\\n\\\"pubdate_extractor\\\":\\\"%pubdate_extractor%\\\",\\n\\\"title_extractor\\\":\\\"%title_extractor%\\\",\\n\\\"description_extractor\\\":\\\"%description_extractor%\\\",\\n\\\"media_extractor\\\":\\\"%media_extractor%\\\",\\n\\\"author_extractor\\\":\\\"%author_extractor%\\\",\\n\\\"dc_date_extractor\\\":\\\"%dc_date_extractor%\\\",\\n\\\"link_extractor\\\":\\\"%link_extractor%\\\",\\n\\\"keywords_extractor\\\":\\\"%keywords_extractor%\\\",\\n\\\"content_encoded_extractor\\\":\\\"%content_encoded_extractor%\\\",\\n\\\"html_lang_extractor\\\":\\\"%html_lang_extractor%\\\",\\n\\\"pubdate_xpath\\\":\\\"%pubdate_xpath%\\\",\\n\\\"title_xpath\\\":\\\"%title_xpath%\\\",\\n\\\"description_xpath\\\":\\\"%description_xpath%\\\",\\n\\\"media_xpath\\\":\\\"%media_xpath%\\\",\\n\\\"author_xpath\\\":\\\"%author_xpath%\\\",\\n\\\"dc_date_xpath\\\":\\\"%dc_date_xpath%\\\",\\n\\\"link_xpath\\\":\\\"%link_xpath%\\\",\\n\\\"keywords_xpath\\\":\\\"%keywords_xpath%\\\",\\n\\\"content_encoded_xpath\\\":\\\"%content_encoded_xpath%\\\",\\n\\\"html_lang_xpath\\\":\\\"%html_lang_xpath%\\\",\\n\\\"crawler_time\\\":\\\"%crawler_time%\\\",\\n\\\"scraper_time\\\":\\\"%scraper_time%\\\",\\n\\\"pubdate_tz\\\":\\\"%pubdate_tz%\\\",\\n\\\"errors_mask\\\":\\\"%errors_mask%\\\"\\n}\\n\",\"items_footer\":\"\",\"footer\":\"]\\n\"},\"tags\":{\"pubdate\":[],\"title\":[],\"description\":[],\"media\":[],\"author\":[],\"dc_date\":[],\"link\":[],\"keywords\":[],\"content_encoded\":[],\"html_lang\":[],\"pubdate_extractor\":[],\"title_extractor\":[],\"description_extractor\":[],\"media_extractor\":[],\"author_extractor\":[],\"dc_date_extractor\":[],\"link_extractor\":[],\"keywords_extractor\":[],\"content_encoded_extractor\":[],\"html_lang_extractor\":[],\"crawler_time\":[],\"scraper_time\":[],\"errors_mask\":[]},\"priority\":100,\"mandatory\":1,\"is_filled\":0}],\"select\":\"first_nonempty\"}"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "AUTO_REMOVE_RESOURCES", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "1"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "STATS_FREQ_ENABLED", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "1"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "FETCH_RAW_CONTENT", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "0"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "FETCHER_MACRO", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "{\"result_type\": 3, \"result_content_type\":\"text/html\",\"name\":\"macro sets name\",\"sets\":[{\"name\":\"set name\",\"items\":[\"if(location.href=='http://127.0.0.1/user/login'){return [\\\"http://edition.cnn.com/2016/07/06/football/lionel-messi-tax-guilty-sentence-21-months/index.html\\\",\\\"http://edition.cnn.com/2016/07/06/us/baton-rouge-shooting-alton-sterling/index.html\\\"];}else{return;}\"],\"delay\":\"0\"}]}"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "HTTP_REDIRECTS_MAX", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "5"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "PROCESS_CTYPES", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "text/html,text/json"
+                    }, 
+                    {
+                        "cDate": "2016-07-07 13:51:42", 
+                        "name": "STORE_HTTP_HEADERS", 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "uDate": "2016-07-07 13:51:42", 
+                        "urlMd5": "", 
+                        "value": "1"
+                    }
+                ], 
+                "recrawlDate": "2016-07-07 19:53:00", 
+                "recrawlPeriod": 360, 
+                "requestDelay": 500, 
+                "resources": 1, 
+                "size": 310507, 
+                "state": 1, 
+                "tcDate": "2016-07-07 14:43:31", 
+                "tcDateProcess": "2016-07-07 14:43:25", 
+                "uDate": "2016-07-07 13:52:06", 
+                "urlType": 0, 
+                "urls": [
+                    {
+                        "CDate": "2016-07-07 12:51:36", 
+                        "UDate": null, 
+                        "attributes": [], 
+                        "batchId": 0, 
+                        "chainId": null, 
+                        "charset": "", 
+                        "classifierMask": 0, 
+                        "contentMask": 0, 
+                        "contentType": "", 
+                        "contentURLMd5": "", 
+                        "crawled": 0, 
+                        "crawlingTime": 0, 
+                        "depth": 0, 
+                        "eTag": "", 
+                        "errorMask": 0, 
+                        "freq": 0, 
+                        "httpCode": 0, 
+                        "httpMethod": "get", 
+                        "httpTimeout": 10000, 
+                        "lastModified": null, 
+                        "linksE": 0, 
+                        "linksI": 0, 
+                        "mRate": 0.0, 
+                        "mRateCounter": 0, 
+                        "maxURLsFromPage": 0, 
+                        "pDate": null, 
+                        "parentMd5": "", 
+                        "priority": 0, 
+                        "processed": 0, 
+                        "processingDelay": 500, 
+                        "processingTime": 0, 
+                        "rawContentMd5": "", 
+                        "requestDelay": 500, 
+                        "siteId": "ae9b744cdcd99b88865db1f03ddddf25", 
+                        "siteSelect": 3, 
+                        "size": 0, 
+                        "state": 0, 
+                        "status": 7, 
+                        "tagsCount": 0, 
+                        "tagsMask": 0, 
+                        "tcDate": null, 
+                        "totalTime": 0, 
+                        "type": 0, 
+                        "url": "http://127.0.0.1/user/login", 
+                        "urlMd5": "03eda192f2b108026cdaf452b60c6657", 
+                        "urlPut": null, 
+                        "urlUpdate": null, 
+                        "userId": 1
+                    }
+                ], 
+                "userId": 1
+            }, 
+            "node": "m011_data", 
+            "port": "5530", 
+            "time": 160
+        }
+    ]
+}

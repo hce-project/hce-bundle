@@ -1,0 +1,68 @@
+{
+    "avgSpeed": 0, 
+    "avgSpeedCounter": 0, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "contents": 0, 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "mode": 0, 
+            "pattern": "^(?:http(?:s)?:\\/\\/)?(?:[^\\.]+\\.)?yomiuri\\.co\\.jp\\/(.*)\\/news\\/(.*)", 
+            "siteId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 30000, 
+    "id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", 
+    "iterations": 0, 
+    "maxErrors": 100000, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 200, 
+    "maxURLs": 200, 
+    "maxURLsFromPage": 200, 
+    "priority": 100, 
+    "processingDelay": 500, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1", 
+        "AUTO_REMOVE_RESOURCES": "1",
+        "AUTO_REMOVE_WHERE": "ParentMd5<>\"\" AND Status IN (4,7) AND DATE_ADD(UDate, INTERVAL %RecrawlPeriod% MINUTE)<NOW()",
+        "AUTO_REMOVE_ORDER": "CDate ASC",
+        "template": "{\\'description\\': [\\\"//p[contains(@class,\\'par1\\')]//text()\\\"], \\'pubdate\\': [\\\"//meta[contains(@property,\\'article:published_time\\')]/@content\\\"], \\'author\\': [\\\"//meta[contains(@name,\\'author\\')]/@content\\\"], \\'media\\': [\\\"//img[contains(@data-original,\\'\\')]/@data-original\\\"], \\'title\\': [\\'//article/h1/text()\\'], \\'media_thumbnail\\': [\\\"//meta[contains(@name,\\'media_thumbnail\\')]/@content\\\"], \\'media_content\\': [\\\"//meta[contains(@name,\\'media_content\\')]/@content\\\"], \\'dc_date\\': [\\\"//meta[contains(@property,\\'article:published_time\\')]/@content\\\"], \\'link\\': [\\\"//meta[contains(@name,\\'link\\')]/@content\\\", \\\"//li[contains(@class,\\'space\\')]/@href\\\", \\\"//link[contains(@rel,\\'canonical\\')]/@href\\\"], \\'keywords\\': [\\\"//meta[contains(@name,\\'keywords\\')]/@content\\\"], \\'content_encoded\\': [\\\"//p[contains(@itemprop,\\'articleBody\\')]//text()\\\"], \\'guid\\': [\\\"//meta[contains(@name,\\'guid\\')]/@content\\\"], \\'enclosure\\': [\\\"//meta[contains(@name,\\'enclosure\\')]/@content\\\"]}"
+    }, 
+    "recrawlDate" : "DATE_ADD(NOW(), INTERVAL `RecrawlPeriod` MINUTE)",
+    "requestDelay": 500, 
+    "resources": 0, 
+    "size": 0, 
+    "state": 1, 
+    "tcDate": null, 
+    "uDate": null, 
+    "urlType": 0, 
+    "urls": [
+        "http://www.yomiuri.co.jp/politics/?from=ygnav",
+        "http://www.yomiuri.co.jp/election/?from=ygnav",
+        "http://www.yomiuri.co.jp/national/?from=ygnav",
+        "http://www.yomiuri.co.jp/world/?from=ygnav",
+        "http://www.yomiuri.co.jp/atmoney/?from=ygnav",
+        "http://www.yomiuri.co.jp/eco/?from=ygnav",
+        "http://www.yomiuri.co.jp/feature/?from=ygnav",
+        "http://www.yomiuri.co.jp/editorial/?from=ygnav",
+        "http://www.yomiuri.co.jp/feature/20091215-481540/index.htm",
+        "http://www.yomiuri.co.jp/feature/20130808-020209/index.htm",
+        "http://www.yomiuri.co.jp/feature/20110316-866921/index.htm",
+        "http://www.yomiuri.co.jp/feature/20110316-866918/index.htm",
+        "http://www.yomiuri.co.jp/feature/20131004-140795/index.htm",
+        "http://www.yomiuri.co.jp/feature/20080115-899562/index.htm"
+    ], 
+    "recrawlPeriod" : 240,
+    "userId": 2,
+    "collectedURLs": 0,
+    "fetchType": 1
+}

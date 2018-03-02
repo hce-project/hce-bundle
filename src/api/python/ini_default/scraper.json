@@ -1,0 +1,49 @@
+{
+    "Scraper": {"properties":
+           {"algorithm":{"algorithm_name":"regular"},
+      "modules":{"regular":["ScrapyExtractor","GooseExtractor","NewspaperExtractor","MLExtractor"],
+           "concurrency":["NewspaperExtractor","ScrapyExtractor","GooseExtractor"],
+           "training":["ScrapyExtractor","DiffBotExtractor"],
+           "ML":["MLExtractor"],
+           "SCRAPY":["ScrapyExtractor"],
+           "GOOSE":["GooseExtractor"],
+           "NEWSPAPER":["NewspaperExtractor"],
+           "prediction":["MLExtractor"]
+          }
+    }
+      },
+    "ScraperMultiItemsTask": {"properties":
+    {"algorithm":{"algorithm_name":"regular"},
+     "modules":{"regular":["ScrapyExtractor","GooseExtractor","NewspaperExtractor","MLExtractor"],
+          "concurrency":["NewspaperExtractor","ScrapyExtractor","GooseExtractor"],
+          "training":["ScrapyExtractor","DiffBotExtractor"],
+          "ML":["MLExtractor"],
+          "SCRAPY":["ScrapyExtractor"],
+          "GOOSE":["GooseExtractor"],
+          "NEWSPAPER":["NewspaperExtractor"],
+          "prediction":["MLExtractor"]
+         }
+    }
+      },
+    "ScraperCustomJson": {"properties":
+    {"algorithm":{"algorithm_name":"regular"},
+     "modules":{"regular":["ScrapyExtractor","GooseExtractor","NewspaperExtractor","MLExtractor"],
+          "concurrency":["NewspaperExtractor","ScrapyExtractor","GooseExtractor"],
+          "training":["ScrapyExtractor","DiffBotExtractor"],
+          "ML":["MLExtractor"],
+          "SCRAPY":["ScrapyExtractor"],
+          "GOOSE":["GooseExtractor"],
+          "NEWSPAPER":["NewspaperExtractor"],
+          "prediction":["MLExtractor"]
+         }
+    }
+      },
+    "ScrapyExtractor": {"properties":{"rank":1,"tags":{"content_encoded":{"rank":1},"pubdate":{"rank":1},"media":{"rank":1},"description":{"rank":1},"author":{"rank":1},"keywords":{"rank":1},"title":{"rank":1},"link":{"rank":1}},"template":"", "html5":1}},
+    "MLExtractor": {"properties":{"rank":1,"tags":{"content_encoded":{"rank":1},"pubdate":{"rank":1},"media":{"rank":1},"description":{"rank":1},"author":{"rank":1},"keywords":{"rank":1},"title":{"rank":1},"link":{"rank":1}},"template":"", "html5":1}},
+    "NewspaperExtractor": {"properties":{"rank":10,"tags":{"content_encoded":{"rank":1},"pubdate":{"rank":1},"media":{"rank":101},"description":{"rank":1},"author":{"rank":1},"keywords":{"rank":1},"title":{"rank":1},"link":{"rank":1}},"template":""}},
+    "GooseExtractor": {"properties":{"rank":10,"tags":{"content_encoded":{"rank":1},"pubdate":{"rank":1},"media":{"rank":101},"description":{"rank":1},"author":{"rank":1},"keywords":{"rank":1},"title":{"rank":1},"link":{"rank":1}},"template":""}},
+    "BoilerpipeExtractor": {"properties":{"rank":10,"tags":{"content_encoded":{"rank":1},"pubdate":{"rank":1},"media":{"rank":101},"description":{"rank":1},"author":{"rank":1},"keywords":{"rank":1},"title":{"rank":1},"link":{"rank":1}},"template":""}},
+    "AlchemyExtractor": {"properties":{"rank":10,"tags":{"content_encoded":{"rank":1},"pubdate":{"rank":1},"media":{"rank":101},"description":{"rank":1},"author":{"rank":1},"keywords":{"rank":1},"title":{"rank":1},"link":{"rank":1}},"template":""}},
+    "CustomExtractor": {"properties":{"rank":1,"tags":{"content_encoded":{"rank":1},"pubdate":{"rank":1},"media":{"rank":1},"description":{"rank":1},"author":{"rank":1},"keywords":{"rank":1},"title":{"rank":1},"link":{"rank":1}},"template":""}}
+    
+}

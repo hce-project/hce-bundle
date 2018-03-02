@@ -1,0 +1,47 @@
+{
+  "avgSpeed": 0,
+  "avgSpeedCounter": 0,
+  "cDate": {
+    "str": "NOW()"
+  },
+  "contents": 0,
+  "description": "cabinet_search",
+  "errorMask": 0,
+  "errors": 0,
+  "filters": null,
+  "httpTimeout": 30000,
+  "id": "cabinet_search",
+  "iterations": 0,
+  "maxErrors": 0,
+  "maxResourceSize": 500000,
+  "maxResources": 0,
+  "maxURLs": 0,
+  "maxURLsFromPage": 0,
+  "priority": 100,
+  "processingDelay": 500,
+  "properties": [
+                 {
+                 "siteId": "cabinet_search",
+                 "name": "PROCESS_CTYPES",
+                 "value": "text/html"
+                 },
+                 {
+                 "siteId": "cabinet_search",
+                 "name": "HTTP_HEADERS",
+                 "value": "User-Agent:Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3"
+                 }
+                 ],
+  "recrawlDate" : null,
+  "requestDelay": 500,
+  "resources": 0,
+  "size": 0,
+  "state": 0,
+  "tcDate": null,
+  "uDate": null,
+  "urlType": 0,
+  "urls": [],
+  "recrawlPeriod": 360,
+  "userId": 5,
+  "collectedURLs": 0,
+  "fetchType": 1
+}

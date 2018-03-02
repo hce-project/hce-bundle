@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 736537056, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:08:53", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 17, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2017-01-26 05:08:54", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1197, 
+                        "RawContentMd5": "", 
+                        "Size": 31818, 
+                        "Status": 7, 
+                        "TagsCount": 6, 
+                        "TagsMask": 33555485, 
+                        "UDate": "2017-01-26 05:08:54"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJwdWJkYXRlIjoiMjAxNy0wMS0yNiAwNTowODo1NCIsCiJ0aXRsZSI6IuODgeODpeODvOODquODg+ODl+OBp+aPj+OBj+OCtOODg+ODm+OBruiCluWDj+OAgeayoeW+jDEyNeW5tOOBpyDjgqrjg6njg7Pjg4Ag5YaZ55yfMuaemiDlm73pmpvjg4vjg6Xjg7zjgrnvvJpBRlBCQiBOZXdzIiwKImRlc2NyaXB0aW9uIjoiJWRlc2NyaXB0aW9uJSIsCiJtZWRpYSI6Imh0dHA6Ly9hZnBiYi5pc21jZG4uanAvbXdpbWdzLzEvNC8zODR4L2ltZ18xNDUwYmY4NWNmYWZjNTgyYzljNmFiY2YzMmQ1MWYyMDkwNTAwLmpwZyIsCiJhdXRob3IiOiIlYXV0aG9yJSIsCiJkY19kYXRlIjoiJWRjX2RhdGUlIiwKImxpbmsiOiJodHRwOi8vMTI3LjAuMC4xL3RlbXBsYXRlX3NjcmFwaW5nL2phcGFuX3BhZ2UxLmh0bWwiLAoia2V5d29yZHMiOiLlm73pmpvjg4vjg6Xjg7zjgrkiLAoiY29udGVudF9lbmNvZGVkIjoiJWNvbnRlbnRfZW5jb2RlZCUiLAoiaHRtbF9sYW5nIjoiJWh0bWxfbGFuZyUiLAoiZXJyb3JzX21hc2siOiIwIgp9Cl0K", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/japan_page1.html", 
+                    "urlMd5": "9eb80d764c4130ea33c0bc0670a35857"
+                }
+            ], 
+            "node": "r011_data", 
+            "port": "5730", 
+            "time": 3629
+        }
+    ]
+}

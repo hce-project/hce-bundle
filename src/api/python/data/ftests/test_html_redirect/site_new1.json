@@ -1,0 +1,52 @@
+{
+    "cDate": "NOW()", 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "pattern": "http://127.0.0.1(.*)", 
+            "siteId": "699fcf4591fc23e79b839d8819904293", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 20000, 
+    "id": "699fcf4591fc23e79b839d8819904293", 
+    "iterations": 0, 
+    "maxErrors": 1000, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 200, 
+    "maxURLs": 200, 
+    "priority": 100, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html", 
+        "STORE_HTTP_HEADERS": "1", 
+        "HTTP_REDIRECTS_MAX": "5", 
+        "HTML_REDIRECTS_MAX": "5", 
+        "STORE_HTTP_REQUEST": "1",
+				"STATS_LOG_ENABLED" : "1"
+    }, 
+    "requestDelay": 100, 
+    "resources": 0, 
+    "state": 1, 
+    "tcDate": "NULL", 
+    "tcDateProcess": "NULL",
+    "uDate": "NULL", 
+    "urlType": 0, 
+    "urls": [
+        "http://127.0.0.1/html_redirect/index1.html"
+    ],
+    "contents": 0,
+    "processingDelay" : 500,
+    "size" : 0,
+    "avgSpeed" : 0,
+    "avgSpeedCounter" : 0,
+    "recrawlPeriod" : 0,
+    "recrawlDate": "NULL", 
+    "userId" : 0,
+	  "maxURLsFromPage": 100,
+    "collectedURLs": 0,
+    "fetchType": 1 
+}

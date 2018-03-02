@@ -1,0 +1,19 @@
+[
+    {
+	"siteId": null,
+	"url": "http://intel.com/path1/",
+	"urlType": 0,
+	"siteLimits": [1, 5],
+	"criterions": 
+	{
+	    "LIMIT": "10"
+	}
+
+    },
+    {
+	"siteId": "intel1",
+	"url": "http://intel.com/path1/",
+	"urlType": 0,
+	"criterions": null
+    }
+]

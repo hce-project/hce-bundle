@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 3247396216, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:34:58", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 29, 
+                        "ErrorMask": 274877906944, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2015-05-07 02:03:14", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1266, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 4, 
+                        "TagsMask": 33554444, 
+                        "UDate": "2017-01-26 05:35:00"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJwdWJkYXRlIjoiMjAxNS0wNS0wNyAwMjowMzoxNCIsCiJ0aXRsZSI6IkhpcC1Ib3AgV2FzIHRoZSBCaWdnZXN0IFJldm9sdXRpb24gaW4gQW1lcmljYW4gTXVzaWMgYW5kIFRoYXTigJlzIEJhY2tlZCBCeSBhIFN0dWR5IG9mIDE3LDAwMCBTb25ncyIsCiJlcnJvcnNfbWFzayI6IjI3NDg3NzkwNjk0NCIKfQpdCg==", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html", 
+                    "urlMd5": "b3eb9e33190cbc35e4419a3764903a01"
+                }
+            ], 
+            "node": "r013_data", 
+            "port": "5732", 
+            "time": 3647
+        }
+    ]
+}

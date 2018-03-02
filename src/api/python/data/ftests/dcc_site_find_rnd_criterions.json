@@ -1,0 +1,8 @@
+{
+    "url": null,
+    "сriterions": {
+        "WHERE": "`User_Id`=0", 
+        "LIMIT": 10, 
+        "ORDER BY": "CDate ASC"
+    }
+}

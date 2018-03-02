@@ -1,0 +1,6 @@
+{
+    "rid": 100,
+    "query": "CREATE TABLE IF NOT EXISTS `content_c4986d863c6ff11603dc717b6d3ef85d` (`id` varchar(32) NOT NULL DEFAULT '\"\"', `data` BLOB NOT NULL, `CDate` datetime DEFAULT NULL, KEY `id` (`id`), KEY `CDate` (`CDate`)) ENGINE=MyISAM DEFAULT CHARSET=utf8",
+    "dbName": "dc_contents",
+    "includeFieldsNames": 0
+}

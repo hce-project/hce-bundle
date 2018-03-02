@@ -1,0 +1,78 @@
+{
+    "avgSpeed": 0, 
+    "avgSpeedCounter": 0, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "contents": 0, 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "mode": 0, 
+            "pattern": "^http://mainichi.jp/(.*)", 
+            "siteId": "62f7d742b0476ff4aa4c0a90bf059a24", 
+            "type": 1,
+            "stage": 0,
+            "subject": "",
+            "action": 1
+        },
+        {
+            "mode": 0, 
+            "pattern": "^http://www\\.mainichi\\.co\\.jp/(.*)", 
+            "siteId": "62f7d742b0476ff4aa4c0a90bf059a24", 
+            "type": 1,
+            "stage": 0,
+            "subject": "",
+            "action": -2
+        },
+        {
+            "mode": 0, 
+            "pattern": ".*", 
+            "siteId": "62f7d742b0476ff4aa4c0a90bf059a24", 
+            "type": 1,
+            "stage": 4,
+            "subject": "",
+            "action": -2
+        }
+    ], 
+    "httpTimeout": 30000, 
+    "id": "62f7d742b0476ff4aa4c0a90bf059a24", 
+    "iterations": 0, 
+    "maxErrors": 100000, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 100000, 
+    "maxURLs": 100000, 
+    "maxURLsFromPage": 200, 
+    "priority": 0, 
+    "processingDelay": 500, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1", 
+        "AUTO_REMOVE_RESOURCES": "1",
+        "AUTO_REMOVE_WHERE": "ParentMd5<>\"\" AND Status IN (4,7) AND DATE_ADD(CDate, INTERVAL %RecrawlPeriod% MINUTE)<NOW()",
+        "AUTO_REMOVE_ORDER": "CDate ASC",
+        "MIME_TYPE_STORE_ON_DISK":"none",
+        "PROCESSOR_NAME" : "NONE",
+        "template": ""
+    }, 
+    "recrawlDate" : "NOW()",
+    "requestDelay": 500, 
+    "resources": 0, 
+    "size": 0, 
+    "state": 1, 
+    "tcDate": null, 
+    "uDate": null, 
+    "fetchType": 1,
+    "urlType": 0, 
+    "collectedURLs": 0,
+    "urls": [
+        "http://www.mainichi.co.jp/"
+    ], 
+    "recrawlPeriod" : 1440,
+    "userId": 2
+}

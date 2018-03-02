@@ -1,0 +1,5968 @@
+{
+  "globalnews.ca": {
+    "content_encoded": [
+      "//div[@class='story-txt']/span[@itemprop='articleBody']/p[not(starts-with(., 'READ MORE:'))]"
+    ],
+    "title": [
+      "//div/article/h1/text()"
+    ]
+  },
+  "mediaite.com": {
+    "content_encoded": [
+      "//article//div[@id='post-body']/p[not(preceding-sibling::p[.='— —'] or .='— —' or starts-with(., '[Image via '))]"
+    ]
+  },
+  "news.yahoo.com": {
+    "pubdate": [
+      "(//*[@itemprop='datePublished']/@content)[1]",
+      "//div[contains(@class,'date') and @data-reactid]/text()"
+    ],
+    "author": [
+      "//*[@class='fn']"
+    ]
+  },
+  "huffingtonpost.com": {
+    "pubdate": [
+      "//*[@class='entry-component__posted']/text()"
+    ],
+    "author": [
+      "//*[@class='author-component__name']",
+      "//span[@class='author-card__details__name']"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'entry__body')]//p[not(@class='share-text' or contains(., 'Cross-posted with')  or contains(., 'for HuffPost and co-hosts the HuffPost Politics') or parent::div[contains(@class, 'before_related_media')])]",
+      "//div[contains(@class, 'content-list-component')]/p[not(starts-with(., 'By') and parent::div[@data-rapid-cpos='1'])]"
+    ],
+    "description": [
+      "//meta[@property='og:description']/@content[not(contains(., 'Cross-posted with'))]",
+      ""
+    ],
+    "media": [
+      "//meta[@property='og:image']/@content",
+      "//div[contains(@class,'entry__body')]/div/figuname -sure/img/@src"
+    ]
+  },
+  "huffingtonpost.de": {
+    "pubdate": [
+      "//*[@class='posted']/time/@datetime",
+      "//*[@id='masthead']/*[@id='mast_date']//text()"
+    ],
+    "author": [
+      "//*[@rel='author']",
+      "//*[@class='thirdparty-logo']"
+    ]
+  },
+  "huffingtonpost.jp": {
+    "pubdate": [
+      "//*[@class='posted']/time/@datetime"
+    ],
+    "author": [
+      "//div[contains(@class, 'author')]//span[contains(@class, 'name')]/text()"
+    ],
+    "media": [
+      "(//*[@id='mainentrycontent']/p/img)[1]/@src",
+      "//div[contains(@class,'embedded-image')]//img[@data-img-path]/@src"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'content')]/*[(not(strong) and local-name()='p') or local-name()='blockquote']"
+    ]
+  },
+  "zaikei.co.jp":{
+    "content_encoded": [
+      "//div[@id='article_body_weblio']/p"
+    ]
+  },
+  "afpbb.com": {
+    "pubdate": [
+      "(//p[@class='day']/text())[1]"
+    ],
+    "keywords": [
+      "concat(//meta[@name='cXenseParse:afp-category']/@content, ', ', //meta[@name='cXenseParse:afp-subcategory'][1]/@content)"
+    ]
+  },
+  "seroundtable.com": {
+    "pubdate": [
+      "//*[@class='meta']//text()"
+    ],
+    "title": [
+      "//div[@class='innerbox']/div[@class='title']/div[@class='title_left']/h1/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='innerbox']/div[@class='post-text']/*[self::p or self::ul or self::blockquote]"
+    ],
+    "media": [
+      "//div[@class='innerbox']/div[@class='post-text']//img/@src",
+      ""
+    ]
+  },
+  "anandtech.com": {
+    "pubdate": [
+      "//div[@class='review_blog']/div//em"
+    ]
+  },
+  "cnn.com": {
+    "pubdate": [
+      "//*[@class='update-time']/text()",
+      "//*[@class='cnnDateStamp']/text()",
+      "//div[@class='cnnBlogContentDateHead']/text()|//div[@class='cnnGryTmeStmp']/text()"
+    ],
+    "author": [
+      "//*[@class='cnn_author']"
+    ],
+    "content_encoded": [
+      "//div[@class='zn-body__paragraph' and not(a[starts-with(., 'READ')])]",
+      "//div[@id='storytext']/*[self::h2 or self::p[not(a/span[starts-with(., 'Related: ')])]]"
+    ],
+    "title": [
+      "//div[@class='l-container']//h1[@class='pg-headline']/text()"
+    ]
+  },
+  "theregister": {
+    "author": [
+      "//a[@class='alt_colour dcl']/text()"
+    ]
+  },
+  "nytimes.com": {
+    "pubdate": [
+      "//time[@class[starts-with(., 'dateline')]]/@datetime",
+      "(//time[@class='dateline'])[1]/@datetime",
+      "//*[@id='date']/p/text()"
+    ],
+    "author": [
+      "//*[@class='fn']/text()",
+      "//*[@class='byline-author']",
+      "//*[@itemprop='author creator']"
+    ],
+    "content_encoded": [
+      "//*[@class='entry-content']/p[@class='story-body-text']",
+      "//blockquote/p[@class='story-body-text']",
+      "//div[contains(@class,'story-body')]//p[contains(@class,'story-body-text') and not(em/a[starts-with(., 'Follow NYT')])]",
+      "//article/*[self::h2[contains(@class, 'heading')] or self::h2[contains(@class, 'heading')] or self::p[contains(@class, 'Paragraph-paragraph')]]",
+      "//article/div/div/div[@class='g-item g-text ']/p"
+    ]
+  },
+  "foxnews.com": {
+    "pubdate": [
+      "//*[@class='article-info']/div/time[@pubdate and @datetime]/@datetime",
+      "//*[@class='article-info']/div/time/text()"
+    ],
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/div[@class='article-text']/*[self::p or self::blockquote]",
+      "//div[@class='article-body']/div[@class='article-text']/*[self::p[not(starts-with(., 'Read more from '))] or self::blockquote]"
+    ],
+    "media": [
+      "//article//div[@itemprop='articleBody']//img/@src",
+      ""
+    ]
+  },
+  "nbcnews.com": {
+    "pubdate": [
+      "//*[@itemprop='datePublished']/text()"
+    ],
+    "author": [
+      "//*[@class='byline_author']"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'article-body')]/p[not(child::strong[starts-with(., 'Related: ') or starts-with(., 'More on MSNBC')])]"
+    ]
+  },
+  "theamericanconservative.com": {
+    "title": [
+      "//div[@id='article-inner']/h1/text()"
+    ],
+    "author": [
+      "//div[@class='byline']/span[contains(@class, 'author')]/a/text()"
+    ]
+  },
+  "dailymail.co.uk": {
+    "pubdate": [
+      "//*[@class='article-timestamp article-timestamp-published']/text()"
+    ],
+    "content_encoded": [
+      "//*[@id='js-article-text']/div/p/font",
+      "//div[@itemprop='articleBody']/p"
+    ],
+    "description": [
+      "substring-after(//meta[@name='description']//@content, ' (Reuters) - ')"
+    ],
+    "author": [
+      "//a[@class='author']/text()"
+    ],
+    "title": [
+      "//*[@id='js-article-text']/div/h1/text()",
+      "//div[@id='js-article-text']/h1/text()"
+    ]
+  },
+  "washingtonpost.com": {
+    "pubdate": [
+      "//span[@class='pb-timestamp']/@content",
+      "//*[@itemprop='datePublished']/text()"
+    ],
+    "author": [
+      "//*[@class='pb-byline']/a/span | //*[@class='pgByline-author-wrap']"
+    ],
+    "media": [
+      "(//article//div[contains(@class,'inline-photo')]/img/@src)[1]"
+    ],
+    "content_encoded": [
+      "//article[@itemprop='articleBody']/p[@id]",
+      "//article[@itemprop='articleBody']/p[not(@channel='wp.com')]"
+    ]
+  },
+  "wsj.com": {
+    "pubdate": [
+      "//*[@class='timestamp']/text()"
+    ],
+    "author": [
+      "//*[@class='name']"
+    ],
+    "content_encoded": [
+      "//*[@class='wsj-snippet-body']",
+      "//div[@itemprop='articleBody']/p[not(child::strong[text()='Write to '])]"
+    ]
+  },
+  "abcnews.go.com": {
+    "pubdate": [
+      "(//div[@class='article-meta']/*[@class='timestamp']/text())[1]",
+      "//*[@class='timestamp']/text()"
+    ],
+    "media": [
+      "//*[contains(@class,'article-figure video')]/*[@class='img-wrap']/picture/img/@src"
+    ],
+    "author": [
+      "(//*[@rel='author'])[1]",
+      "(//div[@class='author']/text())[1]"
+    ],
+    "content_encoded": [
+      "//div[@class='_sc_desc']",
+      "#//div[@class='article-copy']/*[self::p or self::h3]"
+    ],
+    "title": [
+      "//header[@class='article-header']/h1/text()"
+    ]
+  },
+  "bbc.com": {
+    "pubdate": [
+      "//*[@class='page-timestamp']/*[@class='date' or @class='time']/text()",
+      "//span[@class='publication-date index-body']/text()",
+      "(//div[@class='date date--v2']/@data-seconds)[1]",
+      "//div[@class='story-inner']//p[contains(@class, 'date')]/@data-seconds",
+      "//*[@class='mini-info-list__item']/div[@class[starts-with(., 'date date--v')]]/text()",
+      "(//*[@class='mini-info-list__item']/div[@class[starts-with(., 'date date--v')]])[1]/@data-seconds",
+      "(//*[@class='mini-info-list__item']/div[@class[starts-with(., 'date date--v')]])[1]/@data-datetime"
+    ],
+    "author": [
+      "//*[@class='correspondent-promo__details']"
+    ]
+  },
+  "bbc.co.uk": {
+    "pubdate": [
+      "//div[@class='story-inner']//p[contains(@class, 'date')]/@data-seconds"
+    ]
+  },
+  "govtech.com": {
+    "author": [
+      "//*[@class='author']/a/text()"
+    ]
+  },
+  "usnews.com": {
+    "author": [
+      "//*[@class='inline-right-tighter']/text()",
+      "//*[@class='block-flush']/a/text()"
+    ]
+  },
+  "forbes.com": {
+    "content_encoded": [
+      "//*[@class='article-text clearfix']/div/p/text()"
+    ]
+  },
+  "appleinsider.com": {
+    "content_encoded": [
+      "//*[@class='article']//text()"
+    ],
+    "author": [
+      "//*[@class='gray small byline']/a/text()"
+    ],
+    "pubdate": [
+      "//span[@class='gray']/text()"
+    ]
+  },
+  "engadget.com": {
+    "author": [
+      "//*[@class='th-meta']//text()"
+    ],
+    "pubdate": [
+      "//div[@class='th-meta']/text()"
+    ]
+  },
+  "electronicproducts.com": {
+    "content_encoded": [
+      "//*[@class='ep_Body']/p/text()"
+    ],
+    "author": [
+      "//*[@id='ctl00_ContentArea_ctl00_authorPage']/a/text()"
+    ],
+    "pubdate": [
+      "//div[@class='ep_StartDate']/text()"
+    ],
+    "title": [
+      "//*[@class='ep_Title']/text()"
+    ]
+  },
+  "electronicdesign.com": {
+    "title": [
+      "//div[contains(@class, 'heading')]/h1[contains(@itemprop, 'headline')]/text()"
+    ]
+  },
+  "usatoday.com": {
+    "pubdate": [
+      "//span[@class='asset-metabar-time asset-metabar-item nobyline']/text()"
+    ],
+    "author": [
+      "//*[@class='asset-metabar-author asset-metabar-item']"
+    ],
+    "content_encoded": [
+      "//*[@class='asset-double-wide double-wide p402_premium']/p[not(./strong[starts-with(., 'Read more:')] or ./span/strong[starts-with(., 'More:')])]"
+    ],
+    "media": [
+      "//img[@class='ui-pluto-still-img']/@src",
+      "//img[@class='expand-img-horiz']/@src"
+    ]
+  },
+  "pcmag.com": {
+    "pubdate": [
+      "//*[@class='byline']/ul/li[2]"
+    ],
+    "author": [
+      "//*[@id='id_author']/text()",
+      "//*[@class='url fn']/text()"
+    ],
+    "content_encoded": [
+      "//*[@id='id_text']/text()"
+    ]
+  },
+  "linux-mag.com": {
+    "pubdate": [
+      "//div[@class='dateline']/text()"
+    ],
+    "author": [
+      "//*[@id='byline']/a/text()"
+    ],
+    "content_encoded": [
+      "//*[@class='story_copy']/p/text()"
+    ]
+  },
+  "sciencedaily.com": {
+    "pubdate": [
+      "//*[@id='date_posted']/text()"
+    ],
+    "author": [
+      "//*[@id='source']/text()"
+    ]
+  },
+  "cioinsight.com": {
+    "pubdate": [
+      "//div[@id[starts-with(., 'content')]]/span[2]",
+      "//div[@class='gray']/text()"
+    ],
+    "media": [
+      "//li[@id[starts-with(., 'feature_item_')]]/div[@class='item_image']/img[@id='slide_image']/@src"
+    ]
+  },
+  "betanews.com": {
+    "author": [
+      "//*[@class='author']/ul/li/a"
+    ]
+  },
+  "infoworld.com": {
+    "media": [
+      "//*[@class='hero-img']/img/@src"
+    ]
+  },
+  "japantoday.com": {
+    "title": [
+      "//div[@id='article_container']/h2[@id='main_title']/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='article_content']/p",
+      "//div[@itemprop='articleBody']/p[not(preceding-sibling::p[contains(., 'Read more')] or contains(., 'Read more'))]"
+    ],
+    "media": [
+      "//*[contains(@class, 'article_image')]//img/@src",
+      "//div[@itemprop='articleBody']//img/@src",
+      "//article/figure[@itemprop='image']/img/@src",
+      ""
+    ],
+    "author": [
+      "substring-after(string(//div[@id='article_info']/div[@itemprop='author']/p[@class='byline']/text()), 'By ')"
+    ],
+    "keywords": [
+      "substring-after(//meta[contains(@name,'keywords')]/@content, 'Japan,Today,News,')"
+    ]
+  },
+  "straitstimes.com": {
+    "title": [
+      "substring-before(//header/h1[contains(@class, 'node-title')]/text(), ': The Japan News')",
+      "//header/h1[contains(@class, 'node-title')]/text()"
+    ],
+    "content_encoded": [
+      "//header/h2[@class='node-subheadline']",
+      "//div[@itemprop='articleBody']/*[self::h4 or self::p[not(figure)]]"
+    ],
+    "media": [
+      "//header//div[contains(@class, 'media-entity')]//img/@src"
+    ],
+    "keywords": [
+      "//meta[contains(@name,'keywords')]/@content",
+      "//div[contains(@class, 'story-keywords')]/ul/li[@itemprop='keywords']/a/text()"
+    ],
+    "description": [
+      "substring-before(//meta[@name='description']/@content, 'Read more at straitstimes.com.')"
+    ]
+  },
+  "americasmarkets.usatoday.com": {
+    "pubdate": [
+      "//meta[@property='article:published_time']/text()"
+    ],
+    "author": [
+      "//p/*[@class='author url fn']"
+    ]
+  },
+  "aol.com": {
+    "pubdate": [
+      "//*[@class='p-article__byline__date']",
+      "//span[@class='date']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='article-content']/p[./strong[starts-with(., 'More from ')]]/preceding-sibling::p[not(@class='m-related-articles' or @class='p-article__see-also' or starts-with(., 'By: '))]",
+      "//div[@class='article-content']/p[not(@class='m-related-articles' or @class='p-article__see-also' or starts-with(., 'By: ') or ./strong//a[@target='_blank' and starts-with(., 'Watch: ') or starts-with(., 'Read: ')])]"
+    ]
+  },
+  "fortune.com": {
+    "content_encoded": [
+      "//div/article[@class]/p[not(child::em[starts-with(., 'See also: ')])]"
+    ]
+  },
+  "dailykos.com": {
+    "content_encoded": [
+      "//div[contains(@class,'content')]/*[self::p[not(@class='AlignCenter')] or self::blockquote]"
+    ],
+    "pubdate": [
+      "substring-before(//div[contains(@class,'author-date')][1]/span[contains(@class, 'timestamp')][1]/@data-epoch-time, '000')"
+    ]
+  },
+  "examiner.com": {
+    "pubdate": [
+      "//time/@datetime"
+    ]
+  },
+  "brookings.edu": {
+    "pubdate": [
+      "//header//div[contains(@class, 'headline')]//time/text()"
+    ],
+    "title": [
+      "//header//div[contains(@class, 'headline')]//h1[contains(@class,'title')]/text()"
+    ],
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/p[not(child::section)]"
+    ]
+  },
+  "cbsnews.com": {
+    "pubdate": [
+      "//article/header//span[@class='time']/text()",
+      "//*[@id='mantle_skin']/div/meta[@itemprop='datePublished']/@content"
+    ],
+    "content_encoded": [
+      "//div[contains(@itemprop,'articleBody')]//p",
+      "//article//div[@data-page='1']/p"
+    ]
+  },
+  "newsmax.com": {
+    "pubdate": [
+      "//span[@class='artPgDate']/text()"
+    ]
+  },
+  "militarytimes.com": {
+    "pubdate": [
+      "//meta[@itemprop='dateModified']/@content"
+    ]
+  },
+  "commondreams.org": {
+    "pubdate": [
+      "//span[@class='date-display-single']/text()"
+    ],
+    "author": [
+      "//div[2][@class='profile-titles clearfix']/a"
+    ],
+    "media": [
+      ""
+    ]
+  },
+  "article.wn.com": {
+    "pubdate": [
+      "//*[@class='main-article']/p[2]"
+    ],
+    "author": [
+      "//p[2]/a[1][@class='a_keyword_link']"
+    ]
+  },
+  "independent.ie": {
+    "pubdate": [
+      "//meta[@name='published-date']/@content"
+    ],
+    "author": [
+      "//*[@class='originalSource']"
+    ]
+  },
+  "reuters.com": {
+    "pubdate": [
+      "//div[@class='article-header']//span[@class='timestamp']/text()",
+      "string(//div[contains(@class, 'ArticleHeader_content-container')]/div[contains(@class, 'ArticleHeader_date_')])",
+      "//span[@class='timestamp']/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'ArticleBody_body')]/child::node()[self::p or self::h3 or self::text()]"
+    ],
+    "title": [
+      "substring-after(//div[contains(@class,'ArticleHeader_content-container')]/h1[contains(@class, 'ArticleHeader_headline')], 'アングル：')",
+      "//div[contains(@class,'ArticleHeader_content-container')]/h1[contains(@class, 'ArticleHeader_headline')]/text()"
+    ]
+  },
+  "dailyfinance.com": {
+    "pubdate": [
+      "//div[@class='date']/text()"
+    ],
+    "author": [
+      "//*[@class='author-link']/text()"
+    ]
+  },
+  "npr.org": {
+    "pubdate": [
+      "//time[@datetime]/*/text()"
+    ],
+    "media": [
+      "(//meta[@property='og:image']/@content)[last()]"
+    ],
+    "content_encoded": [
+      "//*[@id='storytext']/p"
+    ]
+  },
+  "mwcnews.net": {
+    "pubdate": [
+      "//span[@class='createdate']/text()"
+    ],
+    "media": [
+      "//p[@style='text-align: center;']/img/@src"
+    ],
+    "content_encoded": [
+      "//*[@id='page']/p"
+    ]
+  },
+  "reason.com": {
+    "pubdate": [
+      "//*[@class='byline']/time"
+    ],
+    "author": [
+      "//*[@class='entry postcontent']/p[1]/a[2]"
+    ],
+    "content_encoded": [
+      "//*[@class='entry postcontent']/blockquote/p"
+    ]
+  },
+  "jpost.com": {
+    "pubdate": [
+      "//*[@class='article-box-inner-title']//*[@class='article-date-time']/text()"
+    ]
+  },
+  "investor.yahoo.net": {
+    "pubdate": [
+      "//*[@class='one-col']/div[1]"
+    ]
+  },
+  "news.lycos.com": {
+    "pubdate": [
+      "//span[@class='date']/text()"
+    ]
+  },
+  "newsdaily.com": {
+    "pubdate": [
+      "//time/@datetime"
+    ]
+  },
+  "bignewsnetwork.com": {
+    "pubdate": [
+      "//p[@class='info']/span/text()"
+    ]
+  },
+  "newsblaze.com": {
+    "pubdate": [
+      "//div[@class='storydate']/text()"
+    ]
+  },
+  "cbn.com": {
+    "pubdate": [
+      "//*[@class='articleDate']/text()"
+    ],
+    "content_encoded": [
+      "//*[@class='field-item even']/p"
+    ]
+  },
+  "spectator.org": {
+    "pubdate": [
+      "//meta[@name='dcterms.date']/@content",
+      "//i[@class='print-only']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='print-only']/*[self::p or self::blockquote]"
+    ],
+    "title": [
+      "//h2[@class='print-only']/text()"
+    ],
+    "author": [
+      "//li[@class='author']/span//text()"
+    ]
+  },
+  "thetribunepapers.com": {
+    "pubdate": [
+      "//div[@class='meta']/text()[1]"
+    ]
+  },
+  "atimes.com": {
+    "pubdate": [
+      "//time[@class='entry-date']/@datetime"
+    ]
+  },
+  "boston.com": {
+    "pubdate": [
+      "//meta[@name='publish-date'][1]/@content"
+    ],
+    "content_encoded": [
+      "//p[@class='p1']"
+    ]
+  },
+  "dallasnews.com": {
+    "pubdate": [
+      "//time[@itemprop='published']/@datetime"
+    ],
+    "author": [
+      "//*[@rel='author']"
+    ]
+  },
+  "starsblog.dallasnews.com": {
+    "pubdate": [
+      "//time/@datetime"
+    ],
+    "author": [
+      "//*[@rel='author']"
+    ]
+  },
+  "news.investors.com": {
+    "pubdate": [
+      "//meta[@name='parsely-pub-date']/@content"
+    ],
+    "author": [
+      "//*[@itemprop='author']"
+    ]
+  },
+  "investors.com": {
+    "title": [
+      "//article/header/h1/text()"
+    ],
+    "author": [
+      "//article/header/div/ul[@class='post-meta']/span/a[@rel='author']"
+    ],
+    "content_encoded": [
+      "//article/div[contains(@class, 'single-post-content')]/*[self::p[not(preceding-sibling::p[starts-with(.,'RELATED:')] or starts-with(.,'RELATED:'))] or self::h2]",
+      "//article/div[contains(@class, 'single-post-content')]/*[self::p or self::h2]"
+    ]
+  },
+  "nationalreview.com": {
+    "pubdate": [
+      "//time[@class]/text()"
+    ],
+    "author": [
+      "//*[@class='uppercase']/a"
+    ],
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/*[self::p[not(@class='article-ad-mobile-position')] or self::blockquote]"
+    ],
+    "title": [
+      "//header/*[contains(@class, 'header')]//text()"
+    ]
+  },
+  "ocregister.com": {
+    "pubdate": [
+      "(//div[@class='article-meta']/*[@class='timestamp']/text())[1]"
+    ],
+    "author": [
+      "//*[@class='story-body-text']/p/a[1]"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'body-copy')]/p[not (starts-with(., 'By '))]"
+    ]
+  },
+  "patriotpost.us": {
+    "pubdate": [
+      "//*[@class='meta']/span[@class='text']/text()[2]"
+    ],
+    "author": [
+      "//strong"
+    ]
+  },
+  "post-gazette.com": {
+    "pubdate": [
+      "//meta[@name='publish-date']/@content"
+    ]
+  },
+  "salon.com": {
+    "pubdate": [
+      "//span[@class='toLocalTime']/text()"
+    ],
+    "content_encoded": [
+      "//*[@class='articleContent']/p/text()"
+    ]
+  },
+  "telegraph.co.uk": {
+    "pubdate": [
+      "//meta[@itemprop='datePublished']/@content",
+      "//meta[@name='DCSext.articleFirstPublished']/@content"
+    ],
+    "author": [
+      "//meta[@name='DCSext.author']/@content",
+      "//*[@itemprop='author']"
+    ],
+    "content_encoded": [
+      "//article/div[contains(@class,'articleBodyText')]/div/div/*[self::h4 or self::p[not(starts-with(., 'For tips and advice'))]]"
+    ]
+  },
+  "thetimes.co.uk": {
+    "pubdate": [
+      "//meta[@name='dashboard_published_date']/@content"
+    ],
+    "author": [
+      "//*[@rel='author'] | //span[@itemprop='author']"
+    ]
+  },
+  "unionleader.com": {
+    "pubdate": [
+      "//div[@class='col-sm-6']/a/text()"
+    ]
+  },
+  "newsroom.intel.com": {
+    "pubdate": [
+      "//*[@class='updated']/text()"
+    ],
+    "content_encoded": [
+      "//*[@class='entry-content']/p/text()"
+    ]
+  },
+  "washingtontimes.com": {
+    "pubdate": [
+      "//span[@class='source']"
+    ],
+    "title": [
+      "//div[@id='page-title-container']/h1[@class='page-headline']/text()"
+    ],
+    "media": [
+      "//*[@class='photo']/a/img/@src",
+      "//*[@class='gallery-contained']/a/img/@src",
+      "//*[@class='page-headline']//img/@src",
+      "//*[@class='block more-from-story']/*[@class='block-content']/*[@class='photo-zoom']/*[@class='photo']/a/img/@src",
+      ""
+    ],
+    "author": [
+      "//*[@class='byline']",
+      "//article//span[contains(., ' By ') and @class='byline']/a/text()",
+      "//*[@class='source']"
+    ],
+    "content_encoded": [
+      "//*[@class='bigtext']/p[not(contains(strong, 'ANALYSIS/OPINION:'))]",
+      "//*[@class='gallery-headline']",
+      "//*[@class='storyareawrapper']/p",
+      "//*[@class='summary']/p"
+    ]
+  },
+  "dailynews.com": {
+    "pubdate": [
+      "//*[@class='timestamp']/time/text()",
+      "//meta[@name='sailthru.date']/@content"
+    ],
+    "author": [
+      "//*[@class='byline cleanprint-byline']",
+      "//header//*[@id='a-credits' or @rel='author']"
+    ],
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/div[@class='subscriber-preview' or @class='subscriber-only']",
+      "//*[@id='body-copy']/p"
+    ]
+  },
+  "cbs46.com": {
+    "content_encoded": [
+      "//*[@id='WNStoryBody']/p[not (starts-with(., 'By '))]"
+    ],
+    "pubdate": [
+      "//em[1][@class='wnDate']/script"
+    ]
+  },
+  "fin24.com": {
+    "content_encoded": [
+      "//*[@id='article-body']/p"
+    ]
+  },
+  "nypost.com": {
+    "content_encoded": [
+      "//*[@class='entry-content']/p",
+      "//div[contains(@class, 'entry-content')]/p"
+    ],
+    "title": [
+      "//div[@class='article-header']/h1//text()"
+    ],
+    "media": [
+      "//div[@class='article-header']/div[@id='featured-image-wrapper']/picture/source/@srcset",
+      "//div[@class='article-header']/div/picture//img/@src"
+    ]
+  },
+  "weeklystandard.com": {
+    "pubdate": [
+      "//span[@class='date']/text()"
+    ],
+    "author": [
+      "//*[@class='uppercase gray']/a"
+    ]
+  },
+  "wnd.com": {
+    "pubdate": [
+      "//time/@datetime"
+    ],
+    "author": [
+      "//*[@class='fn']/a"
+    ],
+    "media": [
+      ""
+    ]
+  },
+  "sfgate.com": {
+    "pubdate": [
+      "//meta[@name='sailthru.date']/@content"
+    ],
+    "author": [
+      "//*[@class='byline ap-byline']"
+    ],
+    "content_encoded": [
+      "//div[@class='article-body']/p[not(child::strong[starts-with(., 'Also Read:')] or @class='wp-caption-text')]"
+    ]
+  },
+  "espn.go.com": {
+    "pubdate": [
+      "//meta[@name='DC.date.issued']/@content"
+    ],
+    "author": [
+      "//*[@class='author has-bio']"
+    ]
+  },
+  "espn.com": {
+    "title": [
+      "substring-before(//meta[@name='title']/@content,'- ESPN')"
+    ],
+  "boston.cbslocal.com": {
+    "pubdate": [
+      "//em[@class='entry-date']/text()"
+    ],
+    "author": [
+      "//*[@class='story']/p/em/a"
+    ],
+    "description": [
+      "//div[@id='main-story']/p[contains(style, '')]"
+    ]
+  },
+  "hollywoodreporter.com": {
+    "pubdate": [
+      "//time/@datetime"
+    ],
+    "content_encoded": [
+      "//*[@class='article__body js-fitvids-content']/p"
+    ],
+    "author": [
+      "//*[@class='article-author'] | //*[@class='date'] | //*[@class='blog-post-author-name'] | //*[@class='meta']"
+    ]
+  },
+  "variety.com": {
+    "pubdate": [
+      "(//time[@class='timestamp'])[1]/@datetime"
+    ],
+    "author": [
+      "//a[@rel='author']"
+    ]
+  },
+  "adweek.com": {
+    "pubdate": [
+      "//meta[@name='sailthru.date']/@content"
+    ],
+    "author": [
+      "//span[@class='byline']"
+    ],
+    "content_encoded": [
+      "//p[@class='google_elide']"
+    ],
+    "media": [
+      "//img[@class='imagecache imagecache-node-detail']/@src"
+    ]
+  },
+  "thedrum.com": {
+    "pubdate": [
+      "//span[@itemprop='datePublished']/text()"
+    ],
+    "author": [
+      "//span[@itemprop='author']"
+    ]
+  },
+  "commdiginews.com": {
+    "pubdate": [
+      "(//time[@itemprop='dateCreated'])[1]/@datetime"
+    ],
+    "author": [
+      "//a[@itemprop='author']"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'inner-post-entry')]/p"
+    ]
+  },
+  "newspronto.com": {
+    "pubdate": [
+      "//time/@datetime"
+    ],
+    "author": [
+      "//span[@itemprop='name']"
+    ]
+  },
+  "newspatra.com": {
+    "pubdate": [
+      "//div[@class='obj-attr mb-20']/text()"
+    ],
+    "author": [
+      "//div[@class[starts-with(., 'obj-attr mb-')]]/a"
+    ]
+  },
+  "uproxx.com": {
+    "content_encoded": [
+      "//div[contains(@class, 'ug_page')]/p"
+    ]
+  },
+  "roundnews.com": {
+    "pubdate": [
+      "//time/@datetime"
+    ],
+    "author": [
+      "//*[@class='createdby']"
+    ]
+  },
+  "thewrap.com": {
+    "content_encoded": [
+      "//div[contains(@class, 'entry-content')]/p"
+    ]
+  },
+  "whotv.com": {
+    "content_encoded": [
+      "//div[contains(@class, 'p402_premium')]/p"
+    ]
+  },
+  "tulsaworld.com": {
+    "pubdate": [
+      "(//span[@class='posted' or @class='updated'])[1]/@title"
+    ],
+    "author": [
+      "//*[@class='author vcard'] | //*[@class='author source-org vcard']"
+    ]
+  },
+  "mlive.com": {
+    "pubdate": [
+      "//meta[@name='article_date_original']/@content"
+    ],
+    "author": [
+      "//*[@class='author vcard']"
+    ],
+    "content_encoded": [
+      "//div[@id='entryContent']/p[not(starts-with(., 'BY '))]"
+    ]
+  },
+  "freep.com": {
+    "pubdate": [
+      "//span[@class='asset-metabar-time asset-metabar-item nobyline']/text()"
+    ],
+    "author": [
+      "//*[@class='asset-metabar-author asset-metabar-item']",
+      "//*[@class='asset-metabar-author asset-metabar-item']/a"
+    ],
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/p[not(child::strong[starts-with(., 'Read more:')])]",
+      "//div[@itemprop='articleBody']/*[not(self::div[contains(@class, 'story-asset')] or self::script)]",
+      "//*[@class='asset-double-wide double-wide p402_premium']/p"
+    ],
+    "media": [
+      "//div[@class='ui-pluto-still']/img/@src",
+      "substring-before(substring-after(//div[@poster and @data-video-id]/div[@class='vjs-poster']/@style, 'background-image: url(\"'), '\"')",
+      "//div[@class='gallery-slide video-gallery-slide slide']/div[@class[starts-with(., 'ui-video-wrapper')]]/div[@class[starts-with(., 'ui-pluto-video js-ui-video-init story-video gallery-video playlistsmallattophtml')]]/div[@class='ui-pluto-still']/img[@class='ui-pluto-still-img']"
+    ]
+  },
+  "hometownlife.com": {
+    "pubdate": [
+      "//span[@class='asset-metabar-time asset-metabar-item nobyline']/text()"
+    ],
+    "author": [
+      "//*[@class='asset-metabar-author asset-metabar-item']"
+    ]
+  },
+  "hollywoodlife.com": {
+    "content_encoded": [
+      "//section[@class='main-post']/article[contains(@class, 'entry-content')]/div[@class]/*[self::p or self::h3[not(./a)]]"
+    ],
+    "title": [
+      "//section[@class='main-post']/header/h1/text()"
+    ]
+  },
+  "www.itnews.com": {
+    "media": [
+      "//*[@class='hero-img']/img/@src"
+    ],
+    "content_encoded": [
+      "//div[@itemprop='reviewBody']/*[self::p or self::h2]"
+    ]
+  },
+  "infowars.com": {
+    "media": [
+      "//img[@class='landscape thumbnail full']/@src"
+    ],
+    "content_encoded": [
+      "//div[@class='text']/article/p[not(starts-with(., 'Read More'))]"
+    ]
+  },
+  "walb.com": {
+    "content_encoded": [
+      "//*[@id='WNStoryBody']/p"
+    ]
+  },
+  "detroitnews.com": {
+    "pubdate": [
+      "//meta[@itemprop='dateModified']/@content"
+    ],
+    "author": [
+      "//*[@class='asset-metabar-author asset-metabar-item']"
+    ]
+  },
+  "11alive.com": {
+    "pubdate": [
+      "//span[@class='asset-metabar-time asset-metabar-item nobyline']/text()"
+    ],
+    "author": [
+      "//*[@class='asset-metabar-author asset-metabar-item']"
+    ]
+  },
+  "fox5atlanta.com": {
+    "pubdate": [
+      "(//p[@class='updated']/text())[1]"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'story-content')]/p[not(child::strong[contains(text(), 'RELATED')])]"
+    ],
+    "author": [
+      "//div[contains(@class, 'author')]/a"
+    ]
+  },
+  "nbcbayarea.com": {
+    "pubdate": [
+      "//meta[@http-equiv='last-modified']/@content"
+    ]
+  },
+  "nbcwashington.com": {
+    "pubdate": [
+      "//meta[@http-equiv='last-modified']/@content"
+    ]
+  },
+  "wusa9.com": {
+    "pubdate": [
+      "//span[@class='asset-metabar-time asset-metabar-item nobyline']/text()"
+    ],
+    "author": [
+      "//*[@class='asset-metabar-author asset-metabar-item']"
+    ]
+  },
+  "click2houston.com": {
+    "pubdate": [
+      "(//span[@class='date postedAt notRecent'])[1]/text()"
+    ],
+    "author": [
+      "//*[@class='author']/span/a[1] | //span[@itemprop='name']"
+    ]
+  },
+  "abc7news.com": {
+    "pubdate": [
+      "//div/time/text()"
+    ],
+    "author": [
+      "(//div[@class='meta'])[last()]"
+    ]
+  },
+  "mynorthwest.com": {
+    "pubdate": [
+      "//span[@itemprop='datePublished']/text()"
+    ]
+  },
+  "wtop.com": {
+    "pubdate": [
+      "//meta[@name='sailthru.date']/@content"
+    ],
+    "author": [
+      "//*[@class='Entry-infoContent']/a[1]"
+    ]
+  },
+  "observer.com": {
+    "pubdate": [
+      "//p[@class='published-date']/text()",
+      "//header/div[contains(@class,'entry-meta')]/span[@class='entry-date']/text()"
+    ],
+    "media": [
+      "//div[contains(@class,'entry-content')]/div[contains(@id,'attachment')]/img/@data-lazy-src"
+    ],
+    "title": [
+      "//meta[@name='twitter:title']/@content",
+      "//meta[@name='twitter:text:title']/@content"
+    ]
+  },
+  "ajc.com": {
+    "pubdate": [
+      "//div[@class='cm-story-meta']/text()"
+    ],
+    "author": [
+      "//span[@class='cm-tablet-hide']"
+    ]
+  },
+  "heraldonline.com": {
+    "pubdate": [
+      "//time[@class='published-date']",
+      "//p[@class='published-date']/text()"
+    ]
+  },
+  "dnainfo.com": {
+    "pubdate": [
+      "(//div[@class='media-heading']/text())[2]"
+    ],
+    "author": [
+      "//div[@class='media-heading']/a"
+    ],
+    "media": [
+      "//img[@class='vital  xs-xxxlarge']/@src"
+    ],
+    "title": [
+      "//div[@id='story-header']/h3[contains(@class, 'title')][1]/text()"
+    ],
+    "content_encoded": [
+      "//*[@class='entry clearfix']/p"
+    ]
+  },
+  "nola.com": {
+    "pubdate": [
+      "//meta[@name='article_date_original']/@content"
+    ]
+  },
+  "wral.com": {
+    "author": [
+      "//*[@class='byline']"
+    ],
+    "content_encoded": [
+      "//*[@class='g-row story-text']/p[not(contains(@class,'byline'))]"
+    ],
+    "title": [
+      "//h1[contains(@class, 'h-1')][1]/text()"
+    ]
+  },
+  "wralsportsfan.com": {
+    "title": [
+      "//div[contains(@class, 'story-header-text')]/h1[contains(@class, 'h-1')]/text()"
+    ]
+  },  
+  "inquirer.net": {
+    "pubdate": [
+      "//div[@id='art_plat']/text()[2]",
+      "//div[@id='mobile_byline']/h5/text()"
+    ],
+    "media": [
+      "//div[@id='article_content']//div[contains(@id, 'attachment')]//img/@data-lazy-src"
+    ],
+    "title": [
+      "//article//h1[@class='entry-title']/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='outbrain_readmore']/p[starts-with(., 'RELATED STOR')]/preceding-sibling::p[not(child::*[starts-with(.,'RELATED STOR')] or child::*[starts-with(., 'READ:')])]",
+      "//div[@id='outbrain_readmore']/p[not(descendant-or-self::p[.='RELATED STORIES' or starts-with(., 'READ:')] or preceding::p[.='RELATED STORIES'])]",
+      "//div[@id='article_content']/p[not(starts-with(., 'Related stor'))]"
+    ]
+  },
+  "wng.org": {
+    "pubdate": [
+      "substring-after(string(//div[@class='content']/div/h6), 'Posted')"
+    ],
+    "media": [
+      "//div[@class='innp']//img/@src"
+    ],
+    "content_encoded": [
+      "//div[@id='article_content']//div[contains(@id, 'readmore')]/p"
+    ],
+    "author": [
+      "substring-after(substring-before(string(//div[@class='content']/div/h6), 'Posted'), 'by ')"
+    ]
+  },
+  "komonews.com": {
+    "pubdate": [
+      "(//span[@class='fin_publish_dates_published']/abbr)[1]/text() | (//span[@class='fin_publish_dates_published']/abbr)[1]/span/text()"
+    ],
+    "author": [
+      "(//*[@class='url fn n'])[1]"
+    ]
+  },
+  "wxyz.com": {
+    "pubdate": [
+      "//div[@class='posted']/text()"
+    ]
+  },
+  "chron.com": {
+    "pubdate": [
+      "//meta[@name='sailthru.date']/@content"
+    ]
+  },
+  "gazettes.com": {
+    "pubdate": [
+      "//meta[@itemprop='datePublished']/@content"
+    ]
+  },
+  "presstelegram.com": {
+    "pubdate": [
+      "(//time/text())[1]",
+      "//*[@class='timestamp']"
+    ],
+    "content_encoded": [
+      "//*[@id='body-copy']/p"
+    ]
+  },
+  "delcotimes.com": {
+    "pubdate": [
+      "(//time/text())[1]"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'article')]//div[@id]/p"
+    ],
+    "author": [
+      "//section[@id]/div[@class='byline-bar']/p/a[@href='#author1']/text()"
+    ]
+  },
+  "statesman.com": {
+    "pubdate": [
+      "//div[@class='cm-story-meta']/text()"
+    ],
+    "author": [
+      "//*[@class='cm-tablet-hide']"
+    ]
+  },
+  "thenewstribune.com": {
+    "pubdate": [
+      "//p[@class='published-date']/text()"
+    ],
+    "title": [
+      "//meta[@property='og:title']/@content"
+    ]
+  },
+  "deseretnews.com": {
+    "pubdate": [
+      "(//meta[@name='speare-timestamp']/@content)[1]"
+    ]
+  },
+  "mid-day.com": {
+    "pubdate": [
+      "//meta[@itemprop='datePublished']/@content"
+    ],
+    "author": [
+      "//*[@class='article_detail']/*[@class='metalink']"
+    ]
+  },
+  "heraldsun.com": {
+    "pubdate": [
+      "(//time/@datetime)[1]"
+    ]
+  },
+  "timeslive.co.za": {
+    "pubdate": [
+      "(//div[@class='meta'])[1]/text()"
+    ]
+  },
+  "sfglobe.com": {
+    "pubdate": [
+      "//div[@itemprop='datePublished']/text()"
+    ],
+    "author": [
+      "//*[@class='main']/div/div/span"
+    ]
+  },
+  "hitnewsnow.com": {
+    "pubdate": [
+      "//abbr[@class='published']/@title"
+    ]
+  },
+  "fox29.com": {
+    "pubdate": [
+      "(//p[@class='updated']/text())[1]"
+    ]
+  },
+  "dailycaller.com": {
+    "pubdate": [
+      "//meta[@name='sailthru.date']/@content",
+      "//div[@class='dateline']/text()"
+    ],
+    "author": [
+      "//*[@id='name']"
+    ],
+    "title": [
+      "//div[@id='main-article']/h1/text()"
+    ],
+    "content_encoded": {
+      "xpath": [
+        "//div[contains(@class, 'article-content')]/*[self::blockquote or self::p[not((@style='font-size: 14px;' and em[starts-with(., 'Content created by The')]) or a/i[contains(., 'on Twitter')])]]",
+        ";//div[contains(@class, 'article-content')]/div/descendant::node()[(self::text()[parent::p or parent::a] or self::p[not(strong/a[starts-with(., '(RELATED: ')])] ) and not(preceding-sibling::div[contains(@class, 'ArticleBody_body')] or self::p[child::em/a[starts-with(., 'Follow ')] or @class='wp-caption-text'] or preceding-sibling::p[child::em/a[starts-with(., 'Follow ')]] or self::text()[parent::p[not(strong/a[starts-with(., '(RELATED: ')])]])]",
+        ";//div[contains(@class, 'article-content')]/div/p[not(preceding-sibling::div[contains(@class, 'ArticleBody_body')] or @class='wp-caption-text' or preceding-sibling::p[child::em[starts-with(., 'Follow ')]])]",
+        ";//div[contains(@class, 'article-content')]/descendant::node()[(self::text()[parent::p or parent::a] or self::p[not(strong/a[starts-with(., '(RELATED: ')] or @class='wp-caption-text') ] ) and not(preceding-sibling::div[contains(@class, 'ArticleBody_body')] or self::p[child::em/a[starts-with(., 'Follow ')]] or preceding-sibling::p[child::em/a[starts-with(., 'Follow ')]] or self::text()[parent::p[not(strong/a[starts-with(., '(RELATED: ')])]])]"
+      ],
+      "replace": {
+        "<strong><a href=.*RELATED:.*</a></strong>": ""
+      }
+    }
+  },
+  "3aj.com": {
+    "pubdate": [
+      "//div[@class='postdate']/text()[1]"
+    ]
+  },
+  "moneynews24.info": {
+    "pubdate": [
+      "//*/span/strong/text()"
+    ]
+  },
+  "moneycontrol.com": {
+    "pubdate": [
+      "substring-before(//div[contains(@class, 'artiCol')]/p[contains(@class, 'arttidate')]/text(), '| Source')",
+      "//article[@class='article_box']/div[@class='arttidate']/text()"
+    ],
+    "title": [
+      "//h1[contains(@class, 'arti_title')]/text()"
+    ],
+    "content_encoded": [
+      "//article//div[@id='article-main']/child::node()[not(self::p[strong/a[starts-with(., 'Also Read:')]] or self::p[strong[.='Moneycontrol News']] or self::comment() or self::div[@class='clearfix' or contains(@class, 'ads-320-250') or contains(@class, 'MR30 wd225') or contains(@class, 'mid-arti-ad') or contains(@class, 'MB20 wd285')])]",
+      "//article//div[@id='article-main']/child::node()[not(self::p[strong[.='Moneycontrol News']] or self::comment())]",
+      "//div[contains(@class, 'arti_cont')]/div/descendant-or-self::*[self::p or self::div]/text()"
+    ],
+    "description": [
+      "//article[@class='article_box']/h2[@class='subhead']/text()",
+      "//meta[@property='og:description']/@content",
+      ""
+    ]
+  },
+  "pri.org": {
+    "pubdate": [
+      "//header/p/span[@property='dc:date']/@content"
+    ],
+    "title": [
+      "//header/h1/text()"
+    ],
+    "content_encoded": [
+      "//div/article[contains(@class, 'node-story')]/*[self::p or self::h3 or self::div[@class='story__deck']]",
+      "//div/article[contains(@class, 'node-story')]/*[self::p or self::h3 or self::div[@class='story__deck']]//text()"
+    ],
+    "keywords": [
+      "//p[@class='story__tag-list']/a/text()"
+    ]
+  },
+  "thestarpress.com": {
+    "pubdate": [
+      "//meta[@itemprop='datePublished']/@content"
+    ]
+  },
+  "jewishjournal.com": {
+    "pubdate": [
+      "//*/p/small/text()"
+    ],
+    "author": [
+      "//*[@class='author']/strong/big/a"
+    ]
+  },
+  "thetimesherald.com": {
+    "pubdate": [
+      "//meta[@itemprop='datePublished']/@content"
+    ]
+  },
+  "livingstondaily.com": {
+    "pubdate": [
+      "//meta[@itemprop='datePublished']/@content"
+    ]
+  },
+  "headlinenewstoday.net globalvoices.org": {
+    "content_encoded": [
+      "//div[@class='entry']/*[self::p or self::h2 or self::blockquote]"
+    ]
+  },
+  "kyodo.co.jp": {
+    "pubdate": [
+      "normalize-space(string(//div[@class='entry-meta']/text()[last()]))",
+      "//div[@class='entry-meta']/text()[last()]",
+      "string(//div[contains(@class,'entry-meta')])",
+      "(//p[@class='date']/text())[1]",
+      "//div[@class='entry-content']//ul[@class='sns_btn']/following-sibling::p[position()=1]/text()"
+    ],
+    "content_encoded": [
+      "(//div[@class='entry-content c04'])//p//text()",
+      "//div[contains(@id, 'post')]/div[contains(@class,'entry-content')]/p[not(contains(., '記事提供元'))]",
+      "//div[@class='area-content articles']/div[@class='entry-content']/p"
+    ],
+    "author": [
+      "//*[@class='provider-source']"
+    ],
+    "title": [
+      "//div[contains(@id,'title-area')]/h3/text()"
+    ]
+  },
+  "cnn.co.jp": {
+    "pubdate": [
+      "//*[div][@id='_popIn_pubdate']/text()",
+      "//div[@class='row']//p[@class='datetime']/text()"
+    ],
+    "content_encoded": [
+      "//*[@id='leaf-body']"
+    ],
+    "author": [
+      "(//*[@class='catch1'])[1]",
+      "//*[@id='left-column']/div[6]/p"
+    ],
+    "title": [
+      "//div[@class='row']/h1[contains(@class, 'headline')]/text()"
+    ]
+  },
+  "www3.nhk.or.jp": {
+    "pubdate": [
+      "//div[@class='time']//text()",
+      "//section/header/h1//time/@datetime"
+    ],
+    "dc_date": [
+      "//div[@class='time']//text()"
+    ],
+    "content_encoded": [
+      "//div[@id='news_textbody']//text() | //div[@id='news_textmore']//text()"
+    ]
+  },
+  "nikkei.com": {
+    "pubdate": [
+      "//dd[@class='cmnc-publish']/text()",
+      "//div[contains(@class, 'detailBox')]/p/text()"
+    ],
+    "content_encoded": [
+      "//*[contains(@class, 'article_text')]//p//text()",
+      "//div[contains(@class, 'text01')]/p"
+    ],
+    "description": [
+      "substring-after(string(//meta[@property='og:description']/@content), '】')"
+    ],
+    "media": [
+      "//*[contains(@class, 'article_text')]//img/@src",
+      "//meta[@property='og:image']/@content"
+    ],
+    "link": [
+      "//meta[@property='og:url']/@content"
+    ],
+    "title": [
+      "//h1[contains(@class,'article_title')]/span/text()",
+      "//h1[contains(@class,'article_title')]/text()",
+      "//div[@id='conts']/p[@class='text']/text()[1]"
+    ]
+  },
+  "sankei": {
+    "pubdate": [
+      "//article/span/time/text()",
+      "//*[@id='__r_publish_date__']//text()"
+    ],
+    "title": [
+      "string(//div/h1[contains(@class,'_title')]/span[contains(@id, '_title_')])",
+      "//h1[contains(@class,'title')][1]/*[contains(@id,'article_title')]/text()",
+      "(//article[@class='clearfix']/h1)[last()]/text()"
+    ]
+  },
+  "japan.zdnet.com zdnet.com": {
+    "pubdate": [
+      "//meta[@name='DC.date.issued']/@content"
+    ],
+    "title": [
+      "//h1[contains(@class, 'leaftitle')]"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'article_body')]/p",
+      "//article/div[@class='storyBody']/p"
+    ]
+  },
+  "mainichi.jp rss.rssad.jp": {
+    "pubdate": [
+      "//header//p[@class='day']/text()",
+      "//meta[@name='cXenseParse:recs:publishtime']/@content",
+      "(//div[@id='ArticleH1Wrap']/p[@class='Credit'])[1]/text()"
+    ],
+    "title": [
+      "//div[@id='ArticleH1Wrap']/h1/text()",
+      "//article/header/h1/text()",
+      "//div[@class='header-box']/h1/text()"
+    ],
+    "media": [
+      "//div[@class='main-text']//figure//img[@alt]/@src"
+    ]
+  },
+  "news.ameba.jp": {
+    "pubdate": [
+      "//dt/span[@class='updated']/text()"
+    ],
+    "content_encoded": {
+      "xpath": [
+        "//*[contains(@class,'ontent')]/div[contains(@class,'Module__text')]/child::node()"
+      ],
+      "replace": {
+        "【関連写真】.*": "",
+        "【注目の記事】.*":"",
+        "【関連記事】.*": "",
+        "■関連記事.*": "",
+        "■あわせて読みたい.*": "",
+        "【関連リンク】.*": ""
+      }
+    }
+
+  },
+  "tokyo-np.co.jp": {
+    "pubdate": [
+      "//p[@class='data']/text()"
+    ],
+    "content_encoded": [
+      "//*[@class='News-textarea']/div[@class='Text']//p//text()"
+    ],
+    "media": [
+      "//td/img/@src"
+    ],
+    "description": [
+      ""
+    ]
+  },
+  "daily.co.jp": {
+    "pubdate": [
+      "//p[@class='date']/text()"
+    ],
+    "title": [
+      "//article/div/h1/text()"
+    ],
+    "media": [
+      "//div[@class='newsContent']/div/figure/a/img/@src"
+    ]
+  },
+  "thepage.jp": {
+    "content_encoded": [
+      "//*[@id='art']//section/p/text() | //*[@id='art']//section/h2/text()"
+    ]
+  },
+  "jiji.com": {
+    "media": [
+      "//div[contains(@class, 'ArticleText')]//p/img[@alt]/@src"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'MainInner')]/div[contains(@class,'ArticleText')]/p[not(@class='kizi_all') and not(a[contains(@href,'/jc/list')])]"
+    ],
+    "pubdate": [
+      "//meta[@itemprop='datePublished']/@content"
+    ],
+    "title": [
+      "//div[@class='ArticleTitle']/h1/text()"
+    ]
+  },
+  "yahoo.co.jp": {
+    "description": [
+      "substring-before(string(//meta[@property='og:description']/@content), '- Yahoo!')"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'article')]//div[contains(@class,'article')]//p"
+    ],
+    "pubdate": [
+      "substring-before(//div[contains(@id,'newsarticle')]/div/p[@class='source']/text(), '配信')"
+    ],
+    "title": [
+      "//div[@class='article']/div/div/h1/text()"
+    ]
+  },
+  "rakuten.co.jp": {
+    "content_encoded": [
+      "//div[@class='contentArea']/div[@class='content']/div[contains(@class,'description')]"
+    ]
+  },
+  "sanspo.com": {
+    "content_encoded": [
+      "//div[@class='NewsDetail']/p[not(contains(., '続きを読む'))]"
+    ],
+    "title": [
+      "//h1[@class='speech']/span[contains(@class, '_title')]/text()"
+    ]
+  },
+  "eweek.com": {
+    "pubdate": [
+      "//span[@class='graycolor']/text()",
+      "//a[@class='author']/../following-sibling::span[contains(text(), 'Post')]/text()"
+    ]
+  },
+  "informationweek.com": {
+    "pubdate": [
+      "//span[1][@class='smaller gray']//text()"
+    ],
+    "author": [
+      "//*[@class='smaller blue']"
+    ]
+  },
+  "toptechnews.com": {
+    "pubdate": [
+      "//span[@class='goldMed']/text()"
+    ],
+    "author": [
+      "//i/b"
+    ]
+  },
+  "computerweekly.com": {
+    "author": [
+      "//div[@class='main-article-author-byline']"
+    ],
+    "pubdate": [
+      "//div[@class='publish-date']",
+      "substring-before(substring-after(substring-before(substring-after(string(//article//script[contains(., 'author-date')]), 'var innerHtml ='), ';'), '\">'), '</')",
+      "substring-before(substring-after(string(//script[contains(., 'pubDate')]), ',\"pubDate\":\"'), '\"')"
+    ]
+  },
+  "computing.co.uk": {
+    "author": [
+      "//*[@class='author-dateline-name']/a"
+    ],
+    "pubdate": [
+      "//*[@class='author-dateline-time']/time",
+      "//meta[@property='article:published_time']/@content"
+    ]
+  },
+  "pcadvisor.co.uk": {
+    "title": [
+      "//h1[@id='downloadTitle']/strong/text()"
+    ]
+  },
+  "cnet.com": {
+    "pubdate": [
+      "(//span[@class='formattedDate'])[last()]/text()"
+    ],
+    "title": [
+      "//h1[contains(@class, 'leaf-headline-ttl')][1]/text()",
+      "(//div[contains(@class, 'articleHead')])[1]/h1/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='grid container']/div/div[contains(@class, 'image-meta')]/div/div[@class='caption']/p"
+    ]
+  },
+  "techreport.com": {
+    "pubdate": [
+      "//span[@class='timestamp']"
+    ]
+  },
+  "flashartonline.com": {
+    "pubdate": [
+      "//time[@class='published']"
+    ]
+  },
+  "crn.com": {
+    "pubdate": [
+      "//*[@class='submitted']/span/time/@datetime"
+    ],
+    "media": [
+      "//img[@class='ignoretablet']/@src",
+      "//*[@class='ignoretablet']/tbody/tr/td/img",
+      "//*[@id='slideImage']/p/img/@src"
+    ],
+    "author": [
+      "//*[@class='username']/text()"
+    ]
+  },
+  "itnews.com.au": {
+    "pubdate": [
+      "(//*[@itemprop='datePublished'])[last()]/text()"
+    ],
+    "author": [
+      "//*[@id='article-details']/a/span/span"
+    ]
+  },
+  "pen.org": {
+    "pubdate": [
+      "//li[@class='created']/text()"
+    ]
+  },
+  "artsbma.org": {
+    "pubdate": [
+      "//*[@class='entry-meta']/text()"
+    ],
+    "author": [
+      "//*[@class='custom-post-author']/h4/a"
+    ],
+    "description": [
+      "//*[@class='wp-caption-text']/text()"
+    ]
+  },
+  "artnews.com": {
+    "pubdate": [
+      "//*[@class='date-meta']/b/text()"
+    ],
+    "content_encoded": [
+      "//*[@class='main-content']"
+    ]
+  },
+  "mediapost.com": {
+    "pubdate": [
+      "//li[@id='meta-in']"
+    ],
+    "content_encoded": [
+      "//*[@id='article_body_main']"
+    ],
+    "title": [
+      "//*[@id='title']"
+    ]
+  },
+  "newser.com": {
+    "pubdate": [
+      "//div[@id='divPostedDate']/text()"
+    ],
+    "description": [
+      "substring-before(//meta[@name='description']/@content,'| Newser')"
+    ]
+  },
+  "rt.com": {
+    "pubdate": [
+      "//time[@class='date date_article-header']"
+    ],
+    "title": [
+      "//div[@class='columns__content']/div[contains(@class, 'article')]/h1[@class='article__heading']/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'article__text text')]/p[not(./strong[starts-with(., 'READ MORE:')])]"
+    ]
+  },
+  "chicago.suntimes.com": {
+    "pubdate": [
+      "//div[@class='post-meta post-meta-top columns medium-11 medium-offset-1 end']"
+    ],
+    "content_encoded": [
+      "//*[@class='post-content columns medium-9 medium-offset-1 p402_premium end']/p/text()"
+    ],
+    "author": [
+      "//*[@class='post-meta-author']/a"
+    ],
+    "media": [
+      "//img[@class='attachment-cst-article-featured size-cst-article-featured']/@src"
+    ]
+  },
+  "news24.com": {
+    "content_encoded": [
+      "//*[@id='article-body']/p",
+      "//div[@id='article_special']//p[not(contains(., '    Jump to') or ancestor::div[@id='inside_news'])]"
+    ]
+  },
+  "contemporaryartprojectsusa.com": {
+    "pubdate": [
+      "//*[@class='onDate date updated']/a"
+    ],
+    "author": [
+      "//*[@class='url fn n']/text()"
+    ]
+  },
+  "searchdatamanagement.techtarget.com": {
+    "pubdate": [
+      "//div[@class='publish-date']"
+    ],
+    "author": [
+      "//*[@class='main-article-author-byline']/a"
+    ]
+  },
+  "theinquirer.net": {
+    "pubdate": [
+      "//div[@class='article_posted_date']"
+    ],
+    "author": [
+      "//div[@class='article_author_name']/a/text()",
+      "//*[@class='author-dateline-name']/a/text()"
+    ]
+  },
+  "i-programmer.info": {
+    "pubdate": [
+      "//td[@class='createdate']"
+    ],
+    "author": [
+      "//*[@class='small']"
+    ]
+  },
+  "extremetech.com": {
+    "pubdate": [
+      "//span[@class='by vcard']/text()"
+    ],
+    "author": [
+      "//span[@class='by vcard']/a/text()"
+    ]
+  },
+  "techspot.com": {
+    "pubdate": [
+      "//*[@class='title-group']/em/time"
+    ],
+    "media": [
+      "//img[@class='intro-image']/@src"
+    ],
+    "content_encoded": [
+      "//div[contains(@itemprop,'articleBody')]/p[not(@class='grey' or @class='side-quote')]"
+    ]
+  },
+  "infoq.com": {
+    "pubdate": [
+      "//span[@class='author_general']"
+    ],
+    "author": [
+      "//*[@class='editorlink f_taxonomyEditor']"
+    ],
+    "media": [
+      "//*[@id='conference']/a/img/@src"
+    ],
+    "content_encoded": [
+      "//*[@id='conference']/text()"
+    ],
+    "title": [
+      "//div[@id='content']/div/h1[@class]/text()"
+    ]
+  },
+  "maximumpc.com": {
+    "media": [
+      "//div[@class='body']/p/img/@src"
+    ],
+    "content_encoded": [
+      "//*[@class='body']/p"
+    ]
+  },
+  "softwarecrew.com": {
+    "content_encoded": [
+      "//*[@class='entry clearfloat']/p"
+    ]
+  },
+  "technologyreview.com": {
+    "pubdate": [
+      "//li[2][@class='article-topper__meta-item']/text()"
+    ]
+  },
+  "tomshardware.com": {
+    "pubdate": [
+      "//*[@class='author nolinks']/time"
+    ]
+  },
+  "itpro.co.uk": {
+    "pubdate": [
+      "//span[@class='date-display-single']/@content"
+    ]
+  },
+  "usmagazine.com": {
+    "pubdate": [
+      "//time[@class='article-published-date']/text()"
+    ]
+  },
+  "tmz.com": {
+    "pubdate": [
+      "//h5[@class='article-posted-date']"
+    ]
+  },
+  "dailywire.com": {
+    "author": [
+      "//*[@class='field-authors inline']/a"
+    ]
+  },
+  "healthcareitnews.com": {
+    "author": [
+      "//*[@class='group-author-line field-group-div']/a"
+    ]
+  },
+  "news-gazette.com": {
+    "author": [
+      "//*[@class='authors']/a/text()"
+    ]
+  },
+  "ictv.ua": {
+    "pubdate": [
+      "//div[@class='date']/time/@datetime"
+    ],
+    "media": [
+      "//div[@class='thumb']/img/@src",
+      "//div[@class='single_post_thumbnail']/img/@src"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'post-content')]/*[self::div[not(contains(@class, 'mobile') or @class='dem-poll-shortcode')] or self::p[not(contains(child::*/text(), 'Читайте:'))] or self::ul[not(@class='like_box')]]"
+    ]
+  },
+  "aif.ua": {
+    "content_encoded": [
+      "//article[contains(@class,'articl_body')]"
+    ]
+  },
+  "unian.ua": {
+    "media": [
+      "//span[@itemprop='articleBody']//img/@src"
+    ],
+    "description": [
+      "substring-before(//meta[@name='description']/@content, 'Сьогоднішні новини та події')",
+      "substring-before(//meta[@name='description']/@content, 'Читати онлайн у стрічці новин')",
+      "substring-after(//meta[@name='description']/@content, 'Читайте онлайн в новинній стрічці Українського інформаційного агентства УНІАН -')"
+    ],
+    "content_encoded": [
+      "//span[@itemprop='articleBody']/p[not(starts-with(., 'Теги') or child::span[@class='read-also'])]"
+    ]
+  },
+  "tsn.ua": {
+    "content_encoded": [
+      "//div[@class='e-content']/p[not(child::article or child::aside)]"
+    ]
+  },
+  "112.ua": {
+    "pubdate": [
+      "//div[@itemprop='datePublished']/@content"
+    ],
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/child::node()[not(contains(@class, 'flowplayer') or self::span[@class='subscribe-ads'] or self::div[contains(@id, 'gallery') or contains(@class, 'article-img') or starts-with(., 'Новости по теме')] or self::script or self::meta or self::div[@class]/a[contains(text(), '112.ua')] or self::a[@target='blank'])]",
+      "//div[@class='article-text']/descendant-or-self::*[not(contains(@class, 'flowplayer') or self::script or self::div[@class]/a[contains(text(), '112.ua')] or self::a[@target='blank'])]/text()"
+    ],
+    "author": [
+      ""
+    ],
+    "description": [
+      "//h3[contains(@class, 'article-lead')]/text()"
+    ]
+  },
+  "segodnya.ua": {
+    "pubdate": [
+      "//div[@class='article-content']/div[@class='title']/div/span[not(@style)]/text()"
+    ],
+    "title": [
+      "//div[@class='article-content']/div[@class='title']/h1/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='article-content']/span",
+      "//div[@class='article']/span"
+    ], 
+    "description": [
+      "substring-before(//meta[@name='description']/@content,'| СЕГОДНЯ')"
+    ]
+  },
+  "zn.ua": {
+    "content_encoded": [
+      "//div[@class='article_body']/child::node()[not(self::div) and not(self::span[@class='source']) and not(self::*[starts-with(normalize-space(.), 'Читайте также')])]"
+    ],
+    "description": [
+      "//meta[@property='og:description']/@content"
+    ]
+  },
+  "nashigroshi.org": {
+    "pubdate": [
+      "//div[@class='post']/p[@class='date']/text()"
+    ],
+    "title": [
+      "//div[@class='post']/h2//text()"
+    ],
+    "media": [
+      "//div[@class='post']/div[@class='entry']//img[not(contains(@class, 'PrintIcon'))]/@src"
+    ],
+    "content_encoded": [
+      "//div[@class='post']/div[@class='entry']/p"
+    ]
+  },
+  "expres.ua": {
+    "content_encoded": [
+      "//div[@class='node-content']/*[self::p or self::div[@id='newsSummary']]"
+    ]
+  },
+  "censor.net.ua": {
+    "title": [
+      "//article/header/h1[contains(@class, 'entry-title')]/text()"
+    ]
+  },
+  "magnolia-tv.com": {
+    "pubdate": [
+      "//div[@class='art-PostMetadataHeader']//span[@class='metadata-date']/text()"
+    ],
+    "title": [
+      "//div/h1[@class='art-PostHeader']/text()"
+    ],
+    "media": [
+      "//div[@class='art-article']//img/@src"
+    ],
+    "content_encoded": [
+      "//div[@class='art-article']/p"
+    ]
+  },
+  "nash-rayon.dp.ua": {
+    "pubdate": [
+      "//dl[contains(@class, 'article-info')]/dd[@class='create']/text()",
+      "//dl[@class='article-info clearfix']"
+    ],
+    "media": [
+      "//div[@class='article-content']//img/@src"
+    ]
+  },
+  "nashemisto.dp.ua": {
+    "title": [
+      "//div/h1/span[@itemprop='headline']/text()"
+    ],
+    "author": [
+      "//article/div/div[@itemprop='author']/text()"
+    ],
+    "media": [
+      "//div[@itemprop='articleBody']//img/@src",
+      ""
+    ],
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/p"
+    ]
+  },
+  "dpgor.104.ua": {
+    "pubdate": [
+      "(//span[contains(@class,'date')]/text())[1]"
+    ]
+  },
+  "49000.com.ua": {
+    "content_encoded": [
+      "//div[contains(@class, 'type-post')]//p"
+    ]
+  },
+  "nf.dp.ua": {
+    "description": [
+      "substring-before(//meta[@name='description']/@content, ' Новый формат')",
+      "//meta[@name='description']/@content"
+    ],
+    "pubdate": [
+      "//div[contains(@class, 'post')]//div[@class='postdate']/text()"
+    ],
+    "title": [
+      "//div[contains(@class, 'post')]//h2[@class='title2']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='entry']/*[self::p or self::ul]//"
+    ]
+  },
+  "sobytiya.dp.ua": {
+    "pubdate": [
+      "//div[@class='date']/span/text()"
+    ],
+    "media": [
+      "//div[@class='imgnews']/img/@src"
+    ],
+    "content_encoded": [
+      "//div[@class='text']/index/p"
+    ],
+    "title": [
+      "//div[@class]/h1//text()"
+    ],
+    "author": [
+      "//div[@class='authortop']/a"
+    ]
+  },
+  "kstati.dp.ua": {
+    "pubdate": [
+      "//div[@class='field-post-date']/text()"
+    ],
+    "media": [
+      "//div[contains(@class, 'field-slideshow-slide')]/img/@src"
+    ]
+  },
+  "krnews.ua": {
+    "pubdate": [
+      "//table[@class='contentpaneopen']//td[@class='createdate']/text()"
+    ],
+    "media": [
+      "//table[@class='contentpaneopen']//img[not(@name)]/@src"
+    ],
+    "content_encoded": [
+      "//table[@class='contentpaneopen']//td[@class='createdate']/parent::tr/following-sibling::tr/td/p"
+    ],
+    "description": [
+      "//div[@id='mainbodsbody']//strong[1]/text()"
+    ]
+  },
+  "rudana.com.ua": {
+    "pubdate": [
+      "//div[@class='content']//span[contains(@property, 'date')]/@content"
+    ],
+    "content_encoded": [
+      "//div[@class='content']//div[@property='content:encoded']",
+      ""
+    ],
+    "media": [
+      "//div[@class='content']//img/@src"
+    ]
+  },
+  "24.com.ua kr24.com.ua": {
+    "pubdate": [
+      "//div[@class='article__header']/span[@class='article__time']/text()"
+    ],
+    "media": [
+      "//div[@class='article__body-item']/div[@class='article__gallery']//img/@src",
+      "//div[@class='article__body-item']/div/p/img/@src"
+    ],
+    "content_encoded": [
+      "//div[@class='article__body-item']/div[@class='wTxt']/p"
+    ],
+    "author": [
+      ""
+    ],
+    "keywords": [
+      "//div[@class='article__body-item']/div[@class='article__tags']/a",
+      ""
+    ]
+  },
+  "gazeta.dp.ua": {
+    "pubdate": [
+      "//div[contains(@class,'gbox')]/h6/text()"
+    ],
+    "media": [
+      "//div[contains(@class,'gbox')]/img/@src"
+    ],
+    "title": [
+      "//div[contains(@class,'gbox')]/h2/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'gbox')]/*[local-name()!='h6' and local-name()!='div' and local-name()!=h2]"
+    ]
+  },
+  "skelet-info.org": {
+    "pubdate": [
+      "//div[@id='primary']/article/header/h2/time/@datetime"
+    ],
+    "media": [
+      "//div[@id='primary']/article/div[@class='entry-content']//img/@src"
+    ],
+    "title": [
+      "//div[@id='primary']/article/header/h1/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='primary']/article/div[@class='entry-content']/p"
+    ]
+  },
+  "inforesist.org": {
+    "pubdate": [
+      "//main[@id='main']/article/header//span[@class='updated']//text()"
+    ],
+    "media": [
+      "//main[@id='main']/article//img[not(contains(@class, 'alignnone'))]/@src"
+    ],
+    "title": [
+      "//main[@id='main']/article/header//h1/text()"
+    ],
+    "content_encoded": [
+      "//main[@id='main']/article//div[contains(@class, 'entry-content')]//p"
+    ]
+  },
+  "informator.dp.ua": {
+    "content_encoded": [
+      "//div[@class='mvp-org-wrap']/preceding-sibling::h4/preceding-sibling::*//text()",
+      "//div[@id='content-main']/p"
+    ]
+  },
+  "times.dp.ua": {
+    "content_encoded": [
+      "//div[@class='article']//p[not(@class='article_author')]"
+    ],
+    "pubdate": [
+      "concat(//div[@class='date']/text(), ' ', //div[@class='time date']/text())"
+    ]
+  },
+  "zagidkrasnov.com": {
+    "pubdate": [
+      "substring-after(//header/h1[@class='title']/text(), 'gazeta.info ')"
+    ]
+  },
+  "news.meta.ua": {
+    "title": [
+      "//div[contains(@class, 'h1cluster')]/h1/text()"
+    ],
+    "media": [
+      "//div[contains(@class, 'one_news')]/div[@class='block']//img/@src"
+    ],
+    "pubdate": [
+      "//div[contains(@class, 'one_news')]/div[@class='block']/p/span/label/text()",
+      "//div[contains(@class, 'one_news')]/div[@class='block']//p/a[last()]/following-sibling::b/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'one_news')]/div[@class='block']/p/text()[normalize-space()]",
+      "//div[contains(@class, 'one_news')]/div[@class='block']//p/text()"
+    ]
+  },
+  "dneprnews.info": {
+    "media": [
+      "//div[@class='articleBody']//img/@src"
+    ],
+    "pubdate": [
+      "//div[@id='article']/p[@class='data']/span/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='articleBody']/p[not(a[contains(translate(text(), 'dneprnews.info', 'DNEPRNEWS.INFO'),'DNEPRNEWS.INFO')])]"
+    ],
+    "description": [
+      "substring-before(//meta[@name='description']/@content, 'Об этом сообщ')",
+      "//meta[@name='description']/@content"
+    ]
+  },
+  "dv-gazeta.info": {
+    "pubdate": [
+      "//div[@class='postmetadata' and @id]/span[last()]/text()"
+    ],
+    "title": [
+      "//div[@id]/h1/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='postmetadata' and @id]/parent::div/p"
+    ],
+    "description": [
+      "substring-before(string(//meta[@name='Description']/@content | //meta[@name='description']/@content), '| Свежие городские новости')"
+    ],
+    "media": [
+      "//div[@class='articleBody']//img/@src",
+      "//div[@id='text']//img/@src",
+      ""
+    ]
+  },
+  "podgorodnoe.in.ua": {
+    "title": [
+      "//header/h1/text()"
+    ]
+  },
+  "gorozhanin.dp.ua": {
+    "pubdate": [
+      "//span[contains(@class,'thetime')]//span[@itemprop='datePublished']/text()"
+    ]
+  },
+  "dp.vgorode.ua": {
+    "content_encoded": [
+      "//div[@class='body']/*[not(preceding::p/strong[contains(text(), 'итайте')])]//text()"
+    ],
+    "description": [
+      ""
+    ]
+  },
+  "vesti.dp.ua": {
+    "media": [
+      "//article//img[not(@data-lazy-src)]/@src"
+    ]
+  },
+  "dneprcity.net": {
+    "description": [
+      "substring-before(//meta[@property='og:description']/@content, '- новости Днепропетровска')"
+    ],
+    "title": [
+      "//*[@class='article-title']/text()"
+    ],
+    "media": [
+      "//div[@class='shortcode-content']/p/img/@src",
+      ""
+    ],
+    "author": [
+      "normalize-space(substring-after(//div[@class='shortcode-content']/p[contains(text(), 'Автор:')]/text(), 'Автор:'))"
+    ],
+    "content_encoded": [
+      "//div[@class='shortcode-content']/*[self::p[not(contains(text(), 'ЧИТАЙТЕ ТАКЖЕ') or contains(child::a/text(), 'Источник'))] or self::ul]"
+    ]
+  },
+  "artmuseum.dp.ua": {
+    "pubdate": [
+      "concat(//div[@class='post-meta']/span[not(@class)]/text(), ' ', //div[@class='post-meta']/span[@class='post-date']/text())"
+    ],
+    "author": [
+      "string(//div[@class='post-meta']/span[@class='post-author']/a)"
+    ]
+  },
+  "dnepr.info": {
+    "pubdate": [
+      "//div[contains(@class,'content')]//div[@class='holder-news-top-data']//div[@class='date']/text()",
+      "//div[contains(@class,'content')]//div[@class='date']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='txt-holder']//*[self::p or self::li or self::div[@class='min-ttl']]"
+    ],
+    "media": [
+      "//div[@class='connected-carousels']//img/@src",
+      ""
+    ]
+  },
+  "express.dp.ua": {
+    "pubdate": [
+      "//span[contains(@property, 'dc:date')]/@content"
+    ],
+    "content_encoded": [
+      "//div[@property='content:encoded']/p"
+    ],
+    "media": [
+      "//div[@property='content:encoded']//img/@src",
+      ""
+    ],
+    "description": [
+      ""
+    ],
+    "title": [
+      "//div/h1/text()"
+    ]
+  },
+  "dpua.info": {
+    "pubdate": [
+      "//div[contains(@class,'blog_post')]//div[@class='blog_date']/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'blog_text')]/p"
+    ],
+    "title": [
+      "//h1[@class='blog_title']/a/text()"
+    ],
+    "media": [
+      "//div[contains(@class, 'blog_text')]//img/@src",
+      ""
+    ]
+  },
+  "gorod.dp.ua": {
+    "pubdate": [
+      "//td[@align='center']/div/span[@class='norm8']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='newsbody']/p"
+    ],
+    "title": [
+      "//h1[@class='title_news']/text()"
+    ],
+    "media": [
+      "//table//div//img[@alt and @property]/@src",
+      "//div[@class='small']/img[@alt and @title]/@src",
+      "//div[@class='social-likes']/div[@data-media]/@data-media",
+      "//div[@class='fotoreports']/a/img[@class]/@src",
+      "//img[@id='main_photo']/@src"
+    ],
+    "description": [
+      "//div[@class='newsbody']/p[@class='lead'][1]"
+    ]
+  },
+  "zabeba.li": {
+    "content_encoded": [
+      "//div[@class='thecontent']//*[self::p or self::li]"
+    ]
+  },
+  "citysite.dp.ua": {
+    "pubdate": [
+      "normalize-space(//div[@class='col-lg-4 col-md-4 news-single-header-date text-left']/text())"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'12 no side')]/p",
+      "//div[contains(@class,'news-single-text-body')]/p"
+    ],
+    "title": [
+      "//div[contains(@class,'news-single-header ')]/text()"
+    ],
+    "media": [
+      "concat('http://', 'citysite.dp.ua', substring-before(substring-after(//div[contains(@class,'news-single') and contains(@style, 'url(')]/@style, 'url('), ')'))"
+    ],
+    "author": [
+      "//img[@class='auth']/following-sibling::strong"
+    ]
+  },
+  "most-dnepr.info": {
+    "pubdate": [
+      "//span[@class='kroshki']"
+    ],
+    "media": [
+      "//img[@class='pic_big_article']/@src"
+    ],
+    "content_encoded": [
+      "//*[@id='firstp']/p[not(descendant::strong[contains(text(), 'Читайте также')])]"
+    ],
+    "title": [
+      "//*[@class='zagolovok_article']/text()"
+    ]
+  },
+  "dnepr.web2ua.com": {
+    "content_encoded": [
+      "//article//descendant-or-self::p[not(contains(@class, 'post-byline') or contains(@class, 'post-date') or contains(@class, 'post-date') or contains(@class, 'post-date') or contains(text(), 'Последние новости Днепра') or contains(text(), 'Рекомендуем к прочтению') or contains(text(), '>>>') or contains(text(), 'нажмите Ctrl+Enter'))]"
+    ]
+  },
+  "dniprorada.gov.ua": {
+    "content_encoded": [
+      "//div[contains(@class, 'page-content')]"
+    ],
+    "pubdate": [
+      "substring-after(//div[contains(@class, 'cms-article-date')]/em[1], ':')"
+    ],
+    "media": [
+      "//div[contains(@class, 'cms-page')]//div[contains(@class, 'cms-article-img')]/img/@src",
+      ""
+    ],
+    "title": [
+      "//div[contains(@class, 'cms-article-header')]/h1/text()"
+    ]
+  },
+  "buroua.com": {
+    "content_encoded": [
+      "//div[contains(@class,'type-post')]/p"
+    ]
+  },
+  "nashreporter.com": {
+    "media": [
+      "//article/div[contains(@class,'entry-content')]//img/@src"
+    ]
+  },
+  "pomogaem.com.ua": {
+    "content_encoded": [
+      "//div[contains(@class,'blog-post')]/div[contains(@class, 'post-intro')]/*[self::p | self::div[not(@class='pluso' | @class='inside')]]"
+    ]
+  },
+  "oligarh.org.ua": {
+    "pubdate": [
+      "//div[contains(@class, 'node--news')]//article//span[contains(@property, 'dc:date')]/@content"
+    ],
+    "media": [
+      "//div[contains(@class, 'node--news')]//article//div[@class='art-article']//img/@src"
+    ],
+    "description": [
+      "//div[contains(@class, 'node--news')]//article//div[@class='art-article']//div[@property='content:encoded']/p[1]"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'node--news')]//article//div[@class='art-article']//div[@property='content:encoded']/descendant::*[self::p[not(descendant::strong[contains(text(), 'Читайте также') or contains(text(), 'По материалам:')] or descendant::em[contains(text(), 'Источник фото')])]]"
+    ]
+  },
+  "rian.com.ua": {
+    "pubdate": [
+      "//time[@class='article_header_date']",
+      "//meta[@property='article:published_time']/@content"
+    ],
+    "media": [
+      "//div[contains(@class, 'mainSlideImg_wrap')]/img/@src",
+      "//*[@class='slideshow_item slideshow_item_sel  inject']/img/@src",
+      "//div[@class='article_illustration']/div/abbr[@data-preview]/@data-mainview"
+    ],
+    "content_encoded": [
+      "//*[@id='article_full_text']/child::node()[self::p[not(@style='text-align: center;') ] or self::div[not(contains(@class, 'inject_') or contains(@class, 'article_illustration') or contains(@class, 'media_copyright') or starts-with(@id, 'inject_'))] or self::span or self::strong[starts-with(., 'Читайте также')]]",
+      "//*[@id='article_full_text']/p[not(@style='text-align: center;')]",
+      "//div[@id='article_full_text']/p[not(starts-with(., 'РИА '))]"
+    ]
+  },
+  "liga.net": {
+    "content_encoded": [
+      "//div[@class='news_content']//div[contains(@class, 'text')]/descendant::*[self::p[not(descendant::b[contains(text(), 'Читайте также') or contains(text(), 'Подписывайтесь на аккаунт ')])] or self::div[@class='main_idea'] ]"
+    ],
+    "title": [
+      "//div[@class='news_content']/h1/text()"
+    ]
+  },
+  "golospravdy.com": {
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/p"
+    ]
+  },
+  "1news.info": {
+    "pubdate": [
+      "//span[@class='posted-on']//time/@datetime"
+    ],
+    "content_encoded": [
+      "//div[@class='entry-content']/descendant::*[self::p[not(contains(., 'Последние Срочные Новости'))] or self::i]"
+    ],
+    "title": [
+      "//header/h2//text()"
+    ],
+    "media": [
+      "//div[@class='entry-content']//img/@src"
+    ]
+  },
+  "apostrophe.ua": {
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/p[not(contains(text(), 'Читайте также'))]"
+    ],
+    "media": [
+      "concat(substring(concat('https://i.ytimg.com/vi_webp/', substring-after(//div[@itemprop='articleBody']/p[@class='insert_video_iframe']/iframe/@src, 'embed/'), '/hqdefault.webp'), 1, number(contains(//div[@itemprop='articleBody']/p[@class='insert_video_iframe']/iframe/@src, 'embed/'))      * string-length(concat('https://i.ytimg.com/vi_webp/', substring-after(//div[@itemprop='articleBody']/p[@class='insert_video_iframe']/iframe/@src, 'embed/'), '/hqdefault.webp'))),    substring('', 1, number(not(contains(//div[@itemprop='articleBody']/p[@class='insert_video_iframe']/iframe/@src, 'embed/'))) * 1))"
+    ],
+    "title": [
+      "//header[@class='article__header']/h1[1]/text()"
+    ]
+  },
+  "ukranews.com": {
+    "content_encoded": [
+      "//*[@class='article_content']/p/text()",
+      "//*[@class='article']/p/text()"
+    ]
+  },
+  "unn.com.ua": {
+    "content_encoded": [
+      "//div[@itemprop='articleBody']"
+    ],
+    "description": [
+      "substring-after(//meta[@property='og:description']/@content, 'УНН. ')",
+      "substring-after(//meta[@name='description']/@content, 'Информационное агентство Украинские Национальные Новости. ')"
+    ]
+  },
+  "news.gatech.edu": {
+    "author": [
+      "//div[@class='dateline']/text()"
+    ]
+  },
+  "discovermagazine.com": {
+    "author": [
+      "//*[@class='meta-date']/a/text()"
+    ]
+  },
+  "techlearning.com": {
+    "pubdate": [
+      "//span[@class='mini-time']/text()"
+    ]
+  },
+  "mercurynews.com": {
+    "author": [
+      "//*[@class=' author-name']/text()"
+    ]
+  },
+  "techradar.com": {
+    "author": [
+      "//span[contains(@class, 'author')]/a/span/text()"
+    ],
+    "pubdate": [
+      "//*[@class='no-wrap relative-date chunk']/@datetime"
+    ],
+    "media": [
+      "//*[@class='box']/img/@src"
+    ]
+  },
+  "technewsworld.com": {
+    "author": [
+      "(//div[@id='story-byline']/text())[2]"
+    ],
+    "pubdate": [
+      "//div[@id='story-byline']/text()"
+    ],
+    "content_encoded": [
+      "//*[@id='story-body']/p"
+    ],
+    "media": [
+      "//img[@class='story-image']/@src",
+      "//*[@id='story-graphic-xlarge']/img/@src"
+    ]
+  },
+  "teaparty.org": {
+    "title": [
+      "//div[@id='post']//h3[@class]//text()"
+    ],
+    "pubdate": [
+      "string(//div[@class='post-content']/div[@class='meta']/text())"
+    ],
+    "content_encoded": [
+      "//div[@class='post-content']/p"
+    ],
+    "media": [
+      "substring-before(substring-after(//div[@id='post']//div[contains(@class, 'main-photo')]/@style, concat('background-image:url(', \"'\")), concat(\"'\", ')'))"
+    ]
+  },
+  "korrespondent.net": {
+    "pubdate": [
+      "//div[contains(@class, 'post-item')]//div[@class='post-item__info']"
+    ],
+    "content_encoded": [
+      "//div[@class='post-item__text']/*[not(self::div[@class='mrt_small'])]"
+    ]
+  },
+  "gordonua.com": {
+    "pubdate": [
+      "//div[contains(@class,'article')]//div[@class='a_footer']/text()[1]"
+    ],
+    "content_encoded": [
+      "//div[@class='block article']/*[self::div[@class='a_description' or @class='a_body']]"
+    ],
+    "description": [
+      "substring-after(//meta[@name='description']/@content, 'Эксклюзив от Бульвара Гордона')"
+    ]
+  },
+  "delo.ua": {
+    "content_encoded": [
+      "//div[@id='hypercontext']/index"
+    ],
+    "title": [
+      "//div[@id='art-block']/h1/text()"
+    ],
+    "pubdate": [
+      "//div[@id='art-block']/span[@class='b-info-box']/small/text()"
+    ],
+    "description": [
+      "substring-before(//meta[@name='description']/@content, 'Читайте новости на портале Дело')",
+      "//meta[@name='description']/@content"
+    ],
+    "media": [
+      "//div[@class='b-news-adds']/p[@class='big-img']/img[@height]/@src"
+    ]
+  },
+  "mignews.com.ua": {
+    "content_encoded": [
+      "//div[@itemprop='articleBody']"
+    ],
+    "title": [
+      "//div[@class='news_title']/h1/text()"
+    ],
+    "pubdate": [
+      "//div[@class='article_workspace']/div[@class='clearAfter']/div/div[@class='date']/text()"
+    ]
+  },
+  "proua.com.ua": {
+    "pubdate": [
+      "//div[contains(@class,'postmeta')]//span[@class='left']/child::text()[last()]"
+    ],
+    "media": [
+      "//div/header/div/img/@src"
+    ],
+    "title": [
+      "//div[@class='s-post-header']/h1/text()"
+    ]
+  },
+  "kp.ua": {
+    "pubdate": [
+      "//div[@class='meta']//a[@class='meta__date']"
+    ],
+    "content_encoded": [
+      "//div[@class='content']/p"
+    ],
+    "title": [
+      "//div[@class='content-img__main']/h1/text()"
+    ],
+    "media": [
+      "//div[@class='content-img']/img/@data-href"
+    ]
+  },
+  "apostrophe.com.ua": {
+    "pubdate": [
+      "//header//span[@class='article__date']"
+    ]
+  },
+  "utro.ua": {
+    "pubdate": [
+      "//div[@class='divTop1']/div[@class='fl']/p[@class='mb10']"
+    ]
+  },
+  "dialog.ua": {
+    "pubdate": [
+      "//div[contains(@class, 'news-news')]/div[@class='news-date']"
+    ],
+    "title": [
+      "//div[contains(@class, 'news-news')]/h1/text()"
+    ]
+  },
+  "rbc.ua": {
+    "author": [
+      ""
+    ],
+    "title": [
+      "concat(//div[@class='container']/div[@class='content-extended']/span[@class='prefix-heading'], //div[@class='container']/div[@class='content-extended']/h1[@class='full-width-heading'])"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'publication-text-area')]/p"
+    ],
+    "description": [
+      "substring-before(//meta[@name='description']/@content,'- Новости -')"
+    ]
+  },
+  "focus.ua": {
+    "pubdate": [
+      "//div[contains(@class, 'content-holder')]/div[contains(@class, 'author-date')]//text()"
+    ],
+    "content_encoded": [
+      "//div[@class='text']/p"
+    ],
+    "title": [
+      "//div[contains(@class,'content-holder')]/h1/text()"
+    ]
+  },
+  "gazeta.ua": {
+    "pubdate": [
+      "concat(//article//div[contains(@class,'news-date')]//span[1]/text(), ' ', //article//div[contains(@class,'news-date')]//span[2]/text())"
+    ],
+    "content_encoded": [
+      "//article/p[not(child::strong[contains(text(),'СМОТРИТЕ ТАКЖЕ') or contains(text(),'ЧИТАЙТЕ ТАК')])]"
+    ],
+    "title": [
+      "//article/h1/text()"
+    ]
+  },
+  "tyzhden.ua": {
+    "title": [
+      "//div[contains(@class,'post-body')]/h1[@class]/text()"
+    ],
+    "media": [
+      "//div[contains(@class,'post-body')]/div[@style and not(contains(@class, 'bf1'))]/div//img/@src"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'post-body')]/div[@style and not(contains(@class, 'bf1'))]/div/p"
+    ]
+  },
+  "24tv.ua": {
+    "pubdate": [
+      "concat(//article/div[@class]/span[@class='date'], ' ', //article/div[@class]/span[@class='time'])"
+    ],
+    "content_encoded": [
+      "//div[@class='article_text']//p[not(contains(@class,'read-also') or parent::div[@class='p-wrapper'])]"
+    ]
+  },
+  "dt.ua": {
+    "content_encoded": [
+      "//div[contains(@class, 'text')]/p"
+    ]
+  },  
+  "dp.mns.gov.ua": {
+    "pubdate": [
+      "//div[@id='content_panel_area']/div[@class='note']/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='content_panel_area']/p"
+    ],
+    "media": [
+      "//div[@class='img-block']//img/@src"
+    ]
+  },
+  "056.ua": {
+    "pubdate": [
+      "concat(//div[@id='content']//div[@class='items']/div[@class='date']/span[1], ' ', //div[@id='content']//div[@class='items']/div[@class='date']/span[2])"
+    ],
+    "content_encoded": [
+      "//div[@id='content']//div[@class='static']/p[not(contains(text(), 'Читайте также: ') or contains(text(), 'Читайте: ') or child::b[contains(text(), 'ЧИТАЙТЕ ТАКЖЕ:')])]"
+    ],
+    "media": [
+      "//div[@id='content_panel_area']//img/@src"
+    ],
+    "description": [
+      "substring-before(//meta[@property='og:description']/@content, '#')",
+      "//meta[@property='og:description']/@content"
+    ]
+  },
+  "0564.ua": {
+    "pubdate": [
+      "concat(//div[@id='content']//div[@class='items']/div[@class='date']/span[1], ' ', //div[@id='content']//div[@class='items']/div[@class='date']/span[2])"
+    ],
+    "content_encoded": [
+      "//div[@id='content']//div[@class='static']/p[not(contains(text(), 'Читайте также: ') or contains(text(), 'Читайте: ') or child::b[contains(text(), 'ЧИТАЙТЕ ТАКЖЕ:')])]"
+    ],
+    "media": [
+      "//div[@id='content_panel_area']//img/@src"
+    ],
+    "description": [
+      "substring-before(//meta[@property='og:description']/@content, '#')",
+      "//meta[@property='og:description']/@content"
+    ]
+  },
+  "5632.com.ua": {
+    "pubdate": [
+      "concat(//div[@id='content']//div[@class='items']/div[@class='date']/span[1], ' ', //div[@id='content']//div[@class='items']/div[@class='date']/span[2])"
+    ],
+    "content_encoded": [
+      "//div[@id='content']//div[@class='static']/p[not(contains(text(), 'Читайте также: ') or contains(text(), 'Читайте: ') or child::b[contains(text(), 'ЧИТАЙТЕ ТАКЖЕ:')])]"
+    ],
+    "media": [
+      "//div[@id='content_panel_area']//img/@src"
+    ],
+    "description": [
+      "substring-before(//meta[@property='og:description']/@content, '#')",
+      "//meta[@property='og:description']/@content"
+    ]
+  },
+  "5692.com.ua": {
+    "pubdate": [
+      "concat(//div[@id='content']//div[@class='items']/div[@class='date']/span[1], ' ', //div[@id='content']//div[@class='items']/div[@class='date']/span[2])"
+    ],
+    "content_encoded": [
+      "//div[@id='content']//div[@class='static']/p[not(contains(text(), 'Читайте также: ') or contains(text(), 'Читайте: ') or child::b[contains(text(), 'ЧИТАЙТЕ ТАКЖЕ:')])]"
+    ],
+    "media": [
+      "//div[@id='content_panel_area']//img/@src"
+    ],
+    "description": [
+      "substring-before(//meta[@property='og:description']/@content, '#')",
+      "//meta[@property='og:description']/@content"
+    ]
+  },
+  "0569.com.ua": {
+    "pubdate": [
+      "concat(//div[@id='content']//div[@class='items']/div[@class='date']/span[1], ' ', //div[@id='content']//div[@class='items']/div[@class='date']/span[2])"
+    ],
+    "content_encoded": [
+      "//div[@id='content']//div[@class='static']/p[not(contains(text(), 'Читайте также: ') or contains(text(), 'Читайте: ') or child::b[contains(text(), 'ЧИТАЙТЕ ТАКЖЕ:')])]"
+    ],
+    "media": [
+      "//div[@id='content_panel_area']//img/@src"
+    ],
+    "description": [
+      "substring-before(//meta[@property='og:description']/@content, '#')",
+      "//meta[@property='og:description']/@content"
+    ]
+  },
+  "poleznaya.dp.ua": {
+    "pubdate": [
+      "//div[@class='newstime']/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'middle_bottom_c')]/*[self::p or self::span[@style]]"
+    ],
+    "media": [
+      "//div[contains(@class, 'middle_bottom_c')]//img/@src"
+    ],
+    "title": [
+      "//div[contains(@class, 'middle_bottom_c')]/h1//text()"
+    ],
+    "description": [
+      "//div[contains(@class, 'middle_bottom_c')]/h1//text()"
+    ]
+  },
+  "nasamari.com": {
+    "pubdate": [
+      "//article/div/p[contains(@id,'post-meta')]/span[child::i[contains(@class, 'fa-calendar')]]/text()"
+    ],
+    "content_encoded": [
+      "//article//p[not(contains(@id,'post-meta') or parent::div[contains(@id, 'post-nav')])]"
+    ]
+  },
+  "zovzakona.org": {
+    "pubdate": [
+      "substring-before(string(//div[@class='entry-meta']), '|')"
+    ]
+  },
+  "dp.ric.ua": {
+    "pubdate": [
+      "//span[@class='category']/strong[1]/text()"
+    ],
+    "content_encoded": [
+      "//td[@class='news']/index/p"
+    ],
+    "media": [
+      "//td[@class='news']/index//img/@src"
+    ]
+  },
+  "daily.org.ua": {
+    "media": [
+      "//article/div[contains(@class, 'thumbnail')]/img/@src"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'entry ')]/p"
+    ],
+    "pubdate": [
+      "//p[@class='entry-meta']/span[@class='updated']/text()"
+    ]
+  },
+  "adm.dp.gov.ua": {
+    "pubdate": [
+      "concat(//div[@class='date']/span[contains(@id,'view:')]/text(), ' ', //div[@class='time']/span[contains(@id,'view:')]/text())"
+    ],
+    "content_encoded": [
+      "//div[@id='view:body']"
+    ],
+    "media": [
+      "//div[@id='view:body']//img/@src"
+    ]
+  },
+  "oblrada.dp.gov.ua": {
+    "pubdate": [
+      "//div[@class='news_date']/text()"
+    ],
+    "title": [
+      "//h3[@class='presidium_tit']/text()",
+      "//header/h1[contains(@class, 'title')]/text()"
+    ],
+    "media": [
+      "//div[@class='style-news']//img/@src"
+    ],
+    "description": [
+      ""
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'doc-body')]//*[self::p | self::li | self::h1]"
+    ]
+  },
+  "dniprograd.org": {
+    "pubdate": [
+      "//div[@class='title-wrap']/div[@class='data']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='content-site']/p[not(@itemprop='author')]"
+    ],
+    "media": [
+      "//div[@class='content-site']//img/@src"
+    ],
+    "author": [
+      "//div[@class='content-site']/p[@itemprop='author']/span/text()"
+    ]
+  },
+  "dnepr.com": {
+    "pubdate": [
+      "//div[@class='time']/text()[last()]"
+    ],
+    "content_encoded": [
+      "//div[contains(@id, 'news')]/p"
+    ],
+    "media": [
+      "//div[contains(@id, 'news')]//img/@src"
+    ]
+  },
+  "misto.news": {
+    "content_encoded": [
+      "//div[contains(@class, 'entry-content')]/*[self::p or self::blockquote]"
+    ]
+  },
+  "dp.dsns.gov.ua": {
+    "content_encoded": [
+      "//div[@class='container']/p"
+    ],
+    "pubdate": [
+      "substring-after(//div[@class='container']/div[@class='articledtime']/text(), 'Опубліковано:')"
+    ]
+  },
+  "dnipronews.com.ua": {
+    "pubdate": [
+      "//ul[@class='nav-story']/li[1]/text()"
+    ],
+    "description": [
+      "substring-before(//meta[@name='description']/@content, 'Об этом Dnipronews')",
+      "//meta[@name='description']/@content"
+    ]
+  },
+  "dnpr.com.ua": {
+    "pubdate": [
+      "//span[@property='dc:date dc:created']/@content"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'node-content')]//p"
+    ],
+    "media": [
+      "//div[contains(@class, 'node-content')]//img/@src",
+      "substring-before(substring-after(//div[contains(@class, 'ytp-thumbnail-overlay-image')]/@style, 'background-image: url(\"'), '\")')",
+      ""
+    ],
+    "description": [
+      "substring-before(//div[@property='content:encoded']/p/em/strong/text(), 'Об этом сообщает ГУНП в Днепропетровской области.')",
+      "//div[@property='content:encoded']/p/em/strong/text()"
+    ]
+  },
+  "regionnews.net": {
+    "media": [
+      "//div[@class='single-cover-art']//img/@src"
+    ],
+    "title": [
+      "substring-before(//title/text(), 'RegionNews.net/UA')"
+    ],
+    "content_encoded": [
+      "//div[@class='single-archive']/*[self::p or self::h4]"
+    ]
+  },
+  "9-channel.com": {
+    "pubdate": [
+      "//span[@class='timedate']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='podzagolovok']/following-sibling::*[self::p or self::blockquote]"
+    ],
+    "author": [
+      "//a[@rel='author']/text()"
+    ]
+  },
+  "11channel.dp.ua": {
+    "pubdate": [
+      "normalize-space(//*[@class='content']//span[@class='date']/text())",
+      "substring-before(string(//div[@class='entry-meta']), '|')"
+    ],
+    "content_encoded": [
+      "//*[@class='content']//span[@class='date']/following-sibling::p"
+    ],
+    "title": [
+      "//table//h1/text()"
+    ]
+  },
+  "11tv.dp.ua": {
+    "pubdate": [
+      "normalize-space(//*[@class='content']//span[@class='date']/text())",
+      "substring-before(string(//div[@class='entry-meta']), '|')"
+    ],
+    "content_encoded": [
+      "//*[@class='content']//span[@class='date']/following-sibling::p"
+    ],
+    "title": [
+      "//table//h1/text()"
+    ]
+  },
+  "dnepr.press": {
+    "description": [
+      "substring-before(//meta[@property='og:description']/@content, '[Читать далее...]')"
+    ],
+    "content_encoded": [
+      "//div[@class='entry']/p"
+    ]
+  },
+  "novostidnepr.pp.ua": {
+    "description": [
+      "substring-before(//meta[@name='description']/@content, '| Новости Днепр')"
+    ],
+    "content_encoded": [
+      "//div[@class='td-post-content']/p[not(contains(text(), 'ЧИТАЙТЕ ТАКЖЕ') or child::*[name()='fb:comments-count'] or text()=' comments')]"
+    ]
+  },
+  "dnepr.comments.ua": {
+    "content_encoded": [
+      "//div[contains(@class, 'news_content')]//p[not(@class)]"
+    ],
+    "media": [
+      "//div[@class='top_body_box']//div[@class='news_photo_box']/img/@src"
+    ]
+  },
+  "gai.dp.ua": {
+    "title": [
+      "//div[@class='headline']/h1/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='headline']/following-sibling::div//text()"
+    ],
+    "media": [
+      "//div[@class='headline']/following-sibling::div//img/@src"
+    ]
+  },
+  "34.ua": {
+    "title": [
+      "//div[contains(@class,'content')]//div[contains(@class,'news_name')]/text()"
+    ],
+    "pubdate": [
+      "//div[contains(@class,'content')]//div[contains(@class,'date news_date')]/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'news_description')]/p"
+    ],
+    "media": [
+      "//div[contains(@class,'news_description')]//img/@src",
+      "substring-before(substring-after(//div[contains(@class, 'ytp-thumbnail-overlay-image')]/@style, 'background-image: url(\"'), '\")')",
+      "concat('https://i.ytimg.com/vi_webp/', substring-after(//iframe[parent::div[contains(@class, 'player')]]/@src, 'embed/'), '/sddefault.webp')",
+      ""
+    ]
+  },
+  "1kr.ua": {
+    "pubdate": [
+      "//article//time[@itemprop]/@content"
+    ]
+  },
+  "nikopol.com.ua": {
+    "pubdate": [
+      "//h3/a/following-sibling::text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'shot-text')]/div[not(@style or @class)]/text()",
+      "//span[@class='masha_index masha_index2']/parent::div"
+    ],
+    "media": [
+      "//div[contains(@class, 'shot-text')]/div[not(@style or @class)]//img/@src"
+    ],
+    "title": [
+      "substring-before(//title/text(), '&raquo; газета ГОРОД Никополь')",
+      "//meta[@property='og:title']/@content"
+    ]
+  },
+  "reporter-nikopol.com": {
+    "pubdate": [
+      "//div[contains(@class, 'post')]/div[@class='postmeta']/span[@class='date']/text()"
+    ],
+    "title": [
+      "//div[contains(@class, 'post')]/h2"
+    ]
+  },
+  "glo.ua": {
+    "pubdate": [
+      "substring-after(//p[@class='m-p'], ':')"
+    ]
+  },
+  "litsa.com.ua": {
+    "pubdate": [
+      "//div[contains(@class,'news-date')]/@data-time"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'news-content')]/*[self::p | self::blockquote]"
+    ],
+    "title": [
+      "//h1[contains(@class,'news-header')]/text()"
+    ]
+  },
+  "apost-rn.dp.gov.ua": {
+    "title": [
+      "//table//span[@class='DocTitle']/text()"
+    ],
+    "description": [
+      "(//table//table//font)[1]"
+    ],
+    "media": [
+      "//table//table//img[not(@style) and @width]/@src"
+    ],
+    "content_encoded": [
+      "//table//table//font[not(contains(text(), 'Посилання на сайт'))]"
+    ]
+  },
+  "dkzr.dp.gov.ua": {
+    "title": [
+      "//table//span[@class='DocTitle']/text()"
+    ],
+    "description": [
+      "(//table//table//font)[1]"
+    ],
+    "media": [
+      "//table//table//img[not(@style) and @width]/@src"
+    ],
+    "content_encoded": [
+      "//table//table//font[not(contains(text(), 'Посилання на сайт'))]"
+    ]
+  },
+  "e-contact.dp.gov.ua": {
+    "pubdate": [
+      "//div[contains(@class,'crumbs')]/span/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='content']/div/*[self::h5 or self::h6]"
+    ],
+    "media": [
+      "//div[@class='content']/div//img/@src"
+    ]
+  },
+  "pokrov-mr.gov.ua": {
+    "pubdate": [
+      "//time[@itemprop='dateCreated']/@datetime"
+    ],
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/p"
+    ],
+    "media": [
+      "//div[@itemprop='articleBody']//img/@src"
+    ]
+  },
+  "pavlogradmrada.dp.gov.ua": {
+    "pubdate": [
+      "//span[@id='xs-post-meta-clock']/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='xs-post-meta']/following-sibling::p"
+    ],
+    "title": [
+      "//div[@id='xs-post']/h1/text()"
+    ],
+    "media": [
+      "//div[@id='xs-post-meta']/following-sibling::p//img/@src",
+      ""
+    ]
+  },
+  "xn--80aafeg3bveo.dp.ua": {
+    "pubdate": [
+      "//div[contains(@class, 'article-info')]//span[contains(@class, 'dtreviewed')]/a/i/following-sibling::text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'type-post')]/*[self::p | self::blockquote]"
+    ],
+    "title": [
+      "//div[contains(@class, 'article-head')]/h1/text()"
+    ],
+    "media": [
+      "//div[contains(@class, 'type-post')]//img/@src",
+      ""
+    ]
+  },
+  "dnipr.gp.gov.ua": {
+    "content_encoded": [
+      "//section/table/tr/td[not(@valign)]/div[2]//p[not(contains(text(), 'Прес-служба прокуратури Дніпропетровської області'))]"
+    ],
+    "title": [
+      "//section/table/tr/td[not(@valign)]/div[1]//text()"
+    ],
+    "media": [
+      "//section/table/tr/td[not(@valign)]/div[2]//img/@src",
+      ""
+    ]
+  },
+  "pavlonews.info": {
+    "pubdate": [
+      "//div[@class='post']/p/i/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='post']/p[following::h1 and not(child::i)]",
+      "//div[@class='post']//p"
+    ],
+    "title": [
+      "//div[@class='post']/h3/text()"
+    ],
+    "media": [
+      "//div[@class='post']//img/@src",
+      ""
+    ]
+  },
+  "focus.de": {
+    "pubdate": [
+      "//div[contains(@class, 'content')]//span[@class='created']"
+    ]
+  },
+  "tagesschau.de": {
+    "title": [
+      "//h1/span[contains(@class, 'headline')]/text()"
+    ]
+  },
+  "tt.com": {
+    "pubdate": [
+      "//span[contains(@class, 'meta_time')]//time/@datetime"
+    ],
+    "content_encoded": [
+      "//div[contains(@id, 'article_teaser')]/p[contains(@class, 'intro')]"
+    ]
+  },
+  "ndr.de": {
+    "pubdate": [
+      "//div[@class='lastchanged']/text()[1]"
+    ],
+    "content_encoded": [
+      "//*[@class='modulepadding copytext']//p[not(ancestor::div[@class='textpadding' or @class='teaser' or @class='mplayer_textcontent '])]"
+    ]
+  },
+  "fr-online.de": {
+    "pubdate": [
+      "//div[@id='ContainerContentLinie']//*[@class='Date']"
+    ]
+  },
+  "augsburger-allgemeine.de": {
+    "pubdate": [
+      "//div[contains(@class, 'article')]//div[@itemprop='datePublished']"
+    ]
+  },
+  "diepresse.com": {
+    "pubdate": [
+      "substring-before(substring-after(//script[contains(text(), 'publicationDate')], 'publicationDate\" : \"'), '\",')"
+    ],
+    "content_encoded": [
+      "//*[@class='articletext']/p"
+    ]
+  },
+  "bild.de": {
+    "title": [
+      "//h1/@data-headline"
+    ],
+    "pubdate": [
+      "string(//body//comment()[contains(., '__date')])"
+    ],
+    "description": [
+      "substring-before(//meta[@property='og:description']/@content, '- Bild.de')"
+    ],
+    "content_encoded": [
+      "//div[contains(@itemprop, 'articleBody')]/p[not(preceding-sibling::div[contains(@data-tr-doc-type, 'BTOInfo')])]",
+      "//article/div[@class='txt']/p"
+    ],
+    "media": [
+      "//article//img[contains(@class, 'photo')]/@data-src"
+    ]
+  },
+  "deutsche-wirtschafts-nachrichten.de": {
+    "pubdate": [
+      "//div[@class='entry-meta']/text()[last()]",
+      "//span[@class='entry-date']//time/@datetime"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'entry-content')]/p[not(child::em[contains(text(), 'Bestellen Sie')])]"
+    ]
+  },
+  "haz.de": {
+    "pubdate": [
+      "//div[contains(@class, 'articledate')]//span[@itemprop='datepublished']/@content"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'pda-article-')]/p"
+    ],
+    "author": [
+      "//*[contains(@class, 'pda-author-')]/span[contains(@class, 'name')]/text()"
+    ],
+    "title": [
+      "//h1[contains(@class, 'pda-entry-title entry-title')][1]/text()"
+    ]
+  },
+  "rp-online.de": {
+    "pubdate": [
+      "//meta[@property='vr:published_time']/@content"
+    ]
+  },
+  "sueddeutsche.de": {
+    "title": [
+      "//h2/text()"
+    ],
+    "media": [
+      "//article//img/@src"
+    ]
+  },
+  "stern.de": {
+    "content_encoded": [
+      "//div[@class='text-content']/div/div[@class='rtf-content-wrapper']/p"
+    ]
+  },
+  "boerse.ard.de": {
+    "title": [
+      "//h1/span[contains(@class, 'headline small')]"
+    ]
+  },
+  "swr.de": {
+    "title": [
+      "//h1/span[contains(@class, 'headline small')]"
+    ]
+  },
+  "newyorker.com": {
+    "pubdate": [
+      "(//div[contains(@class, 'issue-date')]//time/@content | //header//h4//span[@class='magazine-date']/text())[1]"
+    ],
+    "author": [
+      "//header//span[@itemprop='author']//span[@itemprop='name']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='SectionBreak__sectionBreak___1ppA7']/p"
+    ]
+  },
+  "bit-tech.net": {
+    "pubdate": [
+      "substring-before(substring-after(string(//p[@class='byline' and contains(text(), 'Publish')]), 'Published on'), 'by')"
+    ],
+    "author": [
+      "substring-after(string(//p[@class='byline' and contains(text(), 'Publish')]), 'by')"
+    ]
+  },
+  "itworldcanada.com": {
+    "author": [
+      "//*[@class='authorLead url fn n']"
+    ],
+    "pubdate": [
+      "//span[@class='publishedon']",
+      "substring-before(substring-after(string(//script[contains(text(), 'Pub Date')]), concat('Pub Date', \"', '\")), concat('', \"'\"))"
+    ],
+    "content_encoded": [
+      "//*[@class='entry-content']/p"
+    ],
+    "media": [
+      "//img[@class='attachment-large size-large wp-post-image']",
+      "//article//div[@class='row']//div[@class='span8']//img"
+    ],
+    "title": [
+      "//*[@class='article-title']"
+    ]
+  },
+  "aljazeera.com": {
+    "pubdate": [
+      "//*[@class='meta']/time"
+    ],
+    "author": [
+      "//*[@id='article-body']/p/span[2] | //*[@class='oryx-heading-profile']/a"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'article-body')]/div[@class='article-p-wrapper']/*[self::p[not(@class='ReadMoreContentSeparator')] or self::h2 or self::ul]",
+      "//div[contains(@class,'article-body')]/*[self::p[not(@class='ReadMoreContentSeparator')] or self::h2 or self::ul]"
+    ]
+  },
+  "theprovince.com": {
+    "pubdate": [
+      "//div[@class='byline']//span[@class='timestamp']/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@id,'ontent')]//p"
+    ],
+    "author": [
+      "//div[contains(@class,'byline')]/span[@class='name']/text()"
+    ]
+  },
+  "gawker.com": {
+    "pubdate": [
+      "//div[@class='meta__text']//time/@datetime"
+    ]
+  },
+  "allafrica.com": {
+    "pubdate": [
+      "//div[@class='content']/div[@class='publication-date']/text()"
+    ]
+  },
+  "cfr.org": {
+    "pubdate": [
+      "//article/preceding-sibling::p[@class='pub-info']/text()[last()]"
+    ]
+  },
+  "marketwatch.com": {
+    "pubdate": [
+      "//p[@class='timestamp']/span"
+    ]
+  },
+  "japantimes.co.jp": {
+    "pubdate": [
+      "//li[contains(@class, 'time')]/time/@datetime"
+    ],
+    "title": [
+      "//header/hgroup/h1/text()"
+    ],
+    "media": [
+      "//article[@role]/div[contains(@class, 'gallery')]//img/@src",
+      "//article//div[@class='attachments']//img/@src"
+    ],
+    "content_encoded": [
+      "//article[@role]/div/div[@class='entry']/p"
+    ]
+  },
+  "cnbc.com": {
+    "pubdate": [
+      "//div[contains(@class, 'unit')]/meta[@itemprop='uploadDate']/@content",
+      "//time[@itemprop='datePublished']/@datetime"
+    ],
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/p[not(contains(text(), 'Follow CNBC International on'))]"
+    ],
+    "media": [
+      "//div[@id='article_body']//img/@src"
+    ]
+  },
+  "noquarterusa.net": {
+    "media": [
+      "//article//div[contains(@class, 'post-content')]//img/@src"
+    ]
+  },
+  "marginalrevolution.com": {
+    "content_encoded": [
+      "//div[@class='pf-content']/*[self::p[not(starts-with(.,'Recommended.'))] or self::blockquote]"
+    ]
+  },
+  "latimes.com": {
+    "pubdate": [
+      "//div[contains(@class, 'date')]/time/@datetime"
+    ],
+    "content_encoded": [
+      "//div[contains(@itemprop,'articleBody')]/div/*[self::p[not(child::strong[child::strong] or preceding::p[child::strong[.='ALSO:']] or child::strong[.='ALSO:'])]]",
+      "//article/div[@class='row']"
+    ],
+    "media": [
+      "//div[contains(@itemprop,'articleBody')]/div//figure/img/@data-baseurl"
+    ]
+  },
+  "eastasiaforum.org": {
+    "pubdate": [
+      "//header//time/@datetime"
+    ],
+    "content_encoded": [
+      "//section/p[not(starts-with(text(), 'Author: '))]"
+    ],
+    "description": [
+      "(//section/p[not(starts-with(text(), 'Author: '))])[1]"
+    ],
+    "title": [
+      "//header/h1/text()"
+    ]
+  },
+  "voanews.com": {
+    "author": [
+      "//div[@class='authors']/ul/li/a[@title]/@title",
+      "//div[@class='authors']/ul/li/div[@title]/@title"
+    ],
+    "pubdate": [
+      "//div[@class='content_text']//p[@class='topdate']",
+      "//div[@class='node-published']/@datetime",
+      "//div[@class='dateblock']//p[@class='article_date']",
+      "//span[@class='date']/time/@datetime"
+    ],
+    "content_encoded": [
+      "//div[@id='content']//div[@class='intro']/p",
+      "//div[contains(@id,'Content')]//text()",
+      "//div[@class='wysiwyg']/p",
+      "//div[@class='row']/div/div/div[@class='wsw']/p"
+    ]
+  },
+  "weaselzippers.us": {
+    "content_encoded": [
+      "//div[@class='post-content']/*[self::p or self::blockquote]"
+    ],
+    "pubdate": [
+      "substring-after(string(//p[@class='postmetadata']), '|')"
+    ],
+    "media": [
+      "//div[@class='post-content']//img[contains(@class,'size')]"
+    ]
+  },
+  "news.xinhuanet.com": {
+    "pubdate": [
+      "//td[@class]/span[@id='pubtime']",
+      "//td[@class='sj']/text()"
+    ],
+    "media": [
+      "//span[@id='content']//p[@class='bigPic']//img/@src"
+    ]
+  },
+  "channelnewsasia.com": {
+    "pubdate": [
+      "//li[@class='news_posttime']/text()"
+    ],
+    "media": [
+      "//img[contains(@id, 'bigStory')]"
+    ],
+    "content_encoded": [
+      "//div[@class='c-rte--article']/p"
+    ]
+  },
+  "westernslopewatchdog.com": {
+    "content_encoded": [
+      "//*[@class='entry-content']/p/text()"
+    ],
+    "media": [
+      "//dl[@class='gallery-item']/dt[@class='gallery-icon landscape']/a/img[@class='attachment-thumbnail size-thumbnail']/@src",
+      "//*[@class='gallery-icon portrait']/a/img[@class='attachment-thumbnail size-thumbnail']/@src"
+    ],
+    "description": [
+      "substring-before(//*[@id='site-description']/text(), 'Click')"
+    ]
+  },
+  "bionicbong.com": {
+    "pubdate": [
+      "//span[@class='entry-date']//time[@datetime]/@datetime"
+    ],
+    "media": [
+      "//article//div[@class='post-thumbnail']//img/@src"
+    ]
+  },
+  "varight.com": {
+    "description": [
+      "(//meta[@property='og:description']/@content)[last()]"
+    ],
+    "title": [
+      "//div[contains(@class, 'post-alt')]/h2/a/text()"
+    ]
+  },
+  "trevorloudon.com": {
+    "description": [
+      "(//meta[@property='og:description']/@content)[1]"
+    ],
+    "title": [
+      "//div[@id='content']/div/h2[@class]/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='content']/div[@class='post']/div[contains(@class, 'entry')]/font"
+    ]
+  },
+  "leftycartoons.com": {
+    "title": [
+      "//div[@id='left']/div[@class='entry']/div[@class='post']/h2//text()"
+    ],
+    "content_encoded": [
+      "//div[@id='left']/div[@class='entry']/div[@class='post']/p[not(a[contains(@rel, 'category')])]"
+    ]
+  },
+  "cincinnati.com": {
+    "pubdate": [
+      "//span[@class='asset-metabar-time asset-metabar-item nobyline']/text()"
+    ],
+    "media": [
+      "//img[@class='expand-img-horiz']/@src"
+    ]
+  },
+  "agweb.com": {
+    "description": [
+      "substring-before(//meta[@property='bt:description']/@content, '.')"
+    ],
+    "author": [
+      "//*[@class='bold']/text()"
+    ]
+  },
+  "thegavoice.com": {
+    "pubdate": [
+      "//*[@class='cb-date cb-byline-element']/time"
+    ],
+    "author": [
+      "//*[@class='cb-author cb-byline-element']/a"
+    ]
+  },
+  "billypenn.com": {
+    "pubdate": [
+      "//*[@class='c-meta-info__timestamp']/@data-meta-info-published"
+    ],
+    "author": [
+      "//*[@class='c-meta-info__source__name c-meta-info__source__item']/a"
+    ]
+  },
+  "planphilly.com": {
+    "author": [
+      "//*[@class='pp-article-top-wrapper']/*[@class='a-blog-item-meta']/*[@class='post-author']/*[@class='a-link']/text()"
+    ]
+  },
+  "newsworks.org": {
+    "media": [
+      "//img[@class='hero-image']/@src"
+    ]
+  },
+  "scmp.com": {
+    "pubdate": [
+      "//div[@class='node-published']/@datetime"
+    ],
+    "content_encoded": [
+      "//div[@class[starts-with(., 'panel-pane pane-entity-field pane-node-body pane-first pos-')]]/*[@class='pane-content']/p[not(a[position()=1])]",
+      "//div[@class[starts-with(., 'panel-pane pane-entity-field pane-node-body pane-first pos-')]]/*[@class='pane-content']/p[not(contains(@class, ' link'))]"
+    ],
+    "media": [
+      "//div[contains(@class, 'pane-node-field-images')]//img/@data-enlarge"
+    ]
+  },
+  "psmag.com": {
+    "content_encoded": [
+      "//*[@class='section-inner sectionLayout--insetColumn']/p/text()"
+    ]
+  },
+  "vox.com": {
+    "pubdate": [
+      "//time[@class='c-byline__item']/@datetime"
+    ],
+    "content_encoded": [
+      "//*[@class='c-entry-content']/p"
+    ]
+  },
+  "ibm.com": {
+    "pubdate": [
+      "//*[@class='ibm-container-body']/p[1]/strong/text()"
+    ],
+    "content_encoded": [
+      "//*[@class='ibm-container-body']/p/span/text()"
+    ]
+  },
+  "yahoo.com": {
+    "pubdate": [
+      "//time[contains(@class,'date') and @datetime]/@datetime",
+      "//div[@class='date']",
+      "//*[@class='W(2/3)--md W(1/1)--sm W(3/4) Bxz(bb)']/*[@id='YDC-Side']/*[@class='sticky-outer-wrapper']/*[@class='sticky-inner-wrapper']/*[@id='YDC-Side-Stack']/*[@class='M(a) W(a)--sm W(0) W(a)--md']/*[@class='Pos(r) Start(-150px) Start(a)--sm Start(a)--md W(a)--sm W(300px) W(a)--md']/div/*[@id='mrt-node-tgtm-SideTop-3-HeadComponentAttribution']/*[@id='tgtm-SideTop-3-HeadComponentAttribution-Proxy']/*[@id='tgtm-SideTop-3-HeadComponentAttribution']/*[@class='auth-prov-soc Fz(14px) Mend(4px) Va(m) D(tbc) Mah(45px) Maw(320px) Mah(40px)--sm']/*[@class='D(tbc)']/*[@class='date D(ib) Fz(11px) Mb(4px)']/@datetime"
+    ],
+    "media": [
+      "//article//img/@src"
+    ],
+    "content_encoded": [
+      "//article[@itemprop='articleBody']/div/p[not(starts-with(., 'By ') or starts-with(., 'RELATED:') or starts-with(., 'Recommended') or starts-with(., 'SEE ALSO:'))]"
+    ],
+    "description": [
+      "substring-after(//meta[@name='description']/@content, ' - ')"
+    ]
+  },
+  "gmanetwork.com": {
+    "@replace": [
+        ["", ""]
+      ],
+    "author":[
+      ""
+    ],
+    "pubdate": [
+      "substring-before(substring-after(string(//script[contains(., 'postDate')]), ',\"postDate\":\"'), '\"')",
+      "//div/time[@itemprop='datePublished']/@datetime"
+    ],
+    "title": [
+      "//meta[@property='og:title']/@content"
+    ],
+    "content_encoded": {
+      "xpath": [
+        "substring-before(substring-after(string(//script[contains(., 'content_1') and contains(., 'content_2')]), ',\"content_1\":\"'), '\",\"content_2')",
+        "substring-before(substring-after(string(//script[contains(., 'content_1')]), ',\"content_1\":\"'), '\"')",
+        "//div[@class='upper_article']/p"
+      ],
+      "replace": {
+        "\\\\/": "\/"
+        }      
+    }
+  },
+  "venturebeat.com": {
+    "pubdate": [
+      "//time[@class='the-time']/text()"
+    ]
+  },
+  "akipress.com": {
+    "pubdate": [
+      "//div[@class='ui-news-time']/text()"
+    ],
+    "description": [
+      "//div[@id='entext']/p[1]/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='entext']/p[not(@style='color:black; font-style:italic;')]"
+    ],
+    "media": [
+      "//div[@class='ui-newsblk']/img/@src"
+    ],
+    "title": [
+      "//div[@class='ui-newsblk']/span[@class='t-b']//text()"
+    ]
+  },
+  "rafu.com": {
+    "description": [
+      "//div[contains(@class,'post-content')]/p[1]/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'post-content')]/p"
+    ]
+  },
+  "tcpalm.com": {
+    "media": [
+      "//img[@class='expand-img-vertical']/@src",
+      "//img[@class='ui-pluto-still-img']"
+    ]
+  },
+  "twincities.com": {
+    "author": [
+      "//*[@class=' author-name']/text()"
+    ]
+  },
+  "thefederalist.com": {
+    "media": [
+      "//img[@class='attachment-aside-post size-aside-post wp-post-image']/@srcset"
+    ]
+  },
+  "scientificamerican.com": {
+    "content_encoded": [
+      "//*[@class='article-block article-text']/p",
+      "//section/div[@class='article-block article-text']/div/div/p"
+    ],
+    "pubdate": [
+      "//*[@class='meta-list t_meta']/li[@class='meta-list__item']/text()"
+    ]
+  },
+  "pcauthority.com.au": {
+    "content_encoded": [
+      "//h2[@class='intro']/text()| //div[@id='body-text']//*[self::p or self::h2]/text()"
+    ],
+    "author": [
+      "//*[@class='byline']/a/span/span/text()"
+    ]
+  },
+  "memphisflyer.com": {
+    "pubdate": [
+      "//h2[@class='blogDate']"
+    ]
+  },
+  "worldmag.com": {
+    "pubdate": [
+      "//time[@pubdate='pubdate']/@datetime"
+    ]
+  },
+  "miamiherald.com": {
+    "pubdate": [
+      "//div[@id='story-header']/p"
+    ],
+    "title": [
+      "//meta[@property='og:title']/@content"
+    ]
+  },
+  "realclearpolitics.com": {
+    "pubdate": [
+      "//div[@class='byline']/text()"
+    ],
+    "description": [
+      "substring-before(//meta[@name='description']/@content, '| RealClearPolitics')",
+      "//meta[@name='description']/@content"
+    ],
+    "title": [
+      "//div[@class='entry-title']/h1/text()"
+    ],
+    "media": [
+      "//div[@class='body-photo-inline']/div/picture/img/@srcset"
+    ]
+  },
+  "nature.com": {
+    "content_encoded": [
+      "//div[@class[starts-with(., 'content')]]/p/text()"
+    ]
+  },
+  "ft.com": {
+    "pubdate": [
+      "//div[@class='article-brand']//span[@class='time']/text()",
+      "//p[@id='publicationDate']//span[@class='time']/text()"
+    ],
+    "title": [
+      "string(//header//div[@class='o-grid-row']//h1[@class='topper__headline'])",
+      "//span[@class='barrier-grid__article-title']/text()",
+      "//header/span[@class='trial-subs__heading-article-title']/text()",
+      "//div[@id='site-content']/header//h1/span[contains(@class, 'barrier__heading-')]/text()",
+      ""
+    ],
+    "description": [
+      "//span[@class='barrier-grid__article-title']",
+      ""
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'article__main')]//div[contains(@class,'article__body')]/p[not(strong[starts-with(., 'Sign up to receive FirstFT by email')])]",
+      "//span[@class='barrier-grid__article-title']",
+      ""
+    ]
+  },
+  "v3.co.uk": {
+    "pubdate": [
+      "//meta[@property='article:published_time']/@content"
+    ],
+    "author": [
+      "//*[@class='author-dateline-name']/a/text()"
+    ]
+  },
+  "news.microsoft.com": {
+    "pubdate": [
+      "//article//header//time[contains(@class, 'published')]/@datetime"
+    ]
+  },
+  "microsoft.com": {
+    "content_encoded":[
+      "//section/p"
+    ]
+  },
+  "mobile-tech-today.com": {
+    "pubdate": [
+      "//body/div/div[@class='mainContainer1000' and @style]/table//i/b/following-sibling::text()"
+    ],
+    "author": [
+      "//body/div/div[@class='mainContainer1000' and @style]/table//i/b/text()"
+    ],
+    "media": [
+      "//body/div/div[@class='mainContainer1000' and @style]/div[@style]/img/@src"
+    ],
+    "content_encoded": [
+      "//body/div/div[@class='mainContainer1000' and @style]/table//div[@class='articleBody']"
+    ],
+    "title": [
+      "//body/div/div[@class='mainContainer1000' and @style]/div[@style]/div[@class='bigTitleWhite']/text()"
+    ]
+  },
+  "toptechnews.com": {
+    "pubdate": [
+      "//body/div/div[@class='mainContainer1000' and @style]/table//i/b/following-sibling::text()"
+    ],
+    "author": [
+      "//body/div/div[@class='mainContainer1000' and @style]/table//i/b/text()"
+    ],
+    "media": [
+      "//body/div/div[@class='mainContainer1000' and @style]/div[@style]/img/@src"
+    ],
+    "content_encoded": [
+      "//body/div/div[@class='mainContainer1000' and @style]/table//div[@class='articleBody']"
+    ],
+    "title": [
+      "//body/div/div[@class='mainContainer1000' and @style]/div[@style]/div[@class='bigTitleWhite']/text()"
+    ]
+  },
+  "feedproxy.google.com techcrunch.com": {
+    "pubdate": [
+      "//article//header//div[@class='byline']/time/text()",
+      "//*[@id='byline_date']/p",
+      "substring-before(substring-after(string(//p[@class='byline' and contains(text(), 'Publish')]), 'Published on'), 'by')",
+      "//div[@class='post']/div[@class='post-title']/div/h2/text()",
+      "//span[@id='dateline']/text()",
+      "//div[@class='content_header']/div[@class='date_content']/div[@class='date']/text()",
+      "//div[contains(@class, 'entry')]//div[contains(@class, 'time')]/text()",
+      "//span[@class='submitted']/text()",
+      "//div[@class='entry-content']/div[@class='entry-meta']//span[@class='posted-on']//time/@datetime",
+      "//*[@class='updated']/text()",
+      "//section[@class]//div[@class='submitted_datetime']/span[@title]",
+      ""
+    ],
+    "author": [
+      "//article//header//div[@class='byline']/a[@rel='author']/text()",
+      "substring-after(string(//p[@class='byline' and contains(text(), 'Publish')]), 'by')",
+      "//p[@class='dateline-byline']/span[contains(@class, 'byline')]/text()",
+      "//div[@id='story']//p[1]/strong/text()",
+      "//div[contains(class, 'blog-content-wrapper')]//div[@class='blog-author']/a[not(@title)]/text()",
+      "substring-after(//span[@class='submitted']/text(), '—')",
+      "//*[@id='byline_author']/p/a//text()",
+      "//section/span[contains(@class, 'byline-content') and contains(@class, 'is-right')]/text()",
+      "//section[contains(@class, 'node-full')]//div[@class='submitted_username']/a[@title]/text()",
+      "//div[@class='entry-content']/div[@class='entry-meta']//span[@class='by-line']/span/text()"
+    ],
+    "content_encoded": [
+      "//article//div[@class='article-entry text']/p",
+      "//article//div[@class='article__content']/*[self::p or self::h3]",
+      "//div[@class='entry-content']/div[@class='entry-text']/p",
+      "//div[@id='content']//div[contains(@class, 'KonaBody')]/div[not(@class)]/p",
+      "//div[@id='content']//div[@class='KonaBody post-content']/p[not(self::p/span[contains(@class, 'image-container')])]",
+      "//*[@class='entry-content']/p",
+      "//div[contains(@class, 'blog-content-wrapper')]//div[@class='blog-content']//p",
+      "//div[contains(@class, 'entry-content')]/descendant-or-self::node()[self::blockquote or self::a or self::div[contains(@class, 'entry-content')]]",
+      "//div[contains(@class, 'body')]/descendant-or-self::node()[self::li or self::p or self::a]",
+      "//section[contains(@class, 'node-full')]//div[@class='content']/descendant::node()[self::li or self::p]",
+      "//div[@id='main']//div[@class='postContent']/p"
+    ],
+    "title": [
+      "//section//h1[@itemprop='headline']/span/text()",
+      "//div[contains(@class, 'posttitle')]/h2[contains(@class, 'title')]/text()",
+      "//article/header/h1/text()",
+      "//section[@class]/h1[@class='title']/text()",
+      "string(//h1[@itemprop='headline'])",
+      "string(//div[@id='main']//h2[@class='postTitle'])",
+      "//div[@class='entry-content']/header//h1/text()",
+      "//div[contains(@class, 'content') and contains(@class, 'js-post')]/div[contains(@class, 'sl-layout-post')]/h1/text()"
+    ],
+    "description": [
+      "(//div[contains(@class, 'entry-content')]/text())[5]"
+    ],
+    "media": [
+      "//section[contains(@class, 'node-full')]//div[@class='content']/p//img/@src",
+      "//div[@id='main']//div[@class='post-thumbnail']/img/@src"
+    ]
+  },
+  "euronews.com": {
+    "content_encoded": [
+      "//article//div[@class='article__content']/*[self::p or self::h3]",
+      "//article/section//div[contains(@class, 'article__content')]/*[self::p or self::h3]"
+    ],
+    "title": [
+      "//section//h1[@itemprop='headline']/span/text()"
+    ]
+  },
+  "rabble.ca": {
+    "content_encoded": [
+      "//div[contains(@class, 'body')]/descendant-or-self::node()[self::li or self::p]/text()"
+    ]
+  },
+  "rawstory.com": {
+    "pubdate": [
+      "//div[contains(@class, 'blog-content-wrapper')]//div[@class='blog-author']/a[not(@title)]/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'blog-content-wrapper')]//div[@class='blog-content']//p[not(starts-with(., 'By '))]",
+      "//div[@itemprop='articleBody']/*[self::p[not(starts-with(., 'By '))] or self::h4[starts-with(., 'Related:')]]"
+    ]
+  },
+  ".blogspot.": {
+    "title": [
+      "//div[contains(@class, 'posttitle')]/h2[contains(@class, 'title')]//text()",
+      "//h3[contains(@class, 'post-title') and contains(@class, 'entry-title')]/text()",
+      "//div[@class='post-outer']/div/h3[contains(@class, 'post-title')]//text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'post-body') and contains(@class, 'entry-content')]",
+      "//div[contains(@class, 'entry-content')]"
+    ],
+    "description": [
+      "//meta[@property='og:description']/@content",
+      "(//div[contains(@class, 'entry-content')]/text())[5]"
+    ],
+    "author": [
+      "//div[@class='post-footer']/div/span[contains(@class, 'post-author')]/span[@class='fn']"
+    ],
+    "media": [
+      "//div[contains(@class, 'post-body') and contains(@class, 'entry-content')]//img/@src"
+    ]
+  },
+  "zerohedge.com": {
+    "content_encoded": [
+      "//section[contains(@class, 'node-full')]//div[@class='content']/descendant::node()[self::li or self::p[not(descendant::em[starts-with(., 'Authored by ')])]]"
+    ],
+    "media": [
+      "//section[contains(@class, 'node-full')]//div[@class='content']/p//img/@src"
+    ],
+    "title": [
+      "//section[@class]/h1[@class='title']/text()"
+    ],
+    "author": [
+      "//section[contains(@class, 'node-full')]//div[@class='submitted_username']/a[@title]/text()"
+    ]
+  },
+  "legalinsurrection.com": {
+    "content_encoded": [
+      "//div[@id='main']//div[@class='postContent']/p"
+    ],
+    "media": [
+      "//div[@id='main']//div[@class='post-thumbnail']/img/@src"
+    ],
+    "title": [
+      "string(//div[@id='main']//h2[@class='postTitle'])"
+    ]
+  },
+  "newshub.co.nz": {
+    "pubdate": [
+      "//*[@id='byline_date']/p",
+      "substring-before(substring-after(string(//p[@class='byline' and contains(text(), 'Publish')]), 'Published on'), 'by')",
+      "//div[@class='post']/div[@class='post-title']/div/h2/text()",
+      "//span[@id='dateline']/text()",
+      "//div[@class='content_header']/div[@class='date_content']/div[@class='date']/text()",
+      "//div[contains(@class, 'entry')]//div[contains(@class, 'time')]/text()",
+      "//span[@class='submitted']/text()",
+      "//*[@class='updated']/text()"
+    ],
+    "author": [
+      "substring-after(string(//p[@class='byline' and contains(text(), 'Publish')]), 'by')",
+      "//p[@class='dateline-byline']/span[contains(@class, 'byline')]/text()",
+      "//div[@id='story']//p[1]/strong/text()",
+      "substring-after(//span[@class='submitted']/text(), '—')",
+      "//*[@id='byline_author']/p/a//text()"
+    ],
+    "content_encoded": [
+      "//*[@class='entry-content']/p/text()"
+    ]
+  },
+  "fashionsnap.com": {
+    "pubdate": [
+      "//*[@itemprop='datePublished']"
+    ]
+  },
+  "commonwealmagazine.org": {
+    "description": [
+      "(//div[contains(@class, 'field-name-body')]/div[@class='field-items']/div[contains(@class, 'field-item ')]/p)[1]/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'field-name-body')]/div[@class='field-items']/div[contains(@class, 'field-item ')]/p"
+    ],
+    "title": [
+      "//div[@id='preface']//div[@class='content']//div[@class='view-content']//div[contains(@class, 'field-name-title')]/h1/text()"
+    ],
+    "media": [
+      "//article//img/@src"
+    ]
+  },
+  "bleedingheartlibertarians.com": {
+    "pubdate": [
+      "//div[@class='entry-content']/div[@class='entry-meta']//span[@class='posted-on']//time/@datetime"
+    ],
+    "author": [
+      "//div[@class='entry-content']/div[@class='entry-meta']//span[@class='by-line']/span/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='entry-content']/div[@class='entry-text']/p"
+    ],
+    "title": [
+      "//div[@class='entry-content']/header//h1/text()"
+    ]
+  },
+  "businessinsider.com businessinsider.de": {
+    "content_encoded": [
+      "//div[@id='content']//div[contains(@class, 'KonaBody')]/div[not(@class)]/p",
+      "//div[@id='content']//div[@class='KonaBody post-content']/*[self::p[not(descendant::span[contains(@class, 'image-container')])] or self::span[not(descendant::span[contains(@class, 'image-container')])] or self::h2]"
+    ],
+    "title": [
+      "//div[contains(@class, 'content') and contains(@class, 'js-post')]/div[contains(@class, 'sl-layout-post')]/h1/text()",
+      "//div[contains(@class, 'content') and contains(@class, 'post')]/div[contains(@class, 'sl-layout-post')]/h1/text()",
+      "//div[contains(@class, 'single-article')]/h1[contains(@class, 'article-title')]/text()",
+      "substring-before(//meta[@name='title']/@content,'| Markets Insider')"
+    ]
+  },
+  "lewrockwell.com": {
+    "content_encoded": [
+      "//div[contains(@class, 'blog-post')]/div[contains(@class, 'blog-content')]/p[not(@class='article-author-archives-link')]"
+    ],
+    "media": [
+      "concat(substring(concat('https://i.ytimg.com/vi/', substring-before(substring-after(//div[contains(@class, 'blog-post')]/div[contains(@class, 'blog-content')]/div/iframe/@src, 'embed/'), '?'), '/sddefault.jpg'), 1, number(contains(//div[contains(@class, 'blog-post')]/div[contains(@class, 'blog-content')]/div/iframe/@src, 'embed/'))      * string-length(concat('https://i.ytimg.com/vi/', substring-before(substring-after(//div[contains(@class, 'blog-post')]/div[contains(@class, 'blog-content')]/div/iframe/@src, 'embed/'), '?'), '/sddefault.jpg'))),    substring('', 1, number(not(contains(//div[contains(@class, 'blog-post')]/div[contains(@class, 'blog-content')]/div/iframe/@src, 'embed/'))) * 1))",
+      "concat(substring(concat('https://i.ytimg.com/vi_webp/', substring-after(//div[contains(@class, 'blog-post')]/div[contains(@class, 'blog-content')]/div/iframe/@src, 'embed/'), '/hqdefault.webp'), 1, number(contains(//div[contains(@class, 'blog-post')]/div[contains(@class, 'blog-content')]/div/iframe/@src, 'embed/'))      * string-length(concat('https://i.ytimg.com/vi_webp/', substring-after(//div[contains(@class, 'blog-post')]/div[contains(@class, 'blog-content')]/div/iframe/@src, 'embed/'), '/hqdefault.webp'))),    substring('', 1, number(not(contains(//div[contains(@class, 'blog-post')]/div[contains(@class, 'blog-content')]/div/iframe/@src, 'embed/'))) * 1))"
+    ],
+    "title": [
+      "//div[contains(@class, 'blog-post')]/h2[@class='blog-title']//text()"
+    ],
+    "description": [
+      "//meta[@name='twitter:description']/@content"
+    ]
+  },
+  "frcblog.com": {
+    "content_encoded": [
+      "//div[contains(@class, 'post-body')]/div[contains(@class, 'post-content')]"
+    ],
+    "title": [
+      "//div[contains(@class, 'post-header')]/h2[@class='post-title']//text()"
+    ]
+  },
+  "pjmedia.com": {
+    "title": [
+      "substring-after(//title, 'Instapundit  » Blog Archive   » ')"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'post-entry')]"
+    ],
+    "media": [
+      "//div[contains(@class, 'post-entry')]//img/@src",
+      ""
+    ]
+  },
+  "politico.com politico.eu": {
+    "content_encoded": [
+      "//article//div[contains(@class, 'story-text')]/p[not(@class='story-continued')]"
+    ],
+    "title": [
+      "//article//div[contains(@class, 'story-text')]//header/h1/text()"
+    ]
+  },
+  "grapee.jp": {
+    "content_encoded": [
+      "//div[@class='comment']"
+    ]
+  },
+  "chunichi.co.jp": {
+    "pubdate": [
+      "//p[@class='data']"
+    ],
+    "media": [
+      "//*[contains(@class,'Photo')]/tbody/tr/td/img"
+    ]
+  },
+  "usfl.com": {
+    "pubdate": [
+      "(//li[@class='date'])[1]"
+    ],
+    "content_encoded": [
+      "//*[@class='post clearfix']"
+    ]
+  },
+  "itmedia.co.jp": {
+    "pubdate": [
+      "//span[@id='update']"
+    ],
+    "content_encoded": [
+      "//*[@class='inner']"
+    ]
+  },
+  "kumanichi.com": {
+    "pubdate": [
+      "//span[@class='date']"
+    ],
+    "content_encoded": [
+      "//*[@class='picCmtArea']"
+    ]
+  },
+  "thevote.jp": {
+    "content_encoded": [
+      "//*[@class='post clearfix']"
+    ]
+  },
+  "harpers.org": {
+    "pubdate": [
+      "//div[@class='category']/a/following-sibling::text()"
+    ],
+    "author": [
+      "//div[@class='post']//p[@class='byline']/a/text()"
+    ]
+  },
+  "motherjones.com": {
+    "pubdate": [
+      "//span[@id='dateline']/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='node-body-top']/p"
+    ]
+  },
+  "aclu.org": {
+    "pubdate": [
+      "//div[@class='updated-date']/text()"
+    ],
+    "author": [
+      "//div[@class='blog-author']/a/text()"
+    ]
+  },
+  "townhall.com": {
+    "pubdate": [
+      "//section//div[contains(@class, 'contributor')][last()]/text()"
+    ],
+    "title": [
+      "string(//article//h1[@class='headline'])"
+    ],
+    "content_encoded": [
+      "//section[@id='article-body']/p[not(starts-with(., 'By ') and position()=1)]"
+    ],
+    "media": [
+      "//article//section[@id='article-media-object']/img/@src"
+    ],
+    "description": [
+      "",
+      "//meta[@property='og:description']/@content",
+      "substring-before(substring-before(//meta[@name='description']/@content, 'EST'), 'AM')",
+      "substring-before(substring-before(//meta[@name='description']/@content, 'EST'), 'PM')"
+    ]
+  },
+  "washingtonexaminer.com": {
+    "pubdate": [
+      "//div[@class='byline']//span[@class='pubdate']/text()"
+    ],
+    "author": [
+      "//div[@class='byline']//span[@class='author']//text()"
+    ],
+    "content_encoded": [
+      "//section[@class='article-body']/node()[self::div or self::text()]"
+    ]
+  },
+  "economist.com": {
+    "pubdate": [
+      "//article//time/@datetime",
+      "//article//time/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='main-content' and @itemprop='articleBody']/p",
+      "//div[@class='blog-post__text' and @itemprop='description']/p",
+      "//article[@itemtype]/p",
+      "//div[@class='main-content']/p"
+    ]
+  },
+  "algemeiner.com": {
+    "pubdate": [
+      "//div[@class='post']/*[@class='meta']/*[@class='date']/text()"
+    ]
+  },
+  "desmog.uk": {
+    "pubdate": [
+      "//p[contains(@class,'desktop-only')]/text()[last()]"
+    ],
+    "author": [
+      "//p[contains(@class,'desktop-only')]/a/text()"
+    ]
+  },
+  "americanthinker.com": {
+    "pubdate": [
+      "//main/div/div[@class='article_date']/text()"
+    ],
+    "author": [
+      "//main/div/div[@class='author']/a/text()"
+    ],
+    "media": [
+      "//div[@class='article_body']//img/@src"
+    ],
+    "content_encoded": [
+      "//div[@class='article_body']"
+    ]
+  },
+  "econlog.econlib.org": {
+    "pubdate": [
+      "//div[@class='dateline']/text()"
+    ],
+    "author": [
+      "//div[@class='hosted']/a/text()"
+    ],
+    "media": [
+      "//div[@class='section']//img"
+    ],
+    "content_encoded": [
+      "(//div[@class='section']//div[@class='blogauthor']/parent::div)[1]"
+    ]
+  },
+  "desmogblog.com": {
+    "pubdate": [
+      "//p[contains(@class,'desktop-only')]/text()[last()]"
+    ],
+    "author": [
+      "//p[contains(@class,'desktop-only')]/a/text()"
+    ]
+  },
+  "worldnewsvine.com": {
+    "pubdate": [
+      "//div[@class='singlepostmeta']/text()[contains(., 'on ')]"
+    ],
+    "author": [
+      "//div[@class='singlepostmeta']/a[@rel='author']/text()"
+    ]
+  },
+  "theguardian.com": {
+    "pubdate": [
+      "//article//p[@class='content__dateline']/time[@itemprop='datePublished']/@datetime"
+    ],
+    "author": [
+      "//meta[@name='author']/@content"
+    ],
+    "content_encoded": {
+      "xpath": [
+        "//div[@itemprop='articleBody']/*[self::p[not(starts-with(., 'If you would like to receive the Guardian'))] or self::h2[not(.='Sign up')]]"
+      ],
+      "replace": {
+        "": ""
+      }
+    },
+    "media": [
+      "//picture/img[@class='immersive-main-media__media']/@src"
+    ],
+    "title": [
+      "(//h1[contains(@class,'headline')])[last()]/text()",
+      "(//h1[@itemprop='headline'])[last()]/text()"
+    ]
+  },
+  "robertreich.org": {
+    "pubdate": [
+      "//div[@id='container']//a[@class='timestamp']/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='container']//li[@class='post']//div[@class='caption']/p"
+    ],
+    "title": [
+      "//div[@id='container']//li[@class='post']//h2"
+    ]
+  },
+  "thenation.com": {
+    "content_encoded": {
+      "xpath": [
+        "//div[contains(@class, 'postid-')]/article//section[contains(@class,'article-body')]//*[self::p[not(ancestor::aside)] or self::h6]"
+      ],
+      "replace": {
+        "<aside.*Ad Policy</a></aside></p>": "</p>",
+        "</div></aside></p>": ""
+      },
+      "exclude": [
+        {
+          "ASIDE": {
+            "class": "/current-issue"
+          }
+        },
+        {
+          "ASIDE": {
+            "class": "pull-quote-module"
+          }
+        },
+        {
+          "ASIDE": {
+            "class": "ad-300"
+          }
+        },
+        {
+          "ASIDE": {
+            "class": "/inline-cta"
+          }
+        },
+        {
+          "ASIDE": {
+            "class": "/most-popular-plus-ad"
+          }
+        },
+        {
+          "ASIDE": {
+            "class": "/related-newarticle"
+          }
+        },
+        {
+          "FOOTER": null,
+          "SECTION": null,
+          "A": {
+            "class": "inifiniteLoader"
+          },
+          "DIV": {
+            "class": "tabola-block"
+          }
+        },
+        {
+          "DIV": {
+            "class": "/position-relative"
+          }
+        }
+      ]
+    },
+    "media": [
+      "//article//section[contains(@class,'article-body')]//img/@src"
+    ]
+  },
+  "chinatopix.com": {
+    "pubdate": [
+      "//div[@class='date']/text()[last()]"
+    ]
+  },
+  "coloradoindependent.com": {
+    "media": [
+      "//*[@class='add-articles']/img/@src",
+      "//img[@class='site-bg']/@src"
+    ]
+  },
+  "thehill.com": {
+    "content_encoded": {
+      "xpath": [
+        ";//div[@property='content:encoded']/descendant-or-self::node()[(parent::span[@class='rollover-people'] or self::p[@dir='ltr'] or parent::p[@dir='ltr'] or parent::div[@property='content:encoded']) and not(@class='rollover-people-block' or @class='rollover-people' or self::p[parent::blockquote[@class='twitter-tweet']] or self::a[ancestor::blockquote[@class='twitter-tweet']] or self::p[child::span[@class='rollover-people']] or preceding-sibling::hr or self::hr or self::script or self::div[contains(@class, 'dfp-tag-wrapper')] or self::text()[parent::p[not(child::span[@class='rollover-people'])]])]",
+        ";RULE WITH HTML ONLY//div[@property='content:encoded']/node()[self::p or self::text()]",
+        "//div[@property='content:encoded']/*[self::p or self::hr]"
+      ],
+      "replace": {
+        "<span><span><span><.*</span></a></span></span></span>": "",
+        "<span><div><div><span>ADVERTISEMENT</span></div></div>": ""
+      },
+      "exclude": [
+        {
+          "SPAN": {
+            "class": "rollover-people-block"
+          }
+        }
+      ]
+    },
+    "author": [
+      "//p[@class='submitted-by']/span/text()",
+      "//*[@class='submitted']/span[1]/text()"
+    ],
+    "media": [
+      "//article/div[@class='content-img-wrp']/div/img/@src",
+      "//meta[@property='og:image']/@content",
+      ""
+    ]
+  },
+  "blogos.com": {
+    "pubdate": [
+      "//li[@class='update']/@content"
+    ]
+  },
+  "news9.com": {
+    "content_encoded": [
+      "//div[@id='WNStoryBody']/p[not(starts-with(., 'By '))]"
+    ],
+    "pubdate": [
+      "(//div[@id='WNStoryHeader']/em/text())[2]"
+    ],
+    "title": [
+      "//div[@id='WNStoryHeader']/h3[@class]/text()"
+    ]
+  },
+  "thegrio.com": {
+    "media": [
+      "//div[@class='the-post-thumbnail']/img/@data-lazy-src",
+      "//div[@class='the-post-thumbnail']/img/@src"
+    ],
+    "author": [
+      "//span/a[@rel='author']/text()"
+    ]
+  },
+  "liberalvaluesblog.com": {
+    "pubdate": [
+      "//span[@class='submitted']/text()"
+    ]
+  },
+  "nbc-2.com": {
+    "pubdate": [
+      "(//*[@id='WNStoryHeader']/em[1]/text())[2]"
+    ],
+    "media": [
+      "//*[@class='wnFancyBox']/img/@src"
+    ],
+    "author": [
+      "//*[@id='WNStoryBody']/p[1]"
+    ]
+  },
+  "japansubculture.com": {
+    "pubdate": [
+      "//div[@class='postauthor']/p/text()[contains(., 'on')]"
+    ],
+    "content_encoded": [
+      "//div[@id='content']//div[@class='postarea']//div[contains(@class, 'addthis')]/following-sibling::p[not(position()=1 and starts-with(., 'by '))]"
+    ],
+    "title": [
+      "//div[@class='posttitle']/h3/text()"
+    ],
+    "author": [
+      "//div[@id='content']//div[@class='postauthor']//a[@rel='author']/text()"
+    ]
+  },
+  "newsonjapan.com": {
+    "title": [
+      "//div[contains(@class, 'detailed-header')]/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'detailed-para')]/descendant-or-self::node()[self::p or self::div[contains(@class, 'detailed-para')]]/text()"
+    ],
+    "media": [
+      "concat(substring(concat('https://i.ytimg.com/vi/', substring-after(//div[contains(@class, 'detailed-para')]//iframe[contains(@src, 'youtube')]/@src, 'embed/'), '/sddefault.jpg'), 1, number(contains(//div[contains(@class, 'detailed-para')]//iframe[contains(@src, 'youtube')]/@src, 'embed/') ) * string-length(concat('https://i.ytimg.com/vi/', substring-after(//div[contains(@class, 'detailed-para')]//iframe[contains(@src, 'youtube')]/@src, 'embed/'), '/sddefault.jpg') ) ), substring('', 1, number(not(contains(//div[contains(@class, 'detailed-para')]//iframe[contains(@src, 'youtube')]/@src, 'embed/') ) ) * 1 ) )",
+      "concat(substring(concat('https://i.ytimg.com/vi_webp/', substring-after(//div[contains(@class, 'detailed-para')]//iframe/@src, 'embed/'), '/sddefault.webp'), 1, number(contains(//div[contains(@class, 'detailed-para')]//iframe/@src, 'embed/'))      * string-length(concat('https://i.ytimg.com/vi_webp/', substring-after(//div[contains(@class, 'detailed-para')]//iframe/@src, 'embed/'), '/sddefault.webp'))),    substring('', 1, number(not(contains(//div[contains(@class, 'detailed-para')]//iframe/@src, 'embed/'))) * 1))"
+    ],
+    "description": [
+      "//div[contains(@class, 'detailed-para-1')]/text()"
+    ]
+  },
+  "buzzfeed.com": {
+    "pubdate": [
+      "substring-before(substring-after(string(//span[@class='post-datetimes']//script[contains(., 'get_formatted_date')]), 'get_formatted_date('), ')')"
+    ],
+    "content_encoded": [
+      "//div[@id='buzz_sub_buzz']//*[self::h2 or self::p[not(contains(@class, 'article_caption') or contains(@class, 'print'))]]/text()"
+    ],
+    "author": [
+      "//div[@class='byline__body']/a[@class='byline__author']/text()"
+    ]
+  },
+  "newindianexpress.com": {
+    "pubdate": [
+      "//p[@class='publishedDateline']/span/following-sibling::text()"
+    ],
+    "author": [
+      "//p[@class='byline']/span[@class='authorName']/text()"
+    ]
+  },
+  "juancole.com": {
+    "pubdate": [
+      "//article/div/*[@class='author-meta']/a[@rel='bookmark']"
+    ],
+    "content_encoded": [
+      "//article/*[@class='entry-content']/p[not(starts-with(., 'By '))]"
+    ],
+    "description": [
+      "//article/*[@class='entry-content']/p[not(starts-with(., 'By '))][1]"
+    ]
+  },
+  "lobelog.com": {
+    "pubdate": [
+      "(//div[contains(@class, 'omc-article-top')]/text())[2]"
+    ],
+    "content_encoded": [
+      "//article/*[self::p[not(starts-with(., 'by '))] or self::blockquote]"
+    ],
+    "author": [
+      "substring-after(//div[contains(@class, 'omc-article-top')]/p/em/text(), 'by ')"
+    ]
+  },
+  "thestar.com": {
+    "pubdate": [
+      "//div[contains(@class, 'article__published-date')]/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'article__body')]//p[@itemprop]",
+      "//div[contains(@class, 'article__body')]/div[@data-reactid]/p"
+    ],
+    "author": [
+      "//span[contains(@class, 'article__author-name')]/text()"
+    ]
+  },
+  "baynews9.com": {
+    "pubdate": [
+      "substring-after(//div[@class='date']/text(), 'Updated:')"
+    ],
+    "content_encoded": [
+      "//span[@itemprop='articleBody']/p"
+    ],
+    "media": [
+      "//div[contains(@id, 'main_image')]/img/@src"
+    ]
+  },
+  "thinkprogress.org": {
+    "pubdate": [
+      "//div[contains(@class, 'postMetaLockup--authorWithBio')]/div[contains(@class,'u-flex1')]/div[contains(@class,'postMetaInline')]/time/@datetime"
+    ],
+    "content_encoded": [
+      "//div[@class='section-content']/div[contains(@class, 'section-inner')]/p"
+    ],
+    "author": [
+      "//div[contains(@class, 'postMetaLockup--authorWithBio')]/div[contains(@class,'u-flex1')]/a/text()"
+    ]
+  },
+  "lobelog.com": {
+    "pubdate": [
+      "//div[@id='omc-inner-placeholder']/div/p/b/following-sibling::text()"
+    ],
+    "content_encoded": [
+      "//article/div[@class='pf-content']/p[not(starts-with(., 'by '))]"
+    ],
+    "author": [
+      "substring-after(string(//article/div[@class='pf-content']/p[starts-with(., 'by ')][1]), 'by ')"
+    ]
+  },
+   "kitguru.net": {
+    "title": [
+      "//article/div[contains(@class, 'post-inner')]/h1//text()"
+    ]
+   },  
+  "bostonglobe.com": {
+    "content_encoded": [
+      "//div[contains(@class,'article-body')]/div[@itemprop='articleBody' or contains(@class, 'article-body-column')]/p"
+    ],
+    "author": [
+      "//div[contains(@class,'article-body')]/div[@class='byline']//a[@rel='author']/span[@itemprop='name']"
+    ]
+  },
+  "radiowroclaw.pl": {
+    "description": [
+      "substring-after(//meta[@name='description']/@content, 'Portal Radia Wrocław. Zawsze aktualne wiadomości i świeże informacje nie tylko z Wroclawia, ale z całego Dolnego Śląska. Żebyś wiedział')"
+    ]
+  },
+  "wiadomosci.wp.pl": {
+    "content_encoded": [
+      "//div[@id[starts-with(., 'intertext')]]/text()"
+    ]
+  },
+  "sportowefakty.wp.pl": {
+    "content_encoded": [
+      "//*[@class='article']/p/text()"
+    ]
+  }, 
+  "nowiny.pl": {
+    "title": [
+      "//div[contains(@class, 'head')]/h1/text()"
+    ]
+  },
+  "sport.nowiny.pl": {
+    "title": [
+      "//div[contains(@class, 'head')]/h1/text()"
+    ]
+  },
+  "gry-online.pl": {
+    "title": [
+      "string(//div[contains(@class, 'u-list')]/header[contains(@class, 'edi-comic-header')]/h1)"
+    ]
+  },
+  "kobieta.wp.pl": {
+    "content_encoded": [
+      "//*[@class='_3Ik9pvc']/text()",
+      "//*[starts-with(@class,'article--text')]/p/text()"
+    ]
+  },
+  "rp.pl": {
+    "title": [
+      "//h1[@class='article-title']/text()"
+    ]
+  },
+  "pap.pl": {
+    "pubdate": [
+      "//div[@class='date']/text()"
+    ]
+  },
+  "dziennikpolski24.pl": {
+    "content_encoded": [
+      "//*[@id='tresc']/text()"
+    ],
+    "author": [
+      "//*[@class='materialZrodlo']/img/@alt"
+    ]
+  },
+  "wiadomosci.gazeta.pl": {
+    "content_encoded": [
+      "//*[@id='artykul']/text()",
+      "//*[@class='art_content']|//*[@class='art_paragraph']/text()"
+    ],
+    "author": [
+      "//*[@id='gazeta_article_author']/span/text()",
+      "//*[@id='gazeta_article_author']/span"
+    ]
+  },
+  "tvn24.pl": {
+    "content_encoded": [
+      "//div[@class='contentFromCMS']/div",
+      "//article[@class[starts-with(., 'mb')]]/text()"
+    ],
+    "author": [
+      "//div[@class[starts-with(., 'articleAuthors mb30 mt5 grey_v')]]/text()"
+    ],
+    "title": [
+      "//h1[@class='standardHeader1']/text()",
+      "//h1[@class[starts-with(., 'size')]]/*[@class='black']/text()",
+      "//h1[@class[starts-with(., 'size30 mt10 pb')]]/*[@class='black']/text()",
+      "//header/h1/text()"
+    ],
+    "media": [
+      "//div[contains(@class, 'mainVideoContainer')]//img/@src",
+      "//div[@class='contentFromCMS']/div//img/@src"
+    ]
+  },
+  "tygodnikpowszechny.pl": {
+    "author": [
+      "//*[@class='field-content views-field-name']/a/text()"
+    ]
+  },
+  "polska-zbrojna.pl": {
+    "content_encoded": [
+      "//*[@class='content tinyMce']/p/text()"
+    ]
+  },
+  "zmianynaziemi.pl": {
+    "content_encoded": [
+      "//*[@class='field-item even']/p/text()"
+    ],
+    "title": [
+      "//header[@id='main-content-header']/h1/text()"
+    ],
+    "author": [
+      "//*[@class='node node-artykul node-promoted article clearfix']/*[@class='submitted with-user-picture']/*[@class='author-datetime']/*[@class='username']/text()"
+    ],
+    "media": [
+      "//img[@class='image-style-large']/@src"
+    ]
+  },
+  "dziennikzbrojny.pl": {
+    "title": [
+      "//div[contains(@class, 'panel')]/h1/text()"
+    ]
+   },
+  "dziennik.pl": {
+    "pubdate": [
+      "//span[@class='ap-date']/time/text()"
+    ],
+    "description": [
+      "substring-before(//meta[@name='Description']/@content, '- Sprawdź najnowsze informacje polityczne w Dziennik.pl. Politycy - PO, PiS, SLD itp. Prezydent, wybory, partie polityczne.')"
+    ]
+  },
+  "polskatimes.pl": {
+    "content_encoded": [
+      "//*[@id='tresc']/text()"
+    ],
+    "author": [
+      "//*[@class='nazwisko autorPT']/b/text()"
+    ]
+  },
+  "wprost.pl": {
+    "content_encoded": [
+      "//*[@id='art-text-inner']/*[self::p or self::h3]"
+    ],
+    "author": [
+      ""
+    ],
+    "media": [
+      "//article/figure//img/@src"
+    ],
+    "title": [
+      "//header/h2//text()"
+    ]
+  },
+  "wisla.krakow.pl": {
+    "content_encoded": [
+      "//*[@class='wysiwyg']/div/text()"
+    ],
+    "media": [
+      "//*[@class='mainPhoto clearfix']/img/@src"
+    ]
+  },
+  "niedziela.pl": {
+    "content_encoded": [
+      "//*[@class='kreskagorna artykul']/p[not(contains(@class, 'artykuldzialy'))]",
+      "//*[@class='film_opis']/p[1]/text()"
+    ],
+    "title": [
+      "//h1[@class='szary wyrownanielewy']/text()",
+      "//div[1][@class='ramka_665']/div[@class[starts-with(., 'header_')]]/text()"
+    ],
+    "pubdate": [
+      "//h4[@class='szary kapitaliki text-right']"
+    ],
+    "author": [
+      "//*[@class='szary kapitaliki']/text()",
+      "//*[@class='kreskagorna artykul']/div[@class='autor_komentarz']/p/text()"
+    ]
+  },
+  "pb.pl": {
+    "content_encoded": [
+      "//*[@id='id-news-content']/p/text()"
+    ],
+    "title": [
+      "//*[@class='article']/h1/text()"
+    ],
+    "pubdate": [
+      "//span[@class='article_date']/text()"
+    ],
+    "author": [
+      "//*[@class='news_author']/text()"
+    ]
+  },
+  "wnp.pl": {
+    "content_encoded": [
+      "//div[@class='tekst']/text()"
+    ],
+    "title": [
+      "//*[@class='article']/h1/text()"
+    ],
+    "pubdate": [
+      "//div[@class='from']/small/text()"
+    ],
+    "author": [
+      "//*[@class='upper']/text()"
+    ]
+  },
+  "pulshr.pl": {
+    "content_encoded": [
+      "//*[@class='article']/p/text()"
+    ],
+    "author": [
+      "//*[@class='author']/strong/text()"
+    ]
+  },
+  "wyborcza.pl": {
+    "content_encoded": [
+      "//*[@id='artykul']/text()",
+      "//*[@class='art_content']/*[self::p or self::h2]",
+      "//*[@class='art_content']/descendant::*/text()",
+      "concat(//*[@class='art_paragraph'],'')"
+    ],
+    "title": [
+      "//*[@class='art-title']/text()"
+    ],
+    "pubdate": [
+      "//*[@class='art-datetime']/@datetime"
+    ],
+    "author": [
+      "//span[@class='art-author']/text()"
+    ],
+    "media": [
+      "//*[@id='gazeta_article_image']/div[1]/a"
+    ]
+  },
+  "gazetaprawna.pl": {
+    "madia": [
+      "//*[@id='logo']/h1/a/img/@src",
+      ""
+    ],
+    "title": [
+      "//*[@class='open title']/text()",
+      "//*[@class='open title']/span/text()"
+    ]
+  },
+  "rmf24.pl": {
+    "content_encoded": [
+      "//*[@class='articleContent']/p/text()"
+    ]
+  },
+  "niezalezna.pl": {
+    "content_encoded": [
+      "//*[@class='node-content']/text()"
+    ]
+  },
+  "msz.gov.pl": {
+    "content_encoded": [
+      "//*[@class='componentBox contentBox']/div/p/span/span/text()"
+    ],
+    "pubdate": [
+      "//*[@class='textwrap']/*[@class='iceOutTxt']/text()"
+    ],
+    "media": [
+      "//div[@class='componentBox contentBox']/div/p/img/@src"
+    ]
+  },
+  "tokfm.pl": {
+    "content_encoded": [
+      "//*[@id='artykul']/text()"
+    ],
+    "author": [
+      ""
+    ]
+  },
+  "ekologia.pl": {
+    "content_encoded": [
+      "//*[@class='rw_area_text']/text()"
+    ]
+  },
+  "zw.com.pl": {
+    "media": [
+      "//*[@class='fot']/a/img/@src"
+    ],
+    "content_encoded": [
+      "//*[@id='storyp']/p/text()"
+    ],
+    "author": [
+      "//div[1][@class='author']/text()"
+    ]
+  },
+  "kresy24.pl": {
+    "content_encoded": [
+      "//*[@id='main']/div/p/text()"
+    ],
+    "media": [
+      "//*[@class='lead']/strong/a/img/@src"
+    ]
+  },
+  "farmer.pl": {
+    "author": [
+      "//*[@class='author']/span/text()"
+    ],
+    "title": [
+      "//article/div[contains(@class, 'article')]/h1/text()"
+    ]
+  },
+  "autocentrum.pl": {
+    "content_encoded": [
+      "//*[@class='body_content']/p/text()"
+    ]
+  },
+  "natemat.pl": {
+    "content_encoded": [
+      "(//*[@class='article-body art__body'])[1]//text()"
+    ],
+    "author": [
+      "(//*[@class='hidden-xs']/*[@class='art__author']/*[@class='art__author__container clearfix']/*[@class='art__author__description']/*[@class='art__author__name']/a)[1]/text()"
+    ],
+    "pubdate": [
+      "//*[@class='hidden-xs']/*[@class='art__author']/*[@class='art__author__container clearfix']/*[@class='art__author__description']/*[@class='art__date']/*[@class='date']/@title"
+    ]
+  },
+  "tvnwarszawa.tvn24.pl": {
+    "content_encoded": [
+      "//*[@class='fromUsers content']/p/text()"
+    ]
+  },
+  "noizz.pl": {
+    "content_encoded": [
+      "//*[@id='detail']/p[@class='hyphenate']/text()"
+    ]
+  },
+  "polityka.pl": {
+    "content_encoded": [
+      "//*[@class='md-article_meat']/p/text()"
+    ],
+    "author": [
+      "//*[@class='md-article_author-comment-name']/text()"
+    ]
+  },
+  "zachod.pl rzg.pl": {
+    "author": [
+      "//*[@class='col-lg-12 col-md-10 col-sm-8 hidden-xs']/*[@class='radioAuthor']/*[@class='radioAuthorDescription']/h4/a/text()"
+    ]
+  },
+  "radiomaryja.pl": {
+    "author": [
+      "//*[@class='minor-meta meta-zrodlo']/text()"
+    ],
+    "title": [
+      "//h1[contains(@class, 'post-title')]/text()"
+    ]
+  },
+  "pasazer.com": {
+    "content_encoded": [
+      "//*[@class='newsContent']/text()",
+      "//*[@class='newsContent']/div/text()"
+    ],
+    "author": [
+      "//*[@class='published']/text()"
+    ]
+  },
+  "gosc.pl": {
+    "content_encoded": [
+      "//*[@class=' txt__rich-area']/p/text()"
+    ],
+    "author": [
+      "//*[@class='l doc-author']/img/@alt"
+    ]
+  },
+  "sejm.gov.pl": {
+    "pubdate": [
+      "//div[@class='komunikatData']/text()"
+    ]
+  },
+  "newsweek.pl": {
+    "title": [
+      "//h1[contains(@class, 'artTitle')]"
+    ]
+  },
+  "polskatimes.pl": {
+    "content_encoded": [
+      "//*[@id='tresc_0']/text()"
+    ],
+    "author": [
+      "//*[@class='nazwisko autorPT']/b/text()"
+    ]
+  },
+  "dw.com": {
+    "media": [
+      "//*[@class='picBox full']/*[@class='overlayLink']/img/@src"
+    ],
+    "content_encoded": [
+      "//div[@id='bodyContent']/div/p[@class='intro']"
+    ],
+    "title": [
+      "(//div[@id='bodyContent']/div/h1)[1]/text()"
+    ]
+  },
+  "stockwatch.pl": {
+    "content_encoded": [
+      "//*[@class='entry']/p/text()"
+    ],
+    "title": [
+      "//*[@class='post']/h1/text()",
+      "//tr/td[contains(@class, 'thread')][text()]"
+    ]
+  },
+  "benchmark.pl": {
+    "author": [
+      "//*[@class='who']/a/span/text()"
+    ],
+    "pubdate": [
+      "//*[@class='createDate']/time/text()"
+    ],
+    "media": [
+      "//p[@class='wideImage']/img"
+    ],
+    "title": [
+      "//*[@id='entityHeader']/h1/text()"
+    ],
+    "content_encoded": [
+      "//*[@class='content']/p/text()"
+    ]
+  },
+  "faktykaliskie.pl": {
+    "content_encoded": [
+      "//div[@class='text']/p/text()"
+    ],
+    "title": [
+      "//*[@class='header-module']/text()"
+    ],
+    "media": [
+      "//*[@class='float-left']/*[@class='logo']/a/img[@class='big']/@src"
+    ],
+    "pubdate": [
+      "//div[@class='date']/text()"
+    ]
+  },
+  "infodent24.pl": {
+    "content_encoded": [
+      "//*[@class='body clearfix']/p/text()"
+    ],
+    "title": [
+      "//*[@class='bodyC']/h1/text()"
+    ],
+    "pubdate": [
+      "//div[@class='sources clearfix']//div[@class='date']/text()"
+    ],
+    "media": [
+      "//*[@class='photo']/img/@src"
+    ]
+  },
+  "tvn24bis.pl": {
+    "content_encoded": [
+      "//*[@class='content']/p/text()"
+    ],
+    "title": [
+      "//*[@class='detail']/header/h1/text()"
+    ]
+  },
+  "tvp.info": {
+    "content_encoded": [
+      "//*[@class='text']/text()"
+    ]
+  },
+  "isp.policja.pl": {
+    "content_encoded": [
+      "//*[@class='post']/p/text()"
+    ],
+    "description": [
+      "//div[contains(@class, 'entry')]/strong[1]/text()"
+    ] 
+  },
+  "gwiazdy.wp.pl": {
+    "content_encoded": [
+      "//*[@class='article--lead _1HGmjUl']/text()"
+    ]
+  },
+  "fakty.interia.pl": {
+    "title": [
+      "//*[@class='article-title']/text()"
+    ]
+  },
+  "stefczyk.info": {
+    "content_encoded": [
+      "//div[@class[starts-with(., 'article clearfix')]]/pre/text()"
+    ],
+    "title": [
+      "//div[@class[starts-with(., 'article clearfix')]]/h1/text()"
+    ],
+    "pubdate": [
+      "//span[@id='phcontentleft_0_lblDate']/text()"
+    ]
+  },
+  "strajk.eu": {
+    "content_encoded": [
+      "//p/span[@class[starts-with(., '_5yl')]]/text()"
+    ],
+    "title": [
+      "//*[@class='title']/a/text()"
+    ],
+    "pubdate": [
+      "//*[@class='post-meta']/text()"
+    ],
+    "author": [
+      "//*[@class='post-meta']//*[@rel='author']/text()"
+    ]
+  },
+  "pl.sputniknews.com": {
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/child::node()[not(div[contains(@class, '-inject')])]"
+    ]
+  },
+  "trybuna.eu": {
+    "content_encoded": [
+      "//div[@class='content']//div[contains(@class, 'article-main-content')]/p"
+    ],
+    "title": [
+      "//div[@class='conetnt']//div[@class='article-big-header']/h2/text()"
+    ],
+    "pubdate": [
+      "//div[@class='content']//div[@class='article-date']//text()"
+    ],
+    "description": [
+      "(//div[@class='content']//div[contains(@class, 'article-main-content')]/p[child::strong])[1]"
+    ],
+    "media": [
+      "//div[@class='content']//div[@class='article-photo']//img/@src"
+    ]
+  },
+  "retrip.jp": {
+    "link": [
+      "//*[@class='source']/a",
+      "//*[@id='mainWrap']/div/span/a"
+    ]
+  },
+  "scotsman.com": {
+    "content_encoded": [
+      "//section/div[contains(@class, 'premium')]"
+    ]
+  },
+  "consortiumnews.com": {
+    "content_encoded": [
+      "//*[@class='entry-content']/p"
+    ],
+    "author": [
+      "//*[@class='entry-content']/p[3]/text()"
+    ]
+  },
+  "time.com": {
+    "content_encoded": [
+      "//article/p[not(strong[starts-with(., 'Read more')])]",
+      "//div[@id='article-body']/div/p[not(strong[starts-with(., 'Read more')])]"
+    ],
+    "author": [
+      "//div[@class='row']/a/span[@class='zhtAwgU0']"
+    ],
+    "title": [
+      "//div[@class='row']/h1[@class='_3A_UUcRS']/text()"
+    ],
+    "pubdate": [
+      "//div[@class='row']/span[@class='MblGHNMJ']/text()"
+    ]
+  },
+  "lasvegassun.com": {
+    "content_encoded": [
+      "//div[@itemprop='articleBody']/p[not(@class='byline' or @class='bypubdate')]"
+    ]
+  },
+  "bloomberg.com": {
+    "content_encoded": [
+      "//div[@class='body-copy']/*[self::p[not(@data-tout-type)] or self::h3]"
+    ],
+    "title": [
+      "//div[@class='lede-large-content__wrapper']/h1/span/text()",
+      "//div[@class='lede-large-content__wrapper']/h1/text()"
+    ],
+    "author": [
+      "//div[@class='lede-large-content__wrapper']/address[@class='lede-large-content__byline']"
+    ]
+  },
+  "rocketnews.com": {
+    "content_encoded": [
+      "//div[contains(@class, 'entry-content')]//p[not(contains(., 'Read More At:') or @class='ReadMoreContentSeparator' or starts-with(., 'Read More At'))]",
+      "//div[@class='entry-content']/p[not(contains(., 'Read More At:'))]",
+      "//div[contains(@class, 'canvas-body')]/p"
+    ],
+    "media": [
+      "//div[@class='entry-content']/div//img/@src",
+      "//div[@class='post-thumbnail header']/img/@src",
+      "//div[@class='imagecontainer item']//img/@src"
+    ]
+  },
+  "hosted.ap.org hosted2.ap.org": {
+    "content_encoded": [
+      "//span[contains(@class, 'entry-content')]/p"
+    ],
+    "title": [
+      "//span[contains(@class, 'entry-title')]/text()"
+    ],
+    "pubdate": [
+      "//div[@class='timestamp updated']/@title"
+    ],
+    "media": [
+      "//*[@class='ap-smallphoto-a']/img/@src"
+    ]
+  },
+  "antiwar.com": {
+    "title": [
+      "//div[@id='box']/h3//text()"
+    ],
+    "author": [
+      "//div[@id='box']/div[@class='details']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='entry']/p"
+    ]
+  },
+  "newsone.com": {
+    "author": [
+      "//span[@class='post-meta-block']/span[@class='post-author__name']/a/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='post-content']/p[not(preceding-sibling::p[strong[starts-with(., 'SOURCE:')]])]"
+    ]
+  },
+  "eschatonblog.com": {
+    "title": [
+      "//div[contains(@class, 'post')]/h3[contains(@class, 'post-title')]/a/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'post-body')]"
+    ],
+    "media": [
+      "//div[contains(@class, 'post-body')]//img/@src",
+      ""
+    ]
+  },
+  "wmur.com": {
+    "title": [
+      "(//section/h1[@class='article-headline--title'])[1]/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='article-content--body-text']/*[self::p or self::div[contains(@class, 'embed-')]]",
+      "(//section/h2[@class='article-headline--subheadline'])[1]"
+    ],
+    "description": [
+      "string((//section/h2[@class='article-headline--subheadline'])[1])"
+    ]
+  },
+  "hotair.com": {
+    "title": [
+      "//div[@id='page-post']/h1/text()",
+      "//h1[@class='article text-capitalize']/text()"
+    ],
+    "content_encoded": [
+      "//div[@id='page-post']/*[self::p or self::blockquote]",
+      "//div[@class='salem-content-injection-wrap']/*[self::p[not(@class='see_also')] or self::blockquote]"
+    ]
+  },
+  "crooksandliars.com": {
+    "content_encoded": [
+      "//article//div[contains(@class,'content')]/*[self::p or self::blockquote]"
+    ],
+    "title": [
+      "//article/header/h2/a/text()",
+      "//article/header/h2/text()"
+    ]
+  },
+  "newswire.net": {
+    "content_encoded": [
+      "//div[@class='article_body']/*[self::p[not(a[contains(., 'Newswire.net')])] or self::h2]"
+    ]
+  },
+  "nakedcapitalism.com": {
+    "content_encoded": [
+      "//div[@class='entry-content']/div[@class='pf-content']/*[self::p[not(em/strong[starts-with(., 'By ')])] or self::blockquote]"
+    ]
+  },
+  "wired.com": {
+    "content_encoded": [
+      "//article/div/p"
+    ],
+    "title": [
+      "//main/header/h1[contains(@class,'title')]/text()"
+    ]
+  },
+  "digbysblog.blogspot": {
+    "content_encoded": [
+      "//div[@class='contentcell']/blockquote/child::node()[preceding-sibling::b and not(starts-with(., 'digby') or contains(., 'by digby'))]"
+    ],
+    "title": [
+      "(//div[@class='contentcell']/blockquote/b)[1]"
+    ]
+  },
+  "politicalwire.com": {
+    "content_encoded": [
+      "//div[@class='entry-content']/*[self::p or self::blockquote]"
+    ],
+    "title": [
+      "//div[@class='entry-container']/header/h1/span/text()"
+    ],
+    "media": [
+      "//div[@class='entry-container']/div[@class='entry-content']/img/@src",
+      ""
+    ]
+  },
+  "theblaze.com": {
+    "content_encoded": [
+      "//div[contains(@class,'entry-content')]/p"
+    ]
+  },
+  "golocalprov.com": {
+    "content_encoded": [
+      "//div[@class='entry']/*[preceding-sibling::p[@class='byline'] and not(self::script) and not(preceding-sibling::hr) and not(self::div[@id='entry_image'])]"
+    ]
+  },
+  "thedailybeast.com": {
+    "content_encoded": [
+      "//article[contains(@class,'Body--expanded')]/div/p",
+      "//article[@class='Body']/div/p"
+    ]
+  },
+  "naturalnews.com": {
+    "content_encoded": [
+      "//div[@class='entry-content']/*[(self::p or self::h2) and not(preceding::p[starts-with(., 'You can read more stories on')] or preceding::p/strong[starts-with(., 'Sources include:')]) and not(starts-with(., 'You can read more stories on') or self::p/strong[starts-with(., 'Sources include:')])]",
+      "//div[@class='entry-content']/*[(self::p or self::h2)]"
+    ]
+  },
+  "littlegreenfootballs.com": {
+    "content_encoded": [
+      "//div[@class='thepost']/*[self::p or self::blockquote]"
+    ],
+    "title": [
+      "//article[@id]/h2/text()"
+    ]
+  },
+  "asiancorrespondent.com": {
+    "content_encoded": [
+      "//*[contains(@itemprop,'articleBody')]/*/p[not(strong[starts-with(., 'SEE ALSO: ')])]"
+    ]
+  },
+  "patdollard.com": {
+    "content_encoded": [
+      "//article/div[@class='single_cat_item']/div[@class='single_cat_content']"
+    ],
+    "media": [
+      "//article/div[@class='single_cat_item']//img/@src"
+    ]
+  },
+  "koreatimes.co.kr": {
+    "content_encoded": [
+      "//div[@class='view_article']/div/div[@id='startts']",
+      "//div[@class='view_article']/div/div/span/child::node()[preceding-sibling::br[2]]",
+      "//div[@class='view_article']/div/div/child::node()[not(starts-with(., 'By ') or self::table)]",
+      "//div[@class='view_page_news_article_wrapper']/span/child::node()[not(starts-with(., 'By') and position()=1)]"
+    ],
+    "media": [
+      "//div[@class='view_article']/div/div//img/@src"
+    ],
+    "title": [
+      "//div[@class='view_headline HD']/text()"
+    ]
+  },
+  "redgreenandblue.org": {
+    "content_encoded": [
+      "//div[@class='entry']/p[not(strong[starts-with(., 'By')])]"
+    ],
+    "media": [
+      "//div[@class='entry']//img/@src"
+    ]
+  },
+  "firstpost.com": {
+    "content_encoded": [
+      "//div[@class='article-full-content']/p",
+      "//div[@class='main-content']/div[@class='consumption']/p",
+      "//div[@class='main']/section[contains(@class, 'article-body')]/div[contains(@class, 'article-full-content')]/p"
+    ]
+  },
+  "politifact.com": {
+    "content_encoded": [
+      "//article/div[@class='article__text']/p"
+    ]
+  },
+  "opendemocracy.net": {
+    "content_encoded": [
+      "//article/div[@class='article__text']/p",
+      "//div[@class='entry-content']/p[not(@class='image-caption' or child::em[starts-with(., 'Originally published on')])]"
+    ],
+    "title": [
+      "//h2[@class='entry-title']/text()"
+    ]
+  },
+  "topix.com": {
+    "title": [
+      "//h1[@class='permheader']/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'snippet')]/p[not(contains(@class, 'x-seo'))]"
+    ],
+    "media": [
+      "//div[contains(@class, 'perm-photo')]/img/@src"
+    ]
+  },
+  "typepad.com": {
+    "title": [
+      "string(//h3[@class='entry-header'])"
+    ],
+    "content_encoded": [
+      "//div[@class='entry-content']/div[@class='entry-body']"
+    ]
+  },
+  "politicspa.com": {
+    "title": [
+      
+    ],
+    "content_encoded": [
+      "//article/p[not(contains(@class,'author'))]"
+    ]
+  },
+  "theintercept.com": {
+    "title": [
+      "//div[@class='Post-title-block']/h1[@class='Post-title']/a/text()",
+      "//div[@class='Post-title-block']/h1[@class='Post-title']/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='PostContent']/div/p[not(@class='caption')]"
+    ]
+  },
+  "afp.com": {
+    "title": [
+      "//div[contains(@class,'content-header')]/h1/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class,'article-entry')]/p"
+    ]
+  },
+  "truthdig.com": {
+    "title": [
+      "//div[@class='section1']/h2/text()"
+    ],
+    "content_encoded": [
+      "//div[@class='entry_body_wrapper']/div[@class='entry_body_wrapper']/child::node()[not(self::div[@class='article_main_image' or contains(@class, 'ad_')])]"
+    ]
+  },
+  "foreignpolicy.com": {
+    "description": [
+      "substring-before(//meta[@name='description']/@content, '« | Foreign Policy')"
+    ],
+    "content_encoded": [
+      "//article/div[contains(@class, 'post-content-main')]/p"
+    ]
+  },
+  "dzone.com": {
+    "title": [
+      "(//div[contains(@class,'title')]/h1[@class='article-title'])[1]/text()"
+    ]
+  },
+  "thesun.co.uk": {
+    "content_encoded": [
+      "//article//div[@class='article__content']/*[self::p or self::h3]"
+    ],
+    "title": [
+      "string(//section[@class='article__headline-section'])"
+    ],
+    "media": [
+      "//article//div[@class='article__content']/figure//img/@src"
+    ]
+  },
+  "slate.com": {
+    "content_encoded": [
+      "//div[@class='newbody body parsys']/div[contains(@class, 'section')]/*[self::p or self::blockquote]"
+    ]
+  },
+  "westernjournalism.com": {
+    "content_encoded": [
+      "//main/article/*[@class='entry-content']/p[not(@class='ad-notice-small')]"
+    ]
+  },
+  "digitaljournal.com": {
+    "content_encoded": [
+      "//div[@id='article_text']/div/div[not(div[contains(@class, 'author')]) and contains(@class, 'rs-content') and (contains(@class, 'abstract') or contains(@class, 'article-column'))]"
+    ]
+  },
+  "worldaffairsjournal": {
+    "content_encoded": [
+      "//div[@class='story-body']/div[@property='articleBody']/p",
+      "//article[@class='nw-card']/div[@class='nw-card__content']/section[@class='nw-description']",
+      ""
+    ],
+    "title": [
+      "substring-before(//title, ' | World Affairs Journal')",
+      "//div[@class='story-body']/h1/text()"
+    ],
+    "media": [
+      "//div[@class='story-body']/div[@property='articleBody']/figure//img/@src"
+    ]
+  },
+  "americanfreedombybarbara.com": {
+    "content_encoded": [
+      "//div[contains(@class, 'post-body')]"
+    ],
+    "title": [
+      "//div[contains(@class, 'hentry')]/h3/text()"
+    ],
+    "media": [
+      "//div[contains(@class, 'post-body')]//img/@src"
+    ]
+  },
+  "business2community.com patheos.com activistpost.com eurasiareview.com fivethirtyeight.com": {
+    "content_encoded": [
+      "//div[contains(@class, 'entry-content')]/node()[self::p[not(@class='entry-meta')] or self::h2 or self::blockquote or self::text()]"
+    ],
+    "title": [
+      "//div/h1[@class='entry-title']/text()",
+      "//header/h1[@class='entry-title']/text()"
+    ],
+    "media": [
+      "//div[contains(@class, 'entry-content')]//img/@src",
+      "//div[@id='content']/article/div[@class='featured-image']//img/@src"
+    ]
+  },
+  "cwa-union.org": {
+    "content_encoded": [
+      "//div[@property='content:encoded']/p"
+    ]
+  },
+  "washingtonmonthly.com": {
+    "content_encoded": [
+      "//section[@itemprop='articleBody']/*[self::p or self::blockquote]"
+    ],
+    "media": [
+      "//section[@itemprop='articleBody']/div[@class='featured-image']/img/@src"
+    ]
+  },
+  "thelondoneconomic.com": {
+    "content_encoded": [
+      "//div[@class='newsstand-blog-single-content']/p"
+    ]
+  },
+  "freebeacon.com": {
+    "title": [
+      "//article/header/h1[contains(@class, 'entry-title')]/text()"
+    ],
+    "content_encoded": [
+      "//div[contains(@class, 'small-12 columns')]/p[not (contains(., 'BY: '))]"
+    ]
+  },  
+  "michellemalkin.com": {
+    "content_encoded": [
+      "//div[@class='article']/div[@class='blog']/*[self::p[not(em[contains(., 'Written by')])] or self::blockquote]"
+    ],
+    "media": [
+      "//div[@class='article']/div[@class='blog']//img/@src"
+    ]
+  },
+  "theaustralian.com.au": {
+    "content_encoded": [
+      "//div[@class='description']/p"
+    ],
+    "title": [
+      "(//div[contains(@class, 'group-content')]//div[contains(@class, '-header')]/h3[contains(@class, 'heading')])[1]/text()"
+    ]
+  },
+  "bizcommunity.com": {
+    "content_encoded": [
+      "//div[@class='kInstance']/div[@class='kInstance-Body' or @class='kInstance-Summary']"
+    ]
+  },
+  "heavy.com.": {
+    "content_encoded": [
+      "//section/p[not (contains(@class, 'wp-caption-text'))]"
+    ]
+  },
+  "tokyo-sports.co.jp": {
+    "content_encoded": [
+      "//*[@id='font_report']/p/text()"
+    ],
+    "title": [
+      "//*[@class='title-main']/text()"
+    ],
+    "pubdate": [
+      "//div[@id='right']/text()"
+    ]
+  },
+  "nikkan.co.jp": {
+    "content_encoded": [
+      "//*[@class='photo_l clearfix']/p/text()"
+    ],
+    "pubdate": [
+      "//p[2][@class='date']/text()"
+    ]
+  },
+  "newsweekjapan.jp": {
+    "content_encoded": [
+      "//div[@class='entryDetailBodyBlock']/p"
+    ],
+    "pubdate": [
+      "//div[@class='entryDetailData']/div[@class='date']/text()"
+    ],
+    "title": [
+      "//div[contains(@class, 'entryDetailHeadline')]/h3/text()"
+    ],
+    "description": [
+      ""
+    ]
+  },
+  "yomiuri.co.jp": {
+    "content_encoded": [
+      "//article/p"
+    ]
+  },
+  "androidheadlines.com": {
+    "content_encoded": [
+      "//*[@class='entry-content']/p/text()"
+    ],
+    "title": [
+      "//*[@class='entry-title']/text()"
+    ],
+    "media": [
+      "//img[@class='img-responsive wp-post-image']/@src"
+    ],
+    "author": [
+      "//*[@class='url fn']/text()"
+    ],
+    "pubdate": [
+      "//span[@class='updated']/text()"
+    ]
+  },
+  "pcper.com": {
+    "content_encoded": [
+      "//*[@id='EchoTopic']/p/text()"
+    ],
+    "media": [
+      "//img[@class='pcper-inline']/@src"
+    ],
+    "pubdate": [
+      "//*[@class='articleBoxContent']/h2/text()"
+    ]
+  },
+  "newsline.com": {
+    "description": [
+      ""
+    ]
+  },
+  "nydailynews.com": {
+    "content_encoded": [
+      "//article[@itemprop='articleBody']/p"
+    ],
+    "title": [
+      "//header[contains(@id, 'headers')]/h1[contains(@id, 'headline')]/text()"
+    ]
+  },
+  "indiatimes.com": {
+    "content_encoded": [
+      "//*[@class='text']//text()"
+    ],
+    "title": [
+      "//div/h1/text()"
+    ]
+  },
+  "dpreview.com": {
+    "content_encoded": [
+      "//*[@class='section']/p/text()"
+    ]
+  },
+  "fnn-news.com": {
+    "content_encoded": [
+      "//div[@class='mainNews']/div[contains(@class, 'read')]"
+    ],
+    "title": [
+      "//div[@class='mainNews']/h2/text()"
+    ],
+    "pubdate": [
+      "//div[@class='mainNews']/div[@class='date']/text()"
+    ]
+  },
+  "gadgetsnow.com": {
+    "content_encoded": [
+      "//div[@class='section1']/div[@class='Normal']"
+    ]
+  },
+  "siasat.com": {
+    "title": [
+      "//div[@class='post-inner']/h1/span/text()"
+    ]
+  },
+  "cdrlabs.com": {
+    "title": [
+      "//article/header/h1[contains(@class, 'article-title')]/a/text()"
+    ]
+  },
+  "vg247.com": {
+    "content_encoded": [
+      "//article/main/child::node()[self::p or self::ul]"
+    ]
+  },
+  "segmentnext.com": {
+    "title": [
+      "//div[@class='my-single']/h1/text()"
+    ]
+  },
+  "sacbee.com": {
+     "title": [
+       "//div[@id='story-header']/h3[contains(@class, 'title')][1]/text()"
+    ]
+  },
+  "sdtimes.com": {
+     "title": [
+       "//div[contains(@class, 'row')]/h1[contains(@class, 'col-xs-12 page-header')]/text()"
+    ]
+  },   
+   "upi.com": {
+     "title": [
+       "//h1[contains(@class, 'st_headline title')][1]/text()"
+    ]
+  },
+   "theimmoralminority.blogspot.de": {
+     "content_encoded": [
+       "//*[contains(@class,'post-body')]/child::node()[not(self::div[@class='separator'] or contains (., 'Courtesy ') or (.= ':') or self::a[ (contains (., 'The Hill'))])]"
+    ]
+  },
+  "*": {
+    "pubdate": [
+      "//div[@class='post-item__info']/text()",
+      "//div[contains(@class, 'article')]/span[contains(@class,'date')]/text()",
+      "//span[contains(@class,'published')]/text()",
+      "(//time[@itemprop='datePublished']/@datetime)[1]",
+      "//div[@id='article-container']/div[@class='byline']/span[contains(@id,'DateTime')]/text()",
+      "//div[@class='main-article-author-date']//text()",
+      "//div[@id='date_holder']/div[@class='date']/text()",
+      "//div[@class='node-submitted']/text()",
+      "(//time[@class='timestamp']/@datetime)[1]",
+      "//meta[@property='article:published_time']/@content",
+      "//*[@class='posted']/time/@datetime",
+      "//p[@class='LastUpdated']/text()",
+      "//meta[@name='publish-date']/@content",
+      "//p[@class='postmetadata']/text()[3]",
+      "//div[@class='overview']/span[@class='time']/time/text()",
+      "//meta[@itemprop='datePublished']/@content",
+      "//meta[@name='publicationDate']/@content",
+      "//time[@id='newsdate']//text()",
+      "//time[@class='article-date']//text()",
+      "//span[@itemprop='datePublished']/@content",
+      "//span[@itemprop='datePublished']//text()",
+      "//h5[@class='data']//text()",
+      "//div[@class='pg-content']/span/text()",
+      "(//article/div[@class='publication_date'])[1]/text()",
+      "//meta[@http-equiv='LAST-Modified']/@content",
+      "//em[@class='entry-date']/text()",
+      "//li[@class='post_time']/time[@pubdate]/@datetime",
+      "translate(//div[contains(@class, 'Blog')]//h2[@class='date-header']//text(), '\n', ' ')",
+      "//span[contains(@class,'timestamp')]/text()",
+      "//div[@class='fl']/p[@class='mb10']/text()",
+      "//meta[contains(@name,'article:published')]/@content",
+      "(//div[@class='postmeta left']/span/text())[2]",
+      "//meta[@name='date']/@content",
+      "//article//time/@datetime",
+      "//span[@class='post-datetimes']//text()",
+      "//div[@class='article_date']/text()[1]"
+    ],
+    "description": [
+      "//meta[@name='Description']/@content",
+      "//meta[@name='description']/@content",
+      "//meta[@property='og:description'][1]/@content",
+      "//p[@class='ynDetailText']",
+      "//div[@id='NWrelart:Body']",
+      "//div[@id='leaf-body']",
+      "//*[@id='video-body']/p[not(@class='video-data')]",
+      "//div[@id='mainentrycontent']/*[not(self::script)]",
+      "//div[@class='NewsArticle']//div[contains(@class, 'NewsBody')]/h3[@class='Komidashi'] | //div[@class='NewsArticle']//div[contains(@class, 'NewsBody')]/p",
+      "//div[@class='articleContent']//div[@class='entry']/*[not(contains(@class,'social')) and not(@id='news_video')]",
+      "//div[@id='CONTENTS_MAIN']/div[@class='cmn-section cmn-indent ']/div[@class='cmn-article_text JSID_key_fonttxt']",
+      "//div[@id='resizeableText']",
+      "//div[@class='News-detail']/div[@class='News-textarea']/div[@class='Text']/p/text()",
+      "//article/ul[@class='thumbnails thumbnails-left'] | //article/p[@itemprop='articleBody']",
+      "//*[@id='main']/p",
+      "//div[@class='description']//text()",
+      "//td[@class='createdate']//text()"
+    ],
+    "author": [
+      "//div[@id='article-container']/div[@class='byline']/a[1]",
+      "//div[@class='node-author']",
+      "//meta[@name='author']/@content",
+      "//meta[contains(@name,'author')]/@content",
+      "//article/div[@class='date-bottom']/span[@class='copyright']/text()",
+      "//*[@class='article-info']/div/div/a/text()",
+      "//*[@class='author']/text()",
+      "//*[@class='author']/span/text()",
+      "//*[@class='article-author']/a/text()",
+      "//*[@class='author']/span/a/text()",
+      "//*[@class='author']/a/text()",
+      "//meta[@property='og:article:author']/@content",
+      "//div[@class='author']//text()",
+      "//div[@class='nameInner']//text()",
+      "//span[@itemprop='author']/meta[@itemprop='name']/@content",
+      "//*[@class='byline']//text()",
+      "//span[@itemprop='name']//text()",
+      "//*[contains(@class,'ng_byline_name')]//text()",
+      "//*[@class='byline cleanprint-byline']//text()",
+      "//*[@rel='author']//text()",
+      "//*[@class='asset-metabar-author asset-metabar-item']//text()",
+      "//meta[@property='article:author:title']/@content",
+      "//span[@class='ng_byline_credit']/text()"
+    ],
+    "media": [
+      "//div[contains(@class, 'media')]//li[contains(@class, 'slide')]/img/@src",
+      "//figure[contains(@class, 'media')]/span[contains(@class, 'image')]/img/@src",
+      "//div[@itemprop='articleBody']/p/img/@src",
+      "//span[contains(@itemprop,'articleBody')]/section/figure/img/@src",
+      "//div[@class='story-img']/img/@src",
+      "//div[contains(@class,'text_info')]/p//img/@src",
+      "//figure[contains(@class,'img_full')]/img/@src",
+      "//div[contains(@class,'content')]//img[contains(@class,'wp-image')]/@src | //div[contains(@id,'content')]//img[contains(@class,'wp-image')]/@src",
+      "//img[contains(@class, 'size-full')]/@src",
+      "//img[@id='main-img']/@src",
+      "//*[@id='flag_']/iframe/@src",
+      "//*[@id='MainInner']/div[@class='ArticleBody']/div[@class='ImagesMod']/div/p/a/img/@src",
+      "//*[@id='MainInner']/div[@class='ArticleBody']/div//img/@src",
+      "//div[@id='leaf_large_image']//img/@src | //div[@id='leaf-media']/div[@class='img-caption']//img[not(@no-padding)]/@src",
+      "//div[@id='mainentrycontent']/p/iframe/@src",
+      "//*[@id='mainentrycontent']/p/a/img/@src",
+      "//div[@id='mainentrycontent']/p/iframe/@src | //div[contains(@class, 'embedded-image')]//img[@alt]/@src",
+      "//*[@id='article-body']/figure/@src",
+      "//div[@class='entry-content c04']//img/@src",
+      "//article/div//img[@class='NewsPhoto']/@src",
+      "//*[@id='MainBody']/div/article/div[@class='NewsArticle']/div/div[@class='NewsBody']/div/a/img/@src",
+      "//article/div//img[@class='NewsPhoto' or @alt='MainPhoto']/@src",
+      "//div[@class='entry']//*[@id='news_image_div']//img/@src",
+      "//div[contains(@class, 'cmn-article_text')]//div[contains(@style, 'cmnc-figure') or contains(@class, 'cmnc-figure')]//img/@src",
+      "//span[@id='midArticle_start']/div[@class='inlineRelatedContent']/table//img/@src",
+      "//*[@id='articlePhoto']/a/img/@src",
+      "//div[@class='News-detail']/div[@class='News-textarea']/table[@class='Photo-undefine']//img/@src",
+      "//article/ul/li/a/img/@src",
+      "//div[@class='contenttop']//img/@src",
+      "//img[contains(@class,'align')]/@src",
+      "//*[@id='imageMid']/img/@src",
+      "//*[@id='main-media']/figure/img/@src",
+      "//div[@class='newsd-post-slideshow']//img/@src",
+      "//img[@class='article_detail_image']/@src",
+      "//meta[@property='og:image'][1]/@content",
+      "//div[contains(@class,'article-page')]//figure/img/@src",
+      "//div[contains(@class,'content')]/div[contains(@class,'story_lead_photo')]//img/@src",
+      "//*[contains(@id,'ArticleTextBody')]//img/@src",
+      "//div[@class='newsl']//img[@alt]/@src"
+    ],
+    "title": [
+      "//meta[@name='title']/@content",
+      "//h2[contains(@class,'posttitle')]/text()",
+      "(//header[@class='article-meta']//h1)[1]",
+      "//h1[@itemprop='headline']/text()",
+      "//header[@id='signage']/h1[@class='title']/text()",
+      "//*[@id='MainInner']/div[@class='ArticleTitle']/div[@class='Title']/h1/text()",
+      "//div[@id='leaf_header']/div[@class='row']/h1/text()",
+      "//div[@id='wrapper']//article[@class='entry']/header/h1[@class='title']/text()",
+      "//*[@id='article-title']/text()",
+      "//h1[@class='entry-title']/text()",
+      "//h1[@class='NewsTitle']/text() | //h2[@class='NewsTitle']/a/text()",
+      "//span[@class='contentTitle']/text()",
+      "//div[@id='CONTENTS_MAIN']/div[@class='cmn-section cmn-indent ']/h4[@class='cmn-article_title cmn-clearfix']/span[@class='cmnc-middle JSID_key_fonthln']/text()",
+      "//div[@class='contentBand']/div[@class='article primaryContent']/h1/text()",
+      "//div[@class='News-detail']/div[@class='News-headarea']/h1/text()",
+      "//section[@class='post-header']/div[@class='wrapper']/div[@class='header-wrapper']/h1[contains(@id, 'post-title')]/text()",
+      "//article/h1//text()",
+      "//article/header/h1/text()",
+      "//*[@id='main']/h1/text()",
+      "//h2[contains(@class,'a-h1-title')]/text()",
+      "//h1[contains(@class,'title')]/b/text()",
+      "//h1[contains(@class,'title')][1]/text()",
+      "//div[@class='page-header']/h1/text()",
+      "string(//div[@id='post-heading']/h3)",
+      "//div[@class='news_head']/h1[@class]/text()",
+      "//meta[@property='og:title']/@content"
+    ],
+    "media_thumbnail": [
+      "//meta[contains(@name,'media_thumbnail')]/@content"
+    ],
+    "media_content": [
+      "//meta[contains(@name,'media_content')]/@content"
+    ],
+    "dc_date": [
+      "//div[contains(@class, 'article')]/span[contains(@class,'date')]/text()",
+      "//meta[contains(@name,'date')]/@content",
+      "(//span[contains(@class,'date')]/text())[1]",
+      "//p[contains(@class,'date')]/text()",
+      "//div[contains(@id,'date')]/text()",
+      "//meta[contains(@property,'article:published_time')]/@content",
+      "//meta[contains(@name,'firstcreate')]/@content",
+      "//meta[contains(@name,'RELEASE_DATE')]/@content",
+      "//meta[@itemprop='dateCreated']/@content"
+    ],
+    "link": [
+      "//meta[contains(@name,'link')]/@content",
+      "//li[contains(@class,'space')]/@href",
+      "//link[contains(@rel,'canonical')]/@href",
+      "//meta[contains(@property,'og:url')]/@content",
+      "//head/link[@rel='canonical']/@href",
+      "//meta[@name='syndication-source']/@content"
+    ],
+    "keywords": [
+      "//header[@id='signage']/p[@class='day']/span[@class='location']/text()",
+      "//meta[contains(@name,'keywords')]/@content",
+      "//meta[contains(@name,'Keywords')]/@content",
+      "//div[@id='CONTENTS_MAIN']/div[@class='cmn-section cmn-indent ']/div[@class='cmn-article_keyword cmn-clearfix']/p[@class='cmnc-words']/text()",
+      "//meta[contains(@name,'sailthru.tags')]/@content",
+      "//meta[contains(@property,'keywords')]/@content"
+    ],
+    "content_encoded": {
+      "xpath": [
+        "//div[contains(@class,'article')]//div[contains(@class,'storyareawrapper')]//p",
+        "//section[@class='article-body']/span/p",
+        "//section[@class='article-body']/p",
+        "//div[contains(@class,'article_full_text')]/p",
+        "//div[contains(@class, 'main_story')]//div[contains(@class, 'body')]/p",
+        "//div[contains(@class, 'article')]//div[contains(@class, 'body')]/p",
+        "//div[@id='story_text']/div[@id='text']/p",
+        "//div[@class='article-content']/p",
+        "//div[@class='a_body']/p",
+        "//div[@id='body']/p",
+        "(//div[@class='container']//article)[1]/p",
+        "//article/div[contains(@class, 'article-main-body')]/div/p[not (a)]",
+        "//div[@class='dateline-storybody']/div[contains(@id,'story')]/div/p",
+        "//section[contains(@class,'body')]/p",
+        "//section[@id='content']/article/section[contains(@class,'body')]/p",
+        "//div[@id='bodycopy']/div[contains(@class,'contentpage')]/p",
+        "//div[@class='post-inner']/div[@class='entry']/*[self::p or self::h2]",
+        "//div[@property='schema:articleBody']/div/p",
+        "//div[contains(@class,'slider-head')]/div[contains(@class,'intro-text')]/p",
+        "//div[contains(@class,'text_info')]/*[self::p or self::blockquote]",
+        "//div[contains(@class, 'main-content')]/div[@itemprop='articleBody']/p[not(strong[starts-with(., 'Latest ')])]",
+        "//*[contains(@class,'ontent')]/div[contains(@class,'text')]",
+        "//article[@class='post-body']/section[@class='article-body']/p",
+        "//section[contains(@class,'content')]/article/p",
+        "//div[@class='col-main']/div[@class='content']/p",
+        "//section[@id='content-body']/p",
+        "//div[contains(@class,'postContent')]//p",
+        "//div[contains(@class,'postcontent')]/p",
+        "//div[contains(@class,'story-body')]//p[contains(@class,'story-body-text')]",
+        "//div[contains(@class,'entry-content')]//div[contains(@class,'main-content') and not(dd)]/text()",
+        "//div[contains(@class,'article-body')]//p",
+        "//div[@class='meldung_wrapper']/p",
+        "//div[contains(@class,'main-text')]/p",
+        "//div[contains(@class,'main-text')]",
+        "//section[@id='content']/p",
+        "//section[@class='body']/p",
+        "//section[@class='article-page']/p",
+        "//div[@class='publication_inn']/div[@class='text']",
+        "//div[@class='pubText']",
+        "//article/div[@class='article-content']",
+        "//article/*[@class='entry-content']/p",
+        "//div[contains(@class,'article_body')]",
+        "(//div[contains(@itemprop,'articleBody')]//div[contains(@itemprop,'articleBody')])[1]/p",
+        "//div[contains(@itemprop,'articleBody')]//p[not (strong) and not (em) and not (span) and not (contains(@class, 'author'))]",
+        "//div[contains(@itemprop,'articleBody')]/div/p[not (strong) and not (em)]",
+        "//div[contains(@itemprop,'articleBody')]/p/font",
+        "//div[contains(@itemprop,'articleBody')]/p",
+        "//div[contains(@itemprop,'articleBody')]",
+        "//div[contains(@class,'articleCopy')]",
+        "//div[contains(@class,'field-items')]//p",
+        "//div[contains(@class,'contenttop')]//p",
+        "//div[@id='insidepage']/p",
+        "//*[contains(@itemprop,'articleBody')]/p",
+        "//*[contains(@itemprop,'articleBody')]/*/p",
+        "//section[contains(@class,'page')]/p",
+        "//div[@class='blogos_article']",
+        "//div[contains(@class,'Text')]/p",
+        "//div[contains(@class,'cbox-content row')]/p",
+        "//div[contains(@class, 'article')]//p[@class='art-text']",
+        "//section[contains(@class,'entry-content')]/div[@class='wrapper']/main/div[@class='tds-content']/*[not(self::twitterwidget or self::div[contains(@class, 'mec-')])]",
+        "//p[contains(@id,'ews')]",
+        "//div[contains(@class,'ews')]/p",
+        "//meta[contains(@name,'content_encoded')]/@content",
+        "//p[contains(@class,'lead-def')]",
+        "//span[contains(@id,'article')]/p",
+        "//div[@class='article']/div/p",
+        "//article//div[@class='article__content']/*[self::p or self::h3]",
+        "//div[contains(@class,'article')]/*[self::p[not(contains(@class,'article-link-wrapper'))] or self::li or self::blockquote]",
+        "//div[contains(@class,'article')]//p[not (contains(@class,'article-link-wrapper'))]",
+        "//div[contains(@class,'content')]/p[contains(@class,'text')]",
+        "//div[contains(@class,'content__standfirst')]/p",
+        "//div[contains(@class,'content')]/p",
+        "//div[contains(@id,'rticle')]/p",
+        "//div[contains(@class,'NewsBody')]/p",
+        "//div[contains(@class,'NewsTextFull')]/p",
+        "//div[contains(@class,'entry-content')]/p",
+        "//p[contains(@id,'news_textmore') or contains(@id,'news_textbody')]",
+        "//div[contains(@id,'resizeableText')]//p",
+        "//div[contains(@class,'summary')]//p",
+        "//div[contains(@class,'cmn-article_text JSID_key_fonttxt')]//p",
+        "//p[contains(@itemprop,'articleBody')]",
+        "//div[contains(@id,'article-body')]//p",
+        "//div[contains(@id,'Main')]//div[contains(@class,'entry-content')]/p",
+        "//div[contains(@class,'Text')]//p",
+        "//p[contains(@itemprop,'articleBody')]",
+        "//div[@class='entry-content c04']/p",
+        "//*[@id='MainInner']/div[@class='ArticleBody']/div[@class='ArticleText']",
+        "//div[@class='ArticleText']/p",
+        "//span[@id='articleText']",
+        "//div[@id='content']/*[@class='entry']",
+        "//section[@class='body']/p",
+        "//div[contains(@class,'body')]/p",
+        "//section/main/div/p",
+        "//article[@class='article']/p",
+        "//article/p",
+        "//article//p",
+        "//*[@id='article-body']",
+        "(/article)[1]"
+      ],
+      "replace": {
+        "": ""
+      }
+    },
+    "guid": [
+      "//meta[contains(@name,'guid')]/@content"
+    ],
+    "enclosure": [
+      "//meta[contains(@name,'enclosure')]/@content"
+    ],
+    "html_lang": [
+      "/html/@lang",
+      "//meta[contains(@property,'og:locale')]/@content",
+      "//meta[contains(@itemprop,'inLanguage')]/@content",
+      "//body/@lang",
+      "/html/@*[name()='xml:lang']",
+      "//meta[@http-equiv='content-language']/@content",
+      "//meta[@http-equiv='Content-Language']/@content"
+    ]
+  }
+}

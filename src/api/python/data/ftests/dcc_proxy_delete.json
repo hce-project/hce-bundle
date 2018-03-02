@@ -1,0 +1,14 @@
+[
+{
+    "siteId": null,
+    "criterions": {"WHERE": "`Limits` = NULL"}
+},
+{
+    "siteId": "0",
+    "criterions": null
+},
+{
+    "siteId": "22",
+    "criterions": {"WHERE": "`Domains` = \"*\""}
+}
+]

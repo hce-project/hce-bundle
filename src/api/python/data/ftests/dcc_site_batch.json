@@ -1,0 +1,51 @@
+{
+    "id": 12345,
+    "crawlerType": 4,
+    "items":
+    [
+	{
+	    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    	    "urlId": "eb066c4d81c58ddf9dfdc1b713700949",
+	    "urlObj":
+    	    {
+		"siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    		"url": "http://127.0.0.1/_site_random_generator.php?id=Beef%20Stir%20Fry%20with%20Vegetables%20sherry%20sugar%20vegetable%20oil%20pepper%20",
+    		"type": 0,
+    		"state": 0,
+    		"status": 2,
+    		"siteSelect": 0,
+    		"crawled": 0,
+    		"processed": 0,
+    		"urlMd5": "eb066c4d81c58ddf9dfdc1b713700949",
+    		"contentType": 0,
+    		"requestDelay": 0,
+		"processingDelay": 0,
+    		"httpTimeout": 5000,
+    		"charset": "",
+    		"batchId": 12345,
+    		"errorMask": 0,
+    		"crawlingTime": 0,
+    		"processingTime": 0,
+    		"totalTime": 0,
+    		"httpCode": 0,
+    		"UDate": "NOW()",
+    		"CDate": "NOW()",
+		"httpMethod": "",
+		"size": 0,
+		"linksI": 0,
+		"linksE": 0,
+		"freq": 0,
+		"depth": 0,
+		"rawContentMd5": "",
+		"parentMd5": "eb066c4d81c58ddf9dfdc1b713700949",
+		"lastModified": "NOW()",
+		"eTag": "",
+		"mRate": 0,
+		"mRateCounter": 0,
+		"maxURLsFromPage": 0,
+		"tcDate": "NOW()",
+		"priority": 0
+	    }
+	}
+    ]
+}

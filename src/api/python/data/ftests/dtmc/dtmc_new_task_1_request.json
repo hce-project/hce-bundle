@@ -1,0 +1,27 @@
+{
+    "command": "ls", 
+    "files": [
+        [
+            "file1.txt", 
+            "test file content 1", 
+            9
+        ], 
+        [
+            "file2.txt", 
+            "test file content 2", 
+            8
+        ]
+    ], 
+    "id": 1100814034, 
+    "input": "", 
+    "limits": {}, 
+    "session": {
+        "LANG": "POSIX", 
+        "WIDTH": 80, 
+        "time_max": 30000
+    }, 
+    "strategy": {
+        "DATE": "2014-09-09 11:00:00", 
+        "PRIORITY": 2
+    }
+}

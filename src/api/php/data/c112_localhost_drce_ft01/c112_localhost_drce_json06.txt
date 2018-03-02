@@ -1,0 +1,29 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+                "LINES": "80",
+                "HOSTNAME": "node22"
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 1,
+        "time_max": 30000,
+        "cleanup": 1
+    },
+    "command": "cd /tmp/ && java Pi",
+    "input": "",
+    "files": [
+        {
+            "name": "/tmp/Pi.class",
+            "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft01/c112_localhost_drce_json06a.class",
+            "action": 2147483657
+        }
+    ]
+}

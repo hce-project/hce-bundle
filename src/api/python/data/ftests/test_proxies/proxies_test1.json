@@ -1,0 +1,179 @@
+{
+  "id": 0,
+  "crawlerType": 4,
+  "maxIterations": "1",
+  "info": {
+    "description": "Site bbc.com",
+    "templates": {
+      "names": [
+        "t1"
+      ]
+    },
+    "scrapingType": "template"
+  },
+  "items": [
+    {
+      "siteId": "0",
+      "urlContentResponse": null,
+      "depth": "1",
+      "siteObj": {
+        "fetchType": 2,
+        "id": "0",
+        "uDate": null,
+        "tcDate": null,
+        "cDate": null,
+        "resources": null,
+        "iterations": null,
+        "description": null,
+        "urls": [
+          
+        ],
+        "filters": [
+          {
+            "pattern": "http(.*)",
+            "siteId": "0",
+            "type": 1
+          },
+          {
+            "mode": 0,
+            "pattern": "%MAX_DEPTH%",
+            "subject": "1",
+            "siteId": "0",
+            "type": 1,
+            "opCode": 4,
+            "stage": 0,
+            "action": 1
+          }
+        ],
+        "properties": {
+          
+        },
+        "state": null,
+        "priority": null,
+        "maxURLs": null,
+        "maxResources": null,
+        "maxErrors": null,
+        "maxResourceSize": null,
+        "requestDelay": null,
+        "httpTimeout": null,
+        "errorMask": null,
+        "errors": null,
+        "urlType": null,
+        "contents": null,
+        "processingDelay": null,
+        "size": null,
+        "avgSpeed": null,
+        "avgSpeedCounter": null,
+        "userId": null,
+        "recrawlPeriod": null,
+        "recrawlDate": null,
+        "maxURLsFromPage": null,
+        "collectedURLs": null
+      },
+      "urlObj": {
+        "status": 2,
+        "linksI": 0,
+        "linksE": 0,
+        "contentMask": 0,
+        "processingTime": 0,
+        "CDate": null,
+        "mRateCounter": 0,
+        "httpTimeout": 10000,
+        "size": 0,
+        "urlPut": null,
+        "batchId": 0,
+        "lastModified": null,
+        "tagsCount": 0,
+        "mRate": 0,
+        "charset": "",
+        "state": 0,
+        "httpCode": 0,
+        "priority": 0,
+        "maxURLsFromPage": null,
+        "processingDelay": 0,
+        "crawlingTime": 0,
+        "type": 1,
+        "processed": 0,
+        "totalTime": 0,
+        "siteSelect": 0,
+        "contentType": "",
+        "pDate": null,
+        "errorMask": 0,
+        "httpMethod": "get",
+        "eTag": "",
+        "siteId": "0",
+        "freq": 0,
+        "tcDate": null,
+        "rawContentMd5": "",
+        "crawled": 0,
+        "UDate": null,
+        "contentURLMd5": "",
+        "requestDelay": 0,
+        "depth": 0,
+        "parentMd5": "",
+        "urlUpdate": null,
+        "tagsMask": 0,
+        "urlMd5": "9709f8d1c40ed308b249edfd6dd0b463",
+        "url": "http://ipinfo.info/index.php"
+      },
+      "urlPutObj": {
+        "putDict": {
+          
+        },
+        "urlMd5": "9709f8d1c40ed308b249edfd6dd0b463",
+        "contentType": 0,
+        "siteId": "0",
+        "fileStorageSuffix": null,
+        "criterions": null
+      },
+      "properties": {
+        "DB_TASK_MODE": "RO",
+        "HTTP_REDIRECTS_MAX": 5,
+        "HTML_REDIRECTS_MAX": 5,
+        "HTML_RECOVER": "0",
+        "ROBOTS_MODE": "0",
+        "COLLECT_ROBOTS_MODE": "0",
+        "USER_PROXY": "{\"source\":0,\"file_path\":\"/tmp/file.prx.json\",\"proxies\":{\"121.41.161.110:80\":{\"host\":\"121.41.161.110:80\",\"domains\":[\"www.latimes.com\"],\"priority\": 44,\"limits\": null},\"124.206.133.227:80\":{\"host\":\"124.206.133.227:80\",\"domains\":[\"*\"],\"priority\":11,\"limits\":null},\"198.169.246.30:80\":{\"host\":\"198.169.246.30:80\",\"domains\":[\"*\"],\"priority\":11,\"limits\":null}}}",
+        "template": {
+          "templates": [
+            {
+              "priority": "0",
+              "mandatory": 0,
+              "state": 1,
+              "is_filled": 0,
+              "output_format": {
+                "type": "template",
+                "name": "json",
+                "header": "[\n",
+                "items_header": "",
+                "item": "{\n\"IP\":\"%IP%\",\n\"IP_extractor\":\"%IP_extractor%\",\n\"crawler_time\":\"%crawler_time%\",\n\"scraper_time\":\"%scraper_time%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n",
+                "items_footer": "",
+                "footer": "]\n"
+              },
+              "tags": {
+                "IP": [
+                  {
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "//*[@class='TextObject']/p/span/a/b",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "delimiter": "",
+                    "canonicalizeURLs": 0,
+                    "mandatory": 0,
+                    "type": "text",
+                    "format": ""
+                  }
+                ]
+              }
+            }
+          ],
+          "select": "first_good"
+        },
+        "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"regular\"},\"modules\":{\"regular\":[\"ScrapyExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}"
+      },
+      "urlId": "9709f8d1c40ed308b249edfd6dd0b463"
+    }
+  ]
+}

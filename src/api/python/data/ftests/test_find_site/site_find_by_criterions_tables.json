@@ -1,0 +1,9 @@
+{
+    "url": null,
+    "criterions": {
+        "WHERE": "`User_Id`=1",
+        "LIMIT": 2, 
+        "ORDER BY": "CDate ASC",
+        "TABLES": "sites,sites_urls"
+    }
+}

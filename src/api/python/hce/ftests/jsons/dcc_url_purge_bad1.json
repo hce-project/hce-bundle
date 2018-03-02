@@ -1,0 +1,16 @@
+[
+    {
+	"siteId": "z2",
+	"url": "",
+	"urlType": 0,
+	"criterions": null
+    },
+    {
+	"siteId": "intel1",
+	"urlType": 0,
+	"criterions": 
+	{
+	    "LIMIT": "1"
+	}
+    }
+]

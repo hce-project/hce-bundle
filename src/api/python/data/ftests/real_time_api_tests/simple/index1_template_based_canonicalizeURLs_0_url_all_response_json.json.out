@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 2282465908, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:23", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 26, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2015-05-07 02:03:14", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1244, 
+                        "RawContentMd5": "", 
+                        "Size": 249851, 
+                        "Status": 7, 
+                        "TagsCount": 8, 
+                        "TagsMask": 33554716, 
+                        "UDate": "2017-01-26 05:05:25"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJsaW5rIjoiL3RlbXBsYXRlX3NjcmFwaW5nL2luZGV4MS5odG1sIiwKImltYWdlIjoiLzIwMTUvMDUvcHVibGljLWVuZW15LXJhcC5qcGc/cXVhbGl0eT02NSZzdHJpcD1jb2xvciZ3PTU1MCIsCiJwdWJkYXRlIjoiMjAxNS0wNS0wNyAwMjowMzoxNCIsCiJhdXRob3IiOiI8YSBpdGVtcHJvcD1cImF1dGhvclwiIGhyZWY9XCIuLi8uLi9hdXRob3IvaGVsZW4tcmVnYW4vaW5kZXguaHRtbFwiPkhlbGVuIFJlZ2FuPC9hPiIsCiJib2R5IjoiVGhlIGV4cGxvc2lvbiBvZiBoaXAtaG9wIG9udG8gdGhlIG11c2ljIHNjZW5lIGluIHRoZSAxOTkwcyB3YXMgdGhlIGJpZ2dlc3QgbXVzaWNhbCByZXZvbHV0aW9uIGluIEFtZXJpY2FuIHBvcCBoaXN0b3J5LiIsCiJ0aXRsZSI6IkhpcC1Ib3AgV2FzIHRoZSBCaWdnZXN0IFJldm9sdXRpb24gaW4gQW1lcmljYW4gTXVzaWMgYW5kIFRoYXTigJlzIEJhY2tlZCBCeSBhIFN0dWR5IG9mIDE3LDAwMCBTb25ncyIsCiJlcnJvcnNfbWFzayI6IjAiCn0KXQo=", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1_canonization.html", 
+                    "urlMd5": "6ad9fe5a439c596d30da2c3f4a46caef"
+                }
+            ], 
+            "node": "r013_data", 
+            "port": "5732", 
+            "time": 3647
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+  "avgSpeed": 0,
+  "avgSpeedCounter": 0,
+  "cDate": {
+    "str": "NOW()"
+  },
+  "contents": 0,
+  "description": "test site",
+  "errorMask": 0,
+  "errors": 0,
+  "filters": [
+              {
+              "mode": 0,
+	      "groupId": 0,
+              "pattern": "^(?:http(?:s)?:\\/\\/)?(?:[^\\.]+\\.)?127.0.0.1\\/template_scraping\\/(.*)\\.html(.*)",
+	      "subject": "",
+              "siteId": "cb62bbad8732c939a20065287033f0f5",
+              "type": 1,
+              "opCode": 0,
+              "stage": 0,
+              "action": 1
+              },
+              {
+              "mode": 0,
+	      "groupId": 0,
+              "pattern": "^(?:http(?:s)?:\\/\\/)?(?:[^\\.]+\\.)??127.0.0.1\\/template_scraping\\/(.*)\\.html(.*)#",
+	      "subject": "",
+              "siteId": "cb62bbad8732c939a20065287033f0f5",
+              "type": 0,
+              "opCode": 0,
+              "stage": 0,
+              "action": -1
+              },
+              {
+              "mode": 0,
+	      "groupId": 0,
+              "pattern": "^http:\\/\\/",
+	      "subject": "",
+              "siteId": "cb62bbad8732c939a20065287033f0f5",
+              "type": 0,
+              "opCode": 0,
+              "stage": 6,
+              "action": 1
+              },
+              {
+              "mode": 0,
+	      "groupId": 0,
+              "pattern": "(.*)LOCAL HEATS(.*)",
+	      "subject": "",
+              "siteId": "cb62bbad8732c939a20065287033f0f5",
+              "type": 0,
+              "opCode": 0,
+              "stage": 2,
+              "action": 1
+              }
+  ],
+  "httpTimeout": 30000,
+  "id": "cb62bbad8732c939a20065287033f0f5",
+  "iterations": 0,
+  "maxErrors": 100000,
+  "maxResourceSize": 40000,
+  "maxResources": 100,
+  "maxURLs": 120,
+  "maxURLsFromPage": 35,
+  "priority": 100,
+  "processingDelay": 500,
+  "properties": {
+    "ROBOTS_MODE": "1",
+    "TIMEZONE": "JST",
+    "CONTENT_HASH": "{ \"algorithm\": 1, \"tags\": \"title,description,content_encoded,media,pubdate\", \"delete\": 1 }",
+    "HTTP_COOKIE": "",
+    "HTTP_HEADERS": "{ \"App-Agent\": [\"value1\",\"value2\"], \"Cookies\": [\"\"]}",
+    "PROTOCOLS": "[]",
+    "PROCESS_CTYPES": "text/html",
+    "STORE_HTTP_HEADERS": "1",
+    "STORE_HTTP_REQUEST": "1",
+    "AUTO_REMOVE_RESOURCES": "1",
+    "AUTO_REMOVE_WHERE": "ParentMd5<>\"\" AND Status IN (4,7) AND DATE_ADD(UDate, INTERVAL %RecrawlPeriod% MINUTE)<NOW()",
+    "AUTO_REMOVE_ORDER": "ContentType ASC, Crawled ASC, TagsCount ASC, CDate ASC",
+    "template": "{\"body\":[\"//*[@class='article-body']/p[1]\"],\"pubdate\":[\"//time[@class='publish-date']\"],\"author\":[\"//*[@class='byline']/a\"],\"media\":[\"//div[@id='mainentrycontent']/p/iframe\",\"//*[@id='mainentrycontent']/p/a/img\",\"//div[@id='mainentrycontent']/p/iframe | //div[contains(@class, 'embedded-image')]//img[@alt]\"],\"title\":[\"//*[@class='article-title']\"],\"media_thumbnail\":[\"//meta[contains(@name,'media_thumbnail')]/@content\"],\"media_content\":[\"//*[@class='article-hero landscape']/img\"],\"dc_date\":[\"//meta[contains(@name,'date')]/@content\"],\"link\":[\"//*[@class='article-meta']/a[2]\"],\"content_encoded\":[\"//*[@class='article-body']/p\"],\"guid\":[\"//meta[contains(@name,'guid')]/@content\"],\"enclosure\":[\"//meta[contains(@name,'enclosure')]/@content\"],\"html_lang\":[\"/html/@lang\"]}",
+    "RECRAWL_DELETE_WHERE": "(`Status`=1 OR (`Status`=4 AND Crawled=0 AND Processed=0) OR `PDate`<CURDATE() OR `PDate` IS NULL OR CDate<CURDATE()) AND `ParentMd5`<>''",
+    "STATS_LOG_ENABLED": "1",
+    "URL_TEMPLATE_REALTIME": "http://near.down.com/id?one=%URL%&two=none",
+    "ROBOTS_CACHE": "1" 
+  },
+  "recrawlDate" : "DATE_ADD(DATE_FORMAT(NOW(),\"%Y-%m-%d 00:00:00\"), INTERVAL ((((HOUR(NOW())*60 + MINUTE(NOW()) + SECOND(NOW())/60) DIV (RecrawlPeriod+1)+1)*RecrawlPeriod) + 45) MINUTE)",
+  "requestDelay": 500,
+  "resources": 0,
+  "size": 0,
+  "state": 3,
+  "tcDate": null,
+  "uDate": null,
+  "urlType": 0,
+  "urls": [
+					 "http://127.0.0.1/template_scraping/"
+          ],
+  "recrawlPeriod": 360,
+  "userId": 2,
+  "collectedURLs": 0,
+  "updateType": 1,
+  "fetchType": 1,
+  "tcDateProcess": "NOW()"
+}

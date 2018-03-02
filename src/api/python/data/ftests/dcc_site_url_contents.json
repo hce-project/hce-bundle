@@ -1,0 +1,23 @@
+[
+{
+    "contentTypeMask": 0, 
+    "siteId": "", 
+    "url": "", 
+    "urlFetch": {
+        "algorithm": 0, 
+        "maxURLs": 0, 
+        "sitesCriterions": {
+            "ORDER BY": "CDate ASC",
+            "WHERE": null
+        }, 
+        "sitesList": [], 
+        "urlUpdate": null, 
+        "urlsCriterions": {
+            "LIMIT": 0, 
+            "ORDER BY": "", 
+            "WHERE": ""
+        }
+    }, 
+    "urlMd5": ""
+}
+]

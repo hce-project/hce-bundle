@@ -1,0 +1,40 @@
+[
+    {
+        "type": 0,
+        "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft_subtasks/c112_localhost_drce_json01_sub1_data.txt",
+        "id": 501,
+        "subtasks": [
+            {
+                "type": 0,
+                "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft_subtasks/c112_localhost_drce_json02_sub1_data.txt",
+                "id": 503,
+                "subtasks": []
+            },
+            {
+                "type": 0,
+                "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft_subtasks/c112_localhost_drce_json03_sub1_data.txt",
+                "id": 504,
+                "subtasks": []
+            }
+        ]
+    },
+    {
+        "type": 0,
+        "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft_subtasks/c112_localhost_drce_json02_sub1_data.txt",
+        "id": 502,
+        "subtasks": [
+            {
+                "type": 0,
+                "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft_subtasks/c112_localhost_drce_json03_sub1_data.txt",
+                "id": 505,
+                "subtasks": []
+            },
+            {
+                "type": 0,
+                "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft_subtasks/c112_localhost_drce_json01_sub1_data.txt",
+                "id": 506,
+                "subtasks": []
+            }
+        ]
+    }
+]

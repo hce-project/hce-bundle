@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 121602168, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:32", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 23, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2015-05-07 02:03:14", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1248, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 8, 
+                        "TagsMask": 33554716, 
+                        "UDate": "2017-01-26 05:05:34"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "PCFET0NUWVBFIGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iY29udGVudC10eXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjwvaGVhZD48Ym9keT4KIDx0YWJsZT4KPHRyPjx0ZD50aXRsZTo8L3RkPjx0ZD5IaXAtSG9wIFdhcyB0aGUgQmlnZ2VzdCBSZXZvbHV0aW9uIGluIEFtZXJpY2FuIE11c2ljIGFuZCBUaGF04oCZcyBCYWNrZWQgQnkgYSBTdHVkeSBvZiAxNywwMDAgU29uZ3M8L3RkPjwvdHI+PHRyPjx0ZD5ib2R5OjwvdGQ+PHRkPlRoYXTigJlzIGFjY29yZGluZyB0byBhIHRlYW0gb2Ygc2NpZW50aXN0cyB3aG8sIGZvciB0aGUgZmlyc3QgdGltZSwgaGF2ZSBhbmFseXplZCB0aGUgZXZvbHV0aW9uIG9mIFdlc3Rlcm4gcG9wIG11c2ljLCBzcGFubmluZyBmcm9tIDE5NjAgdG8gMjAxMCwgYW5kICBwdWJsaXNoZWQgIHRoZWlyIGZpbmRpbmdzIGluIHRoZSAgUm95YWwgU29jaWV0eSBPcGVuIEpvdXJuYWwgLjwvdGQ+PC90cj48dHI+PHRkPmltYWdlOjwvdGQ+PHRkPiZsdDtpbWcgc3JjPSZxdW90O2h0dHBzOi8vdGltZWRvdGNvbS5maWxlcy53b3JkcHJlc3MuY29tLzIwMTUvMDUvcHVibGljLWVuZW15LXJhcC5qcGc/cXVhbGl0eT02NSZhbXA7YW1wO3N0cmlwPWNvbG9yJmFtcDthbXA7dz01NTAmcXVvdDsgaXRlbXByb3A9JnF1b3Q7aW1hZ2UmcXVvdDsgYWx0PSZxdW90O1Bob3RvIG9mIFB1YmxpYyBFbmVteSBKYW4uIDEsIDE5OTEmcXVvdDsgZGF0YS1zcmNzZXQ9JnF1b3Q7aHR0cHM6Ly90aW1lZG90Y29tLmZpbGVzLndvcmRwcmVzcy5jb20vMjAxNS8wNS9wdWJsaWMtZW5lbXktcmFwLmpwZz9xdWFsaXR5PTY1JmFtcDthbXA7c3RyaXA9Y29sb3ImYW1wO2FtcDt3PTExMDAgODAwdywgaHR0cHM6Ly90aW1lZG90Y29tLmZpbGVzLndvcmRwcmVzcy5jb20vMjAxNS8wNS9wdWJsaWMtZW5lbXktcmFwLmpwZz9xdWFsaXR5PTY1JmFtcDthbXA7c3RyaXA9Y29sb3ImYW1wO2FtcDt3PTExMDAgODAwdyAyeCZxdW90OyZndDs8L3RkPjwvdHI+PHRyPjx0ZD5wdWJkYXRlOjwvdGQ+PHRkPjIwMTUtMDUtMDcgMDI6MDM6MTQ8L3RkPjwvdHI+PHRyPjx0ZD5hdXRob3I6PC90ZD48dGQ+Jmx0O2xpIGNsYXNzPSZxdW90O2FydGljbGUtYXV0aG9yICZxdW90OyZndDsKICAJCQkJCQkmbHQ7c3BhbiBjbGFzcz0mcXVvdDtieWxpbmUmcXVvdDsmZ3Q7Jmx0O2EgaXRlbXByb3A9JnF1b3Q7YXV0aG9yJnF1b3Q7IGhyZWY9JnF1b3Q7Li4vLi4vYXV0aG9yL2hlbGVuLXJlZ2FuL2luZGV4Lmh0bWwmcXVvdDsmZ3Q7SGVsZW4gUmVnYW4mbHQ7L2EmZ3Q7Jmx0Oy9zcGFuJmd0OwogIAkJCQkJCSZsdDthIGNsYXNzPSZxdW90O2F1dGhvci10d2l0dGVyJnF1b3Q7IHRhcmdldD0mcXVvdDtfYmxhbmsmcXVvdDsgaHJlZj0mcXVvdDtodHRwczovL3R3aXR0ZXIuY29tL2hjcmVnYW4mcXVvdDsmZ3Q7QGhjcmVnYW4mbHQ7L2EmZ3Q7CiAgCQkJCQkmbHQ7L2xpJmd0OzwvdGQ+PC90cj48dHI+PHRkPmxpbms6PC90ZD48dGQ+Jmx0O2EgaHJlZj0mcXVvdDttYWlsdG86P3RvPWpvZUB4eXouY29tJmFtcDthbXA7Y2M9Ym9iQHh5ei5jb20mYW1wO2FtcDtib2R5PWhlbGxvJnF1b3Q7Jmd0O0pvZSZsdDsvYSZndDs8L3RkPjwvdHI+PHRyPjx0ZD5lcnJvcnNfbWFzazo8L3RkPjx0ZD4wPC90ZD48L3RyPgogPC90YWJsZT4KPC9ib2R5PjwvaHRtbD4K", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html", 
+                    "urlMd5": "b3eb9e33190cbc35e4419a3764903a01"
+                }
+            ], 
+            "node": "r011_data", 
+            "port": "5730", 
+            "time": 3583
+        }
+    ]
+}

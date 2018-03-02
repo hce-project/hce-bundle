@@ -1,0 +1,99 @@
+[
+  {
+    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    "urlMd5": "701ccc5c1c589041d31d13dae8dce90d",
+    "putDict":
+    {
+      "data": "url_put_check-PROCESSOR",
+      "cDate": null
+    },
+    "contentType": 10,
+    "fileStorageSuffix": null,
+    "criterions": null
+  },
+  {
+    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    "urlMd5": "701ccc5c1c589041d31d13dae8dce90d",
+    "putDict":
+    {
+      "data": "url_put_check-RAW",
+      "cDate": null
+    },
+    "contentType": 0,
+    "fileStorageSuffix": null,
+    "criterions": null
+  },
+  {
+    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    "urlMd5": "701ccc5c1c589041d31d13dae8dce90d",
+    "putDict":
+    {
+      "data": "url_put_check-TIDY",
+      "cDate": null
+    },
+    "contentType": 1,
+    "fileStorageSuffix": null,
+    "criterions": null
+  },
+  {
+    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    "urlMd5": "701ccc5c1c589041d31d13dae8dce90d",
+    "putDict":
+    {
+      "data": "url_put_check-HEADERS",
+      "cDate": null
+    },
+    "contentType": 2,
+    "fileStorageSuffix": null,
+    "criterions": null
+  },
+  {
+    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    "urlMd5": "701ccc5c1c589041d31d13dae8dce90d",
+    "putDict":
+    {
+      "data": "url_put_check-REQUESTS",
+      "cDate": null
+    },
+    "contentType": 3,
+    "fileStorageSuffix": null,
+    "criterions": null
+  },
+  {
+    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    "urlMd5": "701ccc5c1c589041d31d13dae8dce90d",
+    "putDict":
+    {
+      "data": "url_put_check-META",
+      "cDate": null
+    },
+    "contentType": 4,
+    "fileStorageSuffix": null,
+    "criterions": null
+  },
+  {
+    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    "urlMd5": "701ccc5c1c589041d31d13dae8dce90d",
+    "putDict":
+    {
+      "data": "url_put_check-COOKIES",
+      "cDate": null
+    },
+    "contentType": 5,
+    "fileStorageSuffix": null,
+    "criterions": null
+  },
+  {
+    "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+    "urlMd5": "701ccc5c1c589041d31d13dae8dce90d",
+    "putDict":
+    {
+      "data": "url_put_check-DYNAMIC",
+      "cDate": null
+    },
+    "contentType": 9,
+    "fileStorageSuffix": null,
+    "criterions": null
+  }
+
+]

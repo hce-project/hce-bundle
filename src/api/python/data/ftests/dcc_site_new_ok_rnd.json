@@ -1,0 +1,55 @@
+{
+    "cDate": "NOW()",
+    "description": "rnd",
+    "errorMask": 0,
+    "errors": 0,
+    "filters": [
+        {
+            "pattern": "http://127.0.0.1/_site_random_generator.php(.*)",
+            "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+            "type": 1
+        }
+    ],
+    "httpTimeout": 20000,
+    "id": "b85ab149a528bd0a024fa0f43e80b5fc",
+    "iterations": 0,
+    "maxErrors": 200,
+    "maxResourceSize": 1000000,
+    "maxResources": 20,
+    "maxURLs": 20,
+    "priority": 100,
+    "properties": {
+        "HTTP_COOKIE": "",
+        "HTTP_HEADERS": "{\"User-Agent\":[\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/43.0.2357.130 Safari\/537.36\",\"Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko\/20100101 Firefox\/38.0\",\"HCE-DC project robot\"]}",
+        "PROCESS_CTYPES": "text/html",
+        "STORE_HTTP_HEADERS": "1",
+        "STORE_HTTP_REQUEST": "1",
+        "AUTO_REMOVE_RESOURCES": "1",
+        "AUTO_REMOVE_WHERE": "`ParentMd5`<>\"\" AND (`Status` IN (4,7) OR (`Status`=4 AND `Crawled`=0 AND `Processed`=0)) AND DATE_ADD(`UDate`, INTERVAL %RecrawlPeriod% MINUTE)<NOW() AND `URLMd5`<>'bf8547848d01b8e99ce6722d20674144'",
+        "AUTO_REMOVE_ORDER": "`ContentType` ASC, `Crawled` ASC, `TagsCount` ASC, `UDate` ASC",
+        "RECRAWL_DELETE_WHERE": "`ParentMd5`<>'' AND URLMd5<>'bf8547848d01b8e99ce6722d20674144'",
+        "STATS_FREQ_ENABLED": "1",
+        "STATS_LOG_ENABLED": "1"
+    },
+    "requestDelay": 200,
+    "resources": 0,
+    "state": 1,
+    "tcDate": "NULL",
+    "tcDateProcess": "NULL",
+    "uDate": "NULL",
+    "urlType": 0,
+    "urls": [
+        "http://127.0.0.1/_site_random_generator.php"
+    ],
+    "contents": 0,
+    "processingDelay": 500,
+    "size": 0,
+    "avgSpeed": 0,
+    "avgSpeedCounter": 0,
+    "userId": 1,
+    "recrawlPeriod": 15,
+    "recrawlDate": "DATE_ADD(NOW(), INTERVAL `RecrawlPeriod` MINUTE)",
+    "maxURLsFromPage": 100,
+    "collectedURLs": 0,
+    "fetchType": 1
+}

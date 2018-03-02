@@ -1,0 +1,62 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 2818145169, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "83ed6ac4676555a563693f58ec12b267", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "Batch_Id": 280121207, 
+                        "CDate": "2016-03-16 12:57:22", 
+                        "Charset": "UTF-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "83ed6ac4676555a563693f58ec12b267", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 152, 
+                        "ErrorMask": 0, 
+                        "HTTPCode": 200, 
+                        "LastModified": "2016-03-16 09:54:21", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2016-03-16 08:48:16", 
+                        "Processed": 1, 
+                        "ProcessingTime": 5646, 
+                        "RawContentMd5": "edd08d68ece119cda7097ff4d1407088", 
+                        "Size": 78433, 
+                        "Status": 7, 
+                        "TagsCount": 10, 
+                        "TagsMask": 67007, 
+                        "UDate": "2016-03-16 12:58:37"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "eyJtZXRyaWNzIjogIlwiXFxcInt9XFxcIlwiIiwgImVycm9yX2NvZGUiOiAwLCAiZXJyb3JfbWVzc2FnZSI6ICIiLCAiZGF0YSI6IHsicmVzSWQiOiAiNWJjNTlkZjE4NzhkMWU5YzYwZjU2NjQ3ZGMyOGNlMjkiLCAidGFnTGlzdCI6IFtbeyJ4cGF0aCI6ICIvL21ldGFbQG5hbWU9J2Rlc2NyaXB0aW9uJ10vL0Bjb250ZW50IiwgImV4dHJhY3RvciI6ICJTY3JhcHlFeHRyYWN0b3IiLCAiZGF0YSI6IFsiSW0gTm9yZHdlc3RlbiBQYWtpc3RhbnMgc2luZCBtaW5kZXN0ZW5zIDE1IE1lbnNjaGVuIGJlaSBlaW5lbSBCb21iZW5hbnNjaGxhZyBhdWYgZWluZW4gQnVzIGdlc3RvcmJlbi4gSW4gaWhtIHNhXHUwMGRmZW4gUmVnaWVydW5nc2JlYW10ZSBhdWYgZGVtIFdlZyB6dXIgQXJiZWl0LiJdLCAibmFtZSI6ICJkZXNjcmlwdGlvbiIsICJ0eXBlIjogbnVsbH0sIHsieHBhdGgiOiAiIiwgImV4dHJhY3RvciI6ICJOZXdzcGFwZXJFeHRyYWN0b3IiLCAiZGF0YSI6IFsiMjAxNi0wMy0xNiAwODo0ODoxNiJdLCAibmFtZSI6ICJwdWJkYXRlIiwgInR5cGUiOiBudWxsfSwgeyJ4cGF0aCI6ICIiLCAiZXh0cmFjdG9yIjogIkdvb3NlRXh0cmFjdG9yIiwgImRhdGEiOiBbIlBha2lzdGFuOiBCb21iZSBleHBsb2RpZXJ0IGluIEJ1cyBtaXQgUmVnaWVydW5nc2JlYW10ZW4iXSwgIm5hbWUiOiAidGl0bGUiLCAidHlwZSI6IG51bGx9LCB7InhwYXRoIjogIiIsICJleHRyYWN0b3IiOiAiTmV3c3BhcGVyRXh0cmFjdG9yIiwgImRhdGEiOiBbImh0dHA6Ly93d3cuemVpdC5kZS9nZXNlbGxzY2hhZnQvemVpdGdlc2NoZWhlbi8yMDE2LTAzL3Bha2lzdGFuLWFuc2NobGFnLWJ1cy93aWRlX18xMzAweDczMSxodHRwOi8vd3d3LnplaXQuZGUvcG9saXRpay9hdXNsYW5kLzIwMTUtMDMvcGFraXN0YW4tamlicmFuLW5hc2lyL2NpbmVtYV9fOTgweDQyMCxodHRwOi8vd3d3LnplaXQuZGUvYW5nZWJvdGUvYmlsZGVyLXZlcmxhZ3NuZXh0cmVhZHMvYWt0dWVsbGUtYXVzZ2FiZS1uZXh0cmVhZC1hdXNnYWJlLTYuanBnL3N1cGVyX182MjB4NDEzLGh0dHA6Ly96ZWl0Lm1ldC52Z3dvcnQuZGUvbmEvMzg5ODE4YjY0Nzk5NGI0MTk1MWM2NWIyZjdjODMwNzQsaHR0cDovL2NjLnplaXQuZGUvY2MuZ2lmP2Jhbm5lci1jaGFubmVsPXBvbGl0aWsvYXVzbGFuZC9hcnRpY2xlJnI9JnJhbmQ9NjA0OTMyNDYsaHR0cDovL3plaXQwMS53ZWJ0cmVray5uZXQvOTgxOTQ5NTMzNDk0NjM2L3d0LnBsP3A9MzI4LHJlZGFrdGlvbi5wb2xpdGlrLmF1c2xhbmQuLmFydGljbGUuemVkZSU3Q3d3dy56ZWl0LmRlL3BvbGl0aWsvYXVzbGFuZC8yMDE2LTAzL3Bha2lzdGFuLWJ1cy1ib21iZW5hbnNjaGxhZy1wZXNoYXdhciwwLDAsMCwwLDAsMCwwLDAmY2cxPXJlZGFrdGlvbiZjZzI9YXJ0aWNsZSZjZzM9cG9saXRpayZjZzQ9emVkZSZjZzU9YXVzbGFuZCZjZzY9JmNnNz1wYWtpc3Rhbi1idXMtYm9tYmVuYW5zY2hsYWctcGVzaGF3YXImY2c4PXBvbGl0aWsvYXVzbGFuZC9hcnRpY2xlJmNnOT0yMDE2LTAzLTE2JmNwMT1ub25lJmNwMj1wb2xpdGlrL2F1c2xhbmQvYmlsZC10ZXh0JmNwMz0xLzEmY3A0PXBvbGl0aWs7cGFraXN0YW47dGVycm9yYW5zY2hsJUMzJUE0Z2U7Ym9tYmVuYW5ncmlmZjt0YWxpYmFuO3Bha2lzdGFuJmNwNT0yMDE2LTAzLTE2LDA4OjQ4OjE2LjUwMTUwOCswMTowMCZjcDY9MTM3OSZjcDc9emVpdG9ubGluZTthcDtkcGE7cmV1dGVyczt2diVDMyVCNiZjcDg9emVkZSZjcDk9cG9saXRpay9hdXNsYW5kL2FydGljbGUmY3AxMD0mY3AxMT0mY3AxMj1kZXNrdG9wLnNpdGUmY3AxMz1zdGF0aW9uYWVyJmNwMTU9JmNwMjU9b3JpZ2luYWwiXSwgIm5hbWUiOiAibWVkaWEiLCAidHlwZSI6IG51bGx9LCB7InhwYXRoIjogIiIsICJleHRyYWN0b3IiOiAiTmV3c3BhcGVyRXh0cmFjdG9yIiwgImRhdGEiOiBbIlplaXQgT25saW5lIEdtYmggSGFtYnVyZyBHZXJtYW55IiwgIlZvbiBBbmRyZWEgQmFja2hhdXMgS2FyYXRzY2hpIl0sICJuYW1lIjogImF1dGhvciIsICJ0eXBlIjogbnVsbH0sIHsieHBhdGgiOiAiLy9tZXRhW2NvbnRhaW5zKEBuYW1lLCdkYXRlJyldL0Bjb250ZW50IiwgImV4dHJhY3RvciI6ICJTY3JhcHlFeHRyYWN0b3IiLCAiZGF0YSI6IFsiMjAxNi0wMy0xNiAwODo0ODoxNiJdLCAibmFtZSI6ICJkY19kYXRlIiwgInR5cGUiOiBudWxsfSwgeyJ4cGF0aCI6ICIiLCAiZXh0cmFjdG9yIjogIkdvb3NlRXh0cmFjdG9yIiwgImRhdGEiOiBbImh0dHA6Ly93d3cuemVpdC5kZS9wb2xpdGlrL2F1c2xhbmQvMjAxNi0wMy9wYWtpc3Rhbi1idXMtYm9tYmVuYW5zY2hsYWctcGVzaGF3YXIiXSwgIm5hbWUiOiAibGluayIsICJ0eXBlIjogbnVsbH0sIHsieHBhdGgiOiAiIiwgImV4dHJhY3RvciI6ICJHb29zZUV4dHJhY3RvciIsICJkYXRhIjogWyJQb2xpdGlrLCBQYWtpc3RhbiwgVGVycm9yYW5zY2hsXHUwMGU0Z2UsIEJvbWJlbmFuZ3JpZmYsIFRhbGliYW4sIFBha2lzdGFuIl0sICJuYW1lIjogImtleXdvcmRzIiwgInR5cGUiOiBudWxsfSwgeyJ4cGF0aCI6ICIiLCAiZXh0cmFjdG9yIjogIkdvb3NlRXh0cmFjdG9yIiwgImRhdGEiOiBbIkVpbiBCdXMgaXN0IGluIGVpbmVtIGJlbGVidGVuIFZpZXJ0ZWwgZGVyIFN0YWR0IFBlc2hhd2FyIGltIE5vcmRlbiBQYWtpc3RhbnMgZXhwbG9kaWVydCwgYWxzIGVyIEJlaFx1MDBmNnJkZW5taXRhcmJlaXRlciB6dSBpaHJlciBBcmJlaXQgbmFoZSBkZXIgR3JlbnplIHp1IEFmZ2hhbmlzdGFuIGJyYWNodGUuIE5hY2ggUG9saXplaWFuZ2FiZW4gc2luZCBkYWJlaSAxNSBNZW5zY2hlbiBnZXRcdTAwZjZ0ZXQgdW5kIDM1IG1pdCBWZXJsZXR6dW5nZW4gaW4gZWluIEtyYW5rZW5oYXVzIGdlYnJhY2h0IHdvcmRlbi4gVmllbGUgdm9uIGlobmVuIGJlZlx1MDBlNG5kZW4gc2ljaCBpbiBlaW5lbSBsZWJlbnNiZWRyb2hsaWNoZW4gWnVzdGFuZC5cXG5EaWUgUG9saXplaSBmYW5kIGVpbmVuIHNlbGJzdCBnZWJhdXRlbiBTcHJlbmdzYXR6LCBkZXIgdW50ZXIgZWluZW0gU2l0eiBpbiBkZW0gQnVzIHZlcnN0ZWNrdCB1bmQgbWl0IGVpbmVtIFplaXR6XHUwMGZjbmRlciBhdXNnZXN0YXR0ZXQgd29yZGVuIHdhci4gRGllIEJvbWJlIHNvbGwgdmllciBLaWxvZ3JhbW0gU3ByZW5nc3RvZmYgZW50aGxhdGVuIGhhYmVuLiBcXFwiRGllIEV4cGxvc2lvbiB3YXIgc2VociBsYXV0XFxcIiwgc2FndGUgZWluIEF1Z2VuemV1Z2UgQWwgSmF6ZWVyYSwgXFxcImRpZSBGZW5zdGVyIHZvbiBHZWJcdTAwZTR1ZGVuIGluIGRlciBOXHUwMGU0aGUgc2luZCB6ZXJzcHJ1bmdlbi5cXFwiIEJpc2hlciBoYXQgc2ljaCBuaWVtYW5kIGZcdTAwZmNyIGRpZSBUYXQgdmVyYW50d29ydGxpY2ggZXJrbFx1MDBlNHJ0LiBCZWkgZGVuIE9wZmVybiBoYW5kZWx0IGVzIHNpY2ggbmFjaCBBbmdhYmVuIGRlcyBzdGVsbHZlcnRyZXRlbmRlbiBQb2xpemVpa29tbWlzc2FycyBmXHUwMGZjciBQZXNjaGF3YXIgXHUwMGZjYmVyd2llZ2VuZCB1bSBSZWdpZXJ1bmdzYmVhbXRlLiBcXG5QYWtpc3RhbiBrXHUwMGU0bXBmdCBzZWl0IG1laHIgYWxzIHplaG4gSmFocmVuIGdlZ2VuIFJlYmVsbGVuIGRlciByYWRpa2FsaXNsYW1pc2NoZW4gVGFsaWJhbi4gRGllIFRhbGliYW4gZ3JlaWZlbiBpbW1lciB3aWVkZXIgWml2aWxpc3RlbiB1bmQgU2ljaGVyaGVpdHNiZWFtdGUgYW4uIEVyc3QgaW4gZGVyIHZlcmdhbmdlbmVuIFdvY2hlIGhhdHRlIGVpbiBTZWxic3Rtb3JkYXR0ZW50XHUwMGU0dGVyIGVpbiBHZXJpY2h0c2dlYlx1MDBlNHVkZSBpbiBkZXIgTlx1MDBlNGhlIHZvbiBQZXNjaGF3YXIgYW5nZWdyaWZmZW4gdW5kIGRhYmVpIDE3IE1lbnNjaGVuIGdldFx1MDBmNnRldC4iXSwgIm5hbWUiOiAiY29udGVudF9lbmNvZGVkIiwgInR5cGUiOiBudWxsfSwgeyJ4cGF0aCI6ICIvaHRtbC9AbGFuZyIsICJleHRyYWN0b3IiOiAiU2NyYXB5RXh0cmFjdG9yIiwgImRhdGEiOiBbImRlIl0sICJuYW1lIjogImh0bWxfbGFuZyIsICJ0eXBlIjogbnVsbH1dXX0sICJ0aW1lIjogIjAuNzQ1MDUxMTQ1NTU0In0=", 
+                            "cDate": "2016-03-16 12:58:37", 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "edd08d68ece119cda7097ff4d1407088", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "7776c5348ae1a4396e52a4ab263d9201", 
+                    "status": 7, 
+                    "url": "http://www.zeit.de/politik/ausland/2016-03/pakistan-bus-bombenanschlag-peshawar", 
+                    "urlMd5": "5bc59df1878d1e9c60f56647dc28ce29"
+                }
+            ], 
+            "node": "m011_data", 
+            "port": "5530", 
+            "time": 157
+        }
+    ]
+}

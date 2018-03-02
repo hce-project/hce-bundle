@@ -1,0 +1,53 @@
+{
+    "cDate": "NOW()", 
+    "description": "rnd timeout", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+	    "mode": 0,
+            "pattern": "http://192.168.140.129/(.*)", 
+	    "subject": "",
+            "siteId": "100d55140d9260ea18d14ac299f85f04", 
+            "type": 1,
+            "opCode": 0,
+            "stage": 3,
+            "action": 1
+        }
+    ], 
+    "httpTimeout": 20000, 
+    "id": "100d55140d9260ea18d14ac299f85f04", 
+    "iterations": 0, 
+    "maxErrors": 1000, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 1000, 
+    "maxURLs": 1000, 
+    "priority": 100, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1"
+    }, 
+    "requestDelay": 100, 
+    "resources": 0, 
+    "state": 1, 
+    "tcDate": "NULL", 
+    "tcDateProcess": "NULL",
+    "uDate": "NULL", 
+    "urlType": 0, 
+    "urls": [
+        "http://192.168.140.129/"
+    ],
+    "contents": 0,
+    "processingDelay" : 500,
+    "size" : 0,
+    "avgSpeed" : 0,
+    "avgSpeedCounter" : 0,
+    "recrawlPeriod" : 0,
+    "recrawlDate": "NULL", 
+    "userId": 11,
+    "collectedURLs": 0,
+    "fetchType": 1
+}

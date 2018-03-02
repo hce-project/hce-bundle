@@ -1,0 +1,56 @@
+{
+  "id": 0,
+  "crawlerType": 4,
+  "items": [
+            {
+            "siteId": "0",
+            "urlId": "0bcf8382eebba7386eecc691a4bd4074",
+            "urlObj": {
+            "siteId": "0",
+            "url": "http://127.0.0.1/rt.html",
+            "type": 1,
+            "state": 0,
+            "status": 2,
+            "siteSelect": 0,
+            "crawled": 0,
+            "processed": 0,
+            "urlMd5": "0bcf8382eebba7386eecc691a4bd4074",
+            "contentType": "",
+            "requestDelay": 0,
+            "processingDelay": 0,
+            "httpTimeout": 30000,
+            "charset": "",
+            "batchId": 0,
+            "errorMask": 0,
+            "crawlingTime": 0,
+            "processingTime": 0,
+            "totalTime": 0,
+            "httpCode": 0,
+            "UDate": "NOW()",
+            "CDate": "NOW()",
+            "httpMethod": "",
+            "size": 0,
+            "linksI": 0,
+            "linksE": 0,
+            "freq": 0,
+            "depth": 0,
+            "rawContentMd5": "",
+            "parentMd5": "0bcf8382eebba7386eecc691a4bd4074",
+            "lastModified": "NULL",
+            "eTag": "",
+            "mRate": 0,
+            "mRateCounter": 0,
+            "maxURLsFromPage": 0,
+            "tcDate": "NOW()",
+            "tagsMask": 0,
+            "tagsCount": 0,
+            "pDate": "NULL",
+            "contentURLMd5": "",
+            "priority": 0
+            },
+            "properties": {
+            "DB_TASK_MODE": "RO"
+            }
+            }
+            ]
+}

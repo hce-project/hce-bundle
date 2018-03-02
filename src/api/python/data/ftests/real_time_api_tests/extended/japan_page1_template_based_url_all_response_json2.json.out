@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 1281121257, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:50:26", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 3984, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 10:33:46", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2015-04-22 10:41:00", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1267, 
+                        "RawContentMd5": "", 
+                        "Size": 30277, 
+                        "Status": 7, 
+                        "TagsCount": 5, 
+                        "TagsMask": 33554444, 
+                        "UDate": "2017-01-26 05:50:28"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJsaW5rIjoiJWxpbmslIiwKImltYWdlIjoiJWltYWdlJSIsCiJwdWJkYXRlIjoiMjAxNS0wNC0yMiAxMDo0MTowMCIsCiJhdXRob3IiOiIlYXV0aG9yJSIsCiJib2R5Ijoi44CQNOaciDIy5pelIEFGUOOAkeOCquODqeODs+ODgOODu+ODquODg+OCu++8iCBWaW5jZW50IFZhbiBHb2doIO+8ieOBruiCluWDj+OBjOODgeODpeODvOODquODg+ODl+OBp+WGjeePvuOBleOCjOOBn+OAguS7iuW5tOOBr+OCtOODg+ODm+ayoeW+jDEyNeW5tOOBq+OBguOBn+OCi+OBk+OBqOOBi+OCieOAgeODleODqeODr+ODvOOCrOODvOODh+ODs+OBruODhuODvOODnuOCguOAjOODleOCoeODs+ODu+OCtOODg+ODm+OAjeOBqOOBquOBo+OBpuOBhOOCi+OAgihjKUFGUCIsCiJ0aXRsZSI6IuODgeODpeODvOODquODg+ODl+OBp+aPj+OBj+OCtOODg+ODm+OBruiCluWDj+OAgeayoeW+jDEyNeW5tOOBpyDjgqrjg6njg7Pjg4AiLAoiZXJyb3JzX21hc2siOiIwIgp9Cl0K", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/japan_page1.html", 
+                    "urlMd5": "9eb80d764c4130ea33c0bc0670a35857"
+                }
+            ], 
+            "node": "r014_data", 
+            "port": "5733", 
+            "time": 7739
+        }
+    ]
+}

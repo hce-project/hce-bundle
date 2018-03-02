@@ -1,0 +1,50 @@
+[
+  {
+    "output_format": {
+      "name": "json",
+      "header": "[\n",
+      "items_header": "",
+      "item": "{\n\"pubdate\":\"%pubdate%\",\n\"title\":\"%title%\",\n\"description\":\"%description%\",\n\"media\":\"%media%\",\n\"author\":\"%author%\",\n\"dc_date\":\"%dc_date%\",\n\"link\":\"%link%\",\n\"keywords\":\"%keywords%\",\n\"content_encoded\":\"%content_encoded%\",\n\"html_lang\":\"%html_lang%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n",
+      "items_footer": "",
+      "footer": "]\n"
+    },
+    "tags": {
+      "pubdate": {
+        "default": ""
+      },
+      "title": {
+        "default": ""
+      },
+      "description": {
+        "default": ""
+      },
+      "media": {
+        "default": ""
+      },
+      "author": {
+        "default": ""
+      },
+      "dc_date": {
+        "default": ""
+      },
+      "link": {
+        "default": ""
+      },
+      "keywords": {
+        "default": ""
+      },
+      "content_encoded": {
+        "default": ""
+      },
+      "html_lang": {
+        "default": ""
+      },
+      "errors_mask": {
+        "default": ""
+      }
+    },
+    "priority": 100,
+    "mandatory": 1,
+    "is_filled": 0
+  }
+]

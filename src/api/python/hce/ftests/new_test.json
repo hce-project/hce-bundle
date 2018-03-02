@@ -1,0 +1,22 @@
+{
+    "command":"aaa", 
+    "id":10, 
+    "input":"aaas", 
+    "files":
+    [
+	"f1",
+	"f2"
+    ], 
+    "session":
+    {
+	"vn":10
+    }, 
+    "strategy":
+    {
+	"vn":10
+    }, 
+    "limits":
+    {
+	"vn":10
+    }
+}

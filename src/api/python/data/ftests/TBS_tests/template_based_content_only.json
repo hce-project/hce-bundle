@@ -1,0 +1,127 @@
+{
+  "items": [
+            {
+            "urlContentResponse": null,
+            "siteId": "0",
+            "urlId": "ab7f8a27bac85d6c9c41b53ccf75165f",
+            "urlObj": {
+            "status": 2,
+            "linksI": 0,
+            "contentMask": 1,
+            "linksE": 0,
+            "processingTime": 0,
+            "CDate": null,
+            "mRateCounter": 0,
+            "httpTimeout": 30000,
+            "size": 0,
+            "batchId": 0,
+            "lastModified": null,
+            "tagsCount": 0,
+            "mRate": 0,
+            "charset": "",
+            "state": 0,
+            "httpCode": 0,
+            "priority": 0,
+            "maxURLsFromPage": 0,
+            "urlMd5": "ab7f8a27bac85d6c9c41b53ccf75165f",
+            "processingDelay": 500,
+            "crawlingTime": 0,
+            "type": 1,
+            "processed": 0,
+            "totalTime": 0,
+            "siteSelect": 0,
+            "contentType": "",
+            "pDate": null,
+            "errorMask": 0,
+            "httpMethod": "get",
+            "eTag": "",
+            "siteId": "0",
+            "freq": 0,
+            "tcDate": null,
+            "rawContentMd5": "",
+            "url": null,
+            "crawled": 0,
+            "UDate": null,
+            "contentURLMd5": "",
+            "requestDelay": 500,
+            "depth": 0,
+            "parentMd5": "",
+            "urlUpdate": null,
+            "tagsMask": 0,
+            "urlPut": {
+            "putDict": {
+            "data": "<html><body><p id='title'>This is title</p><p id='desc'>this is description</p><p id='article'>This is article corpus</p></body></html>"
+            },
+            "urlMd5": "ab7f8a27bac85d6c9c41b53ccf75165f",
+            "contentType": 0,
+            "siteId": "0",
+            "fileStorageSuffix": null,
+            "criterions": null
+            }
+            },
+            "urlPutObj": null,
+            "properties": {
+            "DB_TASK_MODE": "RO",
+            "HTTP_AUTH_NAME": "Smith",
+            "HTTP_AUTH_PWD": "Ooops",
+            "HTTP_REDIRECTS_MAX": 3,
+            "HTML_RECOVER": 0,
+            "PROCESSOR_PROPERTIES": {
+            "algorithm": {
+            "algorithm_name": "regular"
+            },
+            "modules": {
+            "regular": [
+                        "ScrapyExtractor"
+                        ]
+            }
+            },
+            "template": {
+            "templates": [
+                          {
+                          "tags": {
+                          "MyTitle": [
+                                      {
+                                      "begin": "",
+                                      "target": "//h3[@class='b-popular_title']/a",
+                                      "end": "",
+                                      "type": {
+                                      "name": "text",
+                                      "format": ""
+                                      },
+                                      "join": "first"
+                                      },
+                                      {
+                                      "begin": "",
+                                      "target": "//p[@id='title']",
+                                      "end": "",
+                                      "type": {
+                                      "name": "text",
+                                      "format": ""
+                                      },
+                                      "join": "first",
+                                      "mandatory": 1
+                                      }
+                                      ]
+                          },
+                          "priority": "100",
+                          "mandatory": 1,
+                          "is_filled": 0,
+                          "output_format": {
+                          "name": "xml",
+                          "header": "<?xml version='1.0'?><response>",
+                          "items_header": "<item>",
+                          "item": "  <MyTitle>%MyTitle%</MyTitle>",
+                          "items_footer": "</item>",
+                          "footer": "</response>"
+                          }
+                          }
+                          ],
+            "select": "first_nonempty"
+            }
+            }
+            }
+            ],
+  "crawlerType": 4,
+  "id": 1
+}

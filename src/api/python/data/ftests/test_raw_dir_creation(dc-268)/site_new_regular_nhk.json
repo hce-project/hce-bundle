@@ -1,0 +1,52 @@
+{
+    "avgSpeed": 0, 
+    "avgSpeedCounter": 0, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "contents": 0, 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "mode": 0, 
+            "pattern": ".*nhk.or.jp.*", 
+            "siteId": "27d9edc3dc944ee8383ad4bfeaf59061", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 30000, 
+    "id": "27d9edc3dc944ee8383ad4bfeaf59061", 
+    "iterations": 0, 
+    "maxErrors": 5, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 5, 
+    "maxURLs": 5, 
+    "priority": 100, 
+    "processingDelay": 500, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1", 
+        "PROCESSOR_NAME" : "NONE",
+        "template": "{\\'description\\': [\\\"//p[contains(@id,\\'news_textbody\\')]/text()\\\"], \\'pubdate\\': [\\\"concat(//span[contains(@id,\\'news_date\\')]/text(), //span[contains(@id,\\'news_time\\')]/text())\\\"], \\'author\\': [\\\"//meta[contains(@name,\\'author\\')]/@content\\\"], \\'media\\': [\\\"//div[contains(@id,\\'mage\\')]/img//@src\\\", \\\"//div[contains(@class,\\'Image\\')]//@href\\\"], \\'title\\': [\\\"//h1[contains(@class,\\'entryTitle\\')]/span[contains(@class,\\'contentTitle\\')]/text()\\\"], \\'media_thumbnail\\': [\\\"//meta[contains(@name,\\'media_thumbnail\\')]/@content\\\"], \\'media_content\\': [\\\"//meta[contains(@name,\\'media_content\\')]/@content\\\"], \\'dc_date\\': [\\\"//meta[contains(@name,\\'date\\')]/@content\\\"], \\'link\\': [\\\"//meta[contains(@name,\\'link\\')]/@content\\\", \\\"//li[contains(@class,\\'space\\')]/@href\\\", \\\"//link[contains(@rel,\\'canonical\\')]/@href\\\"], \\'keywords\\': [\\\"//meta[contains(@name,\\'keywords\\')]/@content\\\"], \\'content_encoded\\': [\\\"//p[contains(@id,\\'news_textmore\\')]/text() | //p[contains(@id,\\'news_textbody\\')]/text()\\\"], \\'guid\\': [\\\"//meta[contains(@name,\\'guid\\')]/@content\\\"], \\'enclosure\\': [\\\"//meta[contains(@name,\\'enclosure\\')]/@content\\\"]}"
+    }, 
+    "requestDelay": 500, 
+    "resources": 0, 
+    "size": 0, 
+    "state": 1, 
+    "tcDate": null, 
+    "uDate": null, 
+    "urlType": 0, 
+    "urls": [
+        "http://www3.nhk.or.jp/news/"
+    ], 
+    "avgSpeed" : 0,
+    "avgSpeedCounter" : 0,
+    "recrawlPeriod" : 0,
+    "recrawlDate": "NULL", 
+    "userId": 0
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "contentTypeMask": "1",
+    "siteId": "",
+    "url": "",
+    "urlFetch": {
+      "algorithm": 0,
+      "maxURLs": 0,
+      "sitesCriterions": {
+        "WHERE": "`Id` IN (\"facf542821caf565d893f42ec669ae3f\")",
+        "LIMIT": 100,
+        "ORDER BY": "CDate DESC"
+      },
+      "sitesList": [],
+      "urlUpdate": null,
+      "urlsCriterions": {
+        "WHERE": "`TagsCount`>1 AND `Processed`>0",
+        "LIMIT": "10",
+        "ORDER BY": "CDate DESC"
+      }
+    },
+    "urlMd5": ""
+  }
+]

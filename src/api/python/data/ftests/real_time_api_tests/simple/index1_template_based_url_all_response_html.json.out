@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 246884827, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:59", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 30, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2015-05-07 02:03:14", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1273, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 8, 
+                        "TagsMask": 33554716, 
+                        "UDate": "2017-01-26 05:06:01"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "PCFET0NUWVBFIGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iY29udGVudC10eXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjwvaGVhZD48Ym9keT4KIDx0YWJsZT4KPHRyPjx0ZD50aXRsZTo8L3RkPjx0ZD5IaXAtSG9wIFdhcyB0aGUgQmlnZ2VzdCBSZXZvbHV0aW9uIGluIEFtZXJpY2FuIE11c2ljIGFuZCBUaGF04oCZcyBCYWNrZWQgQnkgYSBTdHVkeSBvZiAxNywwMDAgU29uZ3M8L3RkPjwvdHI+PHRyPjx0ZD5ib2R5OjwvdGQ+PHRkPlRoZSBleHBsb3Npb24gb2YgaGlwLWhvcCBvbnRvIHRoZSBtdXNpYyBzY2VuZSBpbiB0aGUgMTk5MHMgd2FzIHRoZSBiaWdnZXN0IG11c2ljYWwgcmV2b2x1dGlvbiBpbiBBbWVyaWNhbiBwb3AgaGlzdG9yeS48L3RkPjwvdHI+PHRyPjx0ZD5pbWFnZTo8L3RkPjx0ZD5odHRwczovL3RpbWVkb3Rjb20uZmlsZXMud29yZHByZXNzLmNvbS8yMDE1LzA1L3B1YmxpYy1lbmVteS1yYXAuanBnP3F1YWxpdHk9NjUmYW1wO3N0cmlwPWNvbG9yJmFtcDt3PTU1MDwvdGQ+PC90cj48dHI+PHRkPnB1YmRhdGU6PC90ZD48dGQ+MjAxNS0wNS0wNyAwMjowMzoxNDwvdGQ+PC90cj48dHI+PHRkPmF1dGhvcjo8L3RkPjx0ZD4mbHQ7YSBpdGVtcHJvcD0mcXVvdDthdXRob3ImcXVvdDsgaHJlZj0mcXVvdDsuLi8uLi9hdXRob3IvaGVsZW4tcmVnYW4vaW5kZXguaHRtbCZxdW90OyZndDtIZWxlbiBSZWdhbiZsdDsvYSZndDs8L3RkPjwvdHI+PHRyPjx0ZD5saW5rOjwvdGQ+PHRkPm1haWx0bzpib2JAeHl6LmNvbTwvdGQ+PC90cj48dHI+PHRkPmVycm9yc19tYXNrOjwvdGQ+PHRkPjA8L3RkPjwvdHI+CiA8L3RhYmxlPgo8L2JvZHk+PC9odG1sPgo=", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html", 
+                    "urlMd5": "b3eb9e33190cbc35e4419a3764903a01"
+                }
+            ], 
+            "node": "r014_data", 
+            "port": "5733", 
+            "time": 3621
+        }
+    ]
+}

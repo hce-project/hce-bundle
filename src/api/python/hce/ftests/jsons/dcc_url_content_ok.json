@@ -1,0 +1,23 @@
+[
+    {
+        "contentTypeMask": 253,
+        "siteId": "z5",
+        "url": "http://url1.com/",
+        "urlFetch": null,
+        "urlMd5": "00abcd0ffd3799be8a5cac2b6c1f25ae"
+    },
+    {
+        "contentTypeMask": 253,
+        "siteId": "z5",
+        "url": "http://url5.com/",
+        "urlFetch": null,
+        "urlMd5": "bb14efd5de900593acf2648d1677526b"
+    },
+    {
+        "contentTypeMask": 125,
+        "siteId": "z5",
+        "url": "http://url5.com/",
+        "urlFetch": null,
+        "urlMd5": "bb14efd5de900593acf2648d1677526b"
+    }
+]

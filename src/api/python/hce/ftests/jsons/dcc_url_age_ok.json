@@ -1,0 +1,23 @@
+[
+    {
+	"sitesCriterions":
+	{
+	    "WHERE": "`Id` != '0'",
+	    "LIMIT": 2
+	},
+	"urlsCriterions":
+	{
+	    "WHERE": "`URL` != ''"
+	},
+	"maxURLs": null,
+	"delayedType": null
+    },
+    {
+	"sitesCriterions":
+	{
+	    "WHERE": "`Id` == '07c5d803a1c1507df633437649240c78'"
+	},
+	"maxURLs": null,
+	"delayedType": null
+    }
+]

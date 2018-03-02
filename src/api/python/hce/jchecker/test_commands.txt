@@ -1,0 +1,4 @@
+../../bin/json-checker.py --file=test.json --path=statuses[3][3] --value=10  (NOT FOUND)
+../../bin/json-checker.py --file=test.json --path=statuses[1][0] --value=2435516 (OK)
+../../bin/json-checker.py --file=test.json --path=statuses[1][0] --value=10,assd,2435516 (OK)
+../../bin/json-checker.py --file=test.json --path=field.internal.boom --value=10,assd,2435516,"azza" (OK)

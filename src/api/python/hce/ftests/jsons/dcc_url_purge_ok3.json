@@ -1,0 +1,13 @@
+[
+    {
+	"siteId": null,
+	"url": "",
+	"urlType": 0,
+	"siteLimits": [1, 5],
+	"criterions": 
+	{
+	    "LIMIT": "1"
+	}
+
+    }
+]

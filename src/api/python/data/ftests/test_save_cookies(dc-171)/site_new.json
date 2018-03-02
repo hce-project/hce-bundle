@@ -1,0 +1,54 @@
+{
+  "errors": 0,
+  "errorMask": 0,
+  "description": "",
+  "contents": 0,
+  "cDate": {
+    "str": "NOW()"
+  },
+  "avgSpeedCounter": 0,
+  "avgSpeed": 0,
+  "httpTimeout": 30000,
+  "collectedURLs": 0,
+  "maxURLsFromPage": 10,
+  "maxURLs": 1,
+  "maxResources": 10,
+  "maxResourceSize": 1e+06,
+  "maxErrors": 10,
+  "iterations": 0,
+  "id": "b85ab149a528bd0a024fa0f43e80b5fc",
+  "state": 1,
+  "tcDate": null,
+  "uDate": null,
+  "urlType": 0,
+  "urls": [
+    "http://127.0.0.1/_site_random_generator.php"
+  ],
+  "recrawlPeriod": 1440,
+  "userId": 2,
+  "fetchType": 0,
+  "size": 0,
+  "resources": 0,
+  "requestDelay": 500,
+  "recrawlDate": "NOW()",
+  "properties": {
+    "PROCESSOR_NAME": "NONE",
+    "MIME_TYPE_STORE_ON_DISK": "none",
+    "STORE_COOKIES": "1",
+    "STORE_HTTP_REQUEST": "1",
+    "STORE_HTTP_HEADERS": "1",
+    "PROCESS_CTYPES": "text/html",
+    "HTTP_HEADERS": "",
+    "HTTP_COOKIE": ""
+  },
+  "processingDelay": 500,
+  "priority": 100,
+  "filters": [
+    {
+      "type": 1,
+      "siteId": "b85ab149a528bd0a024fa0f43e80b5fc",
+      "pattern": "http://127.0.0.1/_site_random_generator.php(.*)",
+      "mode": 0
+    }
+  ]
+}

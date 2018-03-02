@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 3258380262, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:06:56", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 31, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2017-01-26 05:06:58", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1128, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 5, 
+                        "TagsMask": 33554444, 
+                        "UDate": "2017-01-26 05:06:58"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJpbWFnZSI6IiVpbWFnZSUiLAoiYm9keSI6IlRoZSBleHBsb3Npb24gb2YgaGlwLWhvcCBvbnRvIHRoZSBtdXNpYyBzY2VuZSBpbiB0aGUgMTk5MHMgd2FzIHRoZSBiaWdnZXN0IG11c2ljYWwgcmV2b2x1dGlvbiBpbiBBbWVyaWNhbiBwb3AgaGlzdG9yeS4iLAoidGl0bGUiOiJIaXAtSG9wIFdhcyB0aGUgQmlnZ2VzdCBSZXZvbHV0aW9uIGluIEFtZXJpY2FuIE11c2ljIGFuZCBUaGF04oCZcyBCYWNrZWQgQnkgYSBTdHVkeSBvZiAxNywwMDAgU29uZ3MiLAoibGlua19ib2JfZW1haWwtYWRkcmVzcyI6ImJvYkB4eXouY29tIiwKImVycm9yc19tYXNrIjoiMCIKfQpdCg==", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html", 
+                    "urlMd5": "b3eb9e33190cbc35e4419a3764903a01"
+                }
+            ], 
+            "node": "r012_data", 
+            "port": "5731", 
+            "time": 3573
+        }
+    ]
+}

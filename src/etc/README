@@ -1,0 +1,9 @@
+/api/  - API bindings for client target developer language, like php
+/data/ - Directories for indexes with whole Sphinx index files
+/etc/  - Sphinx search config templates that used each time when new index created
+/log/  - Runtime logs for Sphinx search and other external services
+/run/  - Runtime pid files
+/usr/  - Some executable or library files that are used by HCE components
+
+schema.xml - default template of Sphinx index data schema
+sphinx.template - default template of Sphinx index configuration

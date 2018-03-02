@@ -1,0 +1,60 @@
+{
+  "avgSpeed": 0,
+  "avgSpeedCounter": 0,
+  "cDate": {
+    "str": "NOW()"
+  },
+  "contents": 0,
+  "description": "",
+  "errorMask": 0,
+  "errors": 0,
+  "filters": [
+              {
+              "mode": 0,
+              "pattern": "^(?:http(?:s)?:\\/\\/)?(?:[^\\.]+\\.)?afpbb\\.com\\/articles\\/-\\/([0-9]*)$",
+              "siteId": "afe3b4bc8af61fa95d67f62122d55d04",
+              "type": 1
+              }
+              ],
+  "httpTimeout": 30000,
+  "id": "afe3b4bc8af61fa95d67f62122d55d04",
+  "iterations": 0,
+  "maxErrors": 100000,
+  "maxResourceSize": 500000,
+  "maxResources": 500,
+  "maxURLs": 1000,
+  "maxURLsFromPage": 200,
+  "priority": 0,
+  "processingDelay": 500,
+  "properties": {
+    "TIMEZONE": "JST",
+    "CONTENT_HASH": "{ \"algorithm\": 1, \"tags\": \"title,description,content_encoded,media,pubdate\", \"delete\": 1 }",
+    "HTTP_COOKIE": "",
+    "HTTP_HEADERS": "",
+    "PROCESS_CTYPES": "text/html",
+    "STORE_HTTP_HEADERS": "1",
+    "STORE_HTTP_REQUEST": "1",
+    "AUTO_REMOVE_RESOURCES": "1",
+    "AUTO_REMOVE_WHERE": "ParentMd5<>\"\" AND Status IN (4,7) AND DATE_ADD(UDate, INTERVAL %RecrawlPeriod% MINUTE)<NOW()",
+    "AUTO_REMOVE_ORDER": "ContentType ASC, Crawled ASC, TagsCount ASC, CDate ASC",
+    "template": "{\"description\": [\"//div[@id=\u0027NWrelart:Body\u0027]\"], \"pubdate\": [\"//header[@id=\u0027signage\u0027]/p[@class=\u0027day\u0027]/text()\", \"//header[@id=\u0027signage\u0027]/p/text()\"], \"author\": [\"//meta[contains(@name,\u0027author\u0027)]/@content\"], \"media\": [\"//img[@id=\u0027main-img\u0027]\", \"//*[@id=\\\"flag_\\\"]/iframe\"], \"title\": [\"//header[@id=\u0027signage\u0027]/h1[@class=\u0027title\u0027]/text()\"], \"media_thumbnail\": [\"//meta[contains(@name,\u0027media_thumbnail\u0027)]/@content\"], \"media_content\": [\"//meta[contains(@name,\u0027media_content\u0027)]/@content\"], \"dc_date\": [\"//meta[contains(@name,\u0027date\u0027)]/@content\", \"//span[contains(@class,\u0027date\u0027)]/text()\", \"//p[contains(@class,\u0027date\u0027)]/text()\", \"//div[contains(@id,\u0027date\u0027)]/text()\", \"//meta[contains(@property,\u0027article:published_time\u0027)]/@content\", \"//meta[contains(@name,\u0027firstcreate\u0027)]/@content\"], \"link\": [\"//meta[contains(@name,\u0027link\u0027)]/@content\", \"//li[contains(@class,\u0027space\u0027)]/@href\", \"//link[contains(@rel,\u0027canonical\u0027)]/@href\", \"//meta[contains(@property,\u0027og:url\u0027)]/@content\"], \"keywords\": [\"//header[@id=\u0027signage\u0027]/p[@class=\u0027day\u0027]/span[@class=\u0027location\u0027]/text()\"], \"content_encoded\": [\"//div[contains(@class,\u0027Text\u0027)]/p//text()\", \"//div[contains(@class,\u0027ext\u0027)]/p//text()\", \"//div[contains(@class,\u0027cbox-content row\u0027)]/p//text()\", \"//p[contains(@id,\u0027ews\u0027)]/text()\", \"//div[contains(@class,\u0027ews\u0027)]/p//text()\", \"//meta[contains(@name,\u0027content_encoded\u0027)]/@content\", \"//p[contains(@class,\u0027lead-def\u0027)]/text()\", \"//span[contains(@id,\u0027article\u0027)]/p/text()\", \"//div[contains(@class,\u0027article\u0027)]//p//text()\", \"//div[contains(@class,\u0027content\u0027)]/p//text()\", \"//div[contains(@id,\u0027rticle\u0027)]/p//text()\", \"//div[contains(@class,\u0027NewsBody\u0027)]/p/text()\", \"//div[contains(@class,\u0027NewsTextFull\u0027)]/p/text()\", \"//div[contains(@class,\u0027entry-content\u0027)]/p/text()\", \"//p[contains(@id,\u0027news_textmore\u0027)]/text() | //p[contains(@id,\u0027news_textbody\u0027)]/text()\", \"//div[contains(@id,\u0027resizeableText\u0027)]//p/text()\", \"//div[contains(@class,\u0027summary\u0027)]//p/text() | //div[contains(@class, \u0027summary\u0027)]//a/text()\", \"//div[contains(@class,\u0027cmn-article_text JSID_key_fonttxt\u0027)]//p/text()\", \"//p[contains(@itemprop,\u0027articleBody\u0027)]/text()\"], \"guid\": [\"//meta[contains(@name,\u0027guid\u0027)]/@content\"], \"enclosure\": [\"//meta[contains(@name,\u0027enclosure\u0027)]/@content\"],\"html_lang\":[\"/html/@lang\"]}",
+    "RECRAWL_DELETE_WHERE": "(`Status`=1 OR (`Status`=4 AND Crawled=0 AND Processed=0) OR `PDate`<CURDATE() OR `PDate` IS NULL OR CDate<CURDATE()) AND `ParentMd5`<>''"
+  },
+  "recrawlDate" : "DATE_ADD(DATE_FORMAT(NOW(),\"%Y-%m-%d 00:00:00\"), INTERVAL ((((HOUR(NOW())*60 + MINUTE(NOW()) + SECOND(NOW())/60) DIV (RecrawlPeriod+1)+1)*RecrawlPeriod) + 45) MINUTE)",
+  "requestDelay": 500,
+  "resources": 0,
+  "size": 0,
+  "state": 1,
+  "tcDate": null,
+  "uDate": null,
+  "urlType": 0,
+  "urls": [
+           "http://www.afpbb.com/list/latest",
+           "http://www.afpbb.com/list/latest?p=2"
+           ],
+  "recrawlPeriod" : 360,
+  "userId": 2,
+  "collectedURLs": 0,
+  "updateType": 1,
+  "fetchType": 1
+}

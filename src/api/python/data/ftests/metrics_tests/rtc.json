@@ -1,0 +1,19 @@
+{
+  "urls": [
+           {
+           "url": "http://192.168.0.106/rt.html",
+           "properties": {
+           "reprocess": 1,
+           "PROCESSOR_PROPERTIES": {"algorithm": {"algorithm_name": "metric_based"},"modules": {"metric_based": ["ScrapyExtractor","GooseExtractor","NewspaperExtractor","MLExtractor","BoilerpipeExtractor"]},"metrics":[{"name":"WordsMetric","threshold":100},{"name":"SentencesMetric","threshold":10}]}
+           }
+           }
+           ],
+  "site_id": "rss_metric",
+  "tags": [
+           "title",
+           "description",
+           "content_encoded",
+           "pdate"
+           ],
+  "id": "12345"
+}

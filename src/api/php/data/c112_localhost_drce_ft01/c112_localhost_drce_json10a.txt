@@ -1,0 +1,29 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+                "LINES": "80",
+                "HOSTNAME": "node22"
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 1,
+        "time_max": 30000,
+        "cleanup": 1
+    },
+    "command": "cd /tmp/ && chmod 777 hello.out && ./hello.out",
+    "input": "",
+    "files": [
+        {
+            "name": "/tmp/hello.out",
+            "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft01/c112_localhost_drce_json10a.out",
+            "action": 2147483657
+        }
+    ]
+}

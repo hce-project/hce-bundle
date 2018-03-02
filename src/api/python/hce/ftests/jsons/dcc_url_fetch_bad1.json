@@ -1,0 +1,8 @@
+{
+    "sitesList": 100,
+    "criterions":
+    {
+	"crit1": "upload",
+	"crit2": "download"
+    }
+}

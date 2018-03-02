@@ -1,0 +1,5 @@
+{
+ "type": 0,
+ "data": "[{\"error_code\":1,\"error_message\":\"General error!\",\"id\":\"0\",\"files\":[],\"type\":0,\"host\":\"localhost\",\"port\":5700,\"state\":2,\"pid\":22353253,\"stdout\":\"\",\"stderror\":\"\",\"exit_status\":0,\"node\":\"node1\",\"time\":100}]",
+ "ttl": 30000
+}

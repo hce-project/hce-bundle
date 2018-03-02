@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 407796531, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "695ef25e7a8bc3d5b04cabe1a25b4d0f", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:21:38", 
+                        "Charset": "UTF-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "695ef25e7a8bc3d5b04cabe1a25b4d0f", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 17, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2017-01-26 05:21:40", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1255, 
+                        "RawContentMd5": "", 
+                        "Size": 516, 
+                        "Status": 7, 
+                        "TagsCount": 4, 
+                        "TagsMask": 33554460, 
+                        "UDate": "2017-01-26 05:21:40"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "InB1YmRhdGUiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwibWVkaWEiLCJhdXRob3IiLCJkY19kYXRlIiwibGluayIsImtleXdvcmRzIiwiY29udGVudF9lbmNvZGVkIiwiaHRtbF9sYW5nIiwiZXJyb3JzX21hc2siCiIyMDE3LTAxLTI2IDA1OjIxOjQwIiwiVGVzdCBjaGFpbnMgcGFnZSIsIiVkZXNjcmlwdGlvbiUiLCIlbWVkaWElIiwiJWF1dGhvciUiLCIlZGNfZGF0ZSUiLCJodHRwOi8vMTI3LjAuMC4xL3RlbXBsYXRlX3NjcmFwaW5nL2NoYWluc19wYWdlMS5odG1sIiwiJWtleXdvcmRzJSIsIiVjb250ZW50X2VuY29kZWQlIgosIiVodG1sX2xhbmclIiwiMCIK", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/chains_page1.html", 
+                    "urlMd5": "b3eb9e33190cbc35e4419a3764955555"
+                }
+            ], 
+            "node": "r014_data", 
+            "port": "5733", 
+            "time": 3569
+        }
+    ]
+}

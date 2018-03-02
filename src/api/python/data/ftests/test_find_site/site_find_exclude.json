@@ -1,0 +1,5 @@
+{
+    "url": "http://www.jiji.com",
+    "urlsCriterions": null,
+		"excludeList": ["urls", "properties", "filters"]
+}

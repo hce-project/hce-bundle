@@ -1,0 +1,47 @@
+{
+    "cDate": "NOW()", 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "pattern": "http://sankei.jp.msn.com/(.*)", 
+            "siteId": "ab3b37f575d82d74220865746e4778df", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 20000, 
+    "id": "ab3b37f575d82d74220865746e4778df", 
+    "iterations": 0, 
+    "maxErrors": 0, 
+    "maxResourceSize": 4000000, 
+    "maxResources": 100, 
+    "maxURLs": 1000, 
+    "priority": 100, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html,application/xml", 
+        "MIME_TYPE_STORE_ON_DISK": "*", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1"
+    }, 
+    "requestDelay": 1000, 
+    "resources": 0, 
+    "state": 1, 
+    "tcDate": "NULL", 
+    "tcDateProcess": "NULL",
+    "uDate": "NULL", 
+    "urlType": 0, 
+    "urls": [
+        "http://sankei.jp.msn.com/politics/news/140401/stt14040112470002-n1.htm"
+    ],
+    "contents": 0,
+    "processingDelay" : 500,
+    "size" : 0,
+    "avgSpeed" : 0,
+    "avgSpeedCounter" : 0,
+    "recrawlPeriod" : 0,
+    "recrawlDate": "NULL", 
+    "userId" : 0
+}

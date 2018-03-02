@@ -1,0 +1,26 @@
+[
+  {
+    "siteId": "123456789",
+    "host": "0.0.0.0:80",
+    "domains": "[\"*\"]",
+    "priority": 1,
+    "state": 1,
+    "countryCode": "-",
+    "countryName": "-",
+    "regionCode": 1,
+    "regionName": "-",
+    "cityName": "-",
+    "zipCode": "-",
+    "timeZone": "-",
+    "latitude": 0.1,
+    "longitude": 0.1,
+    "metroCode": 1,
+    "faults": 1,
+    "faultsMax": 1,
+    "categoryId": 1,
+    "limits": null,
+    "description": "-",
+    "cDate": null,
+    "uDate": "NOW()"
+  }
+]

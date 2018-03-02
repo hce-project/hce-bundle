@@ -1,0 +1,30 @@
+Short description about exist JSON for tests:
+
+c112_localhost_drce_json_check00.txt - file content JSON request for check task request 
+c112_localhost_drce_json_get00.txt	 - file content JSON request for get task request 
+c112_localhost_drce_json_del00.txt	 - file content JSON request for delete task request 
+
+Files content JSON request for set as new task request on execution:
+
+c112_localhost_drce_json00.txt  
+c112_localhost_drce_json01.txt 
+c112_localhost_drce_json02.txt  
+c112_localhost_drce_json03.txt 
+c112_localhost_drce_json04.txt 
+
+Files content JSON for subtasks request on execution:
+
+c112_localhost_drce_json00_sub1_data.txt
+c112_localhost_drce_json01_sub1_data.txt
+c112_localhost_drce_json02_sub1_data.txt
+c112_localhost_drce_json03_sub1_data.txt
+c112_localhost_drce_json04_sub1_data.txt
+
+Files content JSON-prototype for make subtasks request:
+
+c112_localhost_drce_json00_subtasks.txt
+c112_localhost_drce_json01_subtasks.txt
+c112_localhost_drce_json02_subtasks.txt
+c112_localhost_drce_json03_subtasks.txt
+c112_localhost_drce_json04_subtasks.txt
+       

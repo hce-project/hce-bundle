@@ -1,0 +1,100 @@
+{
+    "items": [
+              {
+              "urlContentResponse": null,
+              "siteId": "0",
+              "urlId": "83bd068f54d4d3d7288f8ba9ef11b0c6",
+              "urlObj": {
+              "status": 2,
+              "linksI": 0,
+              "contentMask": 0,
+              "linksE": 0,
+              "processingTime": 0,
+              "CDate": null,
+              "mRateCounter": 0,
+              "httpTimeout": 30000,
+              "size": 0,
+              "urlPut": null,
+              "batchId": 0,
+              "lastModified": null,
+              "tagsCount": 0,
+              "mRate": 0,
+              "charset": "",
+              "state": 0,
+              "httpCode": 0,
+              "priority": 0,
+              "maxURLsFromPage": 0,
+              "urlMd5": "83bd068f54d4d3d7288f8ba9ef11b0c6",
+              "processingDelay": 500,
+              "crawlingTime": 0,
+              "type": 1,
+              "processed": 0,
+              "totalTime": 0,
+              "siteSelect": 0,
+              "contentType": "",
+              "pDate": null,
+              "errorMask": 0,
+              "httpMethod": "get",
+              "eTag": "",
+              "siteId": "0",
+              "freq": 0,
+              "tcDate": null,
+              "rawContentMd5": "",
+              "url": "http://www.afpbb.com/articles/-/3046087",
+              "crawled": 0,
+              "UDate": null,
+              "contentURLMd5": "",
+              "requestDelay": 500,
+              "depth": 0,
+              "parentMd5": "",
+              "urlUpdate": null,
+              "tagsMask": 0
+              },
+              "urlPutObj": {
+              "putDict": {},
+              "urlMd5": "83bd068f54d4d3d7288f8ba9ef11b0c6",
+              "contentType": 0,
+              "siteId": "0",
+              "fileStorageSuffix": null,
+              "criterions": null
+              },
+              "properties": {
+              "PROCESSOR_PROPERTIES": {
+              "algorithm": {
+              "algorithm_name": "regular"
+              },
+              "modules": {
+              "regular": [
+                          "ScrapyExtractor",
+                          "NewspaperExtractor",
+                          "GooseExtractor"
+                          ]
+              }
+              },
+              "DB_TASK_MODE": "RO",
+              "template": {
+              "templates": [
+                            {
+                            "tags": {
+                            },
+                            "priority": "100",
+                            "mandatory": 1,
+                            "is_filled": 0,
+                            "output_format": {
+                            "name": "xml",
+                            "header": "<?xml version='1.0'?><response>",
+                            "items_header": "<item>",
+                            "item": "<pubdate>%pubdate%</pubdate><title>%title%</title><media>%media%</media><dc_date>%dc_date%</dc_date><link>%link%</link><keywords>%keywords%</keywords><content_encoded>%content_encoded%</content_encoded><html_lang>%html_lang%</html_lang>",
+                            "items_footer": "</item>",
+                            "footer": "</response>"
+                            }
+                            }
+                            ],
+              "select": "first_nonempty"
+              }
+              }
+              }
+              ],
+    "crawlerType": 4,
+    "id": 1
+}

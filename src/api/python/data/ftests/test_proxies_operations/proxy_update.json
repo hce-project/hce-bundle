@@ -1,0 +1,25 @@
+[
+  {
+    "siteId": "123456789",
+    "host": "0.0.0.0:80",
+    "domains": "[\"*\"]",
+    "priority": "2",
+    "state": "0",
+    "countryCode": "countryCode",
+    "countryName": "countryName",
+    "regionCode": "0123",
+    "regionName": "regionName",
+    "cityName": "cityName",
+    "zipCode": "zipCode",
+    "timeZone": "timeZone",
+    "latitude": "0.1",
+    "longitude": "0.2",
+    "metroCode": "0123",
+    "faults": "2",
+    "faultsMax": "3",
+    "categoryId": "7",
+    "limits": "{}",
+    "description": "description",
+    "uDate": "NOW()"
+  }
+]

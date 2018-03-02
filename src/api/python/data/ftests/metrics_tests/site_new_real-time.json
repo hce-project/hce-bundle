@@ -1,0 +1,66 @@
+{
+  "avgSpeed": 0,
+  "avgSpeedCounter": 0,
+  "cDate": {
+    "str": "NOW()"
+  },
+  "contents": 0,
+  "description": "real-time",
+  "errorMask": 0,
+  "errors": 0,
+  "filters": [],
+  "httpTimeout": 30000,
+  "id": "7ab215f916a2475dd8156c6d3f52302a",
+  "iterations": 0,
+  "maxErrors": 0,
+  "maxResourceSize": 500000,
+  "maxResources": 0,
+  "maxURLs": 0,
+  "maxURLsFromPage": 0,
+  "priority": 100,
+  "processingDelay": 500,
+  "properties":
+  [
+   {
+   "siteId": "7ab215f916a2475dd8156c6d3f52302a",
+   "name": "HTTP_HEADERS",
+   "value": "User-Agent: Wget/1.15 (darwin13.2.0)"
+   },
+   {
+   "siteId": "7ab215f916a2475dd8156c6d3f52302a",
+   "name": "TEMPLATE_SELECTION_TYPE",
+   "value": "2"
+   },
+   {
+   "siteId": "7ab215f916a2475dd8156c6d3f52302a",
+   "name": "PROCESS_CTYPES",
+   "value": "text/html,text/xml,application/rss+xml"
+   },
+   {
+   "siteId": "7ab215f916a2475dd8156c6d3f52302a",
+   "name": "template",
+   "value": "{\"description\":[\"//div[@class='field-item even']//p\"]}",
+   "urlMd5": "a901eba1990570fb2f02945b2fb8b637"
+   },
+   {
+   "siteId": "7ab215f916a2475dd8156c6d3f52302a",
+   "name": "template",
+   "value": "{\"description\":[\"//div[@itemprop='articleBody']//p\"]}",
+   "urlMd5": "3077df62955df8c268b2050bdeb9476a"
+   }
+   ],
+  "recrawlDate" : null,
+  "requestDelay": 500,
+  "resources": 0,
+  "size": 0,
+  "state": 3,
+  "tcDate": null,
+  "uDate": null,
+  "urlType": 1,
+  "urls": ["http://feeds.cfr.org/~r/spatrick/~3/SwGoUMhhSJ8/"],
+  "recrawlPeriod": null,
+  "userId": 4,
+  "collectedURLs": 0,
+  "updateType": 1,
+  "fetchType": 1
+}

@@ -1,0 +1,59 @@
+{
+  "avgSpeed": 0,
+  "avgSpeedCounter": 0,
+  "cDate": {
+    "str": "NOW()"
+  },
+  "contents": 0,
+  "description": "aa",
+  "errorMask": 0,
+  "errors": 0,
+  "filters": [
+              {
+              "mode": 0,
+              "pattern": "(.*)nhk\\.or\\.jp(.*)\\/news",
+              "siteId": "27d9edc3dc944ee8383ad4bfeaf59061",
+              "type": 1
+              }
+              ],
+  "httpTimeout": 30000,
+  "id": "27d9edc3dc944ee8383ad4bfeaf59061",
+  "iterations": 0,
+  "maxErrors": 100000,
+  "maxResourceSize": 500000,
+  "maxResources": 500,
+  "maxURLs": 1000,
+  "maxURLsFromPage": 200,
+  "priority": 100,
+  "processingDelay": 500,
+  "properties": {
+    "TIMEZONE": "JST",
+    "CONTENT_HASH": "{ \"algorithm\": 1, \"tags\": \"title,description,content_encoded,media,pubdate\", \"delete\": 1 }",
+    "HTTP_COOKIE": "",
+    "HTTP_HEADERS": "",
+    "PROCESS_CTYPES": "text/html",
+    "STORE_HTTP_HEADERS": "1",
+    "STORE_HTTP_REQUEST": "1",
+    "AUTO_REMOVE_RESOURCES": "1",
+    "AUTO_REMOVE_WHERE": "ParentMd5<>\"\" AND Status IN (4,7) AND DATE_ADD(UDate, INTERVAL %RecrawlPeriod% MINUTE)<NOW()",
+    "AUTO_REMOVE_ORDER": "ContentType ASC, Crawled ASC, TagsCount ASC, CDate ASC",
+    "template": "{\"description\":[\"//div[@class=\\\"articleContent\\\"]//div[@class=\\\"entry\\\"]/*[not(contains(@class,\\\"social\\\")) and not(@id=\\\"news_video\\\")]\"],\"pubdate\":[\"//div[@class=\\\"time\\\"]/*[@id=\\\"news_date\\\"]/text()|//div[@class=\\\"time\\\"]/*[@id=\\\"news_time\\\"]/text()\"],\"media\":[\"//div[@class=\\\"entry\\\"]//*[@id=\\\"news_image_div\\\"]//img\"],\"title\":[\"//span[@class=\\\"contentTitle\\\"]/text()\"],\"link\":[\"//meta[contains(@name,'link')]/@content\",\"//li[contains(@class,'space')]/@href\",\"//link[contains(@rel,'canonical')]/@href\"],\"html_lang\":[\"/html/@lang\"]}",
+    "RECRAWL_DELETE_WHERE": "(`Status`=1 OR (`Status`=4 AND Crawled=0 AND Processed=0) OR `PDate`<CURDATE() OR `PDate` IS NULL OR CDate<CURDATE()) AND `ParentMd5`<>''"
+  },
+  "recrawlDate" : "DATE_ADD(DATE_FORMAT(NOW(),\"%Y-%m-%d 00:00:00\"), INTERVAL ((((HOUR(NOW())*60 + MINUTE(NOW()) + SECOND(NOW())/60) DIV (RecrawlPeriod+1)+1)*RecrawlPeriod) + 45) MINUTE)",
+  "requestDelay": 500,
+  "resources": 0,
+  "size": 0,
+  "state": 1,
+  "tcDate": null,
+  "uDate": null,
+  "urlType": 1,
+  "urls": [
+           "http://www3.nhk.or.jp/news/html/20141202/t10013647211000.html"
+           ],
+  "recrawlPeriod": 360,
+  "userId": 2,
+  "collectedURLs": 0,
+  "updateType": 1,
+  "fetchType": 1
+}

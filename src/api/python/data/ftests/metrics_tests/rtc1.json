@@ -1,0 +1,19 @@
+{
+  "urls": [
+           {
+           "url": "http://feeds.cfr.org/~r/spatrick/~3/SwGoUMhhSJ8/",
+           "properties": {
+           "reprocess": 1,
+           "PROCESSOR_PROPERTIES": {}
+           }
+           }
+           ],
+  "site_id": "rss_metric",
+  "tags": [
+           "title",
+           "description",
+           "content_encoded",
+           "pdate"
+           ],
+  "id": "12345"
+}

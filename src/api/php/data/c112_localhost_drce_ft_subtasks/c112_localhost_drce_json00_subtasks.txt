@@ -1,0 +1,7 @@
+[
+{
+    "type": 0,
+    "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft_subtasks/c112_localhost_drce_json00_sub1_data.txt",
+    "id": 10
+}
+]

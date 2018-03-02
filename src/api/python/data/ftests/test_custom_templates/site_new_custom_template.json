@@ -1,0 +1,59 @@
+{
+    "avgSpeed": 0, 
+    "avgSpeedCounter": 0, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "contents": 0, 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "mode": 0, 
+            "pattern": "^(?:http(?:s)?:\\/\\/)?(?:[^\\.]+\\.)?cnn\\.co\\.jp\\/photo\\/(.*)", 
+            "siteId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "type": 0
+        },
+        {
+            "mode": 0, 
+            "pattern": "^(?:http(?:s)?:\\/\\/)?(?:[^\\.]+\\.)?cnn\\.co\\.jp\\/(.*)", 
+            "siteId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 30000, 
+    "id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", 
+    "iterations": 0, 
+    "maxErrors": 10, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 30, 
+    "maxURLs": 30, 
+    "maxURLsFromPage": 30, 
+    "priority": 100, 
+    "processingDelay": 500, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "REFINE": "{\"refine_first\":[\"pubdate\",\"media\"]}"
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/xml,text/html,application/xml,image/gif",
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1",
+        "template": "{\"description_raw\":[\"//div[@id=\\\"leaf-body\\\"]\"], \"description\":[\"//div[@id=\\\"leaf-body\\\"]\"]}"
+    }, 
+    "recrawlDate" : null,
+    "requestDelay": 500, 
+    "resources": 0, 
+    "size": 0, 
+    "state": 1, 
+    "tcDate": null, 
+    "uDate": null, 
+    "urlType": 1,
+    "urls": [
+        "http://www.cnn.co.jp/travel/35033711.html"
+    ], 
+    "recrawlPeriod" : null,
+    "userId": 2,
+    "collectedURLs": 0,
+    "fetchType": 1
+}

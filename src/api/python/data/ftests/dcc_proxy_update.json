@@ -1,0 +1,20 @@
+[
+{
+    "siteId": "22",
+    "host": "intel.proxy.com:22",
+    "domains": "[\"*\"]",
+    "priority": 1000,
+    "state": null,
+    "limits": null,
+    "description": null
+},
+{
+    "siteId": "100",
+    "host": "some.proxy.com:42",
+    "domains": "[]",
+    "priority": 3,
+    "state": 1,
+    "limits": "[1]",
+    "description": "Some data B"
+}
+]

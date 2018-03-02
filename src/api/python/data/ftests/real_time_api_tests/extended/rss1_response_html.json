@@ -1,0 +1,160 @@
+{
+    "id": 1453210457,
+    "crawlerType": 4,
+    "maxIterations": "2",
+    "info": {
+        "description": "Site bbc.com",
+        "templates": {
+            "names": [
+                ""
+            ]
+        },
+        "scrapingType": "rss"
+    },
+    "items": [
+        {
+            "siteId": "0",
+            "urlContentResponse": null,
+            "depth": 1,
+            "siteObj": {
+                "fetchType": 1,
+                "id": "0",
+                "uDate": null,
+                "tcDate": null,
+                "cDate": null,
+                "resources": null,
+                "iterations": null,
+                "description": null,
+                "urls": [
+                ],
+                "filters": [
+                    {
+                        "pattern": "http(.*)",
+                        "siteId": "0",
+                        "type": 1
+                    },
+                    {
+                        "mode": 0,
+                        "pattern": "%MAX_DEPTH%",
+                        "subject": "2",
+                        "siteId": "0",
+                        "type": 1,
+                        "opCode": 4,
+                        "stage": 0,
+                        "action": 1
+                    }
+                ],
+                "properties": [],
+                "state": null,
+                "priority": null,
+                "maxURLs": null,
+                "maxResources": null,
+                "maxErrors": null,
+                "maxResourceSize": null,
+                "requestDelay": null,
+                "httpTimeout": null,
+                "errorMask": null,
+                "errors": null,
+                "urlType": 0,
+                "contents": null,
+                "processingDelay": null,
+                "size": null,
+                "avgSpeed": null,
+                "avgSpeedCounter": null,
+                "userId": null,
+                "recrawlPeriod": null,
+                "recrawlDate": null,
+                "maxURLsFromPage": 10,
+                "collectedURLs": 0,
+                "updateType": 1
+            },
+            "urlObj": {
+                "status": 2,
+                "linksI": 0,
+                "linksE": 0,
+                "contentMask": 0,
+                "processingTime": 0,
+                "CDate": null,
+                "mRateCounter": 0,
+                "httpTimeout": 10000,
+                "size": 0,
+                "urlPut": null,
+                "batchId": 0,
+                "lastModified": null,
+                "tagsCount": 0,
+                "mRate": 0,
+                "charset": "",
+                "state": 0,
+                "httpCode": 0,
+                "priority": 0,
+                "maxURLsFromPage": 10,
+                "processingDelay": 0,
+                "crawlingTime": 0,
+                "type": 0,
+                "processed": 0,
+                "totalTime": 0,
+                "siteSelect": 0,
+                "contentType": "",
+                "pDate": null,
+                "errorMask": 0,
+                "httpMethod": "get",
+                "eTag": "",
+                "siteId": "0",
+                "freq": 0,
+                "tcDate": null,
+                "rawContentMd5": "",
+                "crawled": 0,
+                "UDate": null,
+                "contentURLMd5": "",
+                "requestDelay": 0,
+                "depth": 0,
+                "parentMd5": "",
+                "urlUpdate": null,
+                "tagsMask": 0,
+                "urlMd5": "b68df8b04c53f136f01880936327b436",
+                "url": "http:\/\/127.0.0.1\/template_scraping\/rss1.xml"
+            },
+            "urlPutObj": {
+                "putDict": {
+                },
+                "urlMd5": "b68df8b04c53f136f01880936327b436",
+                "contentType": 0,
+                "siteId": "0",
+                "fileStorageSuffix": null,
+                "criterions": null
+            },
+            "properties": {
+	        "ROBOTS_MODE": 0,
+        	"ROBOTS_COLLECT":0,
+                "DB_TASK_MODE": "RO",
+                "HTTP_REDIRECTS_MAX": 5,
+                "HTML_REDIRECTS_MAX": 5,
+                "HTML_RECOVER": "0",
+                "URL_CHAIN": null,
+                "FETCH_RAW_CONTENT": 0,
+                "PROCESSOR_NAME": "RSS",
+                "PROCESS_CTYPES": "text\/html",
+                "RECRAWL_NO_ROOT_URLS": "0",
+                "ALLOWED_CTYPES": "text\/html,text\/xml,application\/rss+xml",
+                "template": {
+                    "templates": [
+                        {
+                            "output_format": {
+                                "type": "rss",
+                                "name": "html",
+                                "header": "<!DOCTYPE html><head><title>Title<\/title><meta http-equiv=\"content-type\" content=\"text\/html; charset=UTF-8\"><\/head><body>\n",
+                                "items_header": " <table>\n",
+                                "item": "<tr><td>%tag_name%:<\/td><td>%tag_value%<\/td><\/tr>\n<tr><td>%tag_name%_extractor:<\/td><td>%tag_name%_%extractor_value%<\/td><\/tr>\n",
+                                "items_footer": " <\/table>\n",
+                                "footer": "<\/body><\/html>\n"
+                            },
+                            "tags": [
+                            ]
+                        }
+                    ]
+                }
+            },
+            "urlId": "b68df8b04c53f136f01880936327b436"
+        }
+    ]
+}

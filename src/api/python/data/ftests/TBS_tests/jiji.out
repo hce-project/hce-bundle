@@ -1,0 +1,35 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 2822138821, 
+            "itemObject": [
+                {
+                    "cookies": [], 
+                    "dbFields": {}, 
+                    "headers": [], 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "PD94bWwgdmVyc2lvbj0nMS4wJz8+PHJlc3BvbnNlPjwvcmVzcG9uc2U+", 
+                            "cDate": 0, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "status": 7, 
+                    "url": "http://www.jiji.com/jc/c?g=int_30&k=2015042100972", 
+                    "urlMd5": null
+                }
+            ], 
+            "node": "r011_data", 
+            "port": "5730", 
+            "time": 12126
+        }
+    ]
+}

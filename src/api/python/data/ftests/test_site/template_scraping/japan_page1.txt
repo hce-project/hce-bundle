@@ -1,0 +1,8 @@
+http://www.afpbb.com/articles/-/3046087
+
+title, text, //h1[@class='title']
+body, text, //*[@class='article-body']
+image, image, //*[@id='main-img']
+pubdate, datetime, //*[@id='signage']/p[@class='day']
+author, html, //*[@class='article-body']/p/a[2]
+link, link, //div[3][@class='links']/*[@class='sprite-sprite sprite-icon_arrow']/a

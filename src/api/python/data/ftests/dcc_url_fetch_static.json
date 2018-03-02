@@ -1,0 +1,15 @@
+[
+{
+    "algorithm": 0, 
+    "maxURLs": 20, 
+    "sitesCriterions": {
+        "ORDER BY": "Priority DESC, TcDate ASC"
+    }, 
+    "sitesList": [], 
+    "urlUpdate": null, 
+    "urlsCriterions": {
+        "LIMIT": 20, 
+        "ORDER BY": "CDate ASC"
+    }
+}
+]

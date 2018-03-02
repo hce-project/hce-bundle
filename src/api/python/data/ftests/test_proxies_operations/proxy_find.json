@@ -1,0 +1,10 @@
+[
+  {
+    "siteId": null,
+    "criterions": {
+        "WHERE": "Site_Id IN (\"123456789\")",
+        "LIMIT": "0, 10"
+    },
+    "siteCriterions": null
+  }
+]

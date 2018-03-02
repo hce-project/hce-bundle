@@ -1,0 +1,61 @@
+{
+  "id": 0,
+  "crawlerType": 4,
+  "items": [
+            {
+            "siteId": "",
+            "urlId": "86c54f1f7cf6b1ae232e42b4852a81fb",
+            "urlObj": {
+            "siteId": "",
+            "url": "http://192.168.0.107/rt.html",
+            "type": 1,
+            "state": 0,
+            "status": 5,
+            "siteSelect": 0,
+            "crawled": 0,
+            "processed": 0,
+            "urlMd5": "86c54f1f7cf6b1ae232e42b4852a81fb",
+            "contentType": "",
+            "requestDelay": 0,
+            "processingDelay": 0,
+            "httpTimeout": 30000,
+            "charset": "",
+            "batchId": 0,
+            "errorMask": 0,
+            "crawlingTime": 0,
+            "processingTime": 0,
+            "totalTime": 0,
+            "httpCode": 0,
+            "UDate": "NOW()",
+            "CDate": "NOW()",
+            "httpMethod": "",
+            "size": 0,
+            "linksI": 0,
+            "linksE": 0,
+            "freq": 0,
+            "depth": 0,
+            "rawContentMd5": "",
+            "parentMd5": "86c54f1f7cf6b1ae232e42b4852a81fb",
+            "lastModified": "NULL",
+            "eTag": "",
+            "mRate": 0,
+            "mRateCounter": 0,
+            "maxURLsFromPage": 0,
+            "tcDate": "NOW()",
+            "tagsMask": 0,
+            "tagsCount": 0,
+            "pDate": "NULL",
+            "contentURLMd5": "",
+            "priority": 0
+            },
+            "urlPutObj": {
+            "siteId": "",
+            "urlMd5": "86c54f1f7cf6b1ae232e42b4852a81fb",
+            "putDict": {},
+            "criterions": "",
+            "contentType": 10,
+            "fileStorageSuffix": "NULL"
+            }
+            }
+            ]
+}

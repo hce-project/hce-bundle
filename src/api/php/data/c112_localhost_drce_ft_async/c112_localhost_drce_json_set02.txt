@@ -1,0 +1,24 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+                "LINES": "80",
+                "HOSTNAME": "node22"
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 2,
+        "time_max": 100,
+        "cleanup": 0
+    },
+    "command": "echo \"scale=1000; 4*a(1)\" | bc -l && sleep 10 && ls -la",
+    "input": "",
+    "files": [
+    ]
+}

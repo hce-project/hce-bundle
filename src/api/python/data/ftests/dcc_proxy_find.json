@@ -1,0 +1,13 @@
+[
+{
+    "siteId": "22",
+    "criterions": {"WHERE": "`Priority` = 1000"}
+},
+{
+    "criterions": {"WHERE": "`State` > 0 AND `Domains` = \"[]\""}
+},
+{
+    "siteCriterions": {"WHERE": "1 = 1"},
+    "criterions": null
+}
+]

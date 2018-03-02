@@ -1,0 +1,28 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+                "LINES": "80"
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 1,
+        "time_max": 30000,
+        "cleanup": 1
+    },
+    "command": "cd /tmp/ && php -f -d memory_limit=3072M binarytrees.php-2.php 16",
+    "input": "",
+    "files": [
+        {
+            "name": "/tmp/binarytrees.php-2.php",
+            "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft02/binarytrees.php-2.php",
+            "action": 9
+        }
+    ]
+}

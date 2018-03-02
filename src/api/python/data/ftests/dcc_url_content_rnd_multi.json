@@ -1,0 +1,23 @@
+[
+{
+    "contentTypeMask": 1027, 
+    "siteId": "", 
+    "url": "", 
+    "urlFetch": {
+        "algorithm": 0, 
+        "maxURLs": 20, 
+        "sitesCriterions": {
+            "ORDER BY": "Priority DESC, TcDate ASC",
+            "WHERE": "User_Id=1"
+        }, 
+        "sitesList": [], 
+        "urlUpdate": null, 
+        "urlsCriterions": {
+            "LIMIT": 20, 
+            "ORDER BY": "CDate ASC", 
+            "WHERE": "Status=7 AND Crawled>0 AND Processed>0"
+        }
+    }, 
+    "urlMd5": ""
+}
+]

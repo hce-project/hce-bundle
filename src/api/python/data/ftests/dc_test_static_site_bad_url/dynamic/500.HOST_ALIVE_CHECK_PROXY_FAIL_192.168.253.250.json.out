@@ -1,0 +1,56 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 2208716468, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": null, 
+                        "Charset": "", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 0, 
+                        "CrawlingTime": 0, 
+                        "ErrorMask": 1099511627780, 
+                        "HttpCode": 404, 
+                        "LastModified": null, 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": null, 
+                        "Processed": 0, 
+                        "ProcessingTime": 6, 
+                        "RawContentMd5": "", 
+                        "Size": 0, 
+                        "Status": 7, 
+                        "TagsCount": 0, 
+                        "TagsMask": 0, 
+                        "UDate": "2016-07-27 10:02:02"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://192.168.253.250/dc_test_static_site_bad_url/500.php", 
+                    "urlMd5": "81ef7e1fcb40186017fd3c65213692fb"
+                }
+            ], 
+            "node": "r013_data", 
+            "port": "5732", 
+            "time": 4709
+        }
+    ]
+}

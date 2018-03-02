@@ -1,0 +1,24 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+                "LINES": "80",
+                "HOSTNAME": "node22"
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 1,
+        "time_max": 30000,
+        "cleanup": 1
+    },
+    "command": "ruby --version",
+    "input": "",
+    "files": [
+    ]
+}

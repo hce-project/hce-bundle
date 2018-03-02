@@ -1,0 +1,57 @@
+{
+  "avgSpeed": 0,
+  "avgSpeedCounter": 0,
+  "cDate": {
+    "str": "NOW()"
+  },
+  "contents": 0,
+  "description": "Test site",
+  "errorMask": 0,
+  "errors": 0,
+  "filters": [
+    {
+      "pattern": "http://127.0.0.1/template_scraping/(.*)",
+      "siteId": "12345678901234567890123456789012",
+      "type": 1
+    }
+  ],
+  "httpTimeout": 60000,
+  "id": "12345678901234567890123456789012",
+  "iterations": 2,
+  "maxErrors": 100000,
+  "maxResourceSize": 1000000,
+  "maxResources": 100,
+  "maxURLs": 120,
+  "maxURLsFromPage": 35,
+  "priority": 100,
+  "processingDelay": 500,
+  "properties":    
+  {
+      "HTTP_REDIRECTS_MAX": "5",
+      "HTML_REDIRECTS_MAX": "5",
+      "HTML_RECOVER": "0",
+      "ROBOTS_MODE": "0",
+      "ROBOTS_COLLECT": "0",
+      "FETCH_RAW_CONTENT": "0",
+      "SOCIAL_RATE": "{ \"sentiment\":1, \"debug\":1, \"timeout\":120, \"social_list\":{\"tw\":[\"https:\/\/twitter.com\/search?f=tweets&vertical=default&q=%25QUERY_STRING%25&src=typd\",\"window.IFRAME_KWSRC='%KEYWORDS_FILE%';window.IFRAME_SFIELD='source_url';\",{\"name\":\"tests\", \"sets\":[{\"name\":\"set1\", \"items\":[\"1\", \"%KEYWORDS_FILE%\", \"http:\/\/127.0.0.1\/social.js\", \"70\", \"return window.MACRO_COLLECT;\"], \"repeat\":1, \"delay\":0}], \"result_type\":0, \"result_content_type\":\"text\/json\"}]} }",
+      "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"user_name_algorithm\"},\"modules\":{\"user_name_algorithm\":[\"ScrapyExtractor\",\"GooseExtractor\",\"NewspaperExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}",
+      "template": "{\"templates\":[{\"output_format\":{\"type\":\"news\",\"name\":\"json\",\"header\":\"[\n\",\"items_header\":\"\",\"item\":\"{\n\\\"pubdate\\\":\\\"%pubdate%\\\",\n\\\"title\\\":\\\"%title%\\\",\n\\\"description\\\":\\\"%description%\\\",\n\\\"media\\\":\\\"%media%\\\",\n\\\"author\\\":\\\"%author%\\\",\n\\\"dc_date\\\":\\\"%dc_date%\\\",\n\\\"link\\\":\\\"%link%\\\",\n\\\"keywords\\\":\\\"%keywords%\\\",\n\\\"content_encoded\\\":\\\"%content_encoded%\\\",\n\\\"html_lang\\\":\\\"%html_lang%\\\",\n\\\"source_url\\\":\\\"%source_url%\\\",\n\\\"pubdate_extractor\\\":\\\"%pubdate_extractor%\\\",\n\\\"title_extractor\\\":\\\"%title_extractor%\\\",\n\\\"description_extractor\\\":\\\"%description_extractor%\\\",\n\\\"media_extractor\\\":\\\"%media_extractor%\\\",\n\\\"author_extractor\\\":\\\"%author_extractor%\\\",\n\\\"dc_date_extractor\\\":\\\"%dc_date_extractor%\\\",\n\\\"link_extractor\\\":\\\"%link_extractor%\\\",\n\\\"keywords_extractor\\\":\\\"%keywords_extractor%\\\",\n\\\"content_encoded_extractor\\\":\\\"%content_encoded_extractor%\\\",\n\\\"html_lang_extractor\\\":\\\"%html_lang_extractor%\\\",\n\\\"pubdate_xpath\\\":\\\"%pubdate_xpath%\\\",\n\\\"title_xpath\\\":\\\"%title_xpath%\\\",\n\\\"description_xpath\\\":\\\"%description_xpath%\\\",\n\\\"media_xpath\\\":\\\"%media_xpath%\\\",\n\\\"author_xpath\\\":\\\"%author_xpath%\\\",\n\\\"dc_date_xpath\\\":\\\"%dc_date_xpath%\\\",\n\\\"link_xpath\\\":\\\"%link_xpath%\\\",\n\\\"keywords_xpath\\\":\\\"%keywords_xpath%\\\",\n\\\"content_encoded_xpath\\\":\\\"%content_encoded_xpath%\\\",\n\\\"html_lang_xpath\\\":\\\"%html_lang_xpath%\\\",\n\\\"crawler_time\\\":\\\"%crawler_time%\\\",\n\\\"scraper_time\\\":\\\"%scraper_time%\\\",\n\\\"pubdate_tz\\\":\\\"%pubdate_tz%\\\",\n\\\"errors_mask\\\":\\\"%errors_mask%\\\"\n}\n\",\"items_footer\":\"\",\"footer\":\"]\n\"},\"tags\":{\"pubdate\":[],\"title\":[],\"description\":[],\"media\":[],\"author\":[],\"dc_date\":[],\"link\":[],\"keywords\":[],\"content_encoded\":[],\"html_lang\":[],\"pubdate_extractor\":[],\"title_extractor\":[],\"description_extractor\":[],\"media_extractor\":[],\"author_extractor\":[],\"dc_date_extractor\":[],\"link_extractor\":[],\"keywords_extractor\":[],\"content_encoded_extractor\":[],\"html_lang_extractor\":[],\"crawler_time\":[],\"scraper_time\":[],\"errors_mask\":[]},\"priority\":100,\"mandatory\":1,\"is_filled\":0}],\"select\":\"first_nonempty\"}"
+  },
+  "recrawlDate": "DATE_ADD(DATE_FORMAT(NOW(),\"%Y-%m-%d 00:00:00\"), INTERVAL 1 MINUTE)", 
+  "requestDelay": 500,
+  "resources": 0,
+  "size": 0,
+  "state": 3,
+  "tcDate": null,
+  "uDate": null,
+  "urlType": 0,
+  "urls": [
+ 
+  ],
+  "recrawlPeriod": 1,
+  "userId": 1,
+  "collectedURLs": 0,
+  "updateType": 1,
+  "fetchType": 2,
+  "tcDateProcess": "NOW()"
+}

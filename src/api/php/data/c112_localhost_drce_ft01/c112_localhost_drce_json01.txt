@@ -1,0 +1,29 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+                "LINES": "160",
+                "HOSTNAME": "HCE"
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 1,
+        "time_max": 30000,
+        "cleanup": 1
+    },
+    "command": "cd /tmp && chmod 777 c112_localhost_drce_json01.sh && ./c112_localhost_drce_json01.sh 100",
+    "input": "",
+    "files": [
+        {
+            "name": "/tmp/c112_localhost_drce_json01.sh",
+            "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft01/c112_localhost_drce_json01.sh",
+            "action": 9
+        }
+    ]
+}

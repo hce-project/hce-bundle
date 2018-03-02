@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 3791778931, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:48", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 47, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2015-05-07 02:03:14", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1255, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 8, 
+                        "TagsMask": 33554716, 
+                        "UDate": "2017-01-26 05:05:50"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "PD94bWwgdmVyc2lvbj0iMS4wIj8+PHJlc3BvbnNlPjxpdGVtPjx0aXRsZT5IaXAtSG9wIFdhcyB0aGUgQmlnZ2VzdCBSZXZvbHV0aW9uIGluIEFtZXJpY2FuIE11c2ljIGFuZCBUaGF04oCZcyBCYWNrZWQgQnkgYSBTdHVkeSBvZiAxNywwMDAgU29uZ3M8L3RpdGxlPjxib2R5PlRoYXTigJlzIGFjY29yZGluZyB0byBhIHRlYW0gb2Ygc2NpZW50aXN0cyB3aG8sIGZvciB0aGUgZmlyc3QgdGltZSwgaGF2ZSBhbmFseXplZCB0aGUgZXZvbHV0aW9uIG9mIFdlc3Rlcm4gcG9wIG11c2ljLCBzcGFubmluZyBmcm9tIDE5NjAgdG8gMjAxMCwgYW5kICBwdWJsaXNoZWQgIHRoZWlyIGZpbmRpbmdzIGluIHRoZSAgUm95YWwgU29jaWV0eSBPcGVuIEpvdXJuYWwgLjwvYm9keT48aW1hZ2U+Jmx0O2ltZyBzcmM9JnF1b3Q7aHR0cHM6Ly90aW1lZG90Y29tLmZpbGVzLndvcmRwcmVzcy5jb20vMjAxNS8wNS9wdWJsaWMtZW5lbXktcmFwLmpwZz9xdWFsaXR5PTY1JmFtcDthbXA7c3RyaXA9Y29sb3ImYW1wO2FtcDt3PTU1MCZxdW90OyBpdGVtcHJvcD0mcXVvdDtpbWFnZSZxdW90OyBhbHQ9JnF1b3Q7UGhvdG8gb2YgUHVibGljIEVuZW15IEphbi4gMSwgMTk5MSZxdW90OyBkYXRhLXNyY3NldD0mcXVvdDtodHRwczovL3RpbWVkb3Rjb20uZmlsZXMud29yZHByZXNzLmNvbS8yMDE1LzA1L3B1YmxpYy1lbmVteS1yYXAuanBnP3F1YWxpdHk9NjUmYW1wO2FtcDtzdHJpcD1jb2xvciZhbXA7YW1wO3c9MTEwMCA4MDB3LCBodHRwczovL3RpbWVkb3Rjb20uZmlsZXMud29yZHByZXNzLmNvbS8yMDE1LzA1L3B1YmxpYy1lbmVteS1yYXAuanBnP3F1YWxpdHk9NjUmYW1wO2FtcDtzdHJpcD1jb2xvciZhbXA7YW1wO3c9MTEwMCA4MDB3IDJ4JnF1b3Q7Jmd0OzwvaW1hZ2U+PHB1YmRhdGU+MjAxNS0wNS0wNyAwMjowMzoxNDwvcHViZGF0ZT48YXV0aG9yPiZsdDtsaSBjbGFzcz0mcXVvdDthcnRpY2xlLWF1dGhvciAmcXVvdDsmZ3Q7CiAgCQkJCQkJJmx0O3NwYW4gY2xhc3M9JnF1b3Q7YnlsaW5lJnF1b3Q7Jmd0OyZsdDthIGl0ZW1wcm9wPSZxdW90O2F1dGhvciZxdW90OyBocmVmPSZxdW90Oy4uLy4uL2F1dGhvci9oZWxlbi1yZWdhbi9pbmRleC5odG1sJnF1b3Q7Jmd0O0hlbGVuIFJlZ2FuJmx0Oy9hJmd0OyZsdDsvc3BhbiZndDsKICAJCQkJCQkmbHQ7YSBjbGFzcz0mcXVvdDthdXRob3ItdHdpdHRlciZxdW90OyB0YXJnZXQ9JnF1b3Q7X2JsYW5rJnF1b3Q7IGhyZWY9JnF1b3Q7aHR0cHM6Ly90d2l0dGVyLmNvbS9oY3JlZ2FuJnF1b3Q7Jmd0O0BoY3JlZ2FuJmx0Oy9hJmd0OwogIAkJCQkJJmx0Oy9saSZndDs8L2F1dGhvcj48bGluaz4mbHQ7YSBocmVmPSZxdW90O21haWx0bzo/dG89am9lQHh5ei5jb20mYW1wO2FtcDtjYz1ib2JAeHl6LmNvbSZhbXA7YW1wO2JvZHk9aGVsbG8mcXVvdDsmZ3Q7Sm9lJmx0Oy9hJmd0OzwvbGluaz48ZXJyb3JzX21hc2s+MDwvZXJyb3JzX21hc2s+PC9pdGVtPjwvcmVzcG9uc2U+", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html", 
+                    "urlMd5": "b3eb9e33190cbc35e4419a3764903a01"
+                }
+            ], 
+            "node": "r011_data", 
+            "port": "5730", 
+            "time": 3645
+        }
+    ]
+}

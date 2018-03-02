@@ -1,0 +1,29 @@
+[
+    {
+	"siteId": "intel1",
+	"url": "http://intel.com/path1/",
+	"urlType": 0,
+	"criterions": null
+    },
+    {
+	"siteId": "intel1",
+	"url": "http://intel.com/path1/path2",
+	"urlType": 0,
+	"criterions": null
+    },
+    {
+	"siteId": "z1",
+	"url": null,
+	"urlType": 0,
+	"criterions": 
+	{
+	    "LIMIT": "10",
+	    "WHERE": "`url` LIKE('%url_a%')"
+	}
+    },
+    {
+	"siteId": "z44",
+	"url": "http://url40.com/",
+	"urlType": 0
+    }
+]

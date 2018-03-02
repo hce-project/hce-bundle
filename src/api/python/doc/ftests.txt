@@ -1,0 +1,368 @@
+Demo Tests Suit for Python language applications
+=======================================================================
+
+Copyright (c) 2014 IOIX Ukraine,
+                                 http://hierarchical-cluster-engine.com
+
+-----------------------------------------------------------------------
+
+Table of Contents
+
+1. Introduction
+   1.1. About the python language API and applications in the HCE
+   1.2. Program API description
+   1.3. Applications implementation description
+2. Usage
+   2.1. Distributed Tasks Manager (DTM) Application demo tests
+      2.1.1. General description of DTM functional tests
+      2.1.2. DTM service management admin CLI - DTMA application
+      2.1.3. DTM service user CLI - DTMC application
+   2.2. Distributed Crawler (DC) Application demo tests
+      2.2.1. General description of DC functional tests
+      2.2.2. DC service management admin CLI - DCA application
+      2.2.3. DC service user CLI - DCC application
+      2.2.4. DC service full life cycle functional tests
+
+
+Chapter 1. Introduction
+=======================
+
+Table of Contents
+
+   1.1. About the python language API and applications in the HCE
+   1.2. Program API description
+   1.3. Applications implementation description
+
+
+
+1.1. About the Python language API and applications in the HCE
+==============================================================
+The HCE project consists on several parts that is related by common API.
+The core of all applied products is hce-node cluster. This application is
+native executable and provides support of cluster network infrastructure
+support as well as basic functionality of Sphinx indexing and DRCE.
+More detailed description of hce-node see on main project site:
+http://hierarchical-cluster-engine.com/blog/2013/11/28/hierarchical-cluster-engine-hce-project/
+http://hierarchical-cluster-engine.com/blog/2014/01/22/hierarchical-cluster-engine-hce-project-internal-architecture/
+More detailed description of DRCE functionality see here:
+http://hierarchical-cluster-engine.com/blog/2013/12/30/hce-and-distributed-remote-command-execution/
+
+
+1.2. Program API description
+=============================
+The Python language API bindings implementation includes some libraries and
+several end-user applications based on them. Libraries can be structurally
+subdivided on three levels: transport, application and user.
+Each of them represents own abstraction and business logic functionality
+related with core. More detailed description about APIs structure for languages
+bindings see at:
+http://hierarchical-cluster-engine.com/blog/2014/02/14/client-side-end-user-apis-and-service-applications/
+Upper level of APIs for Python represented with end-user applications for
+target business logic definition. This application uses common API based on
+zmq MOM transport to interact with core cluster (router and data nodes) and
+to execute applied operations and requests. Based on main hce-node handlers
+architecture applications sends messages to the specific handlers instances
+on cluster entry point (router node) or directly to some data node.
+The hce-node cluster with some data sharding schema (shard or replica) defines
+so called Execution Environment (EE). Depends on cluster mode it behaves like
+balancer or multiplexor of DRCE calls. Both async and sync DRCE tasks used.
+Sync tasks used to perform parallel simultaneous actions with data nodes that
+shards data. For example, the same operation with SQL database that is
+multiplied on several hosts to get productivity advantages. This mode of EE
+usage supposes replication data mode when each data node has replicated copy
+of data and DB structure. This type of task supposes that client will wait on
+response until it will be received or timeout reached.
+Async tasks used to perform balanced action execution on one of several possible
+data node to get advantages of resources balancing. This mode can be used in
+case of replication data mode and shard - when each node has own unique part
+of data or receives input context with execute task request. This type of task
+supposes that response will be returned immediately after task created on
+data node. But task execution can take a long time, and client needs to check
+task state, request resulted data if task is finished and so on...
+For more detailed description see DRCE client protocol description:
+http://hierarchical-cluster-engine.com/docs/pdf/DRCE_Functional_object_protocol.pdf
+
+DTS's directories for the Python language APIs:
+/---- api                       - APIs directory for all languages bindings
+|   |---- php                   - APIs bindings for PHP language
+|   `---- python                - APIs bindings for Python language
+|       |---- bin               - Executable loaders of Python applications
+|       |---- cfg               - General bash automation scripts includes cfgs
+|       |---- data              - Data directory of Python applications
+|       |   |---- dc_dbdata     - DC's app key-value database files (per site)
+|       |   |---- dc_rdata      - DC's app raw data files crawled
+|       |   |---- dtm_dbdata    - DTM's app key-value database file
+|       |   `---- ftests        - Data files (jsons) for functional tests
+|       |---- doc               - Documentation and manuals files
+|       |---- ftests            - Functional tests of all applications
+|       |---- hce               - The API and apps implementation modules
+|       |   |---- admin         - API modules for admin node requests
+|       |   |---- algorithms    - Common multi-purpose algorithms modules
+|       |   |---- app           - Common application framework modules
+|       |   |---- dbi           - Common key-value DB API modules (sqlite)
+|       |   |---- dc            - DC service business-logic modules
+|       |   |---- dcc           - User client modules for DC service
+|       |   |---- dc_crawler    - Crawler app for DC service
+|       |   |---- dc_db         - SQL database app for DC service
+|       |   |---- dc_processor  - Processor algorithms (scraper) for DC service
+|       |   |---- drce          - API modules for hce-node DRCE requests
+|       |   |---- dtm           - DTM service business-logic modules
+|       |   |---- dtma          - Admin client modules for DTM and DC
+|       |   |---- dtmc          - User client modules for DTM service
+|       |   |---- ees           - Execution Environment simulator
+|       |   |---- ftests        - Developers functional tests of all modules
+|       |   |---- JsonChecker   - Common purpose utility to check json cli
+|       |   |---- tests         - Unit tests of all modules and classes
+|       |   `---- transport     - API modules of network zmq MOM protocol
+|       |---- ini               - Ini, config and db schemas dumps files
+|       |---- log               - Logs of all applications
+|       |---- manage            - Automation scripts
+|       `---- tests             - Developers tests of all applications
+|---- data                      - Data directory of hce-node DRCE tasks
+|---- etc                       - Additional files for hce-node package
+|---- log                       - Log directory for hce-node cluster
+|---- run                       - PId's directory for Sphinx searchd instances
+`---- usr
+    `---- bin                   - Executable for hce-node package
+
+
+1.3. Applications implementation description
+============================================
+
+Distributed Tasks Manager (DTM) application.
+--------------------------------------------
+This application implements some end-user business-logic of management of DRCE
+tasks that can be executed by EE with some concrete hce-node cluster schema
+architecture. Additionally to the core DRCE functionality of hce-node
+application it defines new high level business-logic objects implemented
+on the Python language like - the Task object, the Execution Environment, the
+Scheduler, the Task's object data cache and so on. For more detailed
+description of the DTM architecture see:
+http://hierarchical-cluster-engine.com/blog/2014/03/19/distributed-tasks-manager-application/
+and
+http://hierarchical-cluster-engine.com/docs/pdf/DTM_application_architecture.pdf
+
+The DTM application is designed as service with internal MOM transport based on
+zmq library with multi-threaded architecture. It consists on three parts:
+ 1. Service executable runs as Linux daemon. This is main application
+    that implements applied business logic. The name of the starter is
+    "dtm-daemon.py". Application uses several modules from "hce" package.
+    Main module is "dtm". The management automation scripts are:
+    dtm-client_start.sh, dtm-daemon_start.sh, dtm-daemon_status.sh and
+    dtm-daemon_stop.sh.
+ 2. User client application with command line interface runs as utility
+    to execute client-server interaction, request command and get response.
+    All commands are in general applied business logic for regular operations.
+    The name of the starter is: "dtm-client.py". The main module is "dtmc".
+    The name of the automation script is "dtm-client_start.sh".
+ 3. Admin client application with command line interface. The same as User
+    client application has cli usage. All commands are admin-management,
+    including stop service and get some runtime statistical data.
+    The name of the starter is: "dtm-admin.py". The main module is "dtma".
+    The name of the automation script that uses it is "dtm-daemon_stop.sh".
+
+As a part of DTS package archive of hce-node DTM service configured for
+tests on single-host hce-node cluster n-type. This cluster configuration is
+main for hce-node package and available for start just after install the
+DTS environment for PHP language. See more detailed description for management
+of hce-node clusters n-type and m-type in PHP language binding set:
+"~/hce-node-bundle/api/php/doc/readme.txt"
+
+
+Distributed Crawler (DC) application.
+-------------------------------------
+This application implements some end-user business-logic of web-sites crawling
+and processing of raw http resources data. It uses objects of main business
+logic like the Site, the URL, the HTTPRequest, HTTPResponse, Tag, Content,
+raw data and actions like crawling, scanning, downloading, scraping and so on.
+Resources downloaded from web-sites are stored in several different storages
+locally on DRCE cluster hosts and available via common API. The application
+architecture is service, client-user interaction uses MOM zmq-based transport
+and networking. The DC service is depends from DTM service and uses it as
+main crawling process management service. So, it requires that DTM service
+present and operable before DC service started.
+For more detailed description of the DC architecture see:
+http://hierarchical-cluster-engine.com/blog/2014/04/21/distributed-crawler-application/
+and
+http://hierarchical-cluster-engine.com/docs/pdf/DC_application_architecture.pdf
+
+The DC application is designed as service with internal MOM transport based on
+zmq library with multi-threaded architecture. It consists on three parts:
+ 1. Service executable runs as Linux daemon. This is main application
+    that implements applied business logic. The name of the starter is
+    "dc-daemon.py". Application uses several modules from "hce" package.
+    Main module is "dc". The management automation scripts are:
+    dc-client_start.sh, dc-daemon_start.sh, dc-daemon_status.sh and
+    dc-daemon_stop.sh.
+ 2. User client application with command line interface runs as utility
+    to execute client-server interaction, request command and get response.
+    All commands are in general applied business logic for regular operations.
+    The name of the starter is: "dc-client.py". The main module is "dcc".
+    The name of the automation script is "dc-client_start.sh".
+ 3. For management used the same as for DTM service - admin client application
+    "dtm-admin.py". The name of the automation script that uses it is
+    "dc-daemon_stop.sh".
+
+As a part of DTS package archive of hce-node DC service configured for
+tests on single-host hce-node cluster m-type. This cluster configuration is
+additional for hce-node package and available for start after switch of current
+configuration for hce-node management automation scripts.
+To switch automation scripts to use m-type cluster use command:
+"~/hce-node-bundle/api/php/manage/config.sh m"
+To check current configuration active use command:
+"~/hce-node-bundle/api/php/manage/config.sh"
+To help to start and to manage both clusters in one use:
+"~/hce-node-bundle/api/php/manage/start_nm.sh"
+"~/hce-node-bundle/api/php/manage/stop_nm.sh"
+"~/hce-node-bundle/api/php/manage/status_nm.sh"
+"~/hce-node-bundle/api/php/manage/kill_nm.sh"
+
+See more detailed description for management of hce-node
+clusters m-type in PHP language binding set:
+"~/hce-node-bundle/api/php/doc/readme.txt"
+
+Main modules are located at "~hce-node-bundle/api/python/hce". Starter modules
+are located at "~hce-node-bundle/api/python/bin". Automation scripts are
+located at: "~hce-node-bundle/api/python/manage".
+
+
+
+Chapter 2. Usage
+================
+
+Table of Contents
+
+2.1. Distributed Tasks Manager (DTM) Application demo tests
+   2.1.1. General description of DTM functional tests
+   2.1.2. DTM service management admin CLI - DTMA application
+   2.1.3. DTM service user CLI - DTMC application
+2.2. Distributed Crawler (DC) Application demo tests
+   2.2.1. General description of DC functional tests
+   2.2.2. DC service management admin CLI - DCA application
+   2.2.3. DC service user CLI - DCC application
+   2.2.4. DC service full life cycle functional tests
+
+
+2.1.1. General description of DTM functional tests
+==================================================
+The DTM functional tests supposes execution all basic operations in set of
+different chains and check results uses regular "n-type" hce-node cluster.
+To start tests execute:
+NEW_CHECK_DELETE_CHECK, NEW_CHECK_FETCH_DELETE_CHECK and NEW_DELETE_CHECK
+scripts. The DTM service used by DC service and most of general functionality
+performs tests thia way.
+
+
+2.1.2. DTM service management admin CLI - DTMA application
+==========================================================
+The service management utility uses MOM zmq-based network protocol to interact
+with server side, make request and get response. It uses some input data that
+is specific for concrete operation. The data format is "json". Most of jsons
+are represents the Python objects used inside of applications. All that objects
+are defined in the "EventObjects.py" module and can be serialized to json
+string format. More detailed description of commands see in the:
+http://hierarchical-cluster-engine.com/docs/pdf/DTM_application_architecture.pdf
+"DTMAdmin" section. All parameters that are required to interact with server
+side like IP address, port, timeouts and so on defined in the configuration
+file "dtm-admin.ini" located in the "ini" directory.
+Most usable command is stop DTM service. Example of usage:
+dtm-admin.py --config=../ini/dtm-admin.ini --cmd=STOP
+By default, all settings are configured for localhost usage.
+
+The main test usage inside DTS environment for the Python language supposes
+that executable are located in the "bin" directory, management automation
+scripts - in the "manage" directory developers functional tests - in the
+"tests" directory and general business logic functional tests - in the
+"ftests" directory.
+
+
+2.1.3. DTM service user CLI - DTMC application
+==============================================
+
+
+2.2.1. General description of DC functional tests
+=================================================
+The DC service general business logic tests performs all life-cycle actions
+states and operations and supposes implication of all algorithms and dependent
+modules. Distributed Crawler architecture supposes that service subdivided on
+three architectural parts that are located and executed different way:
+ 1. The service business logic code, located on single host and executed until
+    service not stopped. It implements key functionality like crawling batches
+    creation, planning, periodical processing, synchronizing and so on.
+    All about web-crawling management but nothing about crawling actions like
+    HTTP requests, TCP connections to the web-servers and so on...
+ 2. Crawler processing code, located on hce-node cluster n-type nodes and
+    executed as the DRCE asynk task managed by DTM service. Crawler task
+    implemented in the "dc_crawler" module. Starter file is "crawler-task.py".
+    This module acts as self-sufficient cli application. It process stdin
+    stream that need to be pickl-ed batch object. The batch object is a
+    container of URLs that crawler processes and stores results in the local
+    file system storage. The crawler task is chained with processing task and
+    from point of view of DTM service task represents one executable unit.
+    The processing task application has the same architecture, also it is
+    cli application that processes the batch as an input data for stdin. The
+    processing module now implemented as scraper algorithms. It processes raw
+    html, rss or another kind resource downloaded from the web-server. Results
+    of processing stored in the key-value DB (sqlite) hosted on the same local
+    host. Processing algorithms are located in the "dc_processor" module.
+    Starter files are "processor-task.py" and "scraper.py".
+    Also, crawler and processor modules uses SQL DB mysql to store some data
+    of sites and urls.
+ 3. Storages management code, located on the hce-node cluster m-type nodes and
+    executed as the DRCE synk task managed by DC service. This module
+    implementation located in "dc_db" directory and starter file is
+    the "db-task.py". This module code performs different actions and requests
+    to manage the data structures in the file storage, key-value db and SQL db.
+    Also, it implements some main business logic operations like create, update
+    and delete object's data for Site and URL, as well as selection, fetching
+    and so on operations with db.
+Functional tests uses all of that compounds and modules to perform full
+simulation of real life cycle of web-site crawling. Also, local host web-server
+need to be installed and started to preform elementary crawling actions from
+"http://127.0.0.1/" URL. The several static html pages for this test site
+located in the "~hce-node-bundle/api/python/data/ftests/test_site" directory.
+More complex test supposes usage dynamic site with random generated pages.
+Also, any kind of regular external real site can be used too.
+
+To start the functional tests change current directory to:
+"~hce-node-bundle/api/python/ftests"
+It contains this automation scripts:
+dc_tests_after.sh, dc_tests_before.sh, dc_tests_cleanup.sh and dc_tests.sh.
+The starter is "dc_tests.sh". Before start ensure that hce-node clusters n-type
+and m-type are started and in active state. To start n-type cluster just after
+hce-node package installed and dependent packages and libraries for PHP
+language are installed too - just run the "start_all.sh" from directory:
+"~/hce-node-bundle/api/php/manage". If all is okay and cluster started - you
+will see ASCII representation of the schema of started cluster. To get some
+status and json representation of nodes configuration - run the "status.sh".
+To stop cluster and all its nodes - run the "stop_all.sh" script.
+To manage the m-type cluster configuration of management scripts must be
+changed. Edit the configuration file "current_cfg.sh" as it was described in
+section 1.3 "Distributed Crawler (DC) application." of this manual. Then, after
+cluster management scripts configuration will be switched to m-type cluster all
+automation scripts will work with this cluster instance until switched back.
+
+For each test all data structures including DTM's db, DC's file and db storages
+located on localhost will be cleared, all raw contents crawled before will be
+deleted. Also, each start of tests starts DTM and DC services and stops them
+after test finished. But both hce-node clusters n-type and m-type stays run.
+
+All actions are logged in the log directory with log file name related with the
+name of executable starter, for example:
+crawler-task.log, db_task.log, dc-admin.log, dc-client.log, dc-daemon.log and
+so on. Functional tests automation script's log uses the same principles.
+
+
+2.2.2. DC service management admin CLI - DCA application
+========================================================
+
+
+2.2.3. DC service user CLI - DCC application
+============================================
+
+
+2.2.4. DC service full life cycle functional tests
+=================================================
+
+
+to be continued...

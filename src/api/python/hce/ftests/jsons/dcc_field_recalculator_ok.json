@@ -1,0 +1,14 @@
+[
+    {
+	"siteId": "z1",
+	"recalcType": 0
+    },
+    {
+	"siteId": "z1",
+	"recalcType": 1,
+	"criterions": 
+	{
+	    "LIMIT": "10"
+	}
+    }
+]

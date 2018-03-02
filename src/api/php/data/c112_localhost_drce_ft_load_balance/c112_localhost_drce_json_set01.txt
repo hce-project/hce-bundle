@@ -1,0 +1,20 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 2,
+        "time_max": 300000,
+        "cleanup": 1
+    },
+    "command": "echo \"scale=10000; 4*a(1)\" | bc -l && echo done",
+    "input": "",
+    "files": [
+    ]
+}

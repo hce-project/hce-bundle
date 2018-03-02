@@ -1,0 +1,24 @@
+[
+    {
+        "contentTypeMask": 1283,
+        "siteId": "z5",
+        "url": "http://url1.com/",
+        "urlFetch": null,
+        "urlMd5": "00abcd0ffd3799be8a5cac2b6c1f25ae",
+	"dbFieldsList": []
+    },
+    {
+        "contentTypeMask": 1533,
+        "siteId": "z1",
+        "url": "http://url1.com/",
+        "urlFetch": null,
+        "urlMd5": "00abcd0ffd3799be8a5cac2b6c1f25ae",
+	"dbFieldsList": 
+	[
+	    "CDate",
+	    "RawContentMd5",
+	    "MRate",
+	    "emptyF"
+	]
+    }
+]

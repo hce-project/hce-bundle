@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 1250849279, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "30c59492c3f327e346d7710f530b61a3", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:21:55", 
+                        "Charset": "UTF-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "30c59492c3f327e346d7710f530b61a3", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 24, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2017-01-26 05:21:57", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1242, 
+                        "RawContentMd5": "", 
+                        "Size": 516, 
+                        "Status": 7, 
+                        "TagsCount": 4, 
+                        "TagsMask": 33554460, 
+                        "UDate": "2017-01-26 05:21:57"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "cHViZGF0ZTogMjAxNy0wMS0yNiAwNToyMTo1Nwp0aXRsZTogVGVzdCBjaGFpbnMgcGFnZQpkZXNjcmlwdGlvbjogJWRlc2NyaXB0aW9uJQptZWRpYTogJW1lZGlhJQphdXRob3I6ICVhdXRob3IlCmRjX2RhdGU6ICVkY19kYXRlJQpsaW5rOiBodHRwOi8vMTI3LjAuMC4xL3RlbXBsYXRlX3NjcmFwaW5nL2NoYWluc19wYWdlMS5odG1sCmtleXdvcmRzOiAla2V5d29yZHMlCmNvbnRlbnRfZW5jb2RlZDogJWNvbnRlbnRfZW5jb2RlZCUKaHRtbF9sYW5nOiAlaHRtbF9sYW5nJQpwdWJkYXRlX2V4dHJhY3RvcjogU2NyYXBlcgp0aXRsZV9leHRyYWN0b3I6IEdvb3NlRXh0cmFjdG9yCmRlc2NyaXB0aW9uX2V4dHJhY3RvcjogJWRlc2NyaXB0aW9uX2V4dHJhY3RvciUKbWVkaWFfZXh0cmFjdG9yOiAlbWVkaWFfZXh0cmFjdG9yJQphdXRob3JfZXh0cmFjdG9yOiAlYXV0aG9yX2V4dHJhY3RvciUKZGNfZGF0ZV9leHRyYWN0b3I6ICVkY19kYXRlX2V4dHJhY3RvciUKbGlua19leHRyYWN0b3I6IEdvb3NlRXh0cmFjdG9yCmtleXdvcmRzX2V4dHJhY3RvcjogJWtleXdvcmRzX2V4dHJhY3RvciUKY29udGVudF9lbmNvZGVkX2V4dHJhY3RvcjogJWNvbnRlbnRfZW5jb2RlZF9leHRyYWN0b3IlCmh0bWxfbGFuZ19leHRyYWN0b3I6ICVodG1sX2xhbmdfZXh0cmFjdG9yJQpjcmF3bGVyX3RpbWU6IDAuMDI0CnNjcmFwZXJfdGltZTogMC4wMzU5MDcwMzAxMDU2CmVycm9yc19tYXNrOiAwCg==", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/chains_page1.html", 
+                    "urlMd5": "b3eb9e33190cbc35e4419a3764955555"
+                }
+            ], 
+            "node": "r014_data", 
+            "port": "5733", 
+            "time": 3555
+        }
+    ]
+}

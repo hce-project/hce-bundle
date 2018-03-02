@@ -1,0 +1,44 @@
+{
+    "id": "z2",
+    "uDate": "12-12-12 12.12.12",
+    "tcDate": "12-12-12 12.12.12",
+    "cDate": "12-12-12 12.12.12",
+    "resources": 100,
+    "iterations": 11,
+    "description": "aaa",
+    "urls": ["http://url3.com/"],
+    "filters": 
+    [
+	{
+	    "siteId": "z5",
+	    "pattern": "z11"
+	}
+    ],
+    "properties": 
+    {
+	"prop1": "10",
+	"prop2": "20"
+    },
+    "state": 0,
+    "priority": 1,
+    "maxURLs": 11,
+    "maxResources": 200,
+    "maxErrors": 1000,
+    "maxResourceSize": 200,
+    "requestDelay": 2020,
+    "httpTimeout": 500,
+    "errorMask": 13,
+    "errors": 44,
+    "urlType": 201,
+    "contents": 0,
+    "processingDelay": 2,
+    "size": 100,
+    "avgSpeed": 100,
+    "avgSpeedCounter": 5,
+    "userId": 100,
+    "recrawlPeriod": 0,
+    "recrawlDate": "12-12-12 12.12.12",
+    "maxURLsFromPage": null,
+    "collectedURLs": null,
+    "fetchType": 0
+}

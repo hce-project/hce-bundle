@@ -1,0 +1,56 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 662771790, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": null, 
+                        "Charset": "", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 0, 
+                        "CrawlingTime": 0, 
+                        "ErrorMask": 1099511627780, 
+                        "HttpCode": 408, 
+                        "LastModified": null, 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": null, 
+                        "Processed": 0, 
+                        "ProcessingTime": 7, 
+                        "RawContentMd5": "", 
+                        "Size": 0, 
+                        "Status": 7, 
+                        "TagsCount": 0, 
+                        "TagsMask": 0, 
+                        "UDate": "2016-07-27 10:03:26"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://192.168.253.250/dc_test_static_site_bad_url/408.php", 
+                    "urlMd5": "e7ed4ebd50c5bf0f4e7f6e70f8fcac7e"
+                }
+            ], 
+            "node": "r011_data", 
+            "port": "5730", 
+            "time": 897
+        }
+    ]
+}

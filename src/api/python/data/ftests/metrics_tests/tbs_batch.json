@@ -1,0 +1,66 @@
+{
+  "id": 0,
+  "crawlerType": 4,
+  "items": [
+            {
+            "siteId": "0",
+            "urlId": "ab7f8a27bac85d6c9c41b53ccf75165f",
+            "urlObj": {
+            "siteId": "0",
+            "url": "http://127.0.0.1/booking.html",
+            "type": 1,
+            "state": 0,
+            "status": 2,
+            "siteSelect": 0,
+            "crawled": 0,
+            "processed": 0,
+            "urlMd5": "ab7f8a27bac85d6c9c41b53ccf75165f",
+            "contentType": "",
+            "requestDelay": 0,
+            "processingDelay": 0,
+            "httpTimeout": 30000,
+            "charset": "",
+            "batchId": 0,
+            "errorMask": 0,
+            "crawlingTime": 0,
+            "processingTime": 0,
+            "totalTime": 0,
+            "httpCode": 0,
+            "UDate": "NOW()",
+            "CDate": "NOW()",
+            "httpMethod": "",
+            "size": 0,
+            "linksI": 0,
+            "linksE": 0,
+            "freq": 0,
+            "depth": 0,
+            "rawContentMd5": "",
+            "parentMd5": "ab7f8a27bac85d6c9c41b53ccf75165f",
+            "lastModified": "NULL",
+            "eTag": "",
+            "mRate": 0,
+            "mRateCounter": 0,
+            "maxURLsFromPage": 0,
+            "tcDate": "NOW()",
+            "tagsMask": 0,
+            "tagsCount": 0,
+            "pDate": "NULL",
+            "contentURLMd5": "",
+            "priority": 0
+            },
+            "properties": {
+            "template": {
+            "title": [
+                      "//h3[@class='b-popular_title']/a/text()"
+                      ],
+            "media": [
+                      "//li[@class='b-popular_item b-sprite-wrap ']//img/@src"
+                      ],
+            "description": [
+                            "//li[@class='b-popular_item b-sprite-wrap ']/p[@class='b-popular_country']/a/text()"
+                            ]
+            }
+            }
+            }
+            ]
+}

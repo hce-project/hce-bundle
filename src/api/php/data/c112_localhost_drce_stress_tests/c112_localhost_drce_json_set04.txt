@@ -1,0 +1,23 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+                "LINES": "80"
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 2,
+        "time_max": 30000,
+        "cleanup": 0
+    },
+    "command": "~/hce-node-bundle/api/php/tests/stress_tests/overloadResourceLimits --threads=10",
+    "input": "",
+    "files": [
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "urls": [
+           {
+           "url": "http://feeds.cfr.org/~r/spatrick/~3/SwGoUMhhSJ8/",
+           "properties": {
+           "reprocess": 1,
+           "PROCESSOR_PROPERTIES": {
+           "algorithm": {
+           "algorithm_name": "metric_based"
+           },
+           "modules": {
+           "metric_based": [
+                            "ScrapyExtractor",
+                            "GooseExtractor",
+                            "NewspaperExtractor",
+                            "MLExtractor"
+                            ]
+           },
+           "metrics": [
+                       {
+                       "name": "WordsMetric",
+                       "threshold": 500
+                       },
+                       {
+                       "name": "SentencesMetric",
+                       "threshold": 100
+                       }
+                       ]
+           }
+           }
+           }
+           ],
+  "site_id": "rss_metric",
+  "tags": [
+           "title",
+           "description",
+           "content_encoded",
+           "pdate"
+           ],
+  "id": "12345"
+}

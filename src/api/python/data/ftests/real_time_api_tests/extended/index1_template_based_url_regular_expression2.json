@@ -1,0 +1,161 @@
+{
+  "id": 1,
+  "crawlerType": 4,
+  "items": [
+    {
+      "siteId": "0",
+      "urlContentResponse": null,
+      "siteObj": {
+        "fetchType": 1,
+        "id": "0",
+        "uDate": null,
+        "tcDate": null,
+        "cDate": null,
+        "resources": null,
+        "iterations": null,
+        "description": null,
+        "urls": [
+          
+        ],
+        "filters": [
+          
+        ],
+        "properties": [],
+        "state": null,
+        "priority": null,
+        "maxURLs": null,
+        "maxResources": null,
+        "maxErrors": null,
+        "maxResourceSize": null,
+        "requestDelay": null,
+        "httpTimeout": null,
+        "errorMask": null,
+        "errors": null,
+        "urlType": null,
+        "contents": null,
+        "processingDelay": null,
+        "size": null,
+        "avgSpeed": null,
+        "avgSpeedCounter": null,
+        "userId": null,
+        "recrawlPeriod": null,
+        "recrawlDate": null,
+        "maxURLsFromPage": null,
+        "collectedURLs": null
+      },
+      "urlObj": {
+        "status": 2,
+        "linksI": 0,
+        "linksE": 0,
+        "contentMask": 0,
+        "processingTime": 0,
+        "CDate": null,
+        "mRateCounter": 0,
+        "httpTimeout": 30000,
+        "size": 0,
+        "urlPut": null,
+        "batchId": 0,
+        "lastModified": null,
+        "tagsCount": 0,
+        "mRate": 0,
+        "charset": "",
+        "state": 0,
+        "httpCode": 0,
+        "priority": 0,
+        "maxURLsFromPage": 0,
+        "processingDelay": 1000,
+        "crawlingTime": 0,
+        "type": 1,
+        "processed": 0,
+        "totalTime": 0,
+        "siteSelect": 0,
+        "contentType": "",
+        "pDate": null,
+        "errorMask": 0,
+        "httpMethod": "get",
+        "eTag": "",
+        "siteId": "0",
+        "freq": 0,
+        "tcDate": null,
+        "rawContentMd5": "",
+        "crawled": 0,
+        "UDate": null,
+        "contentURLMd5": "",
+        "requestDelay": 1000,
+        "depth": 0,
+        "parentMd5": "",
+        "urlUpdate": null,
+        "tagsMask": 0,
+        "urlMd5": "b3eb9e33190cbc35e4419a3764903a01",
+        "url": "http:\/\/127.0.0.1\/template_scraping\/index1.html"
+      },
+      "urlPutObj": {
+        "putDict": {
+          
+        },
+        "urlMd5": "b3eb9e33190cbc35e4419a3764903a01",
+        "contentType": 0,
+        "siteId": "0",
+        "fileStorageSuffix": null,
+        "criterions": null
+      },
+      "properties": {
+        "ROBOTS_MODE": 0,
+        "ROBOTS_COLLECT":0,
+        "DB_TASK_MODE": "RO",
+        "HTTP_REDIRECTS_MAX": 5,
+        "HTML_REDIRECTS_MAX": 5,
+        "HTML_RECOVER": "0",
+        "template": {
+          "templates": [
+            {
+              "priority": "0",
+              "mandatory": 1,
+              "state": 1,
+              "is_filled": 0,
+              "output_format": {
+                "name": "json",
+                "header": "[\n",
+                "items_header": "",
+                "item": "{\n\"pubdate\":\"%pubdate%\",\n\"title\":\"%title%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n",
+                "items_footer": "",
+                "footer": "]\n"
+              },
+              "tags": {
+                "title": [
+                  {
+                    "mandatory": 1,
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "\/\/*[@class='article-title']",
+                    "postProcessing": "(hip-Hop)",
+                    "join": "concat",
+                    "type": "text",
+                    "format": ""
+                  }
+                ],
+                "pubdate": [
+                  {
+                    "mandatory": 1,
+                    "default": "",
+                    "begin": "",
+                    "end": "",
+                    "target": "\/\/time[@class='publish-date']",
+                    "postProcessing": "",
+                    "join": "concat",
+                    "type": "datetime",
+                    "format": ""
+                  }
+                ]
+              }
+            }
+          ],
+          "select": "first_good"
+        },
+        "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"regular\"},\"modules\":{\"regular\":[\"ScrapyExtractor\"]}}"
+      },
+      "urlId": "b3eb9e33190cbc35e4419a3764903a01"
+    }
+  ]
+}

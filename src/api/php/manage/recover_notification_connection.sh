@@ -1,0 +1,8 @@
+#!/bin/bash
+
+. ../cfg/current_cfg.sh
+
+CMD_HANDLER="DataProcessorData"
+LOG_OUT="$LOG_DIR$0.$NODE_APP_LOG_PREFIX.log"
+
+$BIN_DIR$MANAGER_COMMAND --command=NODE_RECOVER_NOTIFICATION_CONNECTION --host=$CMD_HOSTS_CSV --port=$REPLICA_ADMIN_PORTS_CSV --handler=$CMD_HANDLER --timeout=$SMALL_TIMEOUT > $LOG_OUT 2>&1

@@ -1,0 +1,19 @@
+[
+ {
+  "error_code": 2,
+  "error_message": "Request error",
+  "id": "1",
+  "files": [
+  ],
+  "type": 1,
+  "host": "localhost",
+  "port": 5700,
+  "state": 1,
+  "pid": 22353253,
+  "stdout": "",
+  "stderror": "",
+  "exit_status": 0,
+  "node": "node1",
+  "time": 100
+ }
+]

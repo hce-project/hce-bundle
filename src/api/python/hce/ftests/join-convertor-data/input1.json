@@ -1,0 +1,109 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": "0;0", 
+            "errorMessage": "", 
+            "host": "h3.dc5n.hce-project.com;h2.dc5n.hce-project.com", 
+            "id": 1315626282, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "6ba929a606631abc51954d53f3af4259", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "Batch_Id": 2037325486, 
+                        "CDate": "2016-12-20 11:49:06", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "6ba929a606631abc51954d53f3af4259", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 907, 
+                        "ErrorMask": 0, 
+                        "HTTPCode": 200, 
+                        "LastModified": "2016-12-20 08:11:35", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2016-12-20 07:49:59", 
+                        "Processed": 1, 
+                        "ProcessingTime": 74957, 
+                        "RawContentMd5": "8421d9c2acb8c0b1e468625cae9df6e4", 
+                        "Size": 157750, 
+                        "Status": 7, 
+                        "TagsCount": 12, 
+                        "TagsMask": 33621439, 
+                        "UDate": "2016-12-20 11:54:13"
+                    }, 
+                    "headers": [], 
+                    "host": "h3.dc5n.hce-project.com", 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJsaW5rIjoiaHR0cDovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvZWFzdC1hc2lhL2FydGljbGUvMjA1NjA0MS9qYXBhbnMtdG9wLWNvdXJ0LWJhY2tzLXRva3lvLWJpZC1yZWxvY2F0ZS1va2luYXdhLWJhc2UiLAoibGlua19leHRyYWN0b3IiOiJTY3JhcHlFeHRyYWN0b3IiLAoiaHRtbF9sYW5nIjoiZW4iLAoiaHRtbF9sYW5nX2V4dHJhY3RvciI6IlNjcmFweUV4dHJhY3RvciIsCiJ0aXRsZSI6IkphcGFu4oCZcyB0b3AgY291cnQgYmFja3MgVG9reW8gaW4gYmlkIHRvIHJlbG9jYXRlIE9raW5hd2EgYmFzZSIsCiJ0aXRsZV9leHRyYWN0b3IiOiJTY3JhcHlFeHRyYWN0b3IiLAoiYXV0aG9yIjoiQWdlbmNlIEZyYW5jZS1QcmVzc2UgQWdlbmNlIEZyYW5jZS1QcmVzc2UiLAoiYXV0aG9yX2V4dHJhY3RvciI6IlNjcmFweUV4dHJhY3RvciIsCiJrZXl3b3JkcyI6Ik5ld3MsIEFzaWEsIEVhc3QgQXNpYSwgbmFoYSwgb3NwcmV5IE5ld3MsIEFzaWEsIEVhc3QgQXNpYSwgbmFoYSwgb3NwcmV5IiwKImtleXdvcmRzX2V4dHJhY3RvciI6IlNjcmFweUV4dHJhY3RvciIsCiJtZWRpYSI6Imh0dHA6Ly9jZG40Lmktc2NtcC5jb20vc2l0ZXMvZGVmYXVsdC9maWxlcy9zdHlsZXMvNjIweDM1Ni9wdWJsaWMvaW1hZ2VzL21ldGhvZGUvMjAxNi8xMi8yMC9iMDM0YWNiMC1jNjg3LTExZTYtYjBlMy1lMTJjMjljMTUyY2VfaW1hZ2VfaGlyZXMuanBnP2l0b2s9U3k5UWx1V2giLAoibWVkaWFfZXh0cmFjdG9yIjoiU2NyYXB5RXh0cmFjdG9yIiwKInB1YmRhdGUiOiIyMDE2LTEyLTIwIDA3OjQ5OjU5IiwKInB1YmRhdGVfZXh0cmFjdG9yIjoiU2NyYXB5RXh0cmFjdG9yIiwKInNvdXJjZV91cmwiOiJodHRwOi8vd3d3LnNjbXAuY29tL25ld3MvYXNpYS9lYXN0LWFzaWEvYXJ0aWNsZS8yMDU2MDQxL2phcGFucy10b3AtY291cnQtYmFja3MtdG9reW8tYmlkLXJlbG9jYXRlLW9raW5hd2EtYmFzZSIsCiJzb3VyY2VfdXJsX2V4dHJhY3RvciI6IlNjcmFwZXIiLAoiZGVzY3JpcHRpb24iOiJKYXBhbuKAmXMgU3VwcmVtZSBDb3VydCBydWxlZCBvbiBUdWVzZGF5IGluIGZhdm91ciBvZiB0aGUgY2VudHJhbCBnb3Zlcm5tZW50IGluIGl0cyBiaWQgdG8gcmVsb2NhdGUgYSBVUyBhaXJiYXNlIG9uIE9raW5hd2EsIGRlYWxpbmcgYSBzaWduaWZpY2FudCBibG93IHRvIG9wcG9uZW50cyBvZiB0aGUgcGxhbiBsZWQgYnkgdGhlIGlzbGFuZOKAmXMgZ292ZXJub3IuLi4uIiwKImRlc2NyaXB0aW9uX2V4dHJhY3RvciI6IlNjcmFweUV4dHJhY3RvciIsCiJkY19kYXRlIjoiMTQ4MjIyMTQ4NSIsCiJkY19kYXRlX2V4dHJhY3RvciI6IlNjcmFweUV4dHJhY3RvciIsCiJmZWVkX3VybCI6Imh0dHA6Ly9zY21wLmNvbS9yc3MvMy9mZWVkIiwKImZlZWRfdXJsX2V4dHJhY3RvciI6IlNjcmFwZXIiLAoiY29udGVudF9lbmNvZGVkIjoiSmFwYW7igJlzIFN1cHJlbWUgQ291cnQgcnVsZWQgb24gVHVlc2RheSBpbiBmYXZvdXIgb2YgdGhlIGNlbnRyYWwgZ292ZXJubWVudCBpbiBpdHMgYmlkIHRvIHJlbG9jYXRlIGEgVVMgYWlyYmFzZSBvbiBPa2luYXdhLCBkZWFsaW5nIGEgc2lnbmlmaWNhbnQgYmxvdyB0byBvcHBvbmVudHMgb2YgdGhlIHBsYW4gbGVkIGJ5IHRoZSBpc2xhbmTigJlzIGdvdmVybm9yLiBUaGUgSmFwYW5lc2UgYW5kIFVTIGdvdmVybm1lbnRzIHdhbnQgdGhlIGJhc2UgaW4gdGhlIG1pZGRsZSBvZiBhIGNyb3dkZWQgY2l0eSBtb3ZlZCB0byBhIHNwYXJzZWx5IHBvcHVsYXRlZCBhcmVhIGZvciBzYWZldHkgcmVhc29ucy4gQnV0IG1hbnkgbG9jYWxzIHRpcmVkIG9mIHRoZSBwcmVwb25kZXJhbmNlIG9mIEFtZXJpY2FuIGJhc2VzIG9uIE9raW5hd2Egd2FudCBpdCByZWxvY2F0ZWQgb2ZmIHRoZSBpc2xhbmQgYWx0b2dldGhlci4gT2tpbmF3YSBpcyBzdHJhdGVnaWNhbGx5IHNpdHVhdGVkIGluIHRoZSBFYXN0IENoaW5hIFNlYSBmcm9tIHdoZXJlIFVTIHRyb29wcyBhbmQgYWlyY3JhZnQgY2FuIHJlYWN0IHRvIHBvdGVudGlhbCBjb25mbGljdHMgdGhyb3VnaG91dCBBc2lhLiBJdCBoYXMgYmVlbiBhIGJhc3Rpb24gb2YgQW1lcmljYW4gbWlsaXRhcnkgcG93ZXIgc2luY2UgdGhlIGVuZCBvZiBzZWNvbmQgd29ybGQgd2FyLiBPa2luYXdhIGdvdmVybm9yIFRha2VzaGkgT25hZ2EgaGFkIHRyaWVkIHRvIGJsb2NrIGVmZm9ydHMgdG8gcmVjbGFpbSBsYW5kIGZvciB0aGUgbmV3IG9mZnNob3JlIGZhY2lsaXR5IGFuZCBoZSBhbmQgUHJpbWUgTWluaXN0ZXIgU2hpbnpvIEFiZSBmaWxlZCByaXZhbCBsYXdzdWl0cyBpbiBhIGJpZCB0byBzZXR0bGUgdGhlIGlzc3VlLiBJbiBTZXB0ZW1iZXIsIHRoYXQgdGhlIGNlbnRyYWwgZ292ZXJubWVudOKAmXMgcG9zaXRpb24gc2hvdWxkIGJlIHJlc3BlY3RlZCBiZWNhdXNlIGl0IGhhcyDigJxmdW5kYW1lbnRhbCByZXNwb25zaWJpbGl0eeKAnSBmb3IgSmFwYW7igJlzIGRlZmVuY2UgYW5kIGRpcGxvbWFjeS4gVGhlIE9raW5hd2FuIGdvdmVybm1lbnQgYXBwZWFsZWQgdGhhdCBydWxpbmcgYnV0IGl0IHdhcyBkaXNtaXNzZWQgYnkgdGhlIFN1cHJlbWUgQ291cnQgb24gVHVlc2RheS4gVG9reW8gYW5kIFdhc2hpbmd0b24gZmlyc3QgcHJvcG9zZWQgbW92aW5nIHRoZSBGdXRlbm1hIGFpciBiYXNlLCBhIE1hcmluZSBDb3JwcyBmYWNpbGl0eSwgYmFjayBpbiAxOTk2IGJ1dCBpbnNpc3RlZCBpdCByZW1haW4gb24gT2tpbmF3YS4gT3Bwb25lbnRzIGRlbWFuZCB0aGF0IGEgcmVwbGFjZW1lbnQgYmUgYnVpbHQgZWxzZXdoZXJlIGluIEphcGFuIG9yIG92ZXJzZWFzLCBzYXlpbmcgdGhleSBjYW5ub3QgdG9sZXJhdGUgbm9pc2UsIGFjY2lkZW50cyBhbmQgY3JpbWVzIGNvbW1pdHRlZCBieSBVUyBzZXJ2aWNlIG1lbWJlcnMuIFRoZSBTdXByZW1lIENvdXJ0IGRlY2lzaW9uIGNhbWUgYSBkYXkgYWZ0ZXIgdGhlIE1hcmluZXMgcmVzdW1lZCBmbGlnaHRzIG9mIGEgY29udHJvdmVyc2lhbCBoeWJyaWQgYWlyY3JhZnQgYWZ0ZXIgb25lIGNyYXNoLWxhbmRlZCBqdXN0IG9mZiBPa2luYXdh4oCZcyBjb2FzdCBsYXN0IHdlZWsuIE5vIG9uZSB3YXMga2lsbGVkIHdoZW4gdGhlIE1WLTIyIE9zcHJleSB3ZW50IGRvd24gYnV0IHRoZSBhY2NpZGVudCBzcGFya2VkIGZyZXNoIGxvY2FsIGFuZ2VyLiBJbiByZXNwb25zZSwgdGhlIE1hcmluZXMgc3VzcGVuZGVkIGZsaWdodHMgb2YgdGhlIHRpbHQtcm90b3IgYWlyY3JhZnQgaW4gSmFwYW4gcGVuZGluZyBhbiBpbnZlc3RpZ2F0aW9uIGJ1dCAuIE1vcmUgdGhhbiBoYWxmIHRoZSA0NywwMDAgQW1lcmljYW4gdHJvb3BzIGluIEphcGFuIHVuZGVyIGEgZGVjYWRlcy1sb25nIHNlY3VyaXR5IGFsbGlhbmNlIGFyZSBzdGF0aW9uZWQgb24gT2tpbmF3YSwgdGhlIHNpdGUgb2YgYSBtYWpvciBzZWNvbmQgd29ybGQgd2FyIGJhdHRsZSB0aGF0IHdhcyBmb2xsb3dlZCBieSBhIDI3LXllYXIgVVMgb2NjdXBhdGlvbi4gQSBzZXJpZXMgb2YgY3JpbWVzIGluY2x1ZGluZyByYXBlcywgYXNzYXVsdHMgYW5kIGhpdC1hbmQtcnVuIGFjY2lkZW50cyBieSBtaWxpdGFyeSBwZXJzb25uZWwsIHRoZWlyIGRlcGVuZGFudHMgYW5kIGNpdmlsaWFucyBoYXZlIGxvbmcgc3BhcmtlZCBwcm90ZXN0cy4iLAoiY29udGVudF9lbmNvZGVkX2V4dHJhY3RvciI6IlNjcmFweUV4dHJhY3RvciIsCiJwdWJkYXRlX3R6IjoiJXB1YmRhdGVfdHolIiwKInB1YmRhdGVfdHpfZXh0cmFjdG9yIjoiU2NyYXBlciIKfQpdCg==", 
+                            "cDate": "2016-12-20 11:54:13", 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "8421d9c2acb8c0b1e468625cae9df6e4", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "144411ff321070c6928e0c15189c25ee", 
+                    "status": 7, 
+                    "url": "http://www.scmp.com/news/asia/east-asia/article/2056041/japans-top-court-backs-tokyo-bid-relocate-okinawa-base", 
+                    "urlMd5": "86525cb6b0b8c4efe3b5433c5eee8440"
+               }, 
+               {
+                    "attributes": [], 
+                    "contentURLMd5": "75ff326cfb13751e0701ef39f5df4b0a", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "Batch_Id": 3253414407, 
+                        "CDate": "2016-12-20 04:53:05", 
+                        "Charset": "UTF-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "75ff326cfb13751e0701ef39f5df4b0a", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 222, 
+                        "ErrorMask": 0, 
+                        "HTTPCode": 200, 
+                        "LastModified": "2016-12-20 03:13:53", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2016-12-20 04:59:59", 
+                        "Processed": 1, 
+                        "ProcessingTime": 55891, 
+                        "RawContentMd5": "76ca0e7d9b8d9adca70026cfaa052d5c", 
+                        "Size": 254609, 
+                        "Status": 7, 
+                        "TagsCount": 9, 
+                        "TagsMask": 33555519, 
+                        "UDate": "2016-12-20 05:30:26"
+                    }, 
+                    "headers": [], 
+                    "host": "h2.dc5n.hce-project.com", 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJsaW5rIjoiaHR0cDovL3d3dy5jYnNuZXdzLmNvbS92aWRlb3MvcG9saWNlLWluLXUtcy1yZWFjdGluZy10by1iZXJsaW4tdHJ1Y2staW5jaWRlbnQvIiwKImxpbmtfZXh0cmFjdG9yIjoiU2NyYXB5RXh0cmFjdG9yIiwKInRpdGxlIjoiUG9saWNlIGluIFUuUy4gcmVhY3RpbmcgdG8gQmVybGluIHRydWNrIGluY2lkZW50IiwKInRpdGxlX2V4dHJhY3RvciI6Ikdvb3NlRXh0cmFjdG9yIiwKImZlZWRfdXJsIjoiaHR0cDovL2ZlZWRzLmNic25ld3MuY29tL0NCU05ld3NNYWluP2Zvcm1hdD14bWwiLAoiZmVlZF91cmxfZXh0cmFjdG9yIjoiU2NyYXBlciIsCiJrZXl3b3JkcyI6IlBvbGljZSBpbiBVLlMuIHJlYWN0aW5nIHRvIEJlcmxpbiB0cnVjayBpbmNpZGVudCwgaG9saWRheSwgY2hpY2FnbywgTllQRCwgY2hyaXN0bWFzLCBuZXdzLCB2aWRlbywgY2JzLCBnZXJtYW55LCBuZXcgeW9yaywgLCBDQlMgRXZlbmluZyBOZXdzIHZpZGVvLCBjYnMgbmV3cyB2aWRlbywgdmlkZW8sIGNic25ld3MuY29tLCBjYnMgbmV3cyIsCiJrZXl3b3Jkc19leHRyYWN0b3IiOiJTY3JhcHlFeHRyYWN0b3IiLAoibWVkaWEiOiJodHRwOi8vY2JzbmV3czIuY2JzaXN0YXRpYy5jb20vaHViL2kvci8yMDE2LzEyLzE5LzNjMzkzOGYyLTM4Y2MtNGJlZi1iMTljLWQwYzRmMjk2NWM0My90aHVtYm5haWwvMTIwMHg2MzAvNGZhMzE2NmQwOGIyYjRkZGUxMmE2ZDcyMWFlMDFlMDIvZXZlLXBlZ3Vlcy0xMjE5LTEyMTAyNDYtNjQweDM2MC5qcGciLAoibWVkaWFfZXh0cmFjdG9yIjoiU2NyYXB5RXh0cmFjdG9yIiwKInB1YmRhdGUiOiIyMDE2LTEyLTIwIDA0OjU5OjU5IiwKInB1YmRhdGVfZXh0cmFjdG9yIjoiU2NyYXBlciIsCiJzb3VyY2VfdXJsIjoiaHR0cDovL2ZlZWRzLmNic25ld3MuY29tL35yL0NCU05ld3NNYWluL34zL3k3SE1fRGZ0cjI4LyIsCiJzb3VyY2VfdXJsX2V4dHJhY3RvciI6IlNjcmFwZXIiLAoiZGVzY3JpcHRpb24iOiJJbiByZXNwb25zZSB0byB0aGUgYXBwYXJlbnQgdGVycm9yaXN0IGF0dGFjayBhdCBhIEJlcmxpbiBDaHJpc3RtYXMgbWFya2V0LCBhdXRob3JpdGllcyBpbiB0aGUgVS5TLiBoYXZlIGluY3JlYXNlZCBzZWN1cml0eSBhdCBzcGVjaWZpYyBzaXRlcy4gQ2hpY2FnbyBwb2xpY2UgYXJlIGFkZGluZyBzZWN1cml0eSBhdCBhIENocmlzdG1hcyBtYXJrZXQgc2ltaWxhciB0byB0aGUgb25lIHRoYXQgd2FzIGF0dGFja2VkLCBhbmQgdGhlIE5ZUEQgaXMgZGVwbG95aW5nIGNyaXRpY2FsIHJlc3BvbnNlIHRlYW1zIGFyb3VuZCBOZXcgWW9yay4gSmVmZiBQZWd1ZXMgcmVwb3J0cy4iLAoiZGVzY3JpcHRpb25fZXh0cmFjdG9yIjoiU2NyYXB5RXh0cmFjdG9yIiwKImNvbnRlbnRfZW5jb2RlZCI6InwgSW4gcmVzcG9uc2UgdG8gdGhlIGFwcGFyZW50IHRlcnJvcmlzdCBhdHRhY2sgYXQgYSBCZXJsaW4gQ2hyaXN0bWFzIG1hcmtldCwgYXV0aG9yaXRpZXMgaW4gdGhlIFUuUy4gaGF2ZSBpbmNyZWFzZWQgc2VjdXJpdHkgYXQgc3BlY2lmaWMgc2l0ZXMuIENoaWNhZ28gcG9saWNlIGFyZSBhZGRpbmcgc2VjdXJpdHkgYXQgYSBDaHJpc3RtYXMgbWFya2V0IHNpbWlsYXIgdG8gdGhlIG9uZSB0aGF0IHdhcyBhdHRhY2tlZCwgYW5kIHRoZSBOWVBEIGlzIGRlcGxveWluZyBjcml0aWNhbCByZXNwb25zZSB0ZWFtcyBhcm91bmQgTmV3IFlvcmsuIEplZmYgUGVndWVzIHJlcG9ydHMuIiwKImNvbnRlbnRfZW5jb2RlZF9leHRyYWN0b3IiOiJHb29zZUV4dHJhY3RvciIsCiJwdWJkYXRlX3R6IjoiJXB1YmRhdGVfdHolIiwKInB1YmRhdGVfdHpfZXh0cmFjdG9yIjoiU2NyYXBlciIKfQpdCg==", 
+                            "cDate": "2016-12-20 05:30:26", 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "76ca0e7d9b8d9adca70026cfaa052d5c", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "144411ff321070c6928e0c15189c25ee", 
+                    "status": 7, 
+                    "url": "http://feeds.cbsnews.com/~r/CBSNewsMain/~3/y7HM_Dftr28/", 
+                    "urlMd5": "5e04a12c61b5d175fc89e9aeb16ad195"
+                }
+            ], 
+            "node": "m1-3h-data211_data;m1-3h-data111_data", 
+            "port": "5530;5530", 
+            "time": "804;1542"
+        }
+    ]
+}

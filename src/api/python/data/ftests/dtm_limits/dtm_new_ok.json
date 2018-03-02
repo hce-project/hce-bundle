@@ -1,0 +1,32 @@
+{
+    "command": "ls -la", 
+    "files": [
+        [
+            "file1.txt", 
+            "test file content 1", 
+            9
+        ], 
+        [
+            "file2.txt", 
+            "test file content 2", 
+            8
+        ]
+    ], 
+    "id": tid, 
+    "input": "", 
+    "limits": {}, 
+    "session": {
+        "LANG": "POSIX", 
+        "WIDTH": 80, 
+        "time_max": 30000, 
+	"tmode": 2
+    }, 
+    "strategy": {
+        "DATE": "2014-07-18 09:25:00", 
+        "PRIORITY": 2, 
+	"RAM_FREE": 8000000,
+	"CPU_LOAD_MAX": 95,
+	"IO_WAIT_MAX": 95,
+	"RETRY": 3
+    }
+}

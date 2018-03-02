@@ -1,0 +1,26 @@
+[
+    {
+        "contentTypeMask": 3,
+	"siteId": "",
+        "url": "",
+        "urlFetch": 
+        {
+	    "algorithm": 1,
+	    "maxURLs": 10,
+	    "sitesCriterions":
+	    { 
+		"ORDER BY": "Priority DESC, TcDate ASC" 
+	    },
+	    "sitesList": [],
+	    "urlUpdate": null,
+	    "urlsCriterions":
+	    { 
+		"LIMIT": 20, 
+		"ORDER BY": "CDate ASC", 
+		"WHERE": "Status=7 AND Crawled>0 AND Processed>0 AND CDate BETWEEN '2014-06-28 00:00:01' AND '2014-06-28 23:59:59'" 
+	    }
+	},
+	"urlMd5": "thumbnailsÃ‚Âleft",
+	"dbFieldsList": null
+    }
+]

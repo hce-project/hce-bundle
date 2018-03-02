@@ -1,0 +1,6 @@
+{
+    "rid": 100,
+    "query": "SELECT count(*) FROM sites",
+    "dbName": "dc_sites",
+    "includeFieldsNames": 0
+}

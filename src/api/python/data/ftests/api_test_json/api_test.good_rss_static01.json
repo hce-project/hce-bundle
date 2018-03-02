@@ -1,0 +1,133 @@
+{
+    "id": 1006,
+    "crawlerType": 4,
+    "items": [
+        {
+            "siteId": "0",
+            "urlContentResponse": null,
+            "depth": 1,
+            "siteObj": {
+                "fetchType": 1,
+                "id": "0",
+                "uDate": null,
+                "tcDate": null,
+                "cDate": null,
+                "resources": null,
+                "iterations": null,
+                "description": null,
+                "urls": [],
+                "filters": [
+                    {
+                        "pattern": "http://(.*)",
+                        "siteId": "0",
+                        "type": 1
+                    }
+                ],
+                "properties": {},
+                "state": null,
+                "priority": null,
+                "maxURLs": null,
+                "maxResources": null,
+                "maxErrors": null,
+                "maxResourceSize": null,
+                "requestDelay": null,
+                "httpTimeout": null,
+                "errorMask": null,
+                "errors": null,
+                "urlType": 0,
+                "contents": null,
+                "processingDelay": null,
+                "size": null,
+                "avgSpeed": null,
+                "avgSpeedCounter": null,
+                "userId": null,
+                "recrawlPeriod": null,
+                "recrawlDate": null,
+                "maxURLsFromPage": null,
+                "collectedURLs": 0,
+                "updateType": 1
+            },
+            "urlObj": {
+                "status": 2,
+                "linksI": 0,
+                "linksE": 0,
+                "contentMask": 0,
+                "processingTime": 0,
+                "CDate": null,
+                "mRateCounter": 0,
+                "httpTimeout": 10000,
+                "size": 0,
+                "urlPut": null,
+                "batchId": 0,
+                "lastModified": null,
+                "tagsCount": 0,
+                "mRate": 0,
+                "charset": "",
+                "state": 0,
+                "httpCode": 0,
+                "priority": 0,
+                "maxURLsFromPage": 20,
+                "processingDelay": 0,
+                "crawlingTime": 0,
+                "type": 0,
+                "processed": 0,
+                "totalTime": 0,
+                "siteSelect": 0,
+                "contentType": "",
+                "pDate": null,
+                "errorMask": 0,
+                "httpMethod": "get",
+                "eTag": "",
+                "siteId": "0",
+                "freq": 0,
+                "tcDate": null,
+                "rawContentMd5": "",
+                "crawled": 0,
+                "UDate": null,
+                "contentURLMd5": "",
+                "requestDelay": 0,
+                "depth": 0,
+                "parentMd5": "",
+                "urlUpdate": null,
+                "tagsMask": 0,
+                "urlMd5": "26da433e468a8a861cf1efffd2cd3cf4",
+                "url": "http://127.0.0.1/rss/index_feed.xml"
+            },
+            "urlPutObj": {
+                "putDict": {},
+                "urlMd5": "1cd05cef65f7c8848acc97fc8166364a",
+                "contentType": 0,
+                "siteId": "0",
+                "fileStorageSuffix": null,
+                "criterions": null
+            },
+            "properties": {
+                "ROBOTS_MODE": "0",
+                "DB_TASK_MODE": "RO",
+                "HTTP_REDIRECTS_MAX": 5,
+                "HTML_REDIRECTS_MAX": 5,
+                "HTML_RECOVER": "0",
+                "ROBOTS_MODE": "0",
+                "PROCESSOR_NAME": "FEED_PARSER",
+                "PROCESS_CTYPES": "text/html,text/xml,application/rss+xml",
+                "template": {
+                    "templates": [
+                        {
+                            "output_format": {
+                                "type": "rss",
+                                "name": "json",
+                                "header": "[\n{",
+                                "items_header": "",
+                                "item": "\n\"%tag_name%\":\"%tag_value%\", \"%tag_name%_extractor\":\"%tag_name%_%extractor_value%\"",
+                                "items_footer": "",
+                                "footer": "\n}\n]\n"
+                            },
+                            "tags": []
+                        }
+                    ]
+                }
+            },
+            "urlId": "26da433e468a8a861cf1efffd2cd3cf4"
+        }
+    ]
+}

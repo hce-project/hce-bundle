@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sphinx:docset xmlns:sphinx="http://sphinxsearch.com">
+
+<sphinx:schema>
+<sphinx:field name="title" weight="8"/> 
+<sphinx:field name="h" weight="7"/>
+<sphinx:field name="bodys" weight="6"/>
+<sphinx:field name="bodyn" weight="5"/>
+<sphinx:field name="ref" weight="4"/>
+<sphinx:field name="alt" weight="3"/>
+<sphinx:field name="meta" weight="2"/>
+<sphinx:field name="url" weight="1"/>
+<sphinx:attr name="cdate" type="timestamp"/>
+<sphinx:attr name="uid" type="int" default="0"/>
+<sphinx:attr name="sid" type="int" default="0"/>
+<sphinx:attr name="lang" type="int" default="0"/>
+<sphinx:attr name="bseo" type="int" default="0"/>
+<sphinx:attr name="mmedia" type="int" default="0"/>
+<sphinx:attr name="afflags0" type="int" default="0"/>
+<sphinx:attr name="afflags1" type="int" default="0"/>
+<sphinx:attr name="afflags2" type="int" default="0"/>
+<sphinx:attr name="afflags3" type="int" default="0"/>
+<sphinx:attr name="afflags4" type="int" default="0"/>
+<sphinx:attr name="afflags5" type="int" default="0"/>
+<sphinx:attr name="afflags6" type="int" default="0"/>
+<sphinx:attr name="afflags7" type="int" default="0"/>
+</sphinx:schema>
+
+</sphinx:docset>

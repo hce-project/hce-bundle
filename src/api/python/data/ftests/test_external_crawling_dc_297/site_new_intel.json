@@ -1,0 +1,52 @@
+{
+    "avgSpeed": 0, 
+    "avgSpeedCounter": 0, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "contents": 0, 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "mode": 0, 
+            "pattern": "(.*)", 
+            "siteId": "intel", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 90000, 
+    "id": "intel", 
+    "iterations": 0, 
+    "maxErrors": 5, 
+    "maxResourceSize": 1024000, 
+    "maxResources": 5, 
+    "maxURLs": 5, 
+    "maxURLsFromPage": 3, 
+    "priority": 100, 
+    "processingDelay": 500, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/xml,text/html,application/xml",
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1",
+	"EXTERNAL_FETCHER_URL": "http://api.diffbot.com/v3/article?token=18762f1ad77effeb0682fe53bec7046c&url=%url%"
+    }, 
+    "recrawlDate" : null,
+    "requestDelay": 500, 
+    "resources": 0, 
+    "size": 0, 
+    "state": 1, 
+    "tcDate": null, 
+    "uDate": null, 
+    "urlType": 0, 
+    "urls": [
+        "http://ark.intel.com/products/77491/Intel-Core-i3-4350-Processor-4M-Cache-3_60-GHz"
+    ], 
+    "recrawlPeriod" : null,
+    "userId": 100,
+    "collectedURLs": 0,
+    "fetchType": 3
+}

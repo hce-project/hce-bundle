@@ -1,0 +1,14 @@
+#!/bin/bash
+
+. ../cfg/current_cfg.sh
+
+NODE_HOST="$HOST"
+LOG_FILE=$LOG_DIR$0"."$NODE_APP_LOG_PREFIX".log"
+
+INDEX_START_NUMBER=3
+INDEX_NAME_TEMPLATE="c112_ft02_00"
+
+SMALL_TIMEOUT=10000
+BIG_TIMEOUT=120000
+
+. ../cfg/ft02_cleanup.sh

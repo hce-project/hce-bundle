@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?>
+ <?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+ <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+
+  <channel>
+   <title>RSS feed example</title>
+   <link>http://127.0.0.1/rss/index_feed.xml</link>
+   <description>RSS feed example description</description>
+   <lastBuildDate>Tue, 28 Jul 2015 09:08:32 +0000</lastBuildDate>
+   <language>en</language>
+   <sy:updatePeriod>hourly</sy:updatePeriod>
+   <sy:updateFrequency>1</sy:updateFrequency>
+   <generator>http://wordpress.com/</generator>
+   <cloud domain="time.com" port="80" path="/?rsscloud=notify" registerProcedure="" protocol="http-post" />
+   <image>
+    <url>http://0.gravatar.com/blavatar/2cee445ea71a179ffd35ea91cf154905?s=96&amp;d=http%3A%2F%2Fs2.wp.com%2Fi%2Fbuttonw-com.png</url>
+    <title>TIME</title>
+    <link>http://time.com</link>
+   </image>
+
+   <atom:link rel="search" type="application/opensearchdescription+xml" href="http://time.com/osd.xml" title="TIME" />
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/time/newsfeed" />
+     <feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="time/newsfeed" />
+     <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+     <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://time.com/?pushpress=hub" />
+      <item>
+       <title>This Video of an 8-Year-Old With Cerebral Palsy Finishing a Triathlon Is Everything</title>
+       <link>http://time.com/3974276/bailey-matthews-cerebral-palsy-triathlon-england/</link>
+       <comments>http://time.com/3974276/bailey-matthews-cerebral-palsy-triathlon-england/#comments</comments>
+       <pubDate>Tue, 28 Jul 2015 08:32:34 +0000</pubDate>
+       <dc:creator><![CDATA[hcregan]]></dc:creator>
+       <category><![CDATA[Uncategorized]]></category>
+       <category><![CDATA[Bailey Matthews]]></category>
+       <category><![CDATA[Castle Howard Triathlon]]></category>
+       <category><![CDATA[cerebral palsy]]></category>
+       <category><![CDATA[Mobility]]></category>
+       <category><![CDATA[neurological disorder]]></category>
+       <category><![CDATA[North Yorkshire]]></category>
+       <category><![CDATA[Nottinghamshire]]></category>
+       <category><![CDATA[Triathlon]]></category>
+       <category><![CDATA[United Kingdom]]></category>
+       <guid isPermaLink="false">http://time.com/?p=3974276</guid>
+       <description><![CDATA["He doesn’t see himself as different to anyone else,” says the mother of Bailey Matthews<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=time.com&#038;blog=1359921&#038;post=3974276&#038;subd=timedotcom&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+       <content:encoded><![CDATA[<p>Eight-year-old Bailey Matthews from Nottinghamshire, northern England may have <a href="http://www.yorkshirepost.co.uk/news/main-topics/general-news/video-amazing-scenes-as-eight-year-old-cerebral-palsy-sufferer-bailey-finishes-north-yorkshire-triathalon-unaided-1-7378052">cerebral</a> palsy but he wasn&rsquo;t going to let a condition that affects mobility get in the way of completing a grueling triathlon.</p>
+                        <p>Hundreds of people cheered Matthews over the finish line on Saturday after he completed a 100 meter swim, 4,000 meter bike ride and 1,300 meter run at the Castle Howard Triathlon in North Yorkshire, reports the <em>Yorkshire Post</em>.</p>
+                        <p>Matthews used a specially-adapted walking frame to help him round the course but in footage posted online by YouTube user <a href="https://www.youtube.com/watch?v=bEWO9JljMCY">Andrew Cannon</a>, he can be seen pushing the frame aside to finish the last 20 meters unaided.</p>
+                        <p>&ldquo;You can see his little face when he came round and saw everyone, that was his way of finishing in style and showing everyone what he could do. It was the response from the crowd that pushed him to do that,&rdquo; his mother Julie Hardcastle told the <em>Yorkshire Post</em>.</p>
+                        <p>Matthews was born nine weeks early and at 18 months was diagnosed with cerebral palsy, a neurological disorder that affects muscle tone, movement and motor skills.</p>
+                        <p>&ldquo;He has always struggled with getting dressed, things that parents of other children take for granted, he does struggle with, just every day things are more difficult for him, but he never lets it bother him. He doesn&rsquo;t see himself as different to anyone else,&rdquo; his mother said.</p>
+                        <p>Matthews picked up his determination to complete a triathlon from his father, himself a triathlete, who used to push his son in a wheelchair around weekly running events.</p>
+                        <p>[<a href="http://www.yorkshirepost.co.uk/news/main-topics/general-news/video-amazing-scenes-as-eight-year-old-cerebral-palsy-sufferer-bailey-finishes-north-yorkshire-triathalon-unaided-1-7378052"><em>Yorkshire Post</em></a>]</p><img alt="" border="0" src="http://pixel.wp.com/b.gif?host=time.com&#038;blog=1359921&#038;post=3974276&#038;subd=timedotcom&#038;ref=&#038;feed=1" width="1" height="1" />]]>
+       </content:encoded>
+       <wfw:commentRss>http://time.com/3974276/bailey-matthews-cerebral-palsy-triathlon-england/feed/</wfw:commentRss>
+       <slash:comments>0</slash:comments>
+       <media:thumbnail url="https://timedotcom.files.wordpress.com/2015/07/screen-shot-2015-07-28-at-10-47-17-am.png?w=150" />
+       <media:content url="https://timedotcom.files.wordpress.com/2015/07/screen-shot-2015-07-28-at-10-47-17-am.png?w=150" medium="image">
+        <media:title type="html">Screen Shot 2015-07-28 at 10.47.17 AM</media:title>
+       </media:content>
+       <media:content url="http://1.gravatar.com/avatar/7e8b5d8b24d2019350cd1452e59cd096?s=96&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D96" medium="image">
+        <media:title type="html">hcregan</media:title>
+       </media:content>
+      </item>
+
+      <item>
+       <title>Test item 1</title>
+       <link>http://127.0.0.1/_site_random_generator.php?id=12345&amp;item=1</link>
+       <comments>http://127.0.0.1/_site_random_generator.php?type=comments&amp;item=1</comments>
+       <pubDate>Tue, 28 Jul 2015 08:32:34 +0000</pubDate>
+       <dc:creator><![CDATA[hcregan]]></dc:creator>
+       <category><![CDATA[Uncategorized]]></category>
+       <category><![CDATA[Test1]]></category>
+       <category><![CDATA[United Kingdom]]></category>
+       <guid isPermaLink="false">http://127.0.0.1/_site_random_generator.php?id=12345&amp;item=1</guid>
+       <description><![CDATA[Test description content item 1. <a href="http://127.0.0.1/_site_random_generator.php?id=12345&amp;item=1">Test description link item 1</a>]]></description>
+       <content:encoded><![CDATA[<p>Test description content:encoded item 1. <a href="http://127.0.0.1/_site_random_generator.php?id=12345&amp;item=1">Test description:encoded link item 1</a>]]></content:encoded>
+       <wfw:commentRss>http://127.0.0.1/_site_random_generator.php?type=comment</wfw:commentRss>
+       <slash:comments>0</slash:comments>
+       <media:thumbnail url="http://127.0.0.1/_site_random_generator.php?type=thumbnail&amp;item=1" />
+       <media:content url="http://127.0.0.1/_site_random_generator.php?type=content&amp;item=1" medium="image">
+        <media:title type="html">Screen Shot 2015-07-28 at 10.47.17 AM</media:title>
+       </media:content>
+       <media:content url="http://1.gravatar.com/avatar/7e8b5d8b24d2019350cd1452e59cd096?s=96&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D96" medium="image">
+        <media:title type="html">hcregan</media:title>
+       </media:content>
+      </item>
+
+      <item>
+       <title>Test item 2</title>
+       <link>http://127.0.0.1/_site_random_generator.php?id=12345&amp;item=2</link>
+       <comments>http://127.0.0.1/_site_random_generator.php?type=comments&amp;item=2</comments>
+       <pubDate>Tue, 28 Jul 2015 08:32:34 +0000</pubDate>
+       <dc:creator><![CDATA[hcregan]]></dc:creator>
+       <category><![CDATA[Uncategorized]]></category>
+       <category><![CDATA[Test1]]></category>
+       <category><![CDATA[United Kingdom]]></category>
+       <guid isPermaLink="false">http://127.0.0.1/_site_random_generator.php?id=12345&amp;item=2</guid>
+       <description><![CDATA[Test description content item 2. <a href="http://127.0.0.1/_site_random_generator.php?id=12345&amp;item=2">Test description link item 2</a>]]></description>
+       <content:encoded><![CDATA[<p>Test description content:encoded item 2. <a href="http://127.0.0.1/_site_random_generator.php?id=12345&amp;item=2">Test description:encoded link item 2</a>]]></content:encoded>
+       <wfw:commentRss>http://127.0.0.1/_site_random_generator.php?type=comment</wfw:commentRss>
+       <slash:comments>0</slash:comments>
+       <media:thumbnail url="http://127.0.0.1/_site_random_generator.php?type=thumbnail&amp;item=2" />
+       <media:content url="http://127.0.0.1/_site_random_generator.php?type=content&amp;item=2" medium="image">
+        <media:title type="html">Screen Shot 2015-07-28 at 10.47.17 AM</media:title>
+       </media:content>
+       <media:content url="http://1.gravatar.com/avatar/7e8b5d8b24d2019350cd1452e59cd096?s=96&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D96" medium="image">
+        <media:title type="html">hcregan</media:title>
+       </media:content>
+      </item>
+
+  </channel>
+ </rss>

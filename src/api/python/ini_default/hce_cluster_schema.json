@@ -1,0 +1,42 @@
+{
+ "cluster": {
+  "name": "n0",
+  "nodes": [
+   {
+    "name": "n011_data",
+    "role": "replica",
+    "host": "localhost",
+    "client": "tcp:\/\/localhost:5558",
+    "server": "",
+    "admin": "tcp:\/\/*:5530",
+    "connection": "n010_manager"
+   },
+   {
+    "name": "n012_data",
+    "role": "replica",
+    "host": "localhost",
+    "client": "tcp:\/\/localhost:5558",
+    "server": "",
+    "admin": "tcp:\/\/*:5531",
+    "connection": "n010_manager"
+   },
+   {
+    "name": "n000_router",
+    "role": "router",
+    "host": "localhost",
+    "client": "tcp:\/\/*:5556",
+    "server": "tcp:\/\/*:5557",
+    "admin": "tcp:\/\/*:5546"
+   },
+   {
+    "name": "n010_manager",
+    "role": "rmanager-rnd",
+    "host": "localhost",
+    "client": "tcp:\/\/localhost:5557",
+    "server": "tcp:\/\/*:5558",
+    "admin": "tcp:\/\/*:5549",
+    "connection": "n000_router"
+   }
+  ]
+ }
+}

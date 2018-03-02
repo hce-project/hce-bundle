@@ -1,0 +1,15 @@
+[
+{
+    "siteId": "22",
+    "host": "intel.proxy.com:22",
+    "criterions": null
+},
+{
+    "criterions": {"WHERE": "`State` > 0"}
+},
+{
+    "siteId": "442",
+    "host": "some.proxy.com:42",
+    "criterions": null
+}
+]

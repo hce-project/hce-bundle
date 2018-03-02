@@ -1,0 +1,55 @@
+{
+    "avgSpeed": 0, 
+    "avgSpeedCounter": 0, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "contents": 0, 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "mode": 0, 
+            "pattern": "(.*)afpbb\\.com(.*)", 
+            "siteId": "afe3b4bc8af61fa95d67f62122d55d04", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 30000, 
+    "id": "afe3b4bc8af61fa95d67f62122d55d04", 
+    "iterations": 0, 
+    "maxErrors": 1, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 1, 
+    "maxURLs": 1, 
+    "priority": 100, 
+    "processingDelay": 500, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1", 
+        "AUTO_REMOVE_RESOURCES": "1",
+        "AUTO_REMOVE_WHERE": "ParentMd5<>\"\" AND Status IN (4,7) AND DATE_ADD(CDate, INTERVAL %RecrawlPeriod% MINUTE)<NOW()",
+        "AUTO_REMOVE_ORDER": "CDate ASC",
+        "MIME_TYPE_STORE_ON_DISK":"none",
+        "PROCESSOR_NAME" : "NONE",
+        "template": "{\\\"description\\\": [\\\"//meta[contains(@name,\\'description\\')]/@content\\\", \\\"//div[contains(@class,\\'ArticleText\\')]/p[1]/text()\\\", \\\"//div[contains(@class,\\'NewsTextFull\\')]/p[1]/text()\\\", \\\"//div[contains(@id,\\'article-body\\')]/p[1]/text()\\\", \\\"//div[contains(@class,\\'entry-content\\')]/p[1]/text()\\\", \\\"//p[contains(@id,\\'news_textbody\\')]/text()\\\", \\\"///span[contains(@class,\\'focusParagraph\\')]/p/text()\\\", \\\"//div[contains(@class,\\'cmn-article_text JSID_key_fonttxt\\')]/p/text()\\\", \\\"//div[contains(@class,\\'Text\\')]//p[1]/text()\\\", \\\"//p[contains(@class,\\'par1\\')]/text()\\\"], \\\"pubdate\\\": [\\\"//div[contains(@class,\\'date\\')]/text()\\\", \\\"//meta[contains(@name,\\'date\\')]/@content\\\", \\\"//span[contains(@class,\\'date\\')]/text()\\\", \\\"//p[contains(@class,\\'date\\')]/text()\\\", \\\"//div[contains(@id,\\'date\\')]/text()\\\", \\\"//meta[contains(@name,\\'RELEASE_DATE\\')]/@content\\\", \\\"//span[contains(@id,\\'pub_time\\')]/text()\\\", \\\"//div[contains(@class,\\'entry-meta\\')]/text()\\\", \\\"//span[contains(@id,\\'news_date\\')]/text()\\\", \\\"//div[contains(@class,\\'timestampHeader\\')]/text()\\\", \\\"//dl[contains(@class,\\'cmn-article_status cmn-clearfix\\')]/dd[contains(@class,\\'cmnc-publish\\')]/text()\\\", \\\"//p[contains(@class,\\'day\\')]/text()\\\", \\\"//div[contains(@class,\\'News-headarea\\')]/p[contains(@class,\\'data\\')]/text()\\\", \\\"//meta[contains(@property,\\'article:published_time\\')]/@content\\\"], \\\"author\\\": [\\\"//meta[contains(@name,\\'author\\')]/@content\\\"], \\\"media\\\": [\\\"//img[contains(@id,\\'img\\')]/@src\\\"], \\\"title\\\": [\\\"//meta[contains(@property,\\'title\\')]/@content\\\", \\\"//meta[contains(@name,\\'title\\')]/@content\\\", \\\"//title/text()\\\", \\\"//meta[contains(@name,\\'TITLE\\')]/@content\\\", \\\"//div[contains(@class,\\'MainTopics\\')]/h2[contains(@class,\\'NewsTitle\\')]/a/text()\\\", \\\"//meta[contains(@property,\\'og:title\\')]/@content\\\", \\\"//h2[contains(@id,\\'NewsTitle\\')]//text()\\\", \\\"//h1[contains(@id,\\'article-title\\')]/text()\\\", \\\"//h1[contains(@class,\\'entry-title\\')]/text()\\\", \\\"//h1[contains(@class,\\'entryTitle\\')]/span[contains(@class,\\'contentTitle\\')]/text()\\\", \\\"///h1/text()\\\", \\\"//h4[contains(@class,\\'cmn-article_title cmn-clearfi\\')]/span[contains(@class,\\'mnc-middle JSID_key_fonthln\\')]/text()\\\", \\\"//div[contains(@class,\\'News-headarea\\')]/h1/text()\\\", \\\"//article/h1/text()\\\"], \\\"media_thumbnail\\\": [\\\"//meta[contains(@name,\\'media_thumbnail\\')]/@content\\\"], \\\"media_content\\\": [\\\"//meta[contains(@name,\\'media_content\\')]/@content\\\"], \\\"dc_date\\\": [\\\"//meta[contains(@name,\\'date\\')]/@content\\\", \\\"//span[contains(@class,\\'date\\')]/text()\\\", \\\"//p[contains(@class,\\'date\\')]/text()\\\", \\\"//div[contains(@id,\\'date\\')]/text()\\\", \\\"//meta[contains(@property,\\'article:published_time\\')]/@content\\\", \\\"//meta[contains(@name,\\'firstcreate\\')]/@content\\\"], \\\"link\\\": [\\\"//meta[contains(@name,\\'link\\')]/@content\\\", \\\"//li[contains(@class,\\'space\\')]/@href\\\", \\\"//link[contains(@rel,\\'canonical\\')]/@href\\\", \\\"//meta[contains(@property,\\'og:url\\')]/@content\\\"], \\\"keywords\\\": [\\\"//meta[contains(@name,\\'keywords\\')]/@content\\\"], \\\"content_encoded\\\": [\\\"//div[contains(@class,\\'Text\\')]/p//text()\\\", \\\"//div[contains(@class,\\'ext\\')]/p//text()\\\", \\\"//div[contains(@class,\\'cbox-content row\\')]/p//text()\\\", \\\"//p[contains(@id,\\'ews\\')]/text()\\\", \\\"//div[contains(@class,\\'ews\\')]/p//text()\\\", \\\"//meta[contains(@name,\\'content_encoded\\')]/@content\\\", \\\"//p[contains(@class,\\'lead-def\\')]/text()\\\", \\\"//span[contains(@id,\\'article\\')]/p/text()\\\", \\\"//div[contains(@class,\\'article\\')]//p//text()\\\", \\\"//div[contains(@class,\\'content\\')]/p//text()\\\", \\\"//div[contains(@id,\\'rticle\\')]/p//text()\\\", \\\"//div[contains(@class,\\'NewsBody\\')]/p/text()\\\", \\\"//div[contains(@class,\\'NewsTextFull\\')]/p/text()\\\", \\\"//div[contains(@class,\\'entry-content\\')]/p/text()\\\", \\\"//p[contains(@id,\\'news_textmore\\')]/text() | //p[contains(@id,\\'news_textbody\\')]/text()\\\", \\\"//div[contains(@id,\\'resizeableText\\')]//p/text()\\\", \\\"//div[contains(@class,\\'summary\\')]//p/text() | //div[contains(@class, \\'summary\\')]//a/text()\\\", \\\"//div[contains(@class,\\'cmn-article_text JSID_key_fonttxt\\')]//p/text()\\\", \\\"//p[contains(@itemprop,\\'articleBody\\')]/text()\\\"], \\\"guid\\\": [\\\"//meta[contains(@name,\\'guid\\')]/@content\\\"], \\\"enclosure\\\": [\\\"//meta[contains(@name,\\'enclosure\\')]/@content\\\"]}"
+    }, 
+    "recrawlDate" : "NOW()",
+    "requestDelay": 500, 
+    "resources": 0, 
+    "size": 0, 
+    "state": 1, 
+    "tcDate": null, 
+    "uDate": null, 
+    "urlType": 0, 
+    "urls": [
+        "https://twitter.com/share?count=horizontal&original_referer=http%3A%2F%2Fwww.afpbb.com%2Farticles%2F-%2F3021761%3Fpid%3D14131979&text=%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%E8%88%AA%E7%A9%BA%E3%80%81%E6%83%A8%E4%BA%8B%E7%B6%9A%E3%81%8D%E3%81%A7%E7%A0%B4%E7%B6%BB%E5%AF%B8%E5%89%D%E3%81%8B&url=http%3A%2F%2Fwww.afpbb.com%2Farticles%2F-%2F3021761%3Fpid%3D14131979&via=afpbbcom",
+        "http://www.afpbb.com/list/helpaboutphoto/regist?purl=http%3A%2F%2Fwww.afpbb.com%2Farticles%2Fmodepress%2F3014344%3Fpid%3D13648163"
+    ], 
+    "recrawlPeriod" : 1440,
+    "userId": 2
+}

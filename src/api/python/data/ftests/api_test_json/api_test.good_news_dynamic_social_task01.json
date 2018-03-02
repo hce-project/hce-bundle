@@ -1,0 +1,202 @@
+{
+    "id": 1479903884,
+    "crawlerType": 4,
+    "maxIterations": "1",
+    "info": {
+        "description": "",
+        "scrapingType": "news"
+    },
+    "items": [
+        {
+            "siteId": "0",
+            "urlContentResponse": null,
+            "depth": 1,
+            "siteObj": {
+                "fetchType": 2,
+                "id": "0",
+                "uDate": null,
+                "tcDate": null,
+                "cDate": null,
+                "resources": null,
+                "iterations": null,
+                "description": null,
+                "urls": [
+                ],
+                "filters": [
+                    {
+                        "pattern": "http(.*)",
+                        "siteId": "0",
+                        "type": 1
+                    },
+                    {
+                        "mode": 0,
+                        "pattern": "%MAX_DEPTH%",
+                        "subject": "1",
+                        "siteId": "0",
+                        "type": 1,
+                        "opCode": 4,
+                        "stage": 0,
+                        "action": 1
+                    }
+                ],
+                "properties": [
+                ],
+                "state": null,
+                "priority": null,
+                "maxURLs": null,
+                "maxResources": null,
+                "maxErrors": null,
+                "maxResourceSize": null,
+                "requestDelay": null,
+                "httpTimeout": null,
+                "errorMask": null,
+                "errors": null,
+                "urlType": null,
+                "contents": null,
+                "processingDelay": null,
+                "size": null,
+                "avgSpeed": null,
+                "avgSpeedCounter": null,
+                "userId": null,
+                "recrawlPeriod": null,
+                "recrawlDate": null,
+                "maxURLsFromPage": null,
+                "collectedURLs": null
+            },
+            "urlObj": {
+                "status": 2,
+                "linksI": 0,
+                "linksE": 0,
+                "contentMask": 0,
+                "processingTime": 0,
+                "CDate": null,
+                "mRateCounter": 0,
+                "httpTimeout": 60000,
+                "size": 0,
+                "urlPut": null,
+                "batchId": 0,
+                "lastModified": null,
+                "tagsCount": 0,
+                "mRate": 0,
+                "charset": "",
+                "state": 0,
+                "httpCode": 0,
+                "priority": 0,
+                "maxURLsFromPage": null,
+                "processingDelay": 0,
+                "crawlingTime": 0,
+                "type": 1,
+                "processed": 0,
+                "totalTime": 0,
+                "siteSelect": 0,
+                "contentType": "",
+                "pDate": null,
+                "errorMask": 0,
+                "httpMethod": "get",
+                "eTag": "",
+                "siteId": "0",
+                "freq": 0,
+                "tcDate": null,
+                "rawContentMd5": "",
+                "crawled": 0,
+                "UDate": null,
+                "contentURLMd5": "",
+                "requestDelay": 0,
+                "depth": 0,
+                "parentMd5": "",
+                "urlUpdate": null,
+                "tagsMask": 0,
+                "urlMd5": "60f65b2214653894a484360011e9327c",
+                "url": "https:\/\/www.washingtonpost.com\/politics\/trump-says-cruzs-canadian-birth-could-be-very-precarious-for-gop\/2016\/01\/05\/5ce69764-b3f8-11e5-9388-466021d971de_story.html?hpid=hp_hp-top-table-main_trump0106-610pm%3Ahomepage%2Fstory"
+            },
+            "urlPutObj": {
+                "putDict": [
+                ],
+                "urlMd5": "60f65b2214653894a484360011e9327c",
+                "contentType": 0,
+                "siteId": "0",
+                "fileStorageSuffix": null,
+                "criterions": null
+            },
+            "properties": {
+                "HTTP_REDIRECTS_MAX": 5,
+                "HTML_REDIRECTS_MAX": 5,
+                "HTML_RECOVER": "0",
+                "ROBOTS_MODE": "0",
+                "ROBOTS_COLLECT": "0",
+                "URL_CHAIN": null,
+                "FETCH_RAW_CONTENT": 0,
+                "SOCIAL_RATE": "{\"unique\":0, \"sentiment\":0, \"debug\":1, \"timeout\":120, \"social_list\":{\"tw\":[\"https:\/\/twitter.com\/search?f=tweets&vertical=default&q=%25QUERY_STRING%25&src=typd\",\"window.IFRAME_KWSRC='%KEYWORDS_FILE%';window.IFRAME_SFIELD='source_url';\",{\"name\":\"tests\", \"sets\":[{\"name\":\"set1\", \"items\":[\"1\", \"%KEYWORDS_FILE%\", \"http:\/\/127.0.0.1\/social.js\", \"70\", \"return window.MACRO_COLLECT;\"], \"repeat\":1, \"delay\":0}], \"result_type\":0, \"result_content_type\":\"text\/json\"}]} }",
+                "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"user_name_algorithm\"},\"modules\":{\"user_name_algorithm\":[\"ScrapyExtractor\",\"GooseExtractor\",\"NewspaperExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}",
+                "template": {
+                    "templates": [
+                        {
+                            "output_format": {
+                                "type": "news",
+                                "name": "json",
+                                "header": "[\n",
+                                "items_header": "",
+                                "item": "{\n\"pubdate\":\"%pubdate%\",\n\"title\":\"%title%\",\n\"description\":\"%description%\",\n\"media\":\"%media%\",\n\"author\":\"%author%\",\n\"dc_date\":\"%dc_date%\",\n\"link\":\"%link%\",\n\"keywords\":\"%keywords%\",\n\"content_encoded\":\"%content_encoded%\",\n\"html_lang\":\"%html_lang%\",\n\"source_url\":\"%source_url%\",\n\"pubdate_extractor\":\"%pubdate_extractor%\",\n\"title_extractor\":\"%title_extractor%\",\n\"description_extractor\":\"%description_extractor%\",\n\"media_extractor\":\"%media_extractor%\",\n\"author_extractor\":\"%author_extractor%\",\n\"dc_date_extractor\":\"%dc_date_extractor%\",\n\"link_extractor\":\"%link_extractor%\",\n\"keywords_extractor\":\"%keywords_extractor%\",\n\"content_encoded_extractor\":\"%content_encoded_extractor%\",\n\"html_lang_extractor\":\"%html_lang_extractor%\",\n\"pubdate_xpath\":\"%pubdate_xpath%\",\n\"title_xpath\":\"%title_xpath%\",\n\"description_xpath\":\"%description_xpath%\",\n\"media_xpath\":\"%media_xpath%\",\n\"author_xpath\":\"%author_xpath%\",\n\"dc_date_xpath\":\"%dc_date_xpath%\",\n\"link_xpath\":\"%link_xpath%\",\n\"keywords_xpath\":\"%keywords_xpath%\",\n\"content_encoded_xpath\":\"%content_encoded_xpath%\",\n\"html_lang_xpath\":\"%html_lang_xpath%\",\n\"crawler_time\":\"%crawler_time%\",\n\"scraper_time\":\"%scraper_time%\",\n\"pubdate_tz\":\"%pubdate_tz%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n",
+                                "items_footer": "",
+                                "footer": "]\n"
+                            },
+                            "tags": {
+                                "pubdate": [
+                                ],
+                                "title": [
+                                ],
+                                "description": [
+                                ],
+                                "media": [
+                                ],
+                                "author": [
+                                ],
+                                "dc_date": [
+                                ],
+                                "link": [
+                                ],
+                                "keywords": [
+                                ],
+                                "content_encoded": [
+                                ],
+                                "html_lang": [
+                                ],
+                                "pubdate_extractor": [
+                                ],
+                                "title_extractor": [
+                                ],
+                                "description_extractor": [
+                                ],
+                                "media_extractor": [
+                                ],
+                                "author_extractor": [
+                                ],
+                                "dc_date_extractor": [
+                                ],
+                                "link_extractor": [
+                                ],
+                                "keywords_extractor": [
+                                ],
+                                "content_encoded_extractor": [
+                                ],
+                                "html_lang_extractor": [
+                                ],
+                                "crawler_time": [
+                                ],
+                                "scraper_time": [
+                                ],
+                                "errors_mask": [
+                                ]
+                            },
+                            "priority": 100,
+                            "mandatory": 1,
+                            "is_filled": 0
+                        }
+                    ],
+                    "select": "first_nonempty"
+                }
+            },
+            "urlId": "60f65b2214653894a484360011e9327c"
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^([0-9]{3}).php$ errors.php?error=$1

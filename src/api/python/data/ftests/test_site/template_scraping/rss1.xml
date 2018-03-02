@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>RSS feed test page</title>
+    <link>http://127.0.0.1/template_scraping/rss1.xml</link>
+    <description>Test page of rss as index feed.</description>
+    <language>en-us</language>
+    <pubDate>Tue, 10 Jun 2003 04:00:00 GMT</pubDate>
+
+    <lastBuildDate>Tue, 10 Jun 2003 09:41:01 GMT</lastBuildDate>
+    <docs>http://127.0.0.1/template_scraping/rss1.xml</docs>
+    <generator>Weblog Editor 2.0</generator>
+    <managingEditor>editor@example.com</managingEditor>
+    <webMaster>webmaster@example.com</webMaster>
+
+    <item>
+      <title>Hip-Hop Was the Most Significant Musical Revolution in U.S. Music</title>
+      <link>http://127.0.0.1/template_scraping/index1.html</link>
+      <description>Hip-Hop Was the Biggest Revolution in American Music and That’s Backed By a Study of 17,000 Songs.</description>
+      <pubDate>Fri, 30 May 2003 11:06:42 GMT</pubDate>
+      <guid>http://127.0.0.1/template_scraping/index1.html</guid>
+    </item>
+
+    <item>
+      <title>South Korea tells North to halt</title>
+      <link>http://127.0.0.1/template_scraping/index2.html</link>
+      <description>South Korea on Monday urged North Korea to halt its &quot;worrisome&quot; development of a submarine-launched ballistic missile, as one Seoul official warned Pyongyang could have a functional SLBM capability within two years. The North&#039;s state media announced Saturday that a new SLBM had been tested under the personal supervision of North Korean leader Kim Jong-Un, who described it as an &quot;eye-opening success&quot; that provided his military with a &quot;world-level strategic weapon&quot;. &quot;We urge the North to immediately stop development of the SLBM that threatens the security of the Korean peninsula and northeast Asia,&quot; ministry spokesman Kim Min-Seok told reporters.</description>
+      <pubDate>Tue, 27 May 2003 08:37:32 GMT</pubDate>
+      <guid>http://127.0.0.1/template_scraping/index2.html</guid>
+    </item>
+
+    <item>
+      <title>チューリップで描くゴッホの肖像、没後125年で オランダ　写真2枚　国際ニュース：AFPBB News</title>
+      <link>http://127.0.0.1/template_scraping/japan_page1.html</link>
+      <description>【4月22日 AFP】オランダ・リッセ（Lisse）にあるキューケンホフ（Keukenhof）公園のフラワーガーデンで、同国の画家ビンセント・ファン・ゴッホ（Vincent Van Gogh）の肖像がチューリップで再現された。</description>
+      <pubDate>Tue, 20 May 2003 08:56:02 GMT</pubDate>
+      <guid>http://127.0.0.1/template_scraping/japan_page1.html</guid>
+    </item>
+  </channel>
+</rss>

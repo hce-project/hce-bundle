@@ -1,0 +1,59 @@
+{
+    "urlType": 0, 
+    "filters": [
+        {
+            "pattern": "http://(.*)", 
+            "siteId": "fea23a9e127ef43fe60e0ef2667d08bb", 
+            "mode": 0, 
+            "type": 1
+        }, 
+        {
+            "pattern": "%@MAX_DEPTH:1%", 
+            "siteId": "fea23a9e127ef43fe60e0ef2667d08bb", 
+            "mode": 0, 
+            "type": 1
+        }
+    ], 
+    "maxURLs": 500, 
+    "userId": 100, 
+    "iterations": 0, 
+    "httpTimeout": 30000, 
+    "id": "fea23a9e127ef43fe60e0ef2667d08bb", 
+    "contents": 0, 
+    "size": 0, 
+    "errors": 0, 
+    "fetchType": 1, 
+    "maxResourceSize": 500000, 
+    "tcDate": null, 
+    "priority": 0, 
+    "maxURLsFromPage": 200, 
+    "processingDelay": 500, 
+    "resources": 0, 
+    "description": "", 
+    "state": 1, 
+    "avgSpeed": 0, 
+    "recrawlPeriod": null, 
+    "errorMask": 0, 
+    "uDate": null, 
+    "collectedURLs": 0, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "STORE_HTTP_HEADERS": "1", 
+        "URL_XPATH_LIST": "{\"xpath_list\":[\"//item/link\", \"//rss/channel/link\", \"//rss/channel/item/link\", \"//feed/entry/link/@href\"]}", 
+        "PROCESS_CTYPES": "text/xml,text/html,application/xml", 
+        "HTTP_REDIRECTS_MAX": "3", 
+        "STORE_HTTP_REQUEST": "1"
+    }, 
+    "maxErrors": 50, 
+    "recrawlDate": null, 
+    "maxResources": 500, 
+    "requestDelay": 500, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "urls": [
+        "http://ft.com/rss/markets/asiapacific"
+    ], 
+    "avgSpeedCounter": 0
+}

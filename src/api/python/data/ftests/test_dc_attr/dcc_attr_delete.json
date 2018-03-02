@@ -1,0 +1,19 @@
+[
+    {
+	"siteId" : "cb62bbad8732c939a20065287033f0f5",
+	"name": "attrB"
+    },
+    {
+	"siteId" : "fake_siteId",
+	"name": "i7"
+    },
+    {
+	"siteId" : "cb62bbad8732c939a20065287033f0f5",
+	"name": "attrU"
+    },
+    {
+	"siteId" : "cb62bbad8732c939a20065287033f0f5",
+	"name": null,
+	"criterions" : {"WHERE": "`URLMd5` = '8ca6db65fc85c7a998f069ac91c59115'"}
+    }
+]

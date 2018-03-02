@@ -1,0 +1,28 @@
+{
+    "updateType": 11,
+    "id": 10,
+    "uDate": "22aa",
+    "tcDate": "13A-13",
+    "cDate": "12.12.14",
+    "resources": 11,
+    "iterations": 55,
+    "description": 33,
+    "urls": "url1",
+    "filters": ["filter1", "filter2"],
+    "properties":
+    {
+	"prop1": 1,
+	"prop2": 2
+    },
+    "state": 55,
+    "priority": 88,
+    "maxURLs": 100,
+    "maxResources": 121244,
+    "maxErrors": 300,
+    "maxResourceSize": 4440,
+    "requestDelay": 500,
+    "httpTimeout": 333,
+    "errorMask": 11,
+    "errors": 12,
+    "urlType": 11
+}

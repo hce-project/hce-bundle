@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 3392339418, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:08:16", 
+                        "Charset": "UTF-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 44, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2015-05-09 16:20:15", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1255, 
+                        "RawContentMd5": "", 
+                        "Size": 451606, 
+                        "Status": 7, 
+                        "TagsCount": 8, 
+                        "TagsMask": 33554460, 
+                        "UDate": "2017-01-26 05:08:17"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "ImxpbmsiLCJpbWFnZSIsInB1YmRhdGUiLCJhdXRob3IiLCJib2R5IiwidGl0bGUiLCJlcnJvcnNfbWFzayIKImh0dHBzOi8vbWFpbC55YWhvby5jb20vPy5pbnRsPXVzJi5sYW5nPWVuLVVTJi5zcmM9eW0iLCJodHRwczovL3MxLnlpbWcuY29tL3V1L2FwaS9yZXMvMS4yL2x4MVVnY0oyM1E2cURRQmptd0pHb1EtLS9kejAyTkRBN2MyMDlNVHRtYVQxbWFXeHNPM0I1YjJabVBUQTdhRDB6TmpBN1lYQndhV1E5ZVhSaFkyaDViMjQtL2h0dHA6Ly9tZWRpYS56ZW5mcy5jb20vZW4tVVMvdmlkZW8vdmlkZW8ud29jaGl0LmNvbS83YWNjMTUzOTkyNmE1NTI1ODAxZjI5MjM4NjA1Y2FiNyIsIjIwMTUtMDUtMDkgMTY6MjA6MTUiLCIlYXV0aG9yJSIsIlNvdXRoIEtvcmVhIHRlbGxzIE5vcnRoIHRvIGhhbHQgJ3dvcnJpc29tZScgc3ViIG1pc3NpbGUgcHJvamVjdCIsIlNvdXRoIEtvcmVhIHRlbGxzIE5vcnRoIHRvIGhhbHQgJ3dvcnJpc29tZScgc3ViIG1pc3NpbGUgcHJvamVjdCIsIjAiCg==", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index2.html", 
+                    "urlMd5": "c94766124b714e93ccf4efa4b783f0e3"
+                }
+            ], 
+            "node": "r014_data", 
+            "port": "5733", 
+            "time": 3625
+        }
+    ]
+}

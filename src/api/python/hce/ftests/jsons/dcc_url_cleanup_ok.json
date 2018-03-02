@@ -1,0 +1,15 @@
+[
+    {
+	"siteId": "intel1",
+	"url": null,
+	"urlType": 0,
+	"state": 77,
+	"status": 77,
+	"criterions": 
+	{
+	    "LIMIT": "1",
+	    "WHERE": "`state` > 0",
+	    "ORDER BY": "URL"
+	}
+    }
+]

@@ -1,0 +1,7 @@
+{
+    "alg": 1, 
+    "delay": 1000, 
+    "repeat": 3, 
+    "signal": 15,
+		"cleanup": 1
+}

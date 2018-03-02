@@ -1,0 +1,6 @@
+# mysql config file
+
+ROOT_USER=
+ROOT_PASS=
+APP_USER="hce"
+APP_PASS="hce12345"

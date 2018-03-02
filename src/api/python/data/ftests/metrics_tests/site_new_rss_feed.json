@@ -1,0 +1,64 @@
+{
+  "avgSpeed": 0,
+  "avgSpeedCounter": 0,
+  "cDate": {
+    "str": "NOW()"
+  },
+  "contents": 0,
+  "description": "rss-feed",
+  "errorMask": 0,
+  "errors": 0,
+  "filters": [],
+  "httpTimeout": 30000,
+  "id": "c241444dcd1b03bf04549448830c8942",
+  "iterations": 0,
+  "maxErrors": 0,
+  "maxResourceSize": 500000,
+  "maxResources": 0,
+  "maxURLs": 0,
+  "maxURLsFromPage": 5,
+  "priority": 100,
+  "processingDelay": 500,
+  "properties":
+  [
+   {
+   "siteId": "c241444dcd1b03bf04549448830c8942",
+   "name": "PROCESSOR_NAME",
+   "value": "FEED_PARSER"
+   },
+   {
+   "siteId": "c241444dcd1b03bf04549448830c8942",
+   "name": "PROCESSOR_PROPERTIES",
+   "value": "{\"algorithm\": {\"algorithm_name\": \"feed_parser\"},\"modules\": {\"feed_parser\": []}}"
+   },
+   {
+   "siteId": "c241444dcd1b03bf04549448830c8942",
+   "name": "RECRAWL_DELETE_WHERE",
+   "value": "((`Status`=4 AND `Crawled`=0 AND `Processed`=0) OR (`Status`=4 AND `Crawled`>0 AND `Processed`=0 AND `ErrorMask`>0) OR (`Status`=7 AND `TagsCount`=0)) AND `ParentMd5`<>''"
+   },
+   {
+   "siteId": "c241444dcd1b03bf04549448830c8942",
+   "name": "PROCESS_CTYPES",
+   "value": "text/html,text/xml,application/rss+xml"
+   },
+   {
+   "siteId": "c241444dcd1b03bf04549448830c8942",
+   "name": "HTTP_REDIRECTS_MAX",
+   "value": 5
+   }
+   ],
+  "recrawlDate" : "DATE_ADD(DATE_FORMAT(NOW(),\"%Y-%m-%d 00:00:00\"), INTERVAL ((((HOUR(NOW())*60 + MINUTE(NOW()) + SECOND(NOW())/60) DIV (RecrawlPeriod+1)+1)*RecrawlPeriod) + 15) MINUTE)",
+  "requestDelay": 500,
+  "resources": 0,
+  "size": 0,
+  "state": 3,
+  "tcDate": null,
+  "uDate": null,
+  "urlType": 0,
+  "urls": [{"url": "http://feeds.feedburner.com/time/newsfeed", "userId": 1001}],
+  "recrawlPeriod": 90,
+  "userId": 4,
+  "collectedURLs": 0,
+  "updateType": 1,
+  "fetchType": 1
+}

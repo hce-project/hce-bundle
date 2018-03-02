@@ -1,0 +1,14 @@
+[
+    {
+        "type": 0,
+        "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft_subtasks/c112_localhost_drce_json08_sub1_data.txt",
+        "id": 501,
+        "subtasks": []
+    },
+    {
+        "type": 0,
+        "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft_subtasks/c112_localhost_drce_json06_sub1_data.txt",
+        "id": 502,
+        "subtasks": []
+    }
+]

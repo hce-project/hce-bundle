@@ -1,0 +1,10 @@
+{
+  "id": -1,
+  "alg": 1,
+  "delay": 0,
+  "repeat": 9,
+  "signal": 15,
+  "action": 1,
+  "host": "",
+  "port":0
+}

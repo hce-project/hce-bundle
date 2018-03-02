@@ -1,0 +1,3 @@
+#!/bin/bash
+
+../bin/dtm-client.py --config=../ini/dtm-client.ini --task=GET --file=../data/ftests/dtmc_get_task_request.json

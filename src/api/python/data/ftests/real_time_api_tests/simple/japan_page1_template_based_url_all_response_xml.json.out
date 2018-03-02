@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 908772540, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:09:18", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 18, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2015-04-22 10:41:00", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1253, 
+                        "RawContentMd5": "", 
+                        "Size": 31818, 
+                        "Status": 7, 
+                        "TagsCount": 5, 
+                        "TagsMask": 33554444, 
+                        "UDate": "2017-01-26 05:09:19"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "PD94bWwgdmVyc2lvbj0iMS4wIj8+PHJlc3BvbnNlPjxpdGVtPjx0aXRsZT7jg4Hjg6Xjg7zjg6rjg4Pjg5fjgafmj4/jgY/jgrTjg4Pjg5vjga7ogpblg4/jgIHmsqHlvowxMjXlubTjgacg44Kq44Op44Oz44OAPC90aXRsZT48Ym9keT7jgJA05pyIMjLml6UgQUZQ44CR44Kq44Op44Oz44OA44O744Oq44OD44K777yIIFZpbmNlbnQgVmFuIEdvZ2gg77yJ44Gu6IKW5YOP44GM44OB44Ol44O844Oq44OD44OX44Gn5YaN54++44GV44KM44Gf44CC5LuK5bm044Gv44K044OD44Ob5rKh5b6MMTI15bm044Gr44GC44Gf44KL44GT44Go44GL44KJ44CB44OV44Op44Ov44O844Ks44O844OH44Oz44Gu44OG44O844Oe44KC44CM44OV44Kh44Oz44O744K044OD44Ob44CN44Go44Gq44Gj44Gm44GE44KL44CCKGMpQUZQPC9ib2R5PjxpbWFnZT4laW1hZ2UlPC9pbWFnZT48cHViZGF0ZT4yMDE1LTA0LTIyIDEwOjQxOjAwPC9wdWJkYXRlPjxhdXRob3I+JWF1dGhvciU8L2F1dGhvcj48bGluaz4lbGluayU8L2xpbms+PGVycm9yc19tYXNrPjA8L2Vycm9yc19tYXNrPjwvaXRlbT48L3Jlc3BvbnNlPg==", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/japan_page1.html", 
+                    "urlMd5": "9eb80d764c4130ea33c0bc0670a35857"
+                }
+            ], 
+            "node": "r013_data", 
+            "port": "5732", 
+            "time": 3604
+        }
+    ]
+}

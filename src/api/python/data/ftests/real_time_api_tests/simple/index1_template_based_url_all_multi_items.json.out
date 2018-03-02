@@ -1,0 +1,930 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 415482573, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:51", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 37, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": {
+                            "str": "NOW()"
+                        }, 
+                        "Processed": 1, 
+                        "ProcessingTime": 323, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 3, 
+                        "TagsMask": 50331648, 
+                        "UDate": "2017-01-26 05:05:52"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJpbWFnZSI6Imh0dHBzOi8vdGltZWRvdGNvbS5maWxlcy53b3JkcHJlc3MuY29tLzIwMTUvMDUvcHVibGljLWVuZW15LXJhcC5qcGc/cXVhbGl0eT02NSZzdHJpcD1jb2xvciZ3PTU1MCIsCiJwdWJkYXRlIjoiJXB1YmRhdGUlIiwKImJvZHkiOiIlYm9keSUiLAoidGl0bGUiOiIldGl0bGUlIiwKImltYWdlX2V4dHJhY3RvciI6IlNjcmFweUV4dHJhY3RvciIsCiJwdWJkYXRlX2V4dHJhY3RvciI6IiVwdWJkYXRlX2V4dHJhY3RvciUiLAoiYm9keV9leHRyYWN0b3IiOiIlYm9keV9leHRyYWN0b3IlIiwKInRpdGxlX2V4dHJhY3RvciI6IiV0aXRsZV9leHRyYWN0b3IlIiwKImNyYXdsZXJfdGltZSI6IjAuMDM3IiwKInNjcmFwZXJfdGltZSI6IjAuMDQ3MDM4MDc4MzA4MSIsCiJlcnJvcnNfbWFzayI6IjAiCn0KXQo=", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html", 
+                    "urlMd5": "b3eb9e33190cbc35e4419a3764903a01"
+                }, 
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:52", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 37, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": {
+                            "str": "NOW()"
+                        }, 
+                        "Processed": 2, 
+                        "ProcessingTime": 102, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 3, 
+                        "TagsMask": 50331648, 
+                        "UDate": "2017-01-26 05:05:52"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": {
+                        "DB_TASK_MODE": "RO", 
+                        "HTML_RECOVER": "0", 
+                        "HTML_REDIRECTS_MAX": 5, 
+                        "HTTP_REDIRECTS_MAX": 5, 
+                        "PROCESSOR_NAME": "SCRAPER_MULTI_ITEMS", 
+                        "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"regular\"},\"modules\":{\"regular\":[\"ScrapyExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}", 
+                        "ROBOTS_COLLECT": 0, 
+                        "ROBOTS_MODE": "0", 
+                        "URL_CHAIN": null, 
+                        "template": {
+                            "templates": [
+                                {
+                                    "contentsCount": 3, 
+                                    "contentsLen": 165, 
+                                    "isEmpty": false, 
+                                    "is_filled": 0, 
+                                    "mandatory": 0, 
+                                    "output_format": {
+                                        "footer": "]\n", 
+                                        "header": "[\n", 
+                                        "item": "{\n\"image\":\"%image%\",\n\"pubdate\":\"%pubdate%\",\n\"body\":\"%body%\",\n\"title\":\"%title%\",\n\"image_extractor\":\"%image_extractor%\",\n\"pubdate_extractor\":\"%pubdate_extractor%\",\n\"body_extractor\":\"%body_extractor%\",\n\"title_extractor\":\"%title_extractor%\",\n\"crawler_time\":\"%crawler_time%\",\n\"scraper_time\":\"%scraper_time%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n", 
+                                        "items_footer": "", 
+                                        "items_header": "", 
+                                        "name": "json", 
+                                        "type": "template"
+                                    }, 
+                                    "priority": "0", 
+                                    "response": [], 
+                                    "state": 1, 
+                                    "tags": {
+                                        "body": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-body']/p", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "image": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "URL", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-hero landscape']/img", 
+                                                "type": "image"
+                                            }
+                                        ], 
+                                        "pubdate": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//time[@class='publish-date']", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "title": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-title']", 
+                                                "type": "text"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJpbWFnZSI6IiVpbWFnZSUiLAoicHViZGF0ZSI6IiVwdWJkYXRlJSIsCiJib2R5IjoiVGhlIGV4cGxvc2lvbiBvZiBoaXAtaG9wIG9udG8gdGhlIG11c2ljIHNjZW5lIGluIHRoZSAxOTkwcyB3YXMgdGhlIGJpZ2dlc3QgbXVzaWNhbCByZXZvbHV0aW9uIGluIEFtZXJpY2FuIHBvcCBoaXN0b3J5LiIsCiJ0aXRsZSI6IiV0aXRsZSUiLAoiaW1hZ2VfZXh0cmFjdG9yIjoiJWltYWdlX2V4dHJhY3RvciUiLAoicHViZGF0ZV9leHRyYWN0b3IiOiIlcHViZGF0ZV9leHRyYWN0b3IlIiwKImJvZHlfZXh0cmFjdG9yIjoiU2NyYXB5RXh0cmFjdG9yIiwKInRpdGxlX2V4dHJhY3RvciI6IiV0aXRsZV9leHRyYWN0b3IlIiwKImNyYXdsZXJfdGltZSI6IjAuMDM3IiwKInNjcmFwZXJfdGltZSI6IjAuMDQ3MDM4MDc4MzA4MSIsCiJlcnJvcnNfbWFzayI6IjAiCn0KXQo=", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html#1", 
+                    "urlMd5": "8decb45fb300d139ba6031a086623799"
+                }, 
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:52", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 37, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": {
+                            "str": "NOW()"
+                        }, 
+                        "Processed": 2, 
+                        "ProcessingTime": 86, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 3, 
+                        "TagsMask": 50331648, 
+                        "UDate": "2017-01-26 05:05:52"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": {
+                        "DB_TASK_MODE": "RO", 
+                        "HTML_RECOVER": "0", 
+                        "HTML_REDIRECTS_MAX": 5, 
+                        "HTTP_REDIRECTS_MAX": 5, 
+                        "PROCESSOR_NAME": "SCRAPER_MULTI_ITEMS", 
+                        "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"regular\"},\"modules\":{\"regular\":[\"ScrapyExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}", 
+                        "ROBOTS_COLLECT": 0, 
+                        "ROBOTS_MODE": "0", 
+                        "URL_CHAIN": null, 
+                        "template": {
+                            "templates": [
+                                {
+                                    "contentsCount": 3, 
+                                    "contentsLen": 260, 
+                                    "isEmpty": false, 
+                                    "is_filled": 0, 
+                                    "mandatory": 0, 
+                                    "output_format": {
+                                        "footer": "]\n", 
+                                        "header": "[\n", 
+                                        "item": "{\n\"image\":\"%image%\",\n\"pubdate\":\"%pubdate%\",\n\"body\":\"%body%\",\n\"title\":\"%title%\",\n\"image_extractor\":\"%image_extractor%\",\n\"pubdate_extractor\":\"%pubdate_extractor%\",\n\"body_extractor\":\"%body_extractor%\",\n\"title_extractor\":\"%title_extractor%\",\n\"crawler_time\":\"%crawler_time%\",\n\"scraper_time\":\"%scraper_time%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n", 
+                                        "items_footer": "", 
+                                        "items_header": "", 
+                                        "name": "json", 
+                                        "type": "template"
+                                    }, 
+                                    "priority": "0", 
+                                    "response": [], 
+                                    "state": 1, 
+                                    "tags": {
+                                        "body": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-body']/p", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "image": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "URL", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-hero landscape']/img", 
+                                                "type": "image"
+                                            }
+                                        ], 
+                                        "pubdate": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//time[@class='publish-date']", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "title": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-title']", 
+                                                "type": "text"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJpbWFnZSI6IiVpbWFnZSUiLAoicHViZGF0ZSI6IiVwdWJkYXRlJSIsCiJib2R5IjoiVGhhdOKAmXMgYWNjb3JkaW5nIHRvIGEgdGVhbSBvZiBzY2llbnRpc3RzIHdobywgZm9yIHRoZSBmaXJzdCB0aW1lLCBoYXZlIGFuYWx5emVkIHRoZSBldm9sdXRpb24gb2YgV2VzdGVybiBwb3AgbXVzaWMsIHNwYW5uaW5nIGZyb20gMTk2MCB0byAyMDEwLCBhbmQgIHB1Ymxpc2hlZCAgdGhlaXIgZmluZGluZ3MgaW4gdGhlICBSb3lhbCBTb2NpZXR5IE9wZW4gSm91cm5hbCAuIiwKInRpdGxlIjoiJXRpdGxlJSIsCiJpbWFnZV9leHRyYWN0b3IiOiIlaW1hZ2VfZXh0cmFjdG9yJSIsCiJwdWJkYXRlX2V4dHJhY3RvciI6IiVwdWJkYXRlX2V4dHJhY3RvciUiLAoiYm9keV9leHRyYWN0b3IiOiJTY3JhcHlFeHRyYWN0b3IiLAoidGl0bGVfZXh0cmFjdG9yIjoiJXRpdGxlX2V4dHJhY3RvciUiLAoiY3Jhd2xlcl90aW1lIjoiMC4wMzciLAoic2NyYXBlcl90aW1lIjoiMC4wNDcwMzgwNzgzMDgxIiwKImVycm9yc19tYXNrIjoiMCIKfQpdCg==", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html#2", 
+                    "urlMd5": "62b40a77cc7a341ad818b6dce3cdc4a3"
+                }, 
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:52", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 37, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": {
+                            "str": "NOW()"
+                        }, 
+                        "Processed": 2, 
+                        "ProcessingTime": 71, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 3, 
+                        "TagsMask": 50331648, 
+                        "UDate": "2017-01-26 05:05:52"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": {
+                        "DB_TASK_MODE": "RO", 
+                        "HTML_RECOVER": "0", 
+                        "HTML_REDIRECTS_MAX": 5, 
+                        "HTTP_REDIRECTS_MAX": 5, 
+                        "PROCESSOR_NAME": "SCRAPER_MULTI_ITEMS", 
+                        "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"regular\"},\"modules\":{\"regular\":[\"ScrapyExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}", 
+                        "ROBOTS_COLLECT": 0, 
+                        "ROBOTS_MODE": "0", 
+                        "URL_CHAIN": null, 
+                        "template": {
+                            "templates": [
+                                {
+                                    "contentsCount": 3, 
+                                    "contentsLen": 359, 
+                                    "isEmpty": false, 
+                                    "is_filled": 0, 
+                                    "mandatory": 0, 
+                                    "output_format": {
+                                        "footer": "]\n", 
+                                        "header": "[\n", 
+                                        "item": "{\n\"image\":\"%image%\",\n\"pubdate\":\"%pubdate%\",\n\"body\":\"%body%\",\n\"title\":\"%title%\",\n\"image_extractor\":\"%image_extractor%\",\n\"pubdate_extractor\":\"%pubdate_extractor%\",\n\"body_extractor\":\"%body_extractor%\",\n\"title_extractor\":\"%title_extractor%\",\n\"crawler_time\":\"%crawler_time%\",\n\"scraper_time\":\"%scraper_time%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n", 
+                                        "items_footer": "", 
+                                        "items_header": "", 
+                                        "name": "json", 
+                                        "type": "template"
+                                    }, 
+                                    "priority": "0", 
+                                    "response": [], 
+                                    "state": 1, 
+                                    "tags": {
+                                        "body": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-body']/p", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "image": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "URL", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-hero landscape']/img", 
+                                                "type": "image"
+                                            }
+                                        ], 
+                                        "pubdate": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//time[@class='publish-date']", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "title": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-title']", 
+                                                "type": "text"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJpbWFnZSI6IiVpbWFnZSUiLAoicHViZGF0ZSI6IiVwdWJkYXRlJSIsCiJib2R5IjoiVGhlIHRlYW0sIGZyb20gUXVlZW4gTWFyeSBVbml2ZXJzaXR5IG9mIExvbmRvbiBhbmQgSW1wZXJpYWwgQ29sbGVnZSBMb25kb24sIGxvb2tlZCBhdCAzMC1zZWNvbmQgc25pcHBldHMgZnJvbSBhYm91dCAxNywwMDAgc29uZ3MgZnJvbSB0aGUgVS5TLiBCaWxsYm9hcmQgSG90IDEwMCBvdmVyIGEgNTAteWVhciBwZXJpb2QuIFRoZSByZXNlYXJjaGVycyBzdHVkaWVkIHRyZW5kcyBpbiBzdHlsZSBhbmQgZGl2ZXJzaXR5IGFzIHdlbGwgYXMgaG93IGhhcm1vbnksIGNob3JkIGNoYW5nZXMgYW5kIHRvbmFsIHF1YWxpdHkgY2hhbmdlZCBvdmVyIHRpbWUuIiwKInRpdGxlIjoiJXRpdGxlJSIsCiJpbWFnZV9leHRyYWN0b3IiOiIlaW1hZ2VfZXh0cmFjdG9yJSIsCiJwdWJkYXRlX2V4dHJhY3RvciI6IiVwdWJkYXRlX2V4dHJhY3RvciUiLAoiYm9keV9leHRyYWN0b3IiOiJTY3JhcHlFeHRyYWN0b3IiLAoidGl0bGVfZXh0cmFjdG9yIjoiJXRpdGxlX2V4dHJhY3RvciUiLAoiY3Jhd2xlcl90aW1lIjoiMC4wMzciLAoic2NyYXBlcl90aW1lIjoiMC4wNDcwMzgwNzgzMDgxIiwKImVycm9yc19tYXNrIjoiMCIKfQpdCg==", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html#3", 
+                    "urlMd5": "a97b9bef91c9b8c1a9d456856e8b5579"
+                }, 
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:52", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 37, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": {
+                            "str": "NOW()"
+                        }, 
+                        "Processed": 2, 
+                        "ProcessingTime": 56, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 3, 
+                        "TagsMask": 50331648, 
+                        "UDate": "2017-01-26 05:05:52"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": {
+                        "DB_TASK_MODE": "RO", 
+                        "HTML_RECOVER": "0", 
+                        "HTML_REDIRECTS_MAX": 5, 
+                        "HTTP_REDIRECTS_MAX": 5, 
+                        "PROCESSOR_NAME": "SCRAPER_MULTI_ITEMS", 
+                        "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"regular\"},\"modules\":{\"regular\":[\"ScrapyExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}", 
+                        "ROBOTS_COLLECT": 0, 
+                        "ROBOTS_MODE": "0", 
+                        "URL_CHAIN": null, 
+                        "template": {
+                            "templates": [
+                                {
+                                    "contentsCount": 3, 
+                                    "contentsLen": 291, 
+                                    "isEmpty": false, 
+                                    "is_filled": 0, 
+                                    "mandatory": 0, 
+                                    "output_format": {
+                                        "footer": "]\n", 
+                                        "header": "[\n", 
+                                        "item": "{\n\"image\":\"%image%\",\n\"pubdate\":\"%pubdate%\",\n\"body\":\"%body%\",\n\"title\":\"%title%\",\n\"image_extractor\":\"%image_extractor%\",\n\"pubdate_extractor\":\"%pubdate_extractor%\",\n\"body_extractor\":\"%body_extractor%\",\n\"title_extractor\":\"%title_extractor%\",\n\"crawler_time\":\"%crawler_time%\",\n\"scraper_time\":\"%scraper_time%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n", 
+                                        "items_footer": "", 
+                                        "items_header": "", 
+                                        "name": "json", 
+                                        "type": "template"
+                                    }, 
+                                    "priority": "0", 
+                                    "response": [], 
+                                    "state": 1, 
+                                    "tags": {
+                                        "body": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-body']/p", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "image": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "URL", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-hero landscape']/img", 
+                                                "type": "image"
+                                            }
+                                        ], 
+                                        "pubdate": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//time[@class='publish-date']", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "title": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-title']", 
+                                                "type": "text"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJpbWFnZSI6IiVpbWFnZSUiLAoicHViZGF0ZSI6IiVwdWJkYXRlJSIsCiJib2R5Ijoi4oCcV2UgY2FuIGFjdHVhbGx5IGdvIGJleW9uZCB3aGF0IG11c2ljIGV4cGVydHMgdGVsbCB1cywgb3Igd2hhdCB3ZSBrbm93IG91cnNlbHZlcyBhYm91dCB0aGVtLCBieSBsb29raW5nIGRpcmVjdGx5IGludG8gdGhlIHNvbmdzLCBtZWFzdXJpbmcgdGhlaXIgbWFrZXVwLCBhbmQgdW5kZXJzdGFuZGluZyBob3cgdGhleSBoYXZlIGNoYW5nZWQs4oCdIHNhaWQgbGVhZCBhdXRob3Igb2YgdGhlIHN0dWR5IE1hdHRoaWFzIE1hdWNoLiIsCiJ0aXRsZSI6IiV0aXRsZSUiLAoiaW1hZ2VfZXh0cmFjdG9yIjoiJWltYWdlX2V4dHJhY3RvciUiLAoicHViZGF0ZV9leHRyYWN0b3IiOiIlcHViZGF0ZV9leHRyYWN0b3IlIiwKImJvZHlfZXh0cmFjdG9yIjoiU2NyYXB5RXh0cmFjdG9yIiwKInRpdGxlX2V4dHJhY3RvciI6IiV0aXRsZV9leHRyYWN0b3IlIiwKImNyYXdsZXJfdGltZSI6IjAuMDM3IiwKInNjcmFwZXJfdGltZSI6IjAuMDQ3MDM4MDc4MzA4MSIsCiJlcnJvcnNfbWFzayI6IjAiCn0KXQo=", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html#4", 
+                    "urlMd5": "693b7ba341b75816e02e9c96b5d6969c"
+                }, 
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:52", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 37, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": {
+                            "str": "NOW()"
+                        }, 
+                        "Processed": 2, 
+                        "ProcessingTime": 41, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 3, 
+                        "TagsMask": 50331648, 
+                        "UDate": "2017-01-26 05:05:52"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": {
+                        "DB_TASK_MODE": "RO", 
+                        "HTML_RECOVER": "0", 
+                        "HTML_REDIRECTS_MAX": 5, 
+                        "HTTP_REDIRECTS_MAX": 5, 
+                        "PROCESSOR_NAME": "SCRAPER_MULTI_ITEMS", 
+                        "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"regular\"},\"modules\":{\"regular\":[\"ScrapyExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}", 
+                        "ROBOTS_COLLECT": 0, 
+                        "ROBOTS_MODE": "0", 
+                        "URL_CHAIN": null, 
+                        "template": {
+                            "templates": [
+                                {
+                                    "contentsCount": 3, 
+                                    "contentsLen": 143, 
+                                    "isEmpty": false, 
+                                    "is_filled": 0, 
+                                    "mandatory": 0, 
+                                    "output_format": {
+                                        "footer": "]\n", 
+                                        "header": "[\n", 
+                                        "item": "{\n\"image\":\"%image%\",\n\"pubdate\":\"%pubdate%\",\n\"body\":\"%body%\",\n\"title\":\"%title%\",\n\"image_extractor\":\"%image_extractor%\",\n\"pubdate_extractor\":\"%pubdate_extractor%\",\n\"body_extractor\":\"%body_extractor%\",\n\"title_extractor\":\"%title_extractor%\",\n\"crawler_time\":\"%crawler_time%\",\n\"scraper_time\":\"%scraper_time%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n", 
+                                        "items_footer": "", 
+                                        "items_header": "", 
+                                        "name": "json", 
+                                        "type": "template"
+                                    }, 
+                                    "priority": "0", 
+                                    "response": [], 
+                                    "state": 1, 
+                                    "tags": {
+                                        "body": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-body']/p", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "image": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "URL", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-hero landscape']/img", 
+                                                "type": "image"
+                                            }
+                                        ], 
+                                        "pubdate": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//time[@class='publish-date']", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "title": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-title']", 
+                                                "type": "text"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJpbWFnZSI6IiVpbWFnZSUiLAoicHViZGF0ZSI6IiVwdWJkYXRlJSIsCiJib2R5IjoiTWF1Y2jigJlzIHRlYW0gZm91bmQgdGhhdCB0aGVyZSB3ZXJlIHRocmVlIGRpc3RpbmN0IG11c2ljIHJldm9sdXRpb25zOiAgMTk2NCwgLzE5ODMvIGFuZCAxOTkxICYuIiwKInRpdGxlIjoiJXRpdGxlJSIsCiJpbWFnZV9leHRyYWN0b3IiOiIlaW1hZ2VfZXh0cmFjdG9yJSIsCiJwdWJkYXRlX2V4dHJhY3RvciI6IiVwdWJkYXRlX2V4dHJhY3RvciUiLAoiYm9keV9leHRyYWN0b3IiOiJTY3JhcHlFeHRyYWN0b3IiLAoidGl0bGVfZXh0cmFjdG9yIjoiJXRpdGxlX2V4dHJhY3RvciUiLAoiY3Jhd2xlcl90aW1lIjoiMC4wMzciLAoic2NyYXBlcl90aW1lIjoiMC4wNDcwMzgwNzgzMDgxIiwKImVycm9yc19tYXNrIjoiMCIKfQpdCg==", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html#5", 
+                    "urlMd5": "ff2dbcaf8dba4600220e33adec3aee33"
+                }, 
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:05:52", 
+                        "Charset": "utf-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 37, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": {
+                            "str": "NOW()"
+                        }, 
+                        "Processed": 2, 
+                        "ProcessingTime": 27, 
+                        "RawContentMd5": "", 
+                        "Size": 250029, 
+                        "Status": 7, 
+                        "TagsCount": 3, 
+                        "TagsMask": 50331648, 
+                        "UDate": "2017-01-26 05:05:52"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": {
+                        "DB_TASK_MODE": "RO", 
+                        "HTML_RECOVER": "0", 
+                        "HTML_REDIRECTS_MAX": 5, 
+                        "HTTP_REDIRECTS_MAX": 5, 
+                        "PROCESSOR_NAME": "SCRAPER_MULTI_ITEMS", 
+                        "PROCESSOR_PROPERTIES": "{\"algorithm\":{\"algorithm_name\":\"regular\"},\"modules\":{\"regular\":[\"ScrapyExtractor\"]},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}", 
+                        "ROBOTS_COLLECT": 0, 
+                        "ROBOTS_MODE": "0", 
+                        "URL_CHAIN": null, 
+                        "template": {
+                            "templates": [
+                                {
+                                    "contentsCount": 3, 
+                                    "contentsLen": 298, 
+                                    "isEmpty": false, 
+                                    "is_filled": 0, 
+                                    "mandatory": 0, 
+                                    "output_format": {
+                                        "footer": "]\n", 
+                                        "header": "[\n", 
+                                        "item": "{\n\"image\":\"%image%\",\n\"pubdate\":\"%pubdate%\",\n\"body\":\"%body%\",\n\"title\":\"%title%\",\n\"image_extractor\":\"%image_extractor%\",\n\"pubdate_extractor\":\"%pubdate_extractor%\",\n\"body_extractor\":\"%body_extractor%\",\n\"title_extractor\":\"%title_extractor%\",\n\"crawler_time\":\"%crawler_time%\",\n\"scraper_time\":\"%scraper_time%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n", 
+                                        "items_footer": "", 
+                                        "items_header": "", 
+                                        "name": "json", 
+                                        "type": "template"
+                                    }, 
+                                    "priority": "0", 
+                                    "response": [], 
+                                    "state": 1, 
+                                    "tags": {
+                                        "body": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-body']/p", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "image": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "URL", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-hero landscape']/img", 
+                                                "type": "image"
+                                            }
+                                        ], 
+                                        "pubdate": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//time[@class='publish-date']", 
+                                                "type": "text"
+                                            }
+                                        ], 
+                                        "title": [
+                                            {
+                                                "begin": "", 
+                                                "canonicalizeURLs": 0, 
+                                                "default": "", 
+                                                "delimiter": "", 
+                                                "end": "", 
+                                                "format": "", 
+                                                "join": "concat", 
+                                                "mandatory": 0, 
+                                                "postProcessing": "", 
+                                                "target": "//*[@class='article-title']", 
+                                                "type": "text"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJpbWFnZSI6IiVpbWFnZSUiLAoicHViZGF0ZSI6IiVwdWJkYXRlJSIsCiJib2R5IjoiMTk2NCB3YXMgdGhlIHN0YXJ0IG9mIOKAnEJyaXRpc2ggaW52YXNpb27igJ0gd2hlbiBiYW5kcyBsaWtlIHRoZSBCZWF0bGVzIGFuZCB0aGUgUm9sbGluZyBTdG9uZXMgZmxvb2RlZCB0aGUgQW1lcmljYW4gY2hhcnRzLiBCdXQgY29udHJhcnkgdG8gcG9wdWxhciBiZWxpZWYsIHRoZXNlIGJhbmRzIGRpZG7igJl0IGluaXRpYXRlIHRoZSByb2NrIHJldm9sdXRpb24sIHRoZXkgd2VyZSBtZXJlbHkgZm9sbG93aW5nIGV4aXN0aW5nIHRyZW5kcy4iLAoidGl0bGUiOiIldGl0bGUlIiwKImltYWdlX2V4dHJhY3RvciI6IiVpbWFnZV9leHRyYWN0b3IlIiwKInB1YmRhdGVfZXh0cmFjdG9yIjoiJXB1YmRhdGVfZXh0cmFjdG9yJSIsCiJib2R5X2V4dHJhY3RvciI6IlNjcmFweUV4dHJhY3RvciIsCiJ0aXRsZV9leHRyYWN0b3IiOiIldGl0bGVfZXh0cmFjdG9yJSIsCiJjcmF3bGVyX3RpbWUiOiIwLjAzNyIsCiJzY3JhcGVyX3RpbWUiOiIwLjA0NzAzODA3ODMwODEiLAoiZXJyb3JzX21hc2siOiIwIgp9Cl0K", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index1.html#6", 
+                    "urlMd5": "8734cc394ffbc1e0caf42a1d95e70874"
+                }
+            ], 
+            "node": "r012_data", 
+            "port": "5731", 
+            "time": 2041
+        }
+    ]
+}

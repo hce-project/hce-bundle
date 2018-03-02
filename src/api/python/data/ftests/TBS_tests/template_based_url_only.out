@@ -1,0 +1,36 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 1062035232, 
+            "itemObject": [
+                {
+                    "cookies": [], 
+                    "dbFields": {}, 
+                    "headers": [], 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "PD94bWwgdmVyc2lvbj0nMS4wJz8+PHJlc3BvbnNlPjxpdGVtPiAgPE15VGl0bGU+Qm9va2luZy5jb206IDYyMiwwNjQgaG90ZWxzIHdvcmxkd2lkZS4gNDUrIG1pbGxpb24gaG90ZWwgcmV2aWV3cy48L015VGl0bGU+PC9pdGVtPjwvcmVzcG9uc2U+", 
+                            "cDate": 0, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": null, 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/booking.html", 
+                    "urlMd5": null
+                }
+            ], 
+            "node": "r012_data", 
+            "port": "5731", 
+            "time": 10418
+        }
+    ]
+}

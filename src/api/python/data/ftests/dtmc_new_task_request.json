@@ -1,0 +1,25 @@
+{
+  "id": "11111",
+  "session": {
+    "type": 0,
+    "port": 0,
+    "user": "",
+    "password": "",
+    "shell": "",
+    "environment": {},
+    "home_dir": "",
+    "timeout": 0,
+    "tmode": 2,
+    "time_max": 300000,
+    "home_directory": ""
+}, 
+  "command": "ls -lat",
+  "input": "",
+  "files": [
+  ],
+  "limits": {},
+  "strategy": {
+        "DATE": "2014-09-09 11:00:00", 
+        "PRIORITY": 2
+  }
+}

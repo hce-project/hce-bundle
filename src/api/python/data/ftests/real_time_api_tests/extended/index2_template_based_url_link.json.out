@@ -1,0 +1,64 @@
+{
+    "errorCode": 0, 
+    "errorMessage": "", 
+    "itemsList": [
+        {
+            "errorCode": 0, 
+            "errorMessage": "", 
+            "host": "localhost", 
+            "id": 1763885833, 
+            "itemObject": [
+                {
+                    "attributes": [], 
+                    "contentURLMd5": "", 
+                    "cookies": [], 
+                    "dbFields": {
+                        "BatchId": 0, 
+                        "CDate": "2017-01-26 05:43:30", 
+                        "Charset": "UTF-8", 
+                        "ContentType": "text/html", 
+                        "ContentURLMd5": "", 
+                        "Crawled": 1, 
+                        "CrawlingTime": 44, 
+                        "ErrorMask": 0, 
+                        "HttpCode": 200, 
+                        "LastModified": "2017-01-26 00:02:15", 
+                        "LinksE": 0, 
+                        "LinksI": 0, 
+                        "PDate": "2017-01-26 05:43:31", 
+                        "Processed": 1, 
+                        "ProcessingTime": 1136, 
+                        "RawContentMd5": "", 
+                        "Size": 451606, 
+                        "Status": 7, 
+                        "TagsCount": 3, 
+                        "TagsMask": 33554452, 
+                        "UDate": "2017-01-26 05:43:31"
+                    }, 
+                    "headers": [], 
+                    "itemProperties": null, 
+                    "meta": [], 
+                    "processedContents": [
+                        {
+                            "buffer": "Wwp7CiJsaW5rIjoiaHR0cHM6Ly93d3cudHVtYmxyLmNvbS9zaGFyZS9waG90bz9jbGlja3RocnU9aHR0cCUzQSUyRiUyRm5ld3MueWFob28uY29tJTJGc291dGgta29yZWEtdm93cy1tZXJjaWxlc3MtcmVzcG9uc2Utbm9ydGgtcHJvdm9jYXRpb24tMDE1MDEzOTM5Lmh0bWwlM0Zzb2Nfc3JjJTNEbWVkaWFjb250ZW50c2hhcmVidXR0b25zJTI2c29jX3RyayUzRHR1JmNhcHRpb249U291dGglMjBLb3JlYSUyMG9uJTIwTW9uZGF5JTIwdXJnZWQlMjBOb3J0aCUyMEtvcmVhJTIwdG8lMjBoYWx0JTIwaXRzJTIwJTIyd29ycmlzb21lJTIyJTIwZGV2ZWxvcG1lbnQlMjBvZiUyMGElMjBzdWJtYXJpbmUtbGF1bmNoZWQlMjBiYWxsaXN0aWMlMjBtaXNzaWxlJTJDJTIwYXMlMjBvbmUlMjBTZW91bCUyMG9mZmljaWFsJTIwd2FybmVkJTIwUHlvbmd5YW5nJTIwY291bGQlMjBoYXZlJTIwYSUyMGZ1bmN0aW9uYWwlMjBTTEJNJTIwY2FwYWJpbGl0eSUyMHdpdGhpbiUyMHR3byUyMHllYXJzLiUyMCUyMFRoZSUyME5vcnRoJTI3cyUyMHN0YXRlJTIwbWVkaWElMjBhbm5vdW5jZWQlMjBTYXR1cmRheSUyMHRoYXQlMjBhJTIwbmV3JTIwU0xCTSUyMGhhZCUyMGJlZW4lMjB0ZXN0ZWQlMjB1bmRlciUyMHRoZSUyMHBlcnNvbmFsJTIwc3VwZXJ2aXNpb24lMjBvZiUyME5vcnRoJTIwS29yZWFuJTIwbGVhZGVyJTIwS2ltJTIwSm9uZy1VbiUyQyUyMHdobyUyMGRlc2NyaWJlZCUyMGl0JTIwYXMlMjBhbiUyMCUyMmV5ZS1vcGVuaW5nJTIwc3VjY2VzcyUyMiUyMHRoYXQlMjBwcm92aWRlZCUyMGhpcyUyMG1pbGl0YXJ5JTIwd2l0aCUyMGElMjAlMjJ3b3JsZC1sZXZlbCUyMHN0cmF0ZWdpYyUyMHdlYXBvbiUyMi4lMjAlMjAlMjJXZSUyMHVyZ2UlMjB0aGUlMjBOb3J0aCUyMHRvJTIwaW1tZWRpYXRlbHklMjBzdG9wJTIwZGV2ZWxvcG1lbnQlMjBvZiUyMHRoZSUyMFNMQk0lMjB0aGF0JTIwdGhyZWF0ZW5zJTIwdGhlJTIwc2VjdXJpdHklMjBvZiUyMHRoZSUyMEtvcmVhbiUyMHBlbmluc3VsYSUyMGFuZCUyMG5vcnRoZWFzdCUyMEFzaWElMkMlMjIlMjBtaW5pc3RyeSUyMHNwb2tlc21hbiUyMEtpbSUyME1pbi1TZW9rJTIwdG9sZCUyMHJlcG9ydGVycy4mc291cmNlPWh0dHAlM0ElMkYlMkZsMS55aW1nLmNvbSUyRmJ0JTJGYXBpJTJGcmVzJTJGMS4yJTJGeS40eVJqNTFna1ZxY0F4MTJVOW9MUS0tJTJGWVhCd2FXUTllVzVsZDNNN2NUMDNOVHQzUFRZd01BLS0lMkZodHRwJTNBJTJGJTJGbWVkaWEuemVuZnMuY29tJTJGZW4tVVMlMkZ2aWRlbyUyRnZpZGVvLndvY2hpdC5jb20lMkY3YWNjMTUzOTkyNmE1NTI1ODAxZjI5MjM4NjA1Y2FiNy5jZi5wbmciLAoiZXJyb3JzX21hc2siOiIwIgp9Cl0K", 
+                            "cDate": {
+                                "str": "NOW()"
+                            }, 
+                            "typeId": 10
+                        }
+                    ], 
+                    "rawContentMd5": "", 
+                    "rawContents": [], 
+                    "requests": [], 
+                    "siteId": "0", 
+                    "status": 7, 
+                    "url": "http://127.0.0.1/template_scraping/index2.html", 
+                    "urlMd5": "c94766124b714e93ccf4efa4b783f0e3"
+                }
+            ], 
+            "node": "r013_data", 
+            "port": "5732", 
+            "time": 3664
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+# For test support of robots
+# localhost
+
+User-agent: *
+Disallow: /robots/*

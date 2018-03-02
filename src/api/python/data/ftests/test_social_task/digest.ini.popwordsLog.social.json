@@ -1,0 +1,78 @@
+{
+    "#language": "ru",
+    "#language": "en",
+    "tags": [
+        "title",
+        "description",
+        "content_encoded:4:70"
+    ],
+    "similar": 1,
+    "data_file": 1,
+    "data_file_ext": "json",
+    "data_file_name": "",
+    "data_file_suffix": "_pw",
+    "data_file_delimiter": ":",
+    "data_file_best_form": 4,
+    "data_file_readable_form": 3,
+    "data_file_associated_fragments":{
+        "included":1,
+        "skipped":1,
+        "max_words_right":4,
+        "max_words_left":4,
+        "unique_per_initial_form":"domain",
+        "#unique":"url",
+        "exclude_subentries":1,
+        "max_items_per_initial_form":20,
+        "#min_items":4,
+        "min_items":1,
+        "max_items":50,
+        "uppercase":0,
+        "merge":{"min_fragments":3,
+                 "ngrams":["1lr", "1r", "1l"],
+                 "nform":1,
+                 "rform":2,
+                 "rform_basic":1,
+                 "threshold":100,
+                 "freq":1,
+                 "stopword_before":0,
+                 "stopword_after":0,
+                 "min_matched_ngrams":3,
+                 "readable":{"form":1, "threshold":50, "replace":3, "ngrams":["2r", "1l", "1r"], "threshold_min_items":3, "threshold_items":5},
+                 "#post_merge_by_normal_form":{"status":0, "min_chars":4},
+                 "post_merge_by_readable_form":{"status":1, "min_chars":4, "max_words":2},
+                 "uppercase":1
+                },
+        "highlight":{"left":"<font color=\"red\">","right":"</font>"},
+        "rates":{"tags":["SENTIMENT_RATE"],
+                 "#sentiment_tag":"SENTIMENT_RATE",
+                 "#sentiment_tag_pos":4,
+                 "#sentiment_tag_multiplier":10
+                }
+    },
+    "data_file_synonims":1,
+    "data_file_format": "json",
+    "data_file_blacklist": [
+        "../ini/classifiers/%LANGUAGE%_popwords_black.txt"
+    ],
+    "data_file_initial_forms_blacklist": [
+        "../ini/classifiers/%LANGUAGE%_popwords_initial_black.txt"
+    ],
+    "data_file_stopwords_languages":["en", "default"],
+    "voc_files": 0,
+    "voc_files_best_form": 2,
+    "voc_files_readable_form": 3,
+    "voc_files_blacklist": [
+        "../ini/classifiers/%LANGUAGE%_popwords_black.txt"
+    ],
+    "voc_files_ext": "txt",
+    "voc_files_max": 20,
+    "#voc_files_min_freq": 4,
+    "voc_files_min_freq": 1,
+    "voc_files_min_word_len": 3,
+    "voc_files_name": "",
+    "voc_files_suffix": "_ac",
+    "voc_files_word_mutual_entrances": 0,
+    "voc_files_stopwords_languages":["en", "default"],
+    "voc_files_synonims":1,
+    "voc_files_classified":1
+}

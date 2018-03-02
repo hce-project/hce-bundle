@@ -1,0 +1,27 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 2,
+        "time_max": 30000,
+        "cleanup": 0
+    },
+    "command": "chmod oug-x /tmp/test1.sh| /tmp/test1.sh",
+    "input": "",
+    "files": [
+			{
+				"name": "/tmp/test1.sh",
+	      "data": "#!/bin/bash \necho \"Hello\"",
+	      "action": 13
+			}
+    ]
+}

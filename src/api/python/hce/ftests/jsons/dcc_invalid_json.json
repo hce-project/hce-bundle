@@ -1,0 +1,14 @@
+[
+    [
+	"url": "urls",
+	"urlType": "type",
+	"state": "sta",
+	"contentTypeMask": "mask"
+    ],
+    [
+	"url": "urls33",
+	"urlType": "type33",
+	"state": "sta33",
+	"contentTypeMask": "mask33"
+    ]
+]

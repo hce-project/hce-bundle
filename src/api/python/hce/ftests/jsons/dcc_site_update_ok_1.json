@@ -1,0 +1,57 @@
+{
+    "updateType": 2,
+    "id": "z5",
+    "uDate": "'11-11-11 11.11.11'",
+    "tcDate": "'11-11-11 11.11.11'",
+    "cDate": "'11-11-11 11.11.11'",
+    "resources": 11,
+    "iterations": 55,
+    "description": 33,
+    "urls": 
+    [
+	{
+	    "url": "http://url1.com/",
+	    "userId": 150
+	},
+	null
+    ],
+    "filters": 
+    [
+	{
+	    "siteId": "z5",
+	    "type": 1,
+	    "mode": 0,
+	    "pattern": "Africa"
+	}
+    ],
+    "properties":
+    [
+	{
+	    "siteId": "z5",
+	    "name": "prop2",
+	    "urlMd5": "777"
+	}
+    ],
+    "state": 55,
+    "priority": 88,
+    "maxURLs": 100,
+    "maxResources": 6688,
+    "maxErrors": 300,
+    "maxResourceSize": 4440,
+    "requestDelay": 500,
+    "httpTimeout": 333,
+    "errorMask": 11,
+    "errors": 12,
+    "urlType": 11,
+    "size": 221,
+    "avgSpeed": 100,
+    "avgSpeedCounter": 2,
+    "contents": 0,
+    "processingDelay": 0,
+    "userId": 150,
+    "recrawlPeriod": 4,
+    "recrawlDate": null,
+    "maxURLsFromPage": 111,
+    "collectedURLs": 0,
+    "fetchType": 0
+}

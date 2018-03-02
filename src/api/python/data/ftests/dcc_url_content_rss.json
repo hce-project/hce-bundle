@@ -1,0 +1,23 @@
+ [
+  {
+  "contentTypeMask": 1027,
+  "siteId": "",
+  "url": "",
+  "urlFetch": {
+  "algorithm": 0,
+  "maxURLs": 100,
+  "sitesCriterions": {
+  "ORDER BY": "`Priority` DESC, `TcDate` ASC",
+  "WHERE": "`Id` IN('26da433e468a8a861cf1efffd2cd3cf5','26DA433E468A8A861CF1EFFFD2CD3CF4') AND `User_Id`=1"
+  },
+  "sitesList": [],
+  "urlUpdate": null,
+  "urlsCriterions": {
+  "LIMIT": 20,
+  "ORDER BY": "`UDate` DESC",
+  "WHERE": "`Status`=7 AND `Crawled`>0 AND `Processed`>0 AND TagsCount>3"
+  }
+  },
+  "urlMd5": ""
+  }
+  ]

@@ -1,0 +1,69 @@
+#!/usr/bin/python
+# coding: utf-8
+
+import os
+import sys
+import logging
+from dc_crawler.HTTPRedirectResolver import HTTPRedirectResolver
+from app.Utils import varDump
+from app.Utils import parseHost
+import app.Consts as APP_CONSTS
+
+
+def getLogger():
+  # create logger
+  logger = logging.getLogger(APP_CONSTS.LOGGER_NAME)
+  logger.setLevel(logging.DEBUG)
+
+  # create console handler and set level to debug
+  ch = logging.StreamHandler()
+  ch.setLevel(logging.DEBUG)
+
+  # create formatter
+  formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+  # add formatter to ch
+  ch.setFormatter(formatter)
+
+  # add ch to logger
+  logger.addHandler(ch)
+
+  return logger
+
+
+if __name__ == '__main__':
+
+  logger = getLogger()
+
+  propertyJson = "{\"METHOD\":\"HEAD\", \"URL\":[\"http(.*)\", \"http:\/\/*\", \"*.nytimes.com*\"], \"MAX\":10, \"TYPES\":[301, 302, 303],\"TIMEOUT\":\"3.0\"}"
+  propertyJson = "{\"METHOD\":\"SGET\", \"URL\":[\"http(.*)\", \"http:\/\/*\", \"*.nytimes.com*\"], \"MAX\":10, \"TYPES\":[301, 302, 303],\"TIMEOUT\":\"3.0\"}"
+
+  # url = 'http://thecaucus.blogs.nytimes.com/feed'
+  # url = 'http://dnepr.comments.ua/news/2017/03/23/151514.html'
+  # url = 'https://www.nytimes.com/2017/05/17/technology/google-io-conference.html?partner=rss&emc=rss'
+  # url = 'http://marganets.info/news/175-marganchani-vshanovuvali-podvig-vizvolitel-v.html'
+  # url = 'https://mainichi.jp/articles/20170525/k00/00m/040/016000c'
+  # url = 'http://www.informationweek.com/iot/ge-draws-up-playbook-for-digital-transformation/d/d-id/1328873?_mc=RSS_IWK_EDT'
+  # url = 'http://blogs.cfr.org/geographics/2016/11/01/trump-tax-plan-cuts-reckless-incentives-for-corporate-debt-but-not-for-banks/'
+  # url = 'http://alexjones.pl/aj/aj-swiat/aj-gospodarka-swiatowa/item/115409-komisja-europejska-chce-wprowadzic-euro-we-wszystkich-krajach-unii'
+  # url = 'http://www.mobile-tech-today.com/story.xhtml?story_id=13200BCGHH1O'
+  url = 'http://www.latimes.com/local/lanow/la-me-ln-tehama-vigil-20171115-story.html'
+  # url = 'http://rss.rssad.jp/rss/artclk/ZLcY1bpa2mkX/f53c1532a6b463049f5c7d79bf257681?ul=GSpoCHoN4iEY8joSKMCUb59mgh_btA0QaEr0leC.nw7c_0vd8c_gWaCnDF.ZKzJSUQ3yqZkmSPX12IXJoYByvGKFXHXn'
+  headers = {'Accept-Language':'en-US,en;q=0.8,en;q=0.6,us;q=0.4,us;q=0.2,ja;q=0.2', 'Accept-Encoding':'gzip, deflate', 'Cache-Control':'no-cache', 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36', 'Connection':'close', 'Referer':u'http://www.scotsman.com/news/politics/indyref2-scotland-in-union-group-launches-project-listen-1-4392095', '--allow-running-insecure-content':'', 'Pragma':'no-cache', '--disable-setuid-sandbox':'', '--allow-file-access-from-files':'', '--disable-web-security':''}
+  # headers = {'Accept-Language':'en-US,en;q=0.8,en;q=0.6,us;q=0.4,us;q=0.2,ja;q=0.2', 'Accept-Encoding':'gzip, deflate', 'Cache-Control':'no-cache', 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36', 'Connection':'close', 'Referer':u'http://alexjones.pl/?format=feed&type=rss', '--allow-running-insecure-content':'', 'Pragma':'no-cache', '--disable-setuid-sandbox':'', '--allow-file-access-from-files':'', 'Cookie':'2e207a62fe17ce9f8bbbb86a50498c41=nk8srbd1hsmia5j9mf7to6oj80\r\nja_t3_blank_tpl; ', '--disable-web-security':''}
+  # headers = {'Accept-Language':'en-US,en;q=0.8,en;q=0.6,us;q=0.4,us;q=0.2,ja;q=0.2', 'Accept-Encoding':'gzip, deflate', 'Cache-Control':'no-cache', 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36', 'Connection':'close', 'Referer':u'http://alexjones.pl/?format=feed&type=rss', '--allow-running-insecure-content':'', 'Pragma':'no-cache', '--disable-setuid-sandbox':'', '--allow-file-access-from-files':'', 'Cookie':'2e207a62fe17ce9f8bbbb86a50498c41=nk8srbd1hsmia5j9mf7to6oj80 ', '--disable-web-security':''}
+  maxRedirects = 10
+  method = 'head'
+
+
+  redirectResolver = HTTPRedirectResolver(propertyJson)
+
+  # logger.debug("!!! redirectProperty: %s", varDump(redirectResolver.redirectProperty))
+
+  # url, contentType = HTTPRedirectResolver.getRedirectUrl(url, headers, maxRedirects, method, [301, 302, 303])
+  # logger.debug("url: %s", str(url))
+  # logger.debug("contentType: %s", str(contentType))
+
+  resContentType = ''
+  resUrl = redirectResolver.resolveRedirectUrl(url, headers)
+  logger.debug("resUrl: %s", str(resUrl))

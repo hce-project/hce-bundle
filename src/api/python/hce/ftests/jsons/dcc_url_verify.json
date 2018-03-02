@@ -1,0 +1,54 @@
+[
+    {
+	"siteId": "8759a87e8fb04392b8070edcb2533fab",
+	"url": "http://verify.com/index1.html",
+	"urlType": 0,
+	"dbName": "dc_urls",
+	"criterions": null
+    },
+    {
+	"siteId": "8759a87e8fb04392b8070edcb2533fab",
+	"url": "http://verify.com/index3.html",
+	"urlType": 0,
+	"dbName": "dc_urls",
+	"criterions": null
+    },
+    {
+	"siteId": "8759a87e8fb04392b8070edcb2533fab",
+	"url": "http://verify.com/index5.html",
+	"urlType": 0,
+	"dbName": "dc_urls",
+	"criterions": null
+    },
+    {
+	"siteId": "79640aff2aa880b3a0d63ec56b9f4b06",
+	"url": "http://verify2.com/index1.html",
+	"urlType": 0,
+	"dbName": "dc_urls",
+	"criterions": 
+	{
+	    "WHERE": "`ProcessingDelay` = 100"
+	}
+    },
+    {
+	"siteId": "79640aff2aa880b3a0d63ec56b9f4b06",
+	"url": "http://verify2.com/index2.html",
+	"urlType": 0,
+	"dbName": "dc_urls",
+	"criterions": null
+    },
+    {
+	"siteId": "79640aff2aa880b3a0d63ec56b9f4b06",
+	"url": "http://verify2.com/index3.html",
+	"urlType": 0,
+	"dbName": "dc_urls",
+	"criterions": null
+    },
+    {
+	"siteId": "79640aff2aa880b3a0d63ec56b9f4b06",
+	"url": "http://verify2.com/index4.html",
+	"urlType": 0,
+	"dbName": "dc_urls",
+	"criterions": null
+    }
+]

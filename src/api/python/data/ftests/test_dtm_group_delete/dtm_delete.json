@@ -1,0 +1,14 @@
+{
+  "id": 5028,
+  "alg": 1,
+  "delay": 0,
+  "repeat": 9,
+  "signal": 15,
+  "action": 0,
+  "host": "",
+  "port":0,
+  "strategy": {
+    "RDELAY": 10000,
+    "RETRY": 4
+  }
+}

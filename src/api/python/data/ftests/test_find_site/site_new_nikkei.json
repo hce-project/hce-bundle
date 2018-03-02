@@ -1,0 +1,52 @@
+{
+    "cDate": "NOW()", 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "pattern": "http://www.nikkei.com/(.*)", 
+            "siteId": "f9a3c00da0978343057c4c8b83868912", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 20000, 
+    "id": "f9a3c00da0978343057c4c8b83868912", 
+    "iterations": 0, 
+    "maxErrors": 0, 
+    "maxResourceSize": 0,
+    "maxResources": 1, 
+    "maxURLs": 1, 
+    "priority": 100, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html,application/xml", 
+        "MIME_TYPE_STORE_ON_DISK": "*",
+         "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1"
+    }, 
+    "requestDelay": 1000, 
+    "resources": 0, 
+    "state": 3, 
+    "tcDate": "NULL", 
+    "tcDateProcess": "NULL",
+    "uDate": "NULL", 
+    "urlType": 0, 
+    "urls": [
+        "http://www.nikkei.com/news/category/economy/",
+        "http://www.nikkei.com/news/category/world/",
+        "http://www.jiji.com/jc/travel/fake"
+    ],
+    "contents": 0,
+    "size": 0,
+    "avgSpeed": 0,
+    "avgSpeedCounter": 0,
+    "recrawlPeriod" : 0,
+    "recrawlDate" : "DATE_ADD(NOW(), INTERVAL `RecrawlPeriod` MINUTE)",
+    "userId": 0,
+    "processingDelay" : 500,
+		"maxURLsFromPage": 100,
+    "collectedURLs": 0,
+    "fetchType": 1
+}

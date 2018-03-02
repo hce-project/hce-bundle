@@ -1,0 +1,26 @@
+{
+    "id": 1000,
+    "uDate": "aa100",
+    "tcDate": "aa200",
+    "resources": 100,
+    "iterations": 11,
+    "description": "aaa",
+    "urls": ["zzz", "fff"],
+    "filters": ["f1","f2","f3"],
+    "properties": 
+    {
+	"prop1": 10,
+	"prop2": 20
+    },
+    "state": 0,
+    "priority": 1,
+    "maxURLs": 11,
+    "maxResources": 200,
+    "maxErrors": 1000,
+    "maxResourceSize": 200,
+    "requestDelay": 2020,
+    "httpTimeout": 500,
+    "errorMask": 13,
+    "errors": 44,
+    "urlType": 201
+}

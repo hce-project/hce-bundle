@@ -1,0 +1,41 @@
+[
+{
+    "siteId": "22",
+    "host": "intel.proxy.com:22",
+    "priority": 3,
+    "state": 1,
+    "limits": "[1]",
+    "description": "Some data A"
+},
+{
+    "siteId": "100",
+    "host": "some.proxy.com:22",
+    "domains": "[]",
+    "priority": 3,
+    "state": 1,
+    "limits": "[1]",
+    "description": "Some data B"
+},
+{
+    "siteId": "101",
+    "host": "intel,proxy.com:22",
+    "domains": "[\"zerro.net\"]",
+    "priority": 3,
+    "limits": "[1]",
+    "description": "Some data C"
+},
+{
+    "siteId": "122",
+    "host": "ibm.proxy.com:22",
+    "domains": "[]",
+    "priority": 3,
+    "description": "Some data D"
+},
+{
+    "siteId": "0",
+    "host": "ibm.proxy.com:22",
+    "domains": "[]",
+    "priority": 13,
+    "description": "Some data E"
+}
+]

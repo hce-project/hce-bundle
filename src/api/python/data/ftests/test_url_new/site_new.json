@@ -1,0 +1,51 @@
+{
+    "avgSpeed": 0, 
+    "avgSpeedCounter": 0, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "contents": 0, 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "mode": 0, 
+            "pattern": ".*yomiuri.co.jp.*", 
+            "siteId": "67d4a8fa3fbffbdfa1936e9874a51b0f", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 30000, 
+    "id": "67d4a8fa3fbffbdfa1936e9874a51b0f", 
+    "iterations": 0, 
+    "maxErrors": 100000, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 100000, 
+    "maxURLs": 100000, 
+    "priority": 100, 
+    "processingDelay": 500, 
+    "properties": {
+        "HTTP_COOKIE": "", 
+        "HTTP_HEADERS": "", 
+        "PROCESS_CTYPES": "text/html", 
+        "STORE_HTTP_HEADERS": "1", 
+        "STORE_HTTP_REQUEST": "1", 
+        "template": "{\\'description\\': [\\\"//p[contains(@class,\\'par1\\')]//text()\\\"], \\'pubdate\\': [\\\"//meta[contains(@property,\\'article:published_time\\')]/@content\\\"], \\'author\\': [\\\"//meta[contains(@name,\\'author\\')]/@content\\\"], \\'media\\': [\\\"//img[contains(@data-original,\\'\\')]/@data-original\\\"], \\'title\\': [\\'//article/h1/text()\\'], \\'media_thumbnail\\': [\\\"//meta[contains(@name,\\'media_thumbnail\\')]/@content\\\"], \\'media_content\\': [\\\"//meta[contains(@name,\\'media_content\\')]/@content\\\"], \\'dc_date\\': [\\\"//meta[contains(@property,\\'article:published_time\\')]/@content\\\"], \\'link\\': [\\\"//meta[contains(@name,\\'link\\')]/@content\\\", \\\"//li[contains(@class,\\'space\\')]/@href\\\", \\\"//link[contains(@rel,\\'canonical\\')]/@href\\\"], \\'keywords\\': [\\\"//meta[contains(@name,\\'keywords\\')]/@content\\\"], \\'content_encoded\\': [\\\"//p[contains(@itemprop,\\'articleBody\\')]//text()\\\"], \\'guid\\': [\\\"//meta[contains(@name,\\'guid\\')]/@content\\\"], \\'enclosure\\': [\\\"//meta[contains(@name,\\'enclosure\\')]/@content\\\"]}"
+    }, 
+    "requestDelay": 500, 
+    "resources": 0, 
+    "size": 0, 
+    "state": 3, 
+    "tcDate": null, 
+    "uDate": null, 
+    "urlType": 0, 
+    "urls": [
+        "http://www.yomiuri.co.jp/"
+    ], 
+    "avgSpeed" : 0,
+    "avgSpeedCounter" : 0,
+    "recrawlPeriod" : 0,
+    "recrawlDate": "NULL", 
+    "userId": 0
+}

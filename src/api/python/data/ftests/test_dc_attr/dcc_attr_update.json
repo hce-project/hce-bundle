@@ -1,0 +1,17 @@
+[
+    {
+	"siteId": "cb62bbad8732c939a20065287033f0f5",
+	"name": "i7",
+	"value": "intel proc"
+    },
+    {
+	"siteId": "fake_siteId",
+	"name": "i7",
+	"value": "intel proc"
+    },
+    {
+	"siteId": "cb62bbad8732c939a20065287033f0f5",
+	"name": "i11",
+	"value": "intel proc"
+    }
+]

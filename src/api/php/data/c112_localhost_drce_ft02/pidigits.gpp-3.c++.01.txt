@@ -1,0 +1,28 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+                "LINES": "80"
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 1,
+        "time_max": 30000,
+        "cleanup": 1
+    },
+    "command": "cd /tmp/ && g++ -c -pipe -O3 -fomit-frame-pointer -march=native pidigits.gpp-3.c++ -o pidigits.gpp-3.c++.o && g++ pidigits.gpp-3.c++.o -o pidigits.gpp-3.gpp_run -lgmp -lgmpxx && ./pidigits.gpp-3.gpp_run 100 && rm pidigits.gpp-3.gpp_run pidigits.gpp-3.c++.o",
+    "input": "",
+    "files": [
+        {
+            "name": "/tmp/pidigits.gpp-3.c++",
+            "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft02/pidigits.gpp-3.c++",
+            "action": 9
+        }
+    ]
+}

@@ -1,0 +1,854 @@
+[
+  {
+    "social_fb_authors": "", 
+    "html_lang_extractor": "ScrapyExtractor", 
+    "pubdate": "2018-01-26 08:30", 
+    "content_encoded": "President Trump said last night, perhaps in an unguarded moment, that he was willing to speak under oath with Special Counsel Robert Mueller. The president's attorneys quickly backtracked. Meanwhile, Mueller and his staff met last week with Attorney General Sessions, as the investigation seems to be turning more and more toward obstruction of justice and money laundering. Russia no longer seems to be in the mix.", 
+    "social_tw_likes": null, 
+    "author_xpath": "//meta[@name='author']/@content", 
+    "description_extractor": "ScrapyExtractor", 
+    "social_fb_udate": "", 
+    "pubdate_tz": "", 
+    "title_extractor": "ScrapyExtractor", 
+    "SENTIMENT_RATE": 0.0, 
+    "social_tw_raw_subLikes": null, 
+    "social_tw_raw_likes": null, 
+    "keywords": "investigation, testimony, Robert Mueller, Donald Trump, Russia investigation, testimony, Robert Mueller, Donald Trump, Russia", 
+    "author_extractor": "ScrapyExtractor", 
+    "social_tw_posts": null, 
+    "dc_date_extractor": "ScrapyExtractor", 
+    "digest_rank": 24.99, 
+    "feed_url": "", 
+    "title": "Trump: Nothing to Hide, Offers to Testify Before Mueller's Russia Probe", 
+    "TAG_ITEM_LINK_DOMAIN": "sputniknews.com", 
+    "media": "https://cdn2.img.sputniknews.com/images/103218/77/1032187793.png", 
+    "keywords_extractor": "ScrapyExtractor", 
+    "pubdate_xpath": "//meta[@itemprop='datePublished']/@content", 
+    "link_xpath": "//link[contains(@rel,'canonical')]/@href", 
+    "social_tw_subLikes": null, 
+    "social_tw_udate": "", 
+    "scraper_time": "0.747843027115", 
+    "urlMd5": "897ce112152fe2fc24e799128de6170e", 
+    "TAG_ITEM_POP_WORDS": {
+      "WEEK": [
+        "week"
+      ], 
+      "MUELLER": [
+        "Mueller"
+      ], 
+      "COUNSEL": [
+        "Counsel"
+      ], 
+      "INVESTIG": [
+        "investigation"
+      ], 
+      "JUSTIC": [
+        "Justice"
+      ], 
+      "GENER": [
+        "General"
+      ], 
+      "NIGHT": [
+        "night"
+      ], 
+      "ATTORNEY": [
+        "Attorney", 
+        "attorneys"
+      ], 
+      "RUSSIA": [
+        "Russia"
+      ], 
+      "OBSTRUCT": [
+        "obstruct", 
+        "obstruction"
+      ], 
+      "SYNTRUMPSYN": [
+        "Trump"
+      ], 
+      "PRESID": [
+        "President"
+      ], 
+      "PROBE": [
+        "Probe"
+      ], 
+      "ROBERT": [
+        "Robert"
+      ], 
+      "SPECIAL": [
+        "Special"
+      ]
+    }, 
+    "social_fb_posts": "", 
+    "size_formatted": "1KB", 
+    "keywords_xpath": "//meta[contains(@name,'keywords')]/@content", 
+    "html_lang": "en", 
+    "crawler_time": "0.546", 
+    "SIMILAR_RATES": [
+      0.3614925373134329, 
+      0.4114285714285714, 
+      0.40285714285714286, 
+      0.39571428571428574, 
+      0.40285714285714286, 
+      0, 
+      0.34812499999999996, 
+      0.36, 
+      0.38571428571428573, 
+      0.435, 
+      0.40285714285714286, 
+      0.4285714271428572, 
+      0.32140845070422536, 
+      0.547878787878788, 
+      0.40285714285714286, 
+      0.3657142857142857, 
+      0.39571428571428574, 
+      0, 
+      0.3499999999999999, 
+      0.36624999999999996, 
+      0.40285714285714286, 
+      0.31850746268656716, 
+      0.4114285714285714, 
+      0, 
+      0.39, 
+      0.4757575757575757, 
+      0.36, 
+      0, 
+      0.36, 
+      0, 
+      0.39571428571428574, 
+      0.46499999999999997, 
+      0.38571428571428573, 
+      0.3657142857142857, 
+      0.36
+    ], 
+    "description_xpath": "//meta[@name='description']/@content", 
+    "description": "On today's episode of Loud & Clear, Brian Becker and John Kiriakou are joined by Daniel Lazare, a journalist and author, Jim Kavanagh, the editor of ThePolemicist.net, and Randy Credico an activist, a comedian, and the former director of the William Moses Kunstler Fund for Racial Justice.", 
+    "social_fb_likes": "", 
+    "dc_date_xpath": "//meta[contains(@name,'date')]/@content", 
+    "TAG_ITEM_URLMD5": "897ce112152fe2fc24e799128de6170e", 
+    "pubdate_extractor": "ScrapyExtractor", 
+    "source_url": "https://sputniknews.com/radio_loud_and_clear/201801261061079518-trump-nothing-to-hide-offers-to-testify-before-muellers-russia-probe/", 
+    "dc_date": "2018-01-26T11:30:00Z", 
+    "TAG_ITEM_CDATE": "2018-01-26 10:52:15", 
+    "link": "https://sputniknews.com/radio_loud_and_clear/201801261061079518-trump-nothing-to-hide-offers-to-testify-before-muellers-russia-probe/", 
+    "content_encoded_xpath": "//div[contains(@itemprop,'articleBody')]//p[not (strong) and not (em) and not (span) and not (contains(@class, 'author'))]", 
+    "social_tw_reposts": null, 
+    "content_encoded_extractor": "ScrapyExtractor", 
+    "size_bytes": 1362, 
+    "social_tw_sentiment": null, 
+    "html_lang_xpath": "/html/@lang", 
+    "social_tw_raw_posts": null, 
+    "media_extractor": "ScrapyExtractor", 
+    "errors_mask": "0", 
+    "social_fb_sentiment": "", 
+    "social_tw_raw_reposts": null, 
+    "author": "Sputnik", 
+    "title_xpath": "//meta[@property='og:title']/@content", 
+    "social_tw_pw": null, 
+    "social_fb_reposts": "", 
+    "redirect_url": "", 
+    "link_extractor": "ScrapyExtractor", 
+    "social_tw_authors": "", 
+    "SIMILAR_MD5": [
+      "ffb67a0082175e992c1f331e184b0876", 
+      "374af0f27bbda33ad45513236ff64059", 
+      "681b5e26af6f85f53290b1786f39eb37", 
+      "b5bbff6d4b0ceb5e269a1ed0763fd47b", 
+      "603ecedf0b67e0e5f2a90298585874e8", 
+      "2b42e444ac8c6ae25f3fde0159a63b40", 
+      "e007044c1d52858bf4e9e89b44d535a2", 
+      "c638978744248fbef8d72277a5214c9a", 
+      "ebdbf67c0c0f68de611e326ab236c6aa", 
+      "1aaaca91b2fba005b518f07b4052f8e1", 
+      "dcfe66c2e548f61191a5079bd4011deb", 
+      "9094623d77b3f61d31ad0057ded4f9cd", 
+      "2a7e7047a8f532d30a3932831c81aee3", 
+      "3736ced652737801dee6594eafd8c202", 
+      "4eb59db4e429e87bb610e3dff34b796a", 
+      "e5545cb8059be526a3986b2f1460bab5", 
+      "d21f727e786bd479a6ca07e88740d3a6", 
+      "c2084888427a8472f3345697f6e1cc44", 
+      "8cc274b4a1bc475b8c64f739f0ccafaf", 
+      "af441e0388c1269aa0ce29eebf15f1e6", 
+      "01fbc48666f721395ea02e0e634310e2", 
+      "a74678715eef8890f786f0c89464b544", 
+      "c67a7ec3a75c43e72a95d3ba129dae2c", 
+      "04368761f4c31e344fbbe1a6db48c31e", 
+      "c5afddafcabefd46a2176d8d1dd7d1be", 
+      "87e48d4fd7a26f70042e9462ccf415d5", 
+      "bced7c943f9bfdb6a22ec24ee1e90296", 
+      "e02dd6daed166591cdb567be982fa5c3", 
+      "0add8299a497c8a2332e92a92ccc67fa", 
+      "005a1db611cb568798b284065f3fe45f", 
+      "f721b6aa9f05b522756029746f343db5", 
+      "a3458c781d04a02a62476b7705c9c23c", 
+      "c281612f3500edcf36f454826a132fd8", 
+      "ee6098675a9f7347aa9b6bdf1ce8b449", 
+      "a00999abc1fcaed808ba00e6e522dca8"
+    ], 
+    "media_xpath": "//meta[@property='og:image'][1]/@content"
+  }, 
+  {
+    "social_fb_authors": "", 
+    "crawler_time": "0.183", 
+    "pubdate": "2018-01-26 08:48", 
+    "content_encoded": "During last year's drills, Pyongyang launched multiple missile tests and held a massive artillery exercise at the end of April.<br />\"Though it is too early to disclose the exact date and size of the planned joint exercises, they will be carried out after the Olympics,\" Choi Hyun-soo, spokeswoman for South Korea's Ministry of National Defense told reporters.<br />The 2018 Winter Olympics close at the end of February while the Winter Paralympics wrap up with a closing ceremony on March 18.<br />A separate South Korean Defense Military official told CNN the joint exercises would not be scaled back despite the unusual delay.<br />\"The Key Resolve and Foal Eagle exercises will not be downsized nor exercises be merged into one,\" he said.<br />An estimated 3,600 additional US service members were deployed to join the 28,000 US troops already based in South Korea during last year's drills, which included ground, air, naval and special operations field exercises.<br />The United States and South Korea maintain that the annual exercises, which have been carried out regularly for nearly 40 years, are strictly defensive and non-provocative.<br />Both exercises, according to US Forces Korea, are designed to \"highlight the longstanding military partnership\" between the two countries and improve stability and security on the Korean Peninsula.<br />The announcement that the exercises will continue after the Games comes during a thaw in relations between the two Koreas, who will march together under a unified flag at the Winter Olympics opening ceremony.<br />The diplomatic breakthrough followed the first face-to-face meetings between representatives from North and South Korea in more than two years, held at the heavily fortified Demilitarized Zone between the two countries.<br />Earlier this month, North Korean state media hailed the talks as \"brilliant\" for \"national reunification.\" Both countries are still technically at war having never signed a peace treaty following the end of hostilities in 1953.", 
+    "social_tw_likes": "", 
+    "author_xpath": "//meta[@name='author']/@content", 
+    "description_extractor": "ScrapyExtractor", 
+    "social_fb_udate": "", 
+    "pubdate_tz": "", 
+    "title_extractor": "ScrapyExtractor", 
+    "SENTIMENT_RATE": 0.6211180124223602, 
+    "urlMd5": "8f6ef990739e328d14996de8f779cad5", 
+    "pubdate_xpath": "//*[@class='update-time']/text()", 
+    "keywords": "asia, US, South Korea to resume military exercises after Winter Olympics  - CNN", 
+    "social_tw_posts": "", 
+    "dc_date_extractor": "ScrapyExtractor", 
+    "digest_rank": 20.99, 
+    "feed_url": "", 
+    "title": "US, South Korea to resume military exercises after Winter Olympics", 
+    "TAG_ITEM_LINK_DOMAIN": "edition.cnn.com", 
+    "media": "http://cdn.cnn.com/cnnnext/dam/assets/170612091201-south-korea-marines-super-tease.jpg", 
+    "keywords_extractor": "ScrapyExtractor", 
+    "author_extractor": "ScrapyExtractor", 
+    "scraper_time": "1.07444500923", 
+    "social_tw_udate": "", 
+    "link_xpath": "//link[contains(@rel,'canonical')]/@href", 
+    "errors_mask": "0", 
+    "TAG_ITEM_POP_WORDS": {
+      "KOREA": [
+        "Korea"
+      ], 
+      "SOUTH": [
+        "South"
+      ]
+    }, 
+    "social_fb_posts": "", 
+    "size_formatted": "2KB", 
+    "keywords_xpath": "//meta[contains(@name,'keywords')]/@content", 
+    "html_lang": "", 
+    "html_lang_extractor": "", 
+    "SIMILAR_RATES": [
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0.35714285714285715, 
+      0, 
+      0.35714285714285715, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0.35714285714285715, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0
+    ], 
+    "description_xpath": "//meta[@name='description']/@content", 
+    "description": "Joint military exercises involving tens of thousands of troops from the United States and South Korea are set to resume after the Winter Olympics, a South Korean defense official said Friday.", 
+    "social_fb_likes": "", 
+    "dc_date_xpath": "//meta[contains(@name,'date')]/@content", 
+    "TAG_ITEM_URLMD5": "8f6ef990739e328d14996de8f779cad5", 
+    "pubdate_extractor": "ScrapyExtractor", 
+    "source_url": "http://edition.cnn.com/2018/01/26/asia/us-south-korea-military-exercises-olympics/index.html", 
+    "dc_date": "2018-01-26T08:19:33Z", 
+    "TAG_ITEM_CDATE": "2018-01-26 11:03:23", 
+    "link": "http://edition.cnn.com/2018/01/26/asia/us-south-korea-military-exercises-olympics/index.html", 
+    "content_encoded_xpath": "//div[@class='zn-body__paragraph' and not(a[starts-with(., 'READ')])]", 
+    "social_tw_reposts": "", 
+    "content_encoded_extractor": "ScrapyExtractor", 
+    "size_bytes": 2764, 
+    "social_tw_sentiment": "", 
+    "media_extractor": "ScrapyExtractor", 
+    "html_lang_xpath": "", 
+    "social_fb_sentiment": "", 
+    "author": "Ben Westcott,", 
+    "title_xpath": "//div[@class='l-container']//h1[@class='pg-headline']/text()", 
+    "social_fb_reposts": "", 
+    "redirect_url": "", 
+    "link_extractor": "ScrapyExtractor", 
+    "social_tw_authors": "", 
+    "SIMILAR_MD5": [
+      "7084bf391a4c602a9a46a321eb03ae18", 
+      "adde030c535fe0be861bb3285e11bcd2", 
+      "fb52775655a10321a129f6114b8cda94", 
+      "e0ee55e59ee9b6bcbecbf77f543acc47", 
+      "7092d08d1d6ecb6465e387c7968a5f36", 
+      "44f98ec069a4948671e11cee67cfeb44", 
+      "2afe83c772f5f22792d2a0849f3244a3", 
+      "3ad21eb78cb0bdcb62e4b4a306934ba2", 
+      "c8cc4b83b547f12d69d4dab9e057de35", 
+      "d7a7673daa24e71f2bb57d93afc70099", 
+      "92c88abb8dbf829e349a239a720c17b0", 
+      "2e855169d1f2e12c82653af7f24d607c", 
+      "19d7baf58175408c79daa78c1aa89d5a", 
+      "7ac3e5831cd98e5ad32153f6c5e862e1", 
+      "26de4ef575c413c317e60f60da8bbc4d", 
+      "7b00f546b732292a830b866d6a891a7f", 
+      "7bf2ac81602cf2aada7b93198874470d", 
+      "f6314a83731cc867e57905d2221a05b7", 
+      "030906acc5e441255a5c4e06a25a2e6c", 
+      "758bf32e54cca39f46ad8ac64f558923", 
+      "177e20e246c10c7376c0b6d42e782123", 
+      "0834e4fe4b31d13afb3692f0c73389c5", 
+      "b5e0da93a9f2ae1ae44c72e2863909f6", 
+      "6ed68f4d6d2acd489e62ed3d68db9feb", 
+      "d76e3e6923720aec4ef110ab7a9b440a", 
+      "378fcd0b675269911371ed8d9b0706fb", 
+      "61deba0a1c9fac023b6c07faea4026fd", 
+      "5d9e9d3f764808f636ceaaafb89ef72b", 
+      "36afbb71b47009da9a4b793db9f60e94", 
+      "9e0221a08cb6ebab405b9c36d9081b9e"
+    ], 
+    "media_xpath": "//meta[@property='og:image'][1]/@content"
+  }, 
+  {
+    "social_fb_authors": "", 
+    "crawler_time": "0.253", 
+    "pubdate": "2018-01-26 09:05", 
+    "content_encoded": "Leaders of major economies like President Donald Trump are making the case for lower corporate taxes and Europe should pay attention, Irish Finance Minister Paschal Donohoe told CNBC at the World Economic Forum on Friday.<br />Asked if he believed Trump was setting an example on tax policy, Donohoe was positive.<br />\"Do I believe the mood is changing on corporate tax globally? The answer is yes,\" he said. <br />\"You have to look at what President Trump has done, you have to look at the state of the U. K., you have to look at what President Macron said earlier in the week,\" he said, referencing the French president's Davos speech in which he proposed cutting some of France's infamously high taxes.<br />In late December, a Republican-led U. S. Congress passed the Tax Cuts and Jobs act, overhauling the U. S. tax system and slashing corporate taxes from 35 to 21 percent. The move, Donohoe said, was making European leaders think again about their own corporate tax propositions.<br />Ireland is something of a poster child for economic recovery, having pulled itself out of dire financial straits after 2008 through a combination of extensive austerity, a bailout program and the creation of an ultra low-tax investment environment.<br />At 12.5 percent, its corporate tax rate is the lowest in the EU. American multinationals alone have more than 700 operations in Ireland, a testament to the policy's success. By 2014, the country's GDP growth rate had rebounded to 4.8 percent from a severe contraction between 2008-09.<br />The tax policy has come under fire, however, with Ireland accused of enabling tax avoidance for multinationals. In a high-profile 2016 case, Apple was ordered to pay the country a record-breaking $15.5 billion after a ruling by the European Commission found that a \"sweetheart\" tax deal between Apple and Ireland's tax authorities broke EU laws.<br />\"Competitiveness is not just a prerogative of larger countries,\" Donohoe argued, defending his country's tax regime. \"Small open economies are entitled to take choices to ensure we are competitive and create jobs, and corporate tax certainty is part of our competitive proposition.\" <br />\"In terms of future changes in Irish corporate tax policy, there will be no change in the rate,\" he said emphatically. \"It is 12.5 percent, and will neither go up nor go down. We will continue to protect and maintain that while making the changes we know need to be made.\"", 
+    "social_tw_likes": "", 
+    "author_xpath": "//meta[@name='author']/@content", 
+    "description_extractor": "ScrapyExtractor", 
+    "social_fb_udate": "", 
+    "pubdate_tz": "", 
+    "title_extractor": "ScrapyExtractor", 
+    "SENTIMENT_RATE": 1.3157894736842104, 
+    "urlMd5": "bbd51e180e0cb3a318f2f022f39ff8d7", 
+    "pubdate_xpath": "//time[@itemprop='datePublished']/@datetime", 
+    "keywords": "Davos WEF, Apple Inc, Donald Trump, Corporate Finance, Taxes, European Union, Ireland, Davos WEF, Special Reports, Politics, World Economy, Banks, Switzerland, business news Ireland, trump, taxes, wef, world economic forum, corporate tax, finance, investment, EU, davos", 
+    "social_tw_posts": "", 
+    "dc_date_extractor": "ScrapyExtractor", 
+    "digest_rank": 16.99, 
+    "feed_url": "", 
+    "title": "Trump is changing the mood on tax in Europe, says Ireland’s finance chief", 
+    "TAG_ITEM_LINK_DOMAIN": "www.cnbc.com", 
+    "media": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/11/27/104863714-GettyImages-866277364.530x298.jpg?v=1511776478", 
+    "keywords_extractor": "ScrapyExtractor", 
+    "author_extractor": "ScrapyExtractor", 
+    "scraper_time": "0.746504068375", 
+    "social_tw_udate": "", 
+    "link_xpath": "//link[contains(@rel,'canonical')]/@href", 
+    "errors_mask": "0", 
+    "TAG_ITEM_POP_WORDS": {
+      "CNBC": [
+        "CNBC"
+      ], 
+      "FORUM": [
+        "Forum"
+      ], 
+      "MAKE": [
+        "making"
+      ], 
+      "TAX": [
+        "taxes", 
+        "Tax"
+      ], 
+      "ECONOM": [
+        "Economic"
+      ], 
+      "ECONOMI": [
+        "economies"
+      ], 
+      "SYNTRUMPSYN": [
+        "Donald Trump", 
+        "Trump"
+      ], 
+      "PRESID": [
+        "President"
+      ], 
+      "DAVO": [
+        "Davos"
+      ], 
+      "WORLD": [
+        "World"
+      ], 
+      "TOLD": [
+        "told"
+      ]
+    }, 
+    "social_fb_posts": "", 
+    "size_formatted": "3KB", 
+    "keywords_xpath": "//meta[contains(@name,'keywords')]/@content", 
+    "html_lang": "en-US", 
+    "html_lang_extractor": "ScrapyExtractor", 
+    "SIMILAR_RATES": [
+      0, 
+      0.490625, 
+      0.44857142857142857, 
+      0.4336585365853658, 
+      0, 
+      0, 
+      0.41538461538461535, 
+      0, 
+      0, 
+      0.4757575757575757, 
+      0, 
+      0, 
+      0, 
+      0.3635294117647059, 
+      0, 
+      0, 
+      0.39885714285714285, 
+      0.4243243243243243, 
+      0.47384615384615386, 
+      0, 
+      0, 
+      0, 
+      0
+    ], 
+    "description_xpath": "//meta[@name='description']/@content", 
+    "description": "President Trump is making EU leaders rethink their corporate tax policies, Paschal Donohoe told CNBC at Davos.", 
+    "social_fb_likes": "", 
+    "dc_date_xpath": "//meta[contains(@property,'article:published_time')]/@content", 
+    "TAG_ITEM_URLMD5": "bbd51e180e0cb3a318f2f022f39ff8d7", 
+    "pubdate_extractor": "ScrapyExtractor", 
+    "source_url": "https://www.cnbc.com/2018/01/26/trump-is-changing-the-mood-on-tax-in-europe-irelands-finance-chief.html", 
+    "dc_date": "2018-01-26T04:05:06-0500", 
+    "TAG_ITEM_CDATE": "2018-01-26 11:15:52", 
+    "link": "https://www.cnbc.com/2018/01/26/trump-is-changing-the-mood-on-tax-in-europe-irelands-finance-chief.html", 
+    "content_encoded_xpath": "//div[@itemprop='articleBody']/p[not(contains(text(), 'Follow CNBC International on'))]", 
+    "social_tw_reposts": "", 
+    "content_encoded_extractor": "ScrapyExtractor", 
+    "size_bytes": 3380, 
+    "social_tw_sentiment": "", 
+    "media_extractor": "ScrapyExtractor", 
+    "html_lang_xpath": "//meta[contains(@itemprop,'inLanguage')]/@content", 
+    "social_fb_sentiment": "", 
+    "author": "Natasha Turak", 
+    "title_xpath": "//h1[contains(@class,'title')][1]/text()", 
+    "social_fb_reposts": "", 
+    "redirect_url": "", 
+    "link_extractor": "ScrapyExtractor", 
+    "social_tw_authors": "", 
+    "SIMILAR_MD5": [
+      "845daede615efabf454e505b7f878a2c", 
+      "4b087728cf05bb766265a66ed7ced4dd", 
+      "28fe511b69a9c8964fe4493fac092b46", 
+      "084f2b6e1a854955a2dd8df6c624dbc6", 
+      "329c9e817f3c22745116ac77b4044082", 
+      "114aba22e84cd7c8e7741ac65ce4ece7", 
+      "15c7cd23d2205ca65f984aa2a179b8ef", 
+      "f069f0081c4d37d253bfc915577df337", 
+      "20505930512cfb5d5ec0bb27c805f909", 
+      "b561a617ccfab29dd3b7444b7533b2db", 
+      "16454ec64b2963c2fbbf5db0377fd6f9", 
+      "ad2aea15ff2c898b312dce3cc6578124", 
+      "496493f9dfc52ba96add81c06a2d6025", 
+      "93976f7a51641cf1295203d458ec8abd", 
+      "0ca98992b7b0fc2c6c60fd098a8c6e71", 
+      "e91e67017c49db7178155c00e163ffef", 
+      "32acd8a46359e80cb545c62afb4f95a3", 
+      "b92954f4f17676afce25e0063864874d", 
+      "c7cae446c60abee098a7a01f214feb31", 
+      "2452f839c267faa2abba694673f8006b", 
+      "058585bb459439dfcb66a22a1de96707", 
+      "e4cb82cb8c7daf9cba04fc36f14fad9b", 
+      "d5217d5c7a698a0e08acfa2bf8318918"
+    ], 
+    "media_xpath": "//div[@id='article_body']//img/@src"
+  }, 
+  {
+    "social_fb_authors": "", 
+    "crawler_time": "0.106", 
+    "pubdate": "2018-01-26 08:50", 
+    "content_encoded": "LONDON (Reuters) - U. S. President Donald Trump said he had not intended to cause offense in Britain by sharing anti-Muslim videos originally posted by a leader of a far-right fringe group and that he would apologize if such people were horrible racists.<br />Trump told ITV’s Good Morning Britain show he knew nothing about the group but that he was the “least racist person that anybody’s going to meet” and that his retweet was not an endorsement. <br />Trump sparked outrage in Britain when he shared the anti-Muslim videos last November and became embroiled in a public spat with British PM Theresa May who criticized him for the retweet.<br />When pressed on whether he would apologize for his retweet, Trump said that if the group was made up of racists then he would.<br />“Here’s what’s fair, if you’re telling me they’re horrible people, horrible racist people I would certainly apologize if you would like me to do that,” Trump said. <br />“I know nothing about them. I don’t want to be involved with [these] people, but you’re telling me about these people because I know nothing about these people.”<br />Jayda Fransen, deputy leader of anti-immigration Britain First, posted the videos which she said showed a group of people who were Muslims beating a teenage boy to death, battering a boy on crutches and destroying a Christian statue.<br />But relations between the two nations, described as “the special relationship”, have faced several ups and downs not just due to Trump’s criticism of May, but also his spats with London Mayor Sadiq Khan and his comments on militant attacks in Britain.<br />Earlier this month, he canceled a trip to London to open a new embassy, saying he did not want to endorse a bad deal agreed by the Obama administration to sell the old one for “peanuts”.<br />Some Britons are angry at the prospect of a visit by Trump with large protests expected when he does arrive, most probably in the second half of the year according to a senior British government source.<br />Officials are discussing whether Trump will be given a state visit, which means he will be hosted by Queen Elizabeth, and when exactly it will take place, the source said.<br />In the interview aired on Friday, Trump said he loved Britain very much and got along well with May.<br />“I can tell you I have a very good relationship with your Prime Minister,” Trump said. “She’s been doing a very good job. We actually have a very good relationship, although a lot of people think we don’t.” <br />“I support her, I support a lot of what she does and a lot of what she says and I support you militarily very much. We will come to your defense if anything should happen, which hopefully will never happen. I am a tremendous supporter of the UK.”", 
+    "social_tw_likes": "", 
+    "author_xpath": "//meta[contains(@name,'author')]/@content", 
+    "description_extractor": "ScrapyExtractor", 
+    "social_fb_udate": "", 
+    "pubdate_tz": "", 
+    "title_extractor": "ScrapyExtractor", 
+    "SENTIMENT_RATE": 0.5305039787798409, 
+    "urlMd5": "e3411409b0385c718acf87922a3f6172", 
+    "pubdate_xpath": "string(//div[contains(@class, 'ArticleHeader_content-container')]/div[contains(@class, 'ArticleHeader_date_')])", 
+    "keywords": "US,USA,TRUMP,BRITAIN,Crime / Law / Justice,Germany,Lawmaking,Western Europe,International Trade,Islam,Judicial Process / Court Cases / Court Decisions,Retirement / Old Age,Crime,France,Transportation (TRBC),Currencies / Foreign Exchange Markets,Major News,Government Borrowing Requirement,United Kingdom,Labour / Personnel,Conflicts / War / Peace,United States,Health / Medicine,Diplomacy / Foreign Policy,Government / Politics,Corporate Events,Economic Events,European Union,General News,Internet / World Wide Web,Europe,Science,International / National Security,Civil Unrest US;USA;TRUMP;BRITAIN;Crime / Law / Justice;Germany;Lawmaking;Western Europe;International Trade;Islam;Judicial Process / Court Cases / Court Decisions;Retirement / Old Age;Crime;France;Transportation (TRBC);Currencies / Foreign Exchange Markets;Major News;Government Borrowing Requirement;United Kingdom;Labour / Personnel;Conflicts / War / Peace;United States;Health / Medicine;Diplomacy / Foreign Policy;Government / Politics;Corporate Events;Economic Events;European Union;General News;Internet / World Wide Web;Europe;Science;International / National Security;Civil Unrest US,USA,TRUMP,BRITAIN,Crime / Law / Justice,Germany,Lawmaking,Western Europe,International Trade,Islam,Judicial Process / Court Cases / Court Decisions,Retirement / Old Age,Crime,France,Transportation (TRBC),Currencies / Foreign Exchange Markets,Major News,Government Borrowing Requirement,United Kingdom,Labour / Personnel,Conflicts / War / Peace,United States,Health / Medicine,Diplomacy / Foreign Policy,Government / Politics,Corporate Events,Economic Events,European Union,General News,Internet / World Wide Web,Europe,Science,International / National Security,Civil Unrest", 
+    "social_tw_posts": "", 
+    "dc_date_extractor": "ScrapyExtractor", 
+    "digest_rank": 15.99, 
+    "feed_url": "", 
+    "title": "Trump says 'would apologize' for sharing British far-right videos", 
+    "TAG_ITEM_LINK_DOMAIN": "www.reuters.com", 
+    "media": "https://s3.reutersmedia.net/resources/r/?m=02&d=20180126&t=2&i=1225398164&w=1200&r=LYNXMPEE0P09O", 
+    "keywords_extractor": "ScrapyExtractor", 
+    "author_extractor": "ScrapyExtractor", 
+    "scraper_time": "0.351782798767", 
+    "social_tw_udate": "", 
+    "link_xpath": "//link[contains(@rel,'canonical')]/@href", 
+    "errors_mask": "0", 
+    "TAG_ITEM_POP_WORDS": {
+      "ANTI-MUSLIM": [
+        "anti-Muslim"
+      ], 
+      "GROUP": [
+        "group"
+      ], 
+      "PEOPL": [
+        "people"
+      ], 
+      "SHARE": [
+        "share", 
+        "shared", 
+        "sharing"
+      ], 
+      "MORN": [
+        "Morning"
+      ], 
+      "APOLOG": [
+        "apologize"
+      ], 
+      "BRITAIN": [
+        "Britain"
+      ], 
+      "FAR-RIGHT": [
+        "far-right"
+      ], 
+      "RACIST": [
+        "racist", 
+        "racists"
+      ], 
+      "SYNTRUMPSYN": [
+        "Donald Trump", 
+        "Trump"
+      ], 
+      "BRITISH": [
+        "British"
+      ], 
+      "PRESID": [
+        "President"
+      ], 
+      "ITV": [
+        "ITV"
+      ], 
+      "VIDEO": [
+        "videos", 
+        "video"
+      ], 
+      "POST": [
+        "posted", 
+        "post"
+      ], 
+      "HORRIBL": [
+        "horrible"
+      ], 
+      "GOOD": [
+        "Good"
+      ], 
+      "TOLD": [
+        "told"
+      ]
+    }, 
+    "social_fb_posts": "", 
+    "size_formatted": "5KB", 
+    "keywords_xpath": "//meta[contains(@name,'keywords')]/@content", 
+    "html_lang": "en", 
+    "html_lang_extractor": "ScrapyExtractor", 
+    "SIMILAR_RATES": [
+      0.6066666666666667, 
+      0.3833333333333333, 
+      0.885, 
+      0.35833333333333334, 
+      0.42483870967741927, 
+      0.70375, 
+      0.37499999875, 
+      0.71625, 
+      0.5683333333333332, 
+      0.5217391304347826, 
+      0.6966666666666667, 
+      1.0933333333333333, 
+      0.6066666666666667, 
+      0.40870967741935477, 
+      0.54, 
+      0.5316666666666666, 
+      0.885
+    ], 
+    "description_xpath": "//meta[@name='description']/@content", 
+    "description": "U. S. President Donald Trump said he had not intended to cause offense in Britain by sharing anti-Muslim videos originally posted by a leader of a far-right fringe group and that he would apologize if such people were horrible racists.", 
+    "social_fb_likes": "", 
+    "dc_date_xpath": "//meta[contains(@name,'date')]/@content", 
+    "TAG_ITEM_URLMD5": "e3411409b0385c718acf87922a3f6172", 
+    "pubdate_extractor": "ScrapyExtractor", 
+    "source_url": "https://www.reuters.com/article/us-usa-trump-britain/trump-says-would-apologize-for-sharing-british-far-right-videos-idUSKBN1FF0LU?feedType=RSS&feedName=topNews&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+reuters%2FtopNews+%28News+%2F+US+%2F+Top+News%29", 
+    "dc_date": "2018-01-26T08:50:01+0000", 
+    "TAG_ITEM_CDATE": "2018-01-26 11:04:23", 
+    "link": "https://www.reuters.com/article/us-usa-trump-britain/trump-says-would-apologize-for-sharing-british-far-right-videos-idUSKBN1FF0LU?feedType=RSS&feedName=topNews&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+reuters%2FtopNews+%28News+%2F+US+%2F+Top+News%29", 
+    "content_encoded_xpath": "//div[contains(@class, 'ArticleBody_body')]/child::node()[self::p or self::h3 or self::text()]", 
+    "social_tw_reposts": "", 
+    "content_encoded_extractor": "ScrapyExtractor", 
+    "size_bytes": 5564, 
+    "social_tw_sentiment": "", 
+    "media_extractor": "ScrapyExtractor", 
+    "html_lang_xpath": "/html/@lang", 
+    "social_fb_sentiment": "", 
+    "author": "Reuters Editorial", 
+    "title_xpath": "//div[contains(@class,'ArticleHeader_content-container')]/h1[contains(@class, 'ArticleHeader_headline')]/text()", 
+    "social_fb_reposts": "", 
+    "redirect_url": "", 
+    "link_extractor": "ScrapyExtractor", 
+    "social_tw_authors": "", 
+    "SIMILAR_MD5": [
+      "845daede615efabf454e505b7f878a2c", 
+      "31dc4afe4c5c3dd9d1c4e41d5a745b3e", 
+      "623dda041b6ade0df8b01ee93786667f", 
+      "f4f1755919a86553854b50f06febba40", 
+      "0d3b695548e624cd88e83f42e943370c", 
+      "9bba70e501c79b6cbb3047919b319a34", 
+      "114aba22e84cd7c8e7741ac65ce4ece7", 
+      "77213d222fc79771779fc64592f231b6", 
+      "d3c5f28ab1f67520690120ba990f3da5", 
+      "cd42389da163e8541090acf852f784cb", 
+      "4d30566fe70fa0c85138fe98261df786", 
+      "3cab438bf2742e784df0f9e616caa85d", 
+      "329c9e817f3c22745116ac77b4044082", 
+      "d0efbbb5b785cfcea34395be48f9fac0", 
+      "a552a0a8595eddc24e61909ba7380a3e", 
+      "084885b08ab9481c3c679fe84af5b770", 
+      "a5e49840556496c27081f4d9217ea9c0"
+    ], 
+    "media_xpath": "//meta[@property='og:image'][1]/@content"
+  }, 
+  {
+    "social_fb_authors": "", 
+    "pubdate": "2018-01-26 08:09", 
+    "content_encoded": "China is planning to cooperate with other countries in an effort to create marine trade routes in the Arctic region within its \"Polar Silk Road\" initiative, the first White Book on China's policy in the Arctic, issued by China's State Council says.<br />\"Constructive steps can be made to coordinate development strategies with Arctic states to create a marine economic route between China and Europe through the Arctic Ocean,\" the statement reads, adding that \"Chinese enterprises are being rewarded for the development of the infrastructure for these routes and for test commercial transit in accordance with the legislation and the corresponding regulations.\"<br />The document further noted that China would pay particular attention to the security of marine navigation in the Arctic as \"the country has participated in the analysis of such routed and is constantly increasing marine surveys in the region to improve navigation and security in the Arctic.\"<br />\"China is planning to develop the extraction of oil, gas, mineral resources and nonfossil energy sources as well as fishing and tourism together with Arctic states, respecting culture and traditions of the people of this region and taking measures to protect the nature,\" the document says, adding that the country was also planning to develop research activities in the region.<br />China's \" One Belt One Road\" initiative, launched in 2013, envisages the construction of infrastructure linking together dozens of countries in Africa, Asia, Europe and the Middle East through the land-based Silk Road Economic Belt and the 21st-century Maritime Silk Road.<br />Russia and China signed an agreement in May 2015 aimed at combining the integration efforts of both the Eurasian Economic Union and the Silk Road project.", 
+    "social_tw_likes": 0, 
+    "social_fb_udate": "", 
+    "SENTIMENT_RATE": 1.4492753623188406, 
+    "keywords": "route, Silk Road, China, Arctic route, Silk Road, China, Arctic", 
+    "social_tw_posts": 2, 
+    "digest_rank": 10.99, 
+    "feed_url": "", 
+    "title": "China Plans to Create 'Polar Silk Road' in Arctic", 
+    "TAG_ITEM_LINK_DOMAIN": "sputniknews.com", 
+    "media": "https://cdn3.img.sputniknews.com/images/104887/86/1048878629.jpg", 
+    "social_tw_udate": "", 
+    "urlMd5": "62bc7405fd3d7cb9d6f805d2bdd3f17c", 
+    "TAG_ITEM_POP_WORDS": {
+      "POLAR": [
+        "Polar"
+      ], 
+      "ARCTIC": [
+        "Arctic"
+      ], 
+      "CHINA": [
+        "China"
+      ], 
+      "PLAN": [
+        "planning", 
+        "Plans", 
+        "Plan"
+      ], 
+      "SILK": [
+        "Silk"
+      ], 
+      "ROAD": [
+        "Road"
+      ]
+    }, 
+    "social_fb_posts": "", 
+    "size_formatted": "2KB", 
+    "html_lang": "en", 
+    "SIMILAR_RATES": [
+      0, 
+      0, 
+      0.37499999875, 
+      0.37499999875, 
+      0.37499999875, 
+      0.37499999875, 
+      0, 
+      0, 
+      0.37499999875, 
+      0.37499999875, 
+      0, 
+      0.37499999875
+    ], 
+    "description": "China's \"One Belt, One Road\" strategy was launched in 2013 and is aimed at developing infrastructure and strengthening ties between Eurasian countries.", 
+    "social_fb_likes": "", 
+    "TAG_ITEM_URLMD5": "62bc7405fd3d7cb9d6f805d2bdd3f17c", 
+    "source_url": "https://sputniknews.com/world/201801261061087209-china-silk-road-arctic/", 
+    "dc_date": "2018-01-26T11:09:00Z", 
+    "link": "https://sputniknews.com/world/201801261061087209-china-silk-road-arctic/", 
+    "social_tw_reposts": 0, 
+    "size_bytes": 2370, 
+    "social_tw_sentiment": 0.0, 
+    "social_fb_sentiment": "", 
+    "author": "Sputnik", 
+    "SIMILAR_MD5": [
+      "d17b75acb655921b4482d094e7a5fabb", 
+      "8c2820f788d90f588162d0ee2b2472aa", 
+      "9445d34cba9f1efa350c14571500d125", 
+      "24c6d2509597be5561b18beada661869", 
+      "bd2ba14b5d6c089561738b5d9851c0fc", 
+      "3dbc0c2d8f9a869d697445276fb11363", 
+      "f5daf9e146046cba02883179a8e4acf5", 
+      "f38f6716205ed8a07fbbcff7543bad85", 
+      "7550c8e4020eee4248df2fc91fae4c84", 
+      "ee28a5617637913cd69dc29b98daef8a", 
+      "37fd267ff7dcafbab92931afa529e7f0", 
+      "efe5f8adfefb0f65213e18966923fca1"
+    ], 
+    "social_fb_reposts": "", 
+    "redirect_url": "", 
+    "social_tw_authors": ""
+  }, 
+  {
+    "social_fb_authors": "", 
+    "html_lang_extractor": "ScrapyExtractor", 
+    "pubdate": "2018-01-26 07:32", 
+    "content_encoded": "By MICHAEL BALSAMO Associated Press<br />LOS ANGELES (AP) - Two Los Angeles attorneys who represented former rap mogul Marion \"Suge\" Knight were arrested on warrants alleging they were accessories after the fact to a felony, authorities said.<br />The attorneys, Matthew Fletcher and Thaddeus Culpepper, were arrested Thursday by Los Angeles County sheriff's deputies, sheriff's department spokeswoman Nicole Nishida told The Associated Press. The warrants allege they were accessories after the fact to a crime, she said, without providing any additional details.<br />Fletcher, 53, was arrested around 2 p.m. and was being booked at the county jail, officials said. Jail records showed he was being held on $1 million bail. No information was listed about Culpepper.<br />In a court filing in August, prosecutors accused Fletcher and Knight of witness tampering in the rap mogul's pending murder case. Transcripts of recorded conversations suggested the two had discussed fabricating testimony and Knight had tried to pay off potential witnesses with his lawyer's help, the filing said.<br />The alleged talks of bribery came in a series of recorded calls in 2015 between Knight, who was in jail and Fletcher, along with Knight's fiancee and his business partner.<br />Fletcher is one of several lawyers who has represented Knight, the Death Row Records co-founder, since he was charged with murder and attempted murder after he ran over two men outside a Compton burger stand in January 2015, killing one of them. Knight has pleaded not guilty and is scheduled to go on trial later this year.<br />The people on the calls discuss payments of as much as $25,000 to witnesses to say the victims or others at the burger stand were armed at the time, bolstering Knight's argument that he was acting in self-defense.<br />In one call, Fletcher said he would \"pay anything\" to bikers who were at the scene.<br />\"If we can get the two or three versions from the bikers on tape and we can get... we're done,\" he said. \"It's going home time. Right? That's a fair... investment, you know, 20,25 thousand dollars.\"<br />After the court filing, Fletcher vehemently denied that he was suggesting bribing witnesses and said he was talking about bikers who may have had cellphone video that could be useful to the defense.<br />The filing also included accusations that Culpepper had contacted a sheriff's department informant and had agreed to pay for his testimony that he was present at the time of the crime and witnessed events that would favorable for the defense's case.<br />A text message sent to Fletcher's cell phone Thursday night was not immediately returned and a woman who answered the phone at his law office declined comment and hung up without giving her name. A telephone message left for Culpepper was also not immediately returned.<br />___<br />Follow Michael Balsamo on Twitter at http://www.twitter.com/MikeBalsamo1 .<br />Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.", 
+    "social_tw_likes": 13, 
+    "author_xpath": "", 
+    "description_extractor": "ScrapyExtractor", 
+    "social_fb_udate": "", 
+    "pubdate_tz": "", 
+    "title_extractor": "ScrapyExtractor", 
+    "SENTIMENT_RATE": -1.1784511784511784, 
+    "social_tw_raw_likes": 13, 
+    "keywords": "cobb county, fulton county, gwinnett county, dekalb county, atlanta, georgia, metro atlanta, news, weather, photos", 
+    "author_extractor": "", 
+    "social_tw_posts": 14, 
+    "dc_date_extractor": "ScrapyExtractor", 
+    "digest_rank": 10.99, 
+    "feed_url": "", 
+    "title": "2 former lawyers of rap mogul 'Suge' Knight arrested", 
+    "TAG_ITEM_LINK_DOMAIN": "www.cbs46.com", 
+    "media": "http://images.worldnow.com/AP/images/15909382_G.jpg", 
+    "keywords_extractor": "ScrapyExtractor", 
+    "pubdate_xpath": "//em[1][@class='wnDate']/script", 
+    "link_xpath": "//link[contains(@rel,'canonical')]/@href", 
+    "social_tw_udate": "", 
+    "scraper_time": "0.722857952118", 
+    "urlMd5": "d7e866621ea899bed4fe6119c23cb79a", 
+    "TAG_ITEM_POP_WORDS": {
+      "AP": [
+        "ap"
+      ], 
+      "LAWYER": [
+        "lawyer", 
+        "lawyers"
+      ], 
+      "AUTHOR": [
+        "authorities", 
+        "author"
+      ], 
+      "KNIGHT": [
+        "Knight"
+      ], 
+      "BALSAMO": [
+        "BALSAMO"
+      ], 
+      "MICHAEL": [
+        "Michael", 
+        "MICHAEL"
+      ], 
+      "ANGELES": [
+        "ANGELES"
+      ], 
+      "MOGUL": [
+        "mogul"
+      ], 
+      "LOS": [
+        "Los", 
+        "LOS"
+      ], 
+      "RAP": [
+        "rap"
+      ], 
+      "PRESS": [
+        "Press"
+      ], 
+      "ARREST": [
+        "arrested", 
+        "arrest"
+      ]
+    }, 
+    "social_fb_posts": "", 
+    "size_formatted": "3KB", 
+    "keywords_xpath": "//meta[contains(@name,'keywords')]/@content", 
+    "html_lang": "en", 
+    "crawler_time": "0.516", 
+    "SIMILAR_RATES": [
+      0.7771428571428572, 
+      1.0666666666666667, 
+      1.0666666666666667, 
+      1.0666666666666667, 
+      0.7771428571428572, 
+      0.68, 
+      1.0666666666666667, 
+      0.7771428571428572, 
+      0.40363636363636357, 
+      0.7771428571428572, 
+      0.7771428571428572, 
+      0.7771428571428572, 
+      0.9142857142857144, 
+      0.49142857142857144, 
+      0.35559999999999997, 
+      0.7771428571428572, 
+      0.7771428571428572
+    ], 
+    "description_xpath": "//meta[@name='Description']/@content", 
+    "description": "Two Los Angeles attorneys who represented former rap mogul Marion \"Suge\" Knight were arrested on warrants alleging they were accessories after the fact to a felony, authorities said.", 
+    "social_fb_likes": "", 
+    "dc_date_xpath": "//meta[contains(@name,'date')]/@content", 
+    "TAG_ITEM_URLMD5": "d7e866621ea899bed4fe6119c23cb79a", 
+    "pubdate_extractor": "ScrapyExtractor", 
+    "source_url": "http://www.cbs46.com/story/37355899/2-former-lawyers-of-rap-mogul-suge-knight-arrested", 
+    "dc_date": "2018/01/26", 
+    "TAG_ITEM_CDATE": "2018-01-26 09:52:42", 
+    "link": "http://www.cbs46.com/story/37355899/2-former-lawyers-of-rap-mogul-suge-knight-arrested", 
+    "content_encoded_xpath": "//*[@id='WNStoryBody']/p", 
+    "social_tw_reposts": 12, 
+    "content_encoded_extractor": "ScrapyExtractor", 
+    "size_bytes": 3750, 
+    "social_tw_sentiment": -10.0, 
+    "html_lang_xpath": "/html/@lang", 
+    "social_tw_raw_posts": 14, 
+    "media_extractor": "ScrapyExtractor", 
+    "errors_mask": "0", 
+    "social_fb_sentiment": "", 
+    "social_tw_raw_reposts": 12, 
+    "author": "", 
+    "title_xpath": "//meta[@property='og:title']/@content", 
+    "social_tw_pw": "[\n  [\n    \"SUGE\", \n    \"Suge\", \n    {\n      \"Suge\": [\n        [\n          \"of rap mogul ‘<font color=\"red\">Suge</font>’ Knight arrested\" #USNews\"\", \n          \"http://www.cbs46.com/story/37355899/2-former-lawyers-of-rap-mogul-suge-knight-arrested#0\", \n          {\n            \"SENTIMENT_RATE\": -8.928571428571429\n          }\n        ]\n      ]\n    }, \n    2, \n    {\n      \"SENTIMENT_RATE\": -10.0\n    }\n  ], \n  [\n    \"KNIGHT\", \n    \"Knight\", \n    {\n      \"Knight\": [\n        [\n          \"rap mogul ‘Suge’ <font color=\"red\">Knight</font> arrested\" #USNews\"\", \n          \"http://www.cbs46.com/story/37355899/2-former-lawyers-of-rap-mogul-suge-knight-arrested#0\", \n          {\n            \"SENTIMENT_RATE\": -8.928571428571429\n          }\n        ]\n      ]\n    }, \n    2, \n    {\n      \"SENTIMENT_RATE\": -10.0\n    }\n  ], \n  [\n    \"STORI\", \n    \"STORY\", \n    {\n      \"STORY\": [\n        [\n          \"CLICK BELOW FOR FULL <font color=\"red\">STORY</font>\", \n          \"http://www.cbs46.com/story/37355899/2-former-lawyers-of-rap-mogul-suge-knight-arrested#9\", \n          {\n            \"SENTIMENT_RATE\": 0.0\n          }\n        ]\n      ]\n    }, \n    1, \n    {\n      \"SENTIMENT_RATE\": 0.0\n    }\n  ], \n  [\n    \"CLICK\", \n    \"CLICK\", \n    {\n      \"CLICK\": [\n        [\n          \"<font color=\"red\">CLICK</font> BELOW FOR FULL STORY\", \n          \"http://www.cbs46.com/story/37355899/2-former-lawyers-of-rap-mogul-suge-knight-arrested#9\", \n          {\n            \"SENTIMENT_RATE\": 0.0\n          }\n        ]\n      ]\n    }, \n    1, \n    {\n      \"SENTIMENT_RATE\": 0.0\n    }\n  ]\n]", 
+    "social_fb_reposts": "", 
+    "redirect_url": "", 
+    "link_extractor": "ScrapyExtractor", 
+    "social_tw_authors": "", 
+    "SIMILAR_MD5": [
+      "111fe7bf73398e144ca5ade0ef7b65b5", 
+      "6971e17dee5beadfa2f6359bb1a5f865", 
+      "a1591c5c64660aed23f8aa10ab0848db", 
+      "7f66610265ef0b862f6ca8bd3f4134a5", 
+      "3bc30b39380f7b378fb3fbc12d861a86", 
+      "f3025487070bc3268e5a7a4898fa0b5a", 
+      "f85e90617b5d86e5f2be270c58926cfd", 
+      "7a2f12f1dfbc10a91114c4428ba7fcd2", 
+      "449aae69734e38c8bd05e2c6f2900b46", 
+      "74e08caefe924c36d75ced5bc2c6f801", 
+      "3c6dd8c399ade51a6ed6ce24512fde26", 
+      "f3247b6546aa2de419bd13f9d8f97da9", 
+      "7e171a66e4e77b74ef0bf1a06d9fc4a2", 
+      "12e84dbab69995118ca454fa06c697cc", 
+      "022769299baf22123f7294577e3f61ca", 
+      "ceacf8f9748b125d02204d6da95320fa", 
+      "9f0ddaceef77a57d632debbf280504c5"
+    ], 
+    "media_xpath": "//meta[@property='og:image'][1]/@content"
+  }
+]

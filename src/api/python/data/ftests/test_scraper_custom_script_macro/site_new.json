@@ -1,0 +1,164 @@
+{
+    "avgSpeed": 0, 
+    "avgSpeedCounter": 0, 
+    "cDate": {
+        "str": "NOW()"
+    }, 
+    "contents": 0, 
+    "description": "", 
+    "errorMask": 0, 
+    "errors": 0, 
+    "filters": [
+        {
+            "mode": 0, 
+            "pattern": "http(.*)", 
+            "siteId": "2f105d68146db820c23aa3fc6010888d", 
+            "type": 1
+        }
+    ], 
+    "httpTimeout": 30000, 
+    "id": "2f105d68146db820c23aa3fc6010888d", 
+    "iterations": 0, 
+    "maxErrors": 100000, 
+    "maxResourceSize": 1000000, 
+    "maxResources": 200, 
+    "maxURLs": 200, 
+    "maxURLsFromPage": 200, 
+    "priority": 100, 
+    "processingDelay": 500, 
+    "properties": [{
+  "DB_TASK_MODE": "RO",
+  "HTTP_REDIRECTS_MAX": 5,
+  "HTML_REDIRECTS_MAX": 5,
+  "HTML_RECOVER": "0",
+  "ROBOTS_MODE": "0",
+  "URL_CHAIN": null,
+  "FETCH_RAW_CONTENT": 0,
+  "FETCHER_MACRO": "[\"function foo(){var e = document.evaluate(\\\"\\\/\\\/a[1]\\\", document, null, XPathResult.ANY_TYPE, null);var i = e.iterateNext(),x = [];while (i) {x.push(i);i = e.iterateNext();};;if(x.length){x[0].click();}};foo();\"]",
+  "processCTypes": "text\/html,text\/json",
+  "PROCESSOR_NAME_REPLACE": "{\"SCRAPER_CUSTOM\":[\"text\\\/json\"]}",
+  "PROCESSOR_PROPERTIES": "{\"modules\":{\"regular\":[\"ScrapyExtractor\"]},\"algorithm\":{\"algorithm_name\":\"regular\"},\"SCRAPER_DOWNLOAD_IMAGES\":1,\"SCRAPER_TEXT_MARKUP\":{\"DIV\":\"\\n\",\"P\":\"\\n\",\"H\":\"\\n\",\"TR\":\"\\n\"}}",
+  "template": {
+    "templates": [
+      {
+        "priority": "0",
+        "mandatory": 0,
+        "state": 1,
+        "is_filled": 0,
+        "condition": {
+          "pattern": "",
+          "field": "url",
+          "type": 0
+        },
+        "output_format": {
+          "type": "template",
+          "name": "json",
+          "header": "[\n",
+          "items_header": "",
+          "item": "{\n\"author\":\"%author%\",\n\"pubdate\":\"%pubdate%\",\n\"image\":\"%image%\",\n\"body\":\"%body%\",\n\"title\":\"%title%\",\n\"author_extractor\":\"%author_extractor%\",\n\"pubdate_extractor\":\"%pubdate_extractor%\",\n\"image_extractor\":\"%image_extractor%\",\n\"body_extractor\":\"%body_extractor%\",\n\"title_extractor\":\"%title_extractor%\",\n\"crawler_time\":\"%crawler_time%\",\n\"scraper_time\":\"%scraper_time%\",\n\"errors_mask\":\"%errors_mask%\"\n}\n",
+          "items_footer": "",
+          "footer": "]\n"
+        },
+        "tags": {
+          "title": [
+            {
+              "default": "",
+              "begin": "",
+              "end": "",
+              "target": "\/\/*[@class='article-title']",
+              "postProcessing": "",
+              "attributesExclude": "",
+              "join": "concat",
+              "delimiter": " ",
+              "canonicalizeURLs": 0,
+              "mandatory": 0,
+              "type": "text",
+              "format": ""
+            }
+          ],
+          "body": [
+            {
+              "default": "",
+              "begin": "",
+              "end": "",
+              "target": "\/\/*[@class='article-body']\/p",
+              "postProcessing": "",
+              "attributesExclude": "",
+              "join": "concat",
+              "delimiter": " ",
+              "canonicalizeURLs": 0,
+              "mandatory": 0,
+              "type": "text",
+              "format": ""
+            }
+          ],
+          "image": [
+            {
+              "default": "",
+              "begin": "",
+              "end": "",
+              "target": "\/\/*[@class='article-hero landscape']\/img",
+              "postProcessing": "",
+              "attributesExclude": "",
+              "join": "concat",
+              "delimiter": " ",
+              "canonicalizeURLs": 0,
+              "mandatory": 0,
+              "type": "image",
+              "format": "URL"
+            }
+          ],
+          "pubdate": [
+            {
+              "default": "",
+              "begin": "",
+              "end": "",
+              "target": "\/\/time[@class='publish-date']",
+              "postProcessing": "",
+              "attributesExclude": "",
+              "join": "concat",
+              "delimiter": " ",
+              "canonicalizeURLs": 0,
+              "mandatory": 0,
+              "type": "datetime",
+              "format": ""
+            }
+          ],
+          "author": [
+            {
+              "default": "",
+              "begin": "",
+              "end": "",
+              "target": "\/\/*[@class='author-twitter']",
+              "postProcessing": "",
+              "attributesExclude": "",
+              "join": "concat",
+              "delimiter": " ",
+              "canonicalizeURLs": 0,
+              "mandatory": 0,
+              "type": "link",
+              "format": ""
+            }
+          ]
+        }
+      }
+    ]
+  }
+}  ]                        
+, 
+    "recrawlDate" : "DATE_ADD(NOW(), INTERVAL `RecrawlPeriod` MINUTE)",
+    "requestDelay": 500, 
+    "resources": 0, 
+    "size": 0, 
+    "state": 1, 
+    "tcDate": null, 
+    "uDate": null, 
+    "urlType": 0, 
+    "urls": [
+        "http:\/\/127.0.0.1\/template_scraping\/chains_page1.html"
+    ], 
+    "recrawlPeriod" : 240,
+    "userId": 2,
+    "collectedURLs": 0,
+    "fetchType": 2
+}

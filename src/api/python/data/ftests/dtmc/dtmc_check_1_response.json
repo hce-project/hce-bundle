@@ -1,0 +1,17 @@
+{
+    "errorCode": 2, 
+    "errorMessage": "Process terminated by VRAM limitation", 
+    "exitStatus": 0, 
+    "files": [], 
+    "id": 1, 
+    "nodeHost": "", 
+    "nodeName": "", 
+    "nodePort": 0, 
+    "pId": 2343253, 
+    "requestTime": 0, 
+    "state": 0, 
+    "stderr": "", 
+    "stdout": "", 
+    "taskTime": 0, 
+    "type": 1
+}

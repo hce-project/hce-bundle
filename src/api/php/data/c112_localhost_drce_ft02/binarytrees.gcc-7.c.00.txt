@@ -1,0 +1,28 @@
+{
+    "session": {
+        "type": 0,
+        "port": 0,
+        "user": "",
+        "password": "",
+        "shell": "",
+        "environment": [
+            {
+                "LINES": "80"
+            }
+        ],
+        "home_dir": "",
+        "timeout": 0,
+        "tmode": 1,
+        "time_max": 30000,
+        "cleanup": 1
+    },
+    "command": "cd /tmp/ && chmod 777 binarytrees.gcc-7.gcc_run && ./binarytrees.gcc-7.gcc_run 16",
+    "input": "",
+    "files": [
+        {
+            "name": "/tmp/binarytrees.gcc-7.gcc_run",
+            "data": "READ_FROM_FILE:../data/c112_localhost_drce_ft02/binarytrees.gcc-7.gcc_run",
+            "action": 2147483657
+        }
+    ]
+}

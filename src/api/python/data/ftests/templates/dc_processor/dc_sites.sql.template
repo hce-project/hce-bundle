@@ -1,0 +1,270 @@
+-- phpMyAdmin SQL Dump
+-- version 4.1.12
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: May 26, 2014 at 10:46 AM
+-- Server version: 5.5.35-0+wheezy1
+-- PHP Version: 5.4.4-14+deb7u8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `dc_sites`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sites`
+--
+
+CREATE TABLE IF NOT EXISTS `sites` (
+  `Id` varchar(32) NOT NULL,
+  `UDate` datetime DEFAULT NULL COMMENT 'Update some fields date',
+  `TcDate` datetime DEFAULT NULL COMMENT 'Touch date, when some action was performed with site or it''s URLs',
+  `CDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `Resources` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `Iterations` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Crawling iterations counter',
+  `State` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '1 - Active, 2 - Disabled, 3 - Suspended',
+  `Priority` int(10) unsigned NOT NULL DEFAULT '0',
+  `MaxURLs` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '0- means unlimited',
+  `MaxResources` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '0 - means unlimited',
+  `MaxErrors` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '0 - means unlimited',
+  `MaxResourceSize` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '0 - means unlimited',
+  `RequestDelay` bigint(20) unsigned NOT NULL DEFAULT '500' COMMENT 'HTTP request delay',
+  `HTTPTimeout` bigint(20) unsigned DEFAULT '30000' COMMENT 'HTTP response timeout, msec',
+  `ErrorMask` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Error bit set mask, see DC_application_architecture spec.',
+  `Errors` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Errors counter',
+  `URLType` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0 - Regular, collect URLs and insert only for this site according filters; 1 - Single, do not collect URLs, 3 - collect URLs, create sites and insert for all',
+  PRIMARY KEY (`Id`),
+  KEY `TcDate` (`TcDate`),
+  KEY `CDate` (`CDate`),
+  KEY `UDate` (`UDate`),
+  KEY `Iterations` (`Iterations`),
+  KEY `State` (`State`),
+  KEY `Priority` (`Priority`),
+  KEY `MaxURLs` (`MaxURLs`),
+  KEY `MaxResources` (`MaxResources`),
+  KEY `MaxErrors` (`MaxErrors`),
+  KEY `MaxResourceSize` (`MaxResourceSize`),
+  KEY `ErrorMask` (`ErrorMask`),
+  KEY `Errors` (`Errors`),
+  KEY `URLType` (`URLType`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `sites`
+--
+
+INSERT INTO `sites` (`Id`, `UDate`, `TcDate`, `CDate`, `Resources`, `Iterations`, `State`, `Priority`, `MaxURLs`, `MaxResources`, `MaxErrors`, `MaxResourceSize`, `RequestDelay`, `HTTPTimeout`, `ErrorMask`, `Errors`, `URLType`) VALUES
+('0b41d5052c7a52f5927ae7114cb288e9', NULL, NULL, '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('8720b16ad7304605daf987f3585839d0', NULL, '2014-05-14 20:02:37', '0000-00-00 00:00:00', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('f49315ae54096e0aba73a5f924278837', NULL, NULL, '2014-04-15 12:07:27', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('130aadc544a6a69d92524166afc41745', NULL, NULL, '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('0', NULL, NULL, '2014-04-21 14:56:17', 0, 0, 1, 0, 0, 0, 0, 0, 500, 30000, 0, 0, 0),
+('bde344064dc99424033f1d39a0e63a11', NULL, NULL, '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('ab3b37f575d82d74220865746e4778df', NULL, NULL, '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('5dfd57388380f1b8ece0bb133b9a61f7', NULL, '2014-04-30 11:27:53', '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('e1d2866893129ea29bd1721ec649d64d', NULL, NULL, '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('5603d05e159f771dd467e1173137f556', NULL, NULL, '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('f84bb45b91e15bc669d4e1456e03175d', NULL, NULL, '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('bdb030e601458942a940a0891e2ed239', NULL, NULL, '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('13d19ef5c14d00d9c550692d5ea8d0af', NULL, NULL, '2014-04-16 11:09:06', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('e1e17e17ff30feab8bfcfc31109fdd0e', NULL, NULL, '2014-04-24 08:40:00', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('7c116de981974e65ec4cd74c301b6f6e', NULL, NULL, '2014-04-24 11:31:34', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('c825953f210efbd804b2811321dc00ba', NULL, '2014-05-15 08:52:01', '2014-04-24 11:32:07', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('', NULL, NULL, '2014-04-24 14:09:53', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('bdaa7bd2043b3e9153fbd38ea79c7f6c', NULL, NULL, '2014-04-25 11:08:41', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('392e14628bd379517cd233a61c2054a1', NULL, NULL, '2014-04-25 11:10:04', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('4333c34921f48717fbf55880feee2d62', NULL, '2014-05-05 13:35:49', '2014-04-30 13:01:55', 0, 0, 3, 0, 0, 0, 0, 0, 0, 30000, 524288, 1, 0),
+('699fcf4591fc23e79b839d8819904293', '0000-00-00 00:00:00', '2014-05-15 09:31:04', '2014-04-30 14:22:24', 0, 0, 1, 0, 4, 4, 5, 1000000, 100, 20000, 0, 0, 0),
+('2ae9821682298357962e0be5af057e06', NULL, NULL, '2014-05-07 08:44:34', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('5c016e8f0f95f039102cbe8366c5c7f3', NULL, NULL, '2014-05-07 10:39:42', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('db1bf576a3d4adf3fd7988f63e6a2e89', NULL, NULL, '2014-05-07 12:33:29', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('af3fe89b5905bc1d04ea94032dc34275', NULL, NULL, '2014-05-07 12:35:10', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('c2c84796283902b7ed36b16df1b71e97', NULL, NULL, '2014-05-07 12:42:53', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('57f4dad48e7a4f7cd171c654226feb5a', NULL, NULL, '2014-05-07 12:55:33', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('080dc02ebed93266228e40adc190f971', NULL, NULL, '2014-05-07 14:16:36', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0),
+('5a5f4a3468c7ea49f8c4bb16496b3f37', NULL, NULL, '2014-05-12 09:43:49', 0, 0, 1, 0, 0, 0, 0, 0, 0, 30000, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sites_filters`
+--
+
+CREATE TABLE IF NOT EXISTS `sites_filters` (
+  `Site_Id` varchar(32) DEFAULT '0',
+  `Pattern` varchar(4096) NOT NULL DEFAULT '""',
+  `Type` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0 - Exclude, 1 - include',
+  `UDate` datetime DEFAULT NULL COMMENT 'Update date',
+  `CDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY `Site_Id` (`Site_Id`),
+  KEY `UDate` (`UDate`),
+  KEY `CDate` (`CDate`),
+  KEY `Type` (`Type`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `sites_filters`
+--
+
+INSERT INTO `sites_filters` (`Site_Id`, `Pattern`, `Type`, `UDate`, `CDate`) VALUES
+('699fcf4591fc23e79b839d8819904293', '*', 0, NULL, '2014-04-30 14:22:25'),
+('0b41d5052c7a52f5927ae7114cb288e9', 'Pattern1', 0, NULL, '2014-04-16 11:09:06');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sites_properties`
+--
+
+CREATE TABLE IF NOT EXISTS `sites_properties` (
+  `Site_Id` varchar(32) NOT NULL DEFAULT '""',
+  `Name` varchar(32) NOT NULL DEFAULT '""',
+  `Value` varchar(4096) NOT NULL DEFAULT '""',
+  `UDate` datetime DEFAULT NULL COMMENT 'Update date',
+  `CDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY `Site_Id` (`Site_Id`),
+  KEY `UDate` (`UDate`),
+  KEY `CDate` (`CDate`),
+  KEY `Name` (`Name`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `sites_properties`
+--
+
+INSERT INTO `sites_properties` (`Site_Id`, `Name`, `Value`, `UDate`, `CDate`) VALUES
+('f49315ae54096e0aba73a5f924278837', 'PROCESS_CTYPES', 'text/html', NULL, '2014-04-15 12:07:27'),
+('f49315ae54096e0aba73a5f924278837', 'STORE_HTTP_HEADERS', '0', NULL, '2014-04-15 12:07:27'),
+('f49315ae54096e0aba73a5f924278837', 'STORE_HTTP_REQUEST', '0', NULL, '2014-04-15 12:07:27'),
+('f49315ae54096e0aba73a5f924278837', 'HTTP_COOKIE', '', NULL, '2014-04-15 12:07:27'),
+('f49315ae54096e0aba73a5f924278837', 'HTTP_HEADERS', '', NULL, '2014-04-15 12:07:27'),
+('0b41d5052c7a52f5927ae7114cb288e9', 'Value', 'val1', NULL, '2014-04-16 11:09:06'),
+('f49315ae54096e0aba73a5f924278837', 'template', '{''description'': ["//meta[contains(@name,''description'')]/@content"], ''pubdate'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''mage'')]/img//@src", "//div[contains(@class,''Image'')]//@href"], ''title'': ["//meta[contains(@property,''title'')]/@content", "//meta[contains(@name,''title'')]/@content", ''//title/text()''], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]/p//text()", "//div[contains(@class,''ext'')]/p//text()", "//div[contains(@class,''cbox-content row'')]/p//text()", "//p[contains(@id,''ews'')]/text()", "//div[contains(@class,''ews'')]/p//text()", "//meta[contains(@name,''content_encoded'')]/@content", "//p[contains(@class,''lead-def'')]/text()", "//span[contains(@id,''article'')]/p/text()", "//div[contains(@class,''article'')]//p//text()", "//div[contains(@class,''content'')]/p//text()", "//div[contains(@id,''rticle'')]/p//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-21 16:58:27', '2014-04-21 13:58:27'),
+('0b41d5052c7a52f5927ae7114cb288e9', 'Name', 'prop1', NULL, '2014-04-16 11:09:06'),
+('0b41d5052c7a52f5927ae7114cb288e9', 'Site_Id', '0b41d5052c7a52f5927ae7114cb288e9', NULL, '2014-04-16 11:09:06'),
+('bde344064dc99424033f1d39a0e63a11', 'template', '{''description'': ["//div[contains(@class,''ArticleText'')]/p[1]/text()"], ''pubdate'': ["//meta[contains(@name,''RELEASE_DATE'')]/@content"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''mage'')]/img//@src", "//div[contains(@class,''Image'')]//@href"], ''title'': ["//meta[contains(@name,''TITLE'')]/@content", "//meta[contains(@name,''title'')]/@content", ''//title/text()''], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]/p//text()", "//div[contains(@class,''ext'')]/p//text()", "//div[contains(@class,''cbox-content row'')]/p//text()", "//p[contains(@id,''ews'')]/text()", "//div[contains(@class,''ews'')]/p//text()", "//meta[contains(@name,''content_encoded'')]/@content", "//p[contains(@class,''lead-def'')]/text()", "//span[contains(@id,''article'')]/p/text()", "//div[contains(@class,''article'')]//p//text()", "//div[contains(@class,''content'')]/p//text()", "//div[contains(@id,''rticle'')]/p//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-23 17:33:28', '2014-04-23 14:33:28'),
+('130aadc544a6a69d92524166afc41745', 'template', '{''description'': ["//meta[contains(@name,''description'')]/@content"], ''pubdate'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@class,''NewsBody'')]/div[contains(@class,''TopPhoto'')]/a/img/@src"], ''title'': ["//div[contains(@class,''MainTopics'')]/h2[contains(@class,''NewsTitle'')]/a/text()", "//meta[contains(@property,''og:title'')]/@content"], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''NewsBody'')]/p/text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-22 12:15:35', '2014-04-22 09:15:35'),
+('ab3b37f575d82d74220865746e4778df', 'template', '{''description'': ["//div[contains(@class,''NewsText'')]/p[1]/text()", "//meta[contains(@name,''description'')]/@content"], ''pubdate'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//span[contains(@id,''__r_article_img__'')]/img/@src"], ''title'': ["//h2[contains(@id,''NewsTitle'')]//text()"], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@property,''og:url'')]/@content"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''NewsText'')]/p/text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-22 12:28:56', '2014-04-22 09:28:56'),
+('bde344064dc99424033f1d39a0e63a11', 'PROCESS_CTYPES', 'text/html', '2014-05-02 17:52:34', '2014-05-02 14:52:34'),
+('5dfd57388380f1b8ece0bb133b9a61f7', 'template', '{''description'': ["//div[contains(@id,''article-body'')]/p[1]/text()"], ''pubdate'': ["//span[contains(@id,''pub_time'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''article-body'')]/figure/div[contains(@class,''figure'')]/a/img/@src"], ''title'': ["//h1[contains(@id,''article-title'')]/text()"], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]/p//text()", "//div[contains(@class,''ext'')]/p//text()", "//div[contains(@class,''cbox-content row'')]/p//text()", "//p[contains(@id,''ews'')]/text()", "//div[contains(@class,''ews'')]/p//text()", "//meta[contains(@name,''content_encoded'')]/@content", "//p[contains(@class,''lead-def'')]/text()", "//span[contains(@id,''article'')]/p/text()", "//div[contains(@class,''article'')]//p//text()", "//div[contains(@class,''content'')]/p//text()", "//div[contains(@id,''rticle'')]/p//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-30 10:58:09', '2014-04-30 07:58:09'),
+('e1d2866893129ea29bd1721ec649d64d', 'template', '{''description'': ["//div[contains(@class,''entry-content'')]/p[1]/text()"], ''pubdate'': ["//div[contains(@class,''entry-meta'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//meta[contains(@property,''og:image'')]/@content"], ''title'': ["//h1[contains(@class,''entry-title'')]/text()"], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@id,''Main'')]//div[contains(@class,''entry-content'')]/p/text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-22 12:39:14', '2014-04-22 09:39:14'),
+('e1e17e17ff30feab8bfcfc31109fdd0e', 'template', '{''description'': ["//p[contains(@id,''news_textbody'')]/text()"], ''pubdate'': ["//span[contains(@id,''news_date'')]/text() | //span[contains(@id,''news_time'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''mage'')]/img//@src", "//div[contains(@class,''Image'')]//@href"], ''title'': ["//h1[contains(@class,''entryTitle'')]/span[contains(@class,''contentTitle'')]/text()"], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//p[contains(@id,''news_textmore'')]/text() | //p[contains(@id,''news_textbody'')]/text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-24 11:53:43', '2014-04-24 08:53:43'),
+('5603d05e159f771dd467e1173137f556', 'template', '{''description'': ["//meta[contains(@name,''description'')]/@content"], ''pubdate'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''mage'')]/img//@src", "//div[contains(@class,''Image'')]//@href"], ''title'': ["//meta[contains(@property,''title'')]/@content", "//meta[contains(@name,''title'')]/@content", ''//title/text()''], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]/p//text()", "//div[contains(@class,''ext'')]/p//text()", "//div[contains(@class,''cbox-content row'')]/p//text()", "//p[contains(@id,''ews'')]/text()", "//div[contains(@class,''ews'')]/p//text()", "//meta[contains(@name,''content_encoded'')]/@content", "//p[contains(@class,''lead-def'')]/text()", "//span[contains(@id,''article'')]/p/text()", "//div[contains(@class,''article'')]//p//text()", "//div[contains(@class,''content'')]/p//text()", "//div[contains(@id,''rticle'')]/p//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-22 12:43:08', '2014-04-22 09:43:08'),
+('f84bb45b91e15bc669d4e1456e03175d', 'template', '{''description'': ["///span[contains(@class,''focusParagraph'')]/p/text()"], ''pubdate'': ["//div[contains(@class,''timestampHeader'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//td[contains(@id,''articlePhoto'')]//img/@src"], ''title'': ["///h1/text()"], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@id,''resizeableText'')]//p/text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-22 12:47:05', '2014-04-22 09:47:05'),
+('bdb030e601458942a940a0891e2ed239', 'template', '{''description'': ["//div[contains(@class,''cmn-article_text JSID_key_fonttxt'')]/p/text()"], ''pubdate'': ["//dl[contains(@class,''cmn-article_status cmn-clearfix'')]/dd[contains(@class,''cmnc-publish'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@class,''cmnc-figure'')]//img/@src"], ''title'': ["//h4[contains(@class,''cmn-article_title cmn-clearfi'')]/span[contains(@class,''mnc-middle JSID_key_fonthln'')]/text()", "//h2[contains(@id,''JSID_title'')]//text()"], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''cmn-article_text JSID_key_fonttxt'')]//p/text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-22 12:50:48', '2014-04-22 09:50:48'),
+('7c116de981974e65ec4cd74c301b6f6e', 'template', '{''description'': ["//meta[contains(@name,''description'')]/@content"], ''pubdate'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''mage'')]/img//@src", "//div[contains(@class,''Image'')]//@href"], ''title'': ["//meta[contains(@property,''title'')]/@content", "//meta[contains(@name,''title'')]/@content", ''//title/text()''], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]/p//text()", "//div[contains(@class,''ext'')]/p//text()", "//div[contains(@class,''cbox-content row'')]/p//text()", "//p[contains(@id,''ews'')]/text()", "//div[contains(@class,''ews'')]/p//text()", "//meta[contains(@name,''content_encoded'')]/@content", "//p[contains(@class,''lead-def'')]/text()", "//span[contains(@id,''article'')]/p/text()", "//div[contains(@class,''article'')]//p//text()", "//div[contains(@class,''content'')]/p//text()", "//div[contains(@id,''rticle'')]/p//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-24 14:31:34', '2014-04-24 11:31:34'),
+('13d19ef5c14d00d9c550692d5ea8d0af', 'template', '{''description'': ["//div[contains(@class,''Text'')]//p[1]/text()"], ''pubdate'': ["//div[contains(@class,''News-headarea'')]/p[contains(@class,''data'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//table[contains(@class,''Photo-undefine'')]//img/@src"], ''title'': ["//div[contains(@class,''News-headarea'')]/h1/text()"], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]//p/text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-22 12:57:23', '2014-04-22 09:57:23'),
+('c825953f210efbd804b2811321dc00ba', 'template', '{''description'': ["//meta[contains(@name,''description'')]/@content"], ''pubdate'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''mage'')]/img//@src", "//div[contains(@class,''Image'')]//@href"], ''title'': ["//meta[contains(@property,''title'')]/@content", "//meta[contains(@name,''title'')]/@content", ''//title/text()''], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]/p//text()", "//div[contains(@class,''ext'')]/p//text()", "//div[contains(@class,''cbox-content row'')]/p//text()", "//p[contains(@id,''ews'')]/text()", "//div[contains(@class,''ews'')]/p//text()", "//meta[contains(@name,''content_encoded'')]/@content", "//p[contains(@class,''lead-def'')]/text()", "//span[contains(@id,''article'')]/p/text()", "//div[contains(@class,''article'')]//p//text()", "//div[contains(@class,''content'')]/p//text()", "//div[contains(@id,''rticle'')]/p//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-24 14:32:07', '2014-04-24 11:32:07'),
+('', 'template', '{''description'': ["//meta[contains(@name,''description'')]/@content"], ''pubdate'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''mage'')]/img//@src", "//div[contains(@class,''Image'')]//@href"], ''title'': ["//meta[contains(@property,''title'')]/@content", "//meta[contains(@name,''title'')]/@content", ''//title/text()''], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]/p//text()", "//div[contains(@class,''ext'')]/p//text()", "//div[contains(@class,''cbox-content row'')]/p//text()", "//p[contains(@id,''ews'')]/text()", "//div[contains(@class,''ews'')]/p//text()", "//meta[contains(@name,''content_encoded'')]/@content", "//p[contains(@class,''lead-def'')]/text()", "//span[contains(@id,''article'')]/p/text()", "//div[contains(@class,''article'')]//p//text()", "//div[contains(@class,''content'')]/p//text()", "//div[contains(@id,''rticle'')]/p//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-24 17:09:53', '2014-04-24 14:09:53'),
+('0', 'template', '{''description'': ["//meta[contains(@name,''description'')]/@content"], ''pubdate'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''mage'')]/img//@src", "//div[contains(@class,''Image'')]//@href"], ''title'': ["//meta[contains(@property,''title'')]/@content", "//meta[contains(@name,''title'')]/@content", ''//title/text()''], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]/p//text()", "//div[contains(@class,''ext'')]/p//text()", "//div[contains(@class,''cbox-content row'')]/p//text()", "//p[contains(@id,''ews'')]/text()", "//div[contains(@class,''ews'')]/p//text()", "//meta[contains(@name,''content_encoded'')]/@content", "//p[contains(@class,''lead-def'')]/text()", "//span[contains(@id,''article'')]/p/text()", "//div[contains(@class,''article'')]//p//text()", "//div[contains(@class,''content'')]/p//text()", "//div[contains(@id,''rticle'')]/p//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-25 12:48:25', '2014-04-25 09:48:25'),
+('bdaa7bd2043b3e9153fbd38ea79c7f6c', 'template', '{''description'': ["//meta[contains(@name,''description'')]/@content"], ''pubdate'': ["//meta[contains(@name,''date'')]/@content", "//span[contains(@class,''date'')]/text()", "//p[contains(@class,''date'')]/text()", "//div[contains(@id,''date'')]/text()"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//div[contains(@id,''mage'')]/img//@src", "//div[contains(@class,''Image'')]//@href"], ''title'': ["//meta[contains(@property,''title'')]/@content", "//meta[contains(@name,''title'')]/@content", ''//title/text()''], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@name,''date'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//div[contains(@class,''Text'')]/p//text()", "//div[contains(@class,''ext'')]/p//text()", "//div[contains(@class,''cbox-content row'')]/p//text()", "//p[contains(@id,''ews'')]/text()", "//div[contains(@class,''ews'')]/p//text()", "//meta[contains(@name,''content_encoded'')]/@content", "//p[contains(@class,''lead-def'')]/text()", "//span[contains(@id,''article'')]/p/text()", "//div[contains(@class,''article'')]//p//text()", "//div[contains(@class,''content'')]/p//text()", "//div[contains(@id,''rticle'')]/p//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-25 14:08:42', '2014-04-25 11:08:42'),
+('699fcf4591fc23e79b839d8819904293', 'PROCESS_CTYPES', 'text/html', NULL, '2014-04-30 14:22:25'),
+('699fcf4591fc23e79b839d8819904293', 'HTTP_HEADERS', '', NULL, '2014-04-30 14:22:25'),
+('699fcf4591fc23e79b839d8819904293', 'STORE_HTTP_REQUEST', '1', NULL, '2014-04-30 14:22:25'),
+('699fcf4591fc23e79b839d8819904293', 'HTTP_COOKIE', '', NULL, '2014-04-30 14:22:25'),
+('699fcf4591fc23e79b839d8819904293', 'STORE_HTTP_HEADERS', '1', NULL, '2014-04-30 14:22:25'),
+('8720b16ad7304605daf987f3585839d0', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:07:40', '2014-05-05 16:07:40'),
+('130aadc544a6a69d92524166afc41745', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:08:50', '2014-05-05 16:08:50'),
+('ab3b37f575d82d74220865746e4778df', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:09:05', '2014-05-05 16:09:05'),
+('5dfd57388380f1b8ece0bb133b9a61f7', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:09:19', '2014-05-05 16:09:19'),
+('e1d2866893129ea29bd1721ec649d64d', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:09:35', '2014-05-05 16:09:35'),
+('e1e17e17ff30feab8bfcfc31109fdd0e', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:09:50', '2014-05-05 16:09:50'),
+('e1d2866893129ea29bd1721ec649d64d', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:10:49', '2014-05-05 16:10:49'),
+('e1e17e17ff30feab8bfcfc31109fdd0e', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:11:03', '2014-05-05 16:11:03'),
+('f84bb45b91e15bc669d4e1456e03175d', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:11:16', '2014-05-05 16:11:16'),
+('13d19ef5c14d00d9c550692d5ea8d0af', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:11:38', '2014-05-05 16:11:38'),
+('bdb030e601458942a940a0891e2ed239', 'PROCESS_CTYPES', 'text/html', '2014-05-05 19:11:54', '2014-05-05 16:11:54'),
+('8720b16ad7304605daf987f3585839d0', 'template', '{''description'': ["//p[contains(@class,''par1'')]//text()"], ''pubdate'': ["//meta[contains(@property,''article:published_time'')]/@content"], ''author'': ["//meta[contains(@name,''author'')]/@content"], ''media'': ["//img[contains(@data-original,'''')]/@data-original"], ''title'': [''//article/h1/text()''], ''media_thumbnail'': ["//meta[contains(@name,''media_thumbnail'')]/@content"], ''media_content'': ["//meta[contains(@name,''media_content'')]/@content"], ''dc_date'': ["//meta[contains(@property,''article:published_time'')]/@content"], ''link'': ["//meta[contains(@name,''link'')]/@content", "//li[contains(@class,''space'')]/@href", "//link[contains(@rel,''canonical'')]/@href"], ''keywords'': ["//meta[contains(@name,''keywords'')]/@content"], ''content_encoded'': ["//p[contains(@itemprop,''articleBody'')]//text()"], ''guid'': ["//meta[contains(@name,''guid'')]/@content"], ''enclosure'': ["//meta[contains(@name,''enclosure'')]/@content"]}', '2014-04-23 15:28:47', '2014-04-23 12:28:47');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sites_urls`
+--
+
+CREATE TABLE IF NOT EXISTS `sites_urls` (
+  `Site_Id` varchar(32) NOT NULL DEFAULT '""',
+  `URL` varchar(4096) NOT NULL DEFAULT '""',
+  `State` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0 - Enabled, 1 - disabled, 2 - error',
+  `Crawled` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Number of crawling iterations',
+  `Processed` int(10) unsigned NOT NULL DEFAULT '0',
+  `CrDate` datetime DEFAULT NULL COMMENT 'Last crawling date',
+  `PrDate` datetime DEFAULT NULL COMMENT 'Processing date',
+  `CDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY `Site_Id` (`Site_Id`,`State`,`Crawled`,`Processed`,`CDate`),
+  KEY `CrDate` (`CrDate`),
+  KEY `PrDate` (`PrDate`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `sites_urls`
+--
+
+INSERT INTO `sites_urls` (`Site_Id`, `URL`, `State`, `Crawled`, `Processed`, `CrDate`, `PrDate`, `CDate`) VALUES
+('0b41d5052c7a52f5927ae7114cb288e9', 'http://newurl2222', 0, 0, 0, NULL, NULL, '2014-04-16 11:09:07'),
+('f49315ae54096e0aba73a5f924278837', 'http://localhost/www.yomiuri.co.jp/template1.html', 0, 0, 0, NULL, NULL, '2014-04-15 12:07:27'),
+('f49315ae54096e0aba73a5f924278837', 'http://localhost/www.yomiuri.co.jp', 0, 0, 0, NULL, NULL, '2014-04-15 12:07:27'),
+('8720b16ad7304605daf987f3585839d0', 'http://www.yomiuri.co.jp', 0, 0, 0, NULL, NULL, '2014-04-15 12:06:14'),
+('8720b16ad7304605daf987f3585839d0', 'http://www.yomiuri.co.jp/sports/mlb/20140407-OYT1T50015.html?from=ytop_top', 0, 0, 0, NULL, NULL, '2014-04-15 12:06:14'),
+('0b41d5052c7a52f5927ae7114cb288e9', 'http://newurl1', 0, 0, 0, NULL, NULL, '2014-04-16 11:09:07'),
+('0b41d5052c7a52f5927ae7114cb288e9', 'http://ibm.com', 0, 0, 0, NULL, NULL, '2014-04-16 11:09:06'),
+('699fcf4591fc23e79b839d8819904293', 'http://127.0.0.1/', 0, 0, 0, NULL, NULL, '2014-04-30 14:22:25');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `urls`
+--
+
+CREATE TABLE IF NOT EXISTS `urls` (
+  `Site_Id` varchar(32) NOT NULL DEFAULT '""',
+  `URL` varchar(4096) NOT NULL DEFAULT '""',
+  `Type` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0 - Regular, collect URLs and insert only for this site according filters; 1 - Single, do not collect URLs, 3 - collect URLs, create sites and insert for all',
+  `State` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '0 - Enabled, 1 - disabled, 2 - error',
+  `Status` tinyint(3) unsigned NOT NULL DEFAULT '1' COMMENT '0 - Undefined, 1 - New, 2 - selected for crawling, 3 - crawling, 4 - crawled, 5 - selected to process, 6 - processing, 7 - processed',
+  `Crawled` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `Processed` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `URLMd5` varchar(32) NOT NULL DEFAULT '""',
+  `ContentType` varchar(32) NOT NULL DEFAULT 'text/html' COMMENT 'MIME content-type string',
+  `RequestDelay` bigint(20) unsigned NOT NULL DEFAULT '500' COMMENT 'Delay before HTTP request',
+  `HTTPTimeout` int(10) unsigned NOT NULL DEFAULT '30000' COMMENT 'HTTP response timeout, msec',
+  `Charset` varchar(32) NOT NULL DEFAULT 'utf-8',
+  `Batch_Id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Batch task Id of DTM',
+  `ErrorMask` bigint(20) unsigned DEFAULT '0' COMMENT 'Error mask bits set',
+  `CrawlingTime` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Time of crawling, msec',
+  `ProcessingTime` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'After crawling processing time, msec',
+  `TotalTime` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Total crawling time, msec',
+  `HTTPCode` int(10) unsigned NOT NULL DEFAULT '200' COMMENT 'HTTP response code',
+  `UDate` datetime DEFAULT NULL COMMENT 'Update date',
+  `CDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY `Site_Id` (`Site_Id`),
+  KEY `UDate` (`UDate`),
+  KEY `CDate` (`CDate`),
+  KEY `State` (`State`),
+  KEY `Crawled` (`Crawled`),
+  KEY `Processed` (`Processed`),
+  KEY `Status` (`Status`),
+  KEY `URLMd5` (`URLMd5`),
+  KEY `Type` (`Type`),
+  KEY `ContentType` (`ContentType`),
+  KEY `Charset` (`Charset`),
+  KEY `ErrorMask` (`ErrorMask`),
+  KEY `HTTPCode` (`HTTPCode`),
+  KEY `CrawlingTime` (`CrawlingTime`),
+  KEY `ProcessingTime` (`ProcessingTime`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
